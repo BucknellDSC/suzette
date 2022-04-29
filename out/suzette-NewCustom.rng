@@ -5,7 +5,7 @@
          xmlns="http://relaxng.org/ns/structure/1.0"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2022-04-28T21:26:07Z. .
+Schema generated from ODD source 2022-04-29T19:00:48Z. .
 TEI Edition: Version 3.6.0. Last updated on
 	16th July 2019, revision daa3cc0b9
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.6.0/
@@ -135,7 +135,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.6.0/
             </choice>
          </zeroOrMore>
       </element>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d9e101095-constraint">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d9e101107-constraint">
          <rule context="tei:content">
             <report test="descendant::*[not(namespace-uri(.) =               ('http://relaxng.org/ns/structure/1.0', 'http://www.tei-c.org/ns/1.0'))]">content descendants must be in the
               namespaces
@@ -184,7 +184,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.6.0/
             </choice>
          </zeroOrMore>
       </element>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d9e102300-constraint">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d9e102312-constraint">
          <rule context="tei:datatype">
             <report test="descendant::*[not(namespace-uri(.) =               ('http://relaxng.org/ns/structure/1.0', 'http://www.tei-c.org/ns/1.0'))]">datatype descendants must be in the
               namespaces
@@ -12526,6 +12526,12 @@ Suggested values include: 1] paper; 2] parch (parchment); 3] mixed</a:documentat
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Bérésina</a:documentation>
                         <value>isthme_suez</value>
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Isthme de Suez</a:documentation>
+                        <value>zambèze</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Zambèze</a:documentation>
+                        <value>sénégal</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Sénégal</a:documentation>
+                        <value>niger</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Niger</a:documentation>
                      </choice>
                   </oneOrMore>
                </list>
