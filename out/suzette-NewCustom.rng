@@ -5,7 +5,7 @@
          xmlns="http://relaxng.org/ns/structure/1.0"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2022-04-29T19:00:48Z. .
+Schema generated from ODD source 2022-06-08T17:33:43Z. .
 TEI Edition: Version 3.6.0. Last updated on
 	16th July 2019, revision daa3cc0b9
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.6.0/
@@ -135,7 +135,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.6.0/
             </choice>
          </zeroOrMore>
       </element>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d9e101107-constraint">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d9e101136-constraint">
          <rule context="tei:content">
             <report test="descendant::*[not(namespace-uri(.) =               ('http://relaxng.org/ns/structure/1.0', 'http://www.tei-c.org/ns/1.0'))]">content descendants must be in the
               namespaces
@@ -184,7 +184,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.6.0/
             </choice>
          </zeroOrMore>
       </element>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d9e102312-constraint">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d9e102341-constraint">
          <rule context="tei:datatype">
             <report test="descendant::*[not(namespace-uri(.) =               ('http://relaxng.org/ns/structure/1.0', 'http://www.tei-c.org/ns/1.0'))]">datatype descendants must be in the
               namespaces
@@ -11938,6 +11938,8 @@ Suggested values include: 1] paper; 2] parch (parchment); 3] mixed</a:documentat
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Vincent</a:documentation>
                   <value>mathias</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Mathias Dumay</a:documentation>
+                  <value>lucie_valon</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Lucie Valon</a:documentation>
                </choice>
             </attribute>
          </optional>
@@ -12213,6 +12215,22 @@ Suggested values include: 1] paper; 2] parch (parchment); 3] mixed</a:documentat
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Aquitaine</a:documentation>
                         <value>elbeuf</value>
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Elbeuf</a:documentation>
+                        <value>cicile</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Sicile</a:documentation>
+                        <value>lorraine</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Lorraine</a:documentation>
+                        <value>franche-comté</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Franche-comté</a:documentation>
+                        <value>béarn</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Béarn</a:documentation>
+                        <value>sicile</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Sicile</a:documentation>
+                        <value>lorraine</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Lorraine</a:documentation>
+                        <value>franche-comté</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Franche-comté</a:documentation>
+                        <value>béarn</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Béarn</a:documentation>
                      </choice>
                   </oneOrMore>
                </list>
@@ -12230,14 +12248,6 @@ Suggested values include: 1] paper; 2] parch (parchment); 3] mixed</a:documentat
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">comté</a:documentation>
                   <value>état</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">état</a:documentation>
-                  <value>sicile</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Sicile</a:documentation>
-                  <value>lorraine</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Lorraine</a:documentation>
-                  <value>franche-comté</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Franche-comté</a:documentation>
-                  <value>béarn</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Béarn</a:documentation>
                </choice>
             </attribute>
          </optional>
@@ -12448,6 +12458,10 @@ Suggested values include: 1] paper; 2] parch (parchment); 3] mixed</a:documentat
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Salins</a:documentation>
                         <value>salies</value>
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Salies</a:documentation>
+                        <value>strasbourg</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Strasbourg</a:documentation>
+                        <value>mayence</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Mayence</a:documentation>
                      </choice>
                   </oneOrMore>
                </list>
