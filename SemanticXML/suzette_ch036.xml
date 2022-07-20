@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/out/suzette-NewCustom.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/CSS/suzette_cwrc.css"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/out/suzette-NewCustom.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -73,11 +73,11 @@
     </teiHeader>
     <text>
         <body>
-            <div1 type="chapitre">
+            <div1 type="chapitre" xml:lang="fr" n="ch036">
                 <pb type="page" n="125" />
                 <head>36. — Pauvre petit! (Élève, p. 81.)</head>
                 <div2 type="récit">
-                    <p>Ah! quels yeux! Ce n'étaient plus ceux du vif et <lb />gentil enfant. Convulsés* <gloss>Convulsé. Tel que s'il était atteint de convulsions.</gloss>, hagards* <gloss>Hagard. Qui
+                    <p>Ah! quels yeux! Ce n'étaient plus ceux du vif et <lb />gentil enfant. Convulsés* <gloss>Convulsé. Tel que s'il était atteint de convulsions.</gloss>, hagards*<gloss>Hagard. Qui
                             marque l'épouvante.</gloss>, ils reconnurent <lb />à peine <persName type="fictif" key="suzette">Suzette</persName>. Elle lui parlait avec tendresse, et, <lb />penchée sur
                         lui, l'embrassait.</p>
                     <pb type="page" n="126" />
@@ -87,8 +87,9 @@
                     <p>— Bon, mon <persName type="fictif" key="françois">François</persName>, mais viens ! </p>
                     <p>— Non, j'attends les gendarmes pour qu'ils m'em- <lb />mènent.</p>
                     <p>Elle savait qu'au délire* <gloss>Délire. Egarement de l'esprit par la maladie </gloss> il n'y a pas de raison à donner <lb />et qu'on le conduit surtout on paraissant se plier à
-                        sa <lb />fantaisie* <gloss>Fantaisie. Ce que l'on veut ou désire.</gloss>.</p>
-                    <p>— Mais, reprit-elle, ce sont les gendarmes qui <lb />t'attendent, toi, au <placeName>Câtelet</placeName> ! Ils sont prévenus...</p>
+                        sa <lb />fantaisie*<gloss>Fantaisie. Ce que l'on veut ou désire.</gloss>.</p>
+                    <p>— Mais, reprit-elle, ce sont les gendarmes qui <lb />t'attendent, toi, au <placeName><bloc ref="europe"><country ref="france"
+                            ><settlement>Câtelet</settlement></country></bloc></placeName> ! Ils sont prévenus...</p>
                     <p>— Que j'ai mis le feu! </p>
                     <p>— Oui.</p>
                     <p>— Bon, allons aux gendarmes!</p>
@@ -97,17 +98,18 @@
                     <p>Le chagrin lui dévorait le cœur : <persName type="fictif" key="françois">François</persName> était re- <lb />trouvé, mais dans quel état!</p>
                     <p>En ce moment le vent apporta les appels de voix <lb />lointaines. Le chien, reconnaissant les voix, répondit <lb />si longuement, si fortement que les appels se rappro-
                         <lb />chèrent.</p>
-                    <p>Bientôt parurent, chacun de son côté, <persName type="fictif" key="m_dumay">M. Dumay</persName> et <lb />le fils aîné,</p>
-                    <p>— Voilà, père ! dit <persName type="fictif" key="suzette">Suzette</persName> ; <persName type="fictif" key="françois">François</persName> s'en va au <placeName>Câtelet</placeName>
+                    <p>Bientôt parurent, chacun de son côté, <persName type="fictif" key="m_dumay">M. Dumay</persName> et <lb />le fils aîné.</p>
+                    <p>— Voilà, père ! dit <persName type="fictif" key="suzette">Suzette</persName> ; <persName type="fictif" key="françois">François</persName> s'en va au <placeName><bloc
+                                ref="europe"><country ref="france"><settlement>Câtelet</settlement></country></bloc></placeName>
                         <lb />trouver les gendarmes.</p>
-                    <p>— Parce que j'ai mis le feu! ajouta l'enfant.</p>
+                    <p>— Parce que j'ai mis le feu ! ajouta l'enfant.</p>
                     <p>A ces mots, à cette mine égarée, aussi bien qu'à <lb />quelques signes de <persName type="fictif" key="suzette">Suzette</persName>, ils comprirent. Et cachant <lb />leur
                         émotion, ils répondirent qu'en effet ils cherchaient <lb /><persName type="fictif" key="françois">François</persName> pour le mener aux gendarmes.</p>
-                    <p>Et marchons! Au bout d'une centaine de pas, l'enfant, <lb />épuisé par la fièvre et par sa longue course affolée * <gloss>Affolé. Qui est sans direction.</gloss>
-                        <lb />à travers les terres, se laissa porter, Sur le dos de son <lb />père, il s'endormit.</p>
+                    <p>Et marchons! Au bout d'une centaine de pas, l'enfant, <lb />épuisé par la fièvre et par sa longue course affolée*<gloss>Affolé. Qui est sans direction.</gloss>
+                        <lb />à travers les terres, se laissa porter. Sur le dos de son <lb />père, il s'endormit.</p>
                     <p>On le coucha dans le lit de <persName type="fictif" key="vincent">Vincent</persName>, le fils de <persName type="fictif" key="ludivine">Ludivine</persName>, <lb />chez qui
                             <persName type="fictif" key="charlot">Charlot</persName> attendait.</p>
-                    <p>Dors, petit malade; qu'un bon et long sommeil em- <lb />porte ton mal!</p>
+                    <p>Dors, petit malade ; qu'un bon et long sommeil em- <lb />porte ton mal!</p>
                 </div2>
                 <pb type="page" n="127" />
                 <fw>PAUVRE PETIT! 127</fw>
@@ -120,7 +122,7 @@
                         <item>— Que disait le pauvre petit ? </item>
                         <item>— Que répondait-elle ? </item>
                         <item>— Pourquoi ne le contredisait-elle point ? </item>
-                        <item>— Que flt-elle enfin ? </item>
+                        <item>— Que fit-elle enfin ? </item>
                         <item>— Qu'entendit-on, qui apparut ? </item>
                         <item>— Que dit <persName type="fictif" key="suzette">Suzette</persName> à son père ? </item>
                         <item>— Comment fit-elle comprendre que <persName type="fictif" key="françois">François</persName> avait le délire ? </item>
@@ -131,7 +133,7 @@
                 <div2 type="exercices">
                     <head>DÉVELOPPEMENT DES SUJETS PROPOSÉS POUR EXERCICES.</head>
                     <div3 type="morale">
-                        <head>Morale.</head>
+                        <head type="sujets">Morale.</head>
                         <div4 type="questions">
                             <list>
                                 <item>— LE REMORDS.</item>
@@ -156,24 +158,24 @@
                         </div4>
                     </div3>
                     <div3 type="instruction_civique">
-                        <head>Instruction civique.</head>
+                        <head type="sujets">Instruction civique.</head>
                         <div4 type="questions">
                             <list>
                                 <item>— Copier sur un bon dictionnaire la définition : d'une contravention, d'un délit, d'un crime.</item>
                                 <item>— Devant qui comparaissent les auteurs : 1° d'une contravention ; — 2° d'un délit ; — 3° d'un crime ? </item>
-                                <item>— Qu'est-ce que le juge de paix?</item>
-                                <item>— Quel magistrat soutient l'accusation devant les tribunaux?</item>
-                                <item>— Que font les juges dans une affaire?</item>
-                                <item>— Qu'est-ce que la cour d'assises?</item>
-                                <item>— Qu'est-ce que les jurés?</item>
-                                <item>— Qu'est-ce qu'un avocat?</item>
-                                <item>— Qu'est-ce qu'un greffier?</item>
+                                <item>— Qu'est-ce que le juge de paix ? </item>
+                                <item>— Quel magistrat soutient l'accusation devant les tribunaux ? </item>
+                                <item>— Que font les juges dans une affaire ? </item>
+                                <item>— Qu'est-ce que la cour d'assises ? </item>
+                                <item>— Qu'est-ce que les jurés ? </item>
+                                <item>— Qu'est-ce qu'un avocat ? </item>
+                                <item>— Qu'est-ce qu'un greffier ? </item>
                             </list>
                         </div4>
                         <div4 type="réponses">
-                            <p>Une <term>contravention</term> est un manquement, une infraction à un règle- <lb />ment de police. Exemples : injurier quelqu'un en public; ne pas <lb />éclairer pendant
-                                la nuit un tas de décombres qu'on a déposés dans <lb />la rue; ne pas échenilloir ses arbres. Toute contravention est punie de <lb />l'amende ou de l à 5 jours de
-                                prison.</p>
+                            <p>Une <term>contravention</term> est un manquement, une infraction à un règle- <lb />ment de police. Exemples : injurier quelqu'un en public ; ne pas <lb />éclairer
+                                pendant la nuit un tas de décombres qu'on a déposés dans <lb />la rue; ne pas échenilloir ses arbres. Toute contravention est punie de <lb />l'amende ou de l à 5 jours
+                                de prison.</p>
                             <p>Un <term>délit</term>, en général, est une violation légѐre de la loi, susceptible <lb />cependant d'être punie de cinq jours à cinq ans de prison selon la <lb />gravité
                                 des faits, ou bien d'une amende. Tels sont : voler des fruits <lb />dans un verger, blesser l'animal du voisin, frapper une personne, <lb />faire une dénonciation
                                 calomnieuse.</p>
@@ -181,7 +183,7 @@
                                 nos colonies, par le bannissement, la perte des droits de ci- <lb />toyen, et quelquefois par la mort sur l'échafaud. L'incendie d'une <lb />maison habitée, le vol avec
                                 effraction, les blessures graves faites à <lb />autrui, la trahison à l'ennemi, le meurtre, sont dos crimes.</p>
                             <p>Le <term>juge de paix</term> est un magistrat installé au chef-lieu d'un anton. Il <pb type="page" n="128" />
-                                <fw type="header">128 SUZETTE</fw>
+                                <fw>128 SUZETTE</fw>
                                 <lb />est chargé de prononcer sur une foule d'affaires peu considérables <lb />qui divisent les gens, et sur les contestations. Il juge les contraven- <lb />tions,
                                 convoque et préside les conseils de famille, appose ou lève les <lb />scellés et dresse les actes d'adoption. On le nomme ainsi parce qu'il <lb />a mission de concilier
                                 les différends qui surgissent dans les affaires <lb />entre particuliers.</p>
@@ -198,7 +200,7 @@
                         </div4>
                     </div3>
                     <div3 type="complexe">
-                        <head>Histoire naturelle.</head>
+                        <head type="sujets">Histoire naturelle.</head>
                         <div4 type="questions">
                             <list type="exercices">
                                 <item>— L'ŒIL.</item>
@@ -227,217 +229,7 @@
                         </div4>
                     </div3>
                 </div2>
-            <pb type="page" n="125"/>
-            <fw>36. — Pauvre petit! (Élève, p. 81.)</fw>
-            <div2 type="récit">
-            <p>Ah! quels yeux! Ce n'étaient plus ceux du vif et 
-            <lb/>gentil enfant. Convulsés* <gloss>Convulsé. Tel que s'il était atteint de convulsions.</gloss>, hagards* <gloss>Hagard. Qui marque l'épouvante.</gloss>, ils reconnurent 
-            <lb/>à peine <persName type="fictif" key="suzette">Suzette</persName>. Elle lui parlait avec tendresse, et, 
-            <lb/>penchée sur lui, l'embrassait.</p>
-                
-            <pb type="page" n="126"/>
-            <fw>126 SUZETTE.</fw>
-                        
-            <p>Il écarta en disant ;</p>
-            <p>— Laissez-moi; j'ai mis le feu.</p>
-            <p>— Bon, mon <persName type="fictif" key="françois">François</persName>, mais viens ! </p>
-            <p>— Non, j'attends les gendarmes pour qu'ils m'em-
-            <lb/>mènent.</p>
-            <p>Elle savait qu'au délire* <gloss>Délire. Egarement de l'esprit par la maladie </gloss> il n'y a pas de raison à donner 
-            <lb/>et qu'on le conduit surtout on paraissant se plier à sa 
-            <lb/>fantaisie* <gloss>Fantaisie. Ce que l'on veut ou désire.</gloss>.</p>
-            <p>— Mais, reprit-elle, ce sont les gendarmes qui 
-            <lb/>t'attendent, toi, au <placeName type="france" subtype="commune">Câtelet</placeName> ! Ils sont prévenus...</p>
-            <p>— Que j'ai mis le feu! </p>
-            <p>— Oui.</p>
-            <p>— Bon, allons aux gendarmes!</p>
-            <p>Elle l'aida à se relever, prit sa main, qui était brûlante 
-            <lb/>de fièvre, et l'entraîna en parlant doucement à ce 
-            <lb/>pauvre cerveau en détresse* <gloss>Détresse. Grande peine d'esprit.</gloss>.</p>
-            <p>Le chagrin lui dévorait le cœur : <persName type="fictif" key="françois">François</persName> était re-
-            <lb/>trouvé, mais dans quel état!</p>
-            <p>En ce moment le vent apporta les appels de voix 
-            <lb/>lointaines. Le chien, reconnaissant les voix, répondit 
-            <lb/>si longuement, si fortement que les appels se rappro-
-            <lb/>chèrent.</p>
-            <p>Bientôt parurent, chacun de son côté, <persName type="fictif" key="m_dumay">M. Dumay</persName> et 
-            <lb/>le fils aîné,</p>
-            <p>— Voilà, père ! dit <persName type="fictif" key="suzette">Suzette</persName> ; <persName type="fictif" key="françois">François</persName> s'en va au <placeName type="france" subtype="commune">Câtelet</placeName> 
-            <lb/>trouver les gendarmes.</p>
-            <p>— Parce que j'ai mis le feu! ajouta l'enfant.</p>
-            <p>A ces mots, à cette mine égarée, aussi bien qu'à 
-            <lb/>quelques signes de <persName type="fictif" key="suzette">Suzette</persName>, ils comprirent. Et cachant 
-            <lb/>leur émotion, ils répondirent qu'en effet ils cherchaient 
-            <lb/><persName type="fictif" key="françois">François</persName> pour le mener aux gendarmes.</p>
-            <p>Et marchons! Au bout d'une centaine de pas, l'enfant, 
-            <lb/>épuisé par la fièvre et par sa longue course affolée* <gloss>Affolé. Qui est sans direction.</gloss>
-            <lb/>à travers les terres, se laissa porter. Sur le dos de son 
-            <lb/>père, il s'endormit.</p>
-            <p>On le coucha dans le lit de <persName type="fictif" key="vincent">Vincent</persName>, le fils de <persName type="fictif" key="ludivine">Ludivine</persName>, 
-            <lb/>chez qui <persName type="fictif" key="charlot">Charlot</persName> attendait.</p>
-            <p>Dors, petit malade; qu'un bon et long sommeil em-
-            <lb/>porte ton mal!</p>
-            </div2>   
-                
-            <pb type="page" n="127"/>
-            <fw>PAUVRE PETIT! 127</fw>
-                        
-            <div2 type="questionnaire">
-            <head>Questionnaire.</head>
-            <list>
-            <item>— Comment étaient les yeux de <persName type="fictif" key="françois">François</persName> ? </item>
-            <item>— Que fit <persName type="fictif" key="suzette">Suzette</persName> ? </item>
-            <item>— Que pensez-vous d'elle ? </item>
-            <item>— Que disait le pauvre petit ? </item>
-            <item>— Que répondait-elle ? </item>
-            <item>— Pourquoi ne le contredisait-elle point ? </item>
-            <item>— Que fit-elle enfin ? </item>
-            <item>— Qu'entendit-on, qui apparut ? </item>
-            <item>— Que dit <persName type="fictif" key="suzette">Suzette</persName> à son père ? </item>
-            <item>— Comment fit-elle comprendre que <persName type="fictif" key="françois">François</persName> avait le délire ? </item>
-            <item>— Qu'arriva-t-il au bout d'une centaine de pas ? </item>
-            <item>— Chez qui amena-t-on le malade ? </item>
-            </list>
-            </div2>
-            <div2 type="exercices">
-            <head>DÉVELOPPEMENT DES SUJETS PROPOSÉS POUR EXERCICES.</head>
-            <div3 type="morale">
-            <head>Morale.</head>
-            <div4 type="questions">    
-            <list>
-            <item>— LE REMORDS.</item>
-            <item>— Qu'éprouve-t-on lorsqu'on a commis une méchante ou honteuse action ? </item>
-            <item>— Qu'est-ce qui nous la reproche ? </item>
-            <item>— Qu'est-ce que la conscience ? </item>
-            <item>— Faut-il écouter la conscience, et pourquoi ? </item>
-            <item>— Comment s'y prend-on pour n'avoir plus de remords ou pour les adoucir ? </item>
-            <item>— Exemple.</item>
-            </list>
-            </div4>    
-            <div4 type="réponses">    
-            <p>Après avoir commis une action blâmable, il semble qu'il s'élève en 
-            <lb/>nous une voix intérieure répétant sans cesse : « Tu as mal agi. » 
-            <lb/>Cette voix est celle de la conscience ; elle produit le <term>remords</term>, senti-
-            <lb/>ment pénible qui nous trouble et nous afflige au souvenir d'une faute 
-            <lb/>que nous avons commise.</p>
-            <p>La <term>conscience</term> est une lumière intérieure, un avertissement qui 
-            <lb/>nous fait reconnaître ce qui est bien et ce qui est mal. Écoutons sa
-            <lb/>voix, sa voix qui exprime toujours la vérité morale; elle nous apprend
-            <lb/>ce qui est notre devoir ; suivons-la docilement et jamais nous ne
-            <lb/>connaîtrons les tourments du remords.</p>
-            <p>Personne n'est parfait, c'est-à-dire exempt de commettre des fautes ;
-            <lb/>mais si on les regrette sincèrement, si l'on est disposé à ne plus y
-            <lb/>retomber et enfin si on les répare dans la mesure du possible, le
-            <lb/>remords disparaît, et il nous semble entendre une voix intérieure
-            <lb/>s'écriant : « Tu es pardonné ! » </p>
-            <p>(L'élѐve devra elle-même trouver l'exemple demandé.)</p>
-            </div4>    
-            </div3>
-            <div3 type="instruction_civique">
-            <head>Instruction civique.</head>
-            <div4 type="questions">    
-            <list>
-            <item>— Copier sur un bon dictionnaire la définition : d'une contravention, d'un délit, d'un crime.</item>
-            <item>— Devant qui comparaissent les auteurs : 1° d'une contravention ; — 2° d'un délit ; — 3° d'un crime ? </item>
-            <item>— Qu'est-ce que le juge de paix ? </item>
-            <item>— Quel magistrat soutient l'accusation devant les tribunaux ? </item>
-            <item>— Que font les juges dans une affaire ? </item>
-            <item>— Qu'est-ce que la cour d'assises ? </item>
-            <item>— Qu'est-ce que les jurés ? </item>
-            <item>— Qu'est-ce qu'un avocat ? </item>
-            <item>— Qu'est-ce qu'un greffier ? </item>
-            </list>
-            </div4>        
-            <div4 type="réponses">    
-            <p>Une <term>contravention</term> est un manquement, une infraction à un règle-
-            <lb/>ment de police. Exemples : injurier quelqu'un en public; ne pas
-            <lb/>éclairer pendant la nuit un tas de décombres qu'on a déposés dans 
-            <lb/>la rue; ne pas échenilloir ses arbres. Toute contravention est punie de
-            <lb/>l'amende ou de l à 5 jours de prison.</p>
-            <p>Un <term>délit</term>, en général, est une violation légѐre de la loi, susceptible 
-            <lb/>cependant d'être punie de cinq jours à cinq ans de prison selon la 
-            <lb/>gravité des faits, ou bien d'une amende. Tels sont : voler des fruits 
-            <lb/>dans un verger, blesser l'animal du voisin, frapper une personne,
-            <lb/>faire une dénonciation calomnieuse.</p>
-            <p>Un <term>crime</term> est une infraction grave aux lois. Le coupable peut être 
-            <lb/>puni de la prison avec travail obligatoire, par les travaux forcés dans 
-            <lb/>une de nos colonies, par le bannissement, la perte des droits de ci-
-            <lb/>toyen, et quelquefois par la mort sur l'échafaud. L'incendie d'une
-            <lb/>maison habitée, le vol avec effraction, les blessures graves faites à
-            <lb/>autrui, la trahison à l'ennemi, le meurtre, sont des crimes.</p>
-            <p>Le <term>juge de paix</term> est un magistrat installé au chef-lieu d'un canton. Il 
-                
-            <pb type="page" n="128"/>
-            <fw type="header">128 SUZETTE</fw>
-                             
-             <lb/>est chargé de prononcer sur une foule d'affaires peu considérables 
-             <lb/>qui divisent les gens, et sur les contestations. Il juge les contraven-
-             <lb/>tions, convoque et préside les conseils de famille, appose ou lève les 
-             <lb/>scellés et dresse les actes d'adoption. On le nomme ainsi parce qu'il 
-             <lb/>a mission de concilier les différends qui surgissent dans les affaires 
-             <lb/>entre particuliers.</p>
-             <p>Le magistrat qui poursuit les délits et les crimes, on saisit la justice,
-             <lb/>demande contre les accusés l'application de la loi, en un mot, qui
-             <lb/>soutient l'accusation, est le <term>procureur de la République</term>.</p>
-             <p>Les <term>juges</term> des tribunaux institués dans chaque chef-lieu d'arrondisse-
-             <lb/>ment étudient les affaires portées devant eux et, après avoir entendu 
-             <lb/>le procureur de la République, l'accusé et son avocat (1), ils se pro-
-             <lb/>noncent sur la culpabilité de l'accusé ; s'ils le jugent coupable, ils lui 
-             <lb/>infligent la peine indiquée par la loi.</p>
-             <p>Les <term>cours d'assises</term> sont des tribunaux institués pour juger les 
-             <lb/>crimes. Trois juges y prononcent sur l'application de la peine à infliger 
-             <lb/>à l'accusé lorsque douze citoyens honorables, appelés jurés, ont décidé 
-             <lb/>qu'il est coupable. La réunion des jurés en cour d'assises forme le 
-             <lb/><term>jury</term>.</p>
-             <p>Un <term>greffier</term> est un officier ministériel chargé de copier, d'expédier 
-             <lb/>et de conserver les <term>minutes</term> des arrêts, des jugements et des diffé-
-             <lb/>rentes pièces d'une affaire. (Une <term>minute</term> est le premier exemplaire 
-             <lb/>d'un acte émanant d'un juge, d'un notaire, par exemple.)</p>
-             </div4>   
-             </div3>
-             <div3 type="complexe">
-             <head>Histoire naturelle.</head>
-             <div4 type="questions">   
-             <list type="exercices">
-             <item>— L'ŒIL.</item>
-             <item>— Quel organe est l'œil ?</item>
-             <item>— Quelles sont les parties de l'œil, 1° à l'extérieur ; 2° à l'intérieur ? </item>
-             <item>— Comment nomme-t-on la membrane colorée de l'œil ? </item>
-             <item>— A quel objet servent les sourcils et les cils ? </item>
-             <item>— Décrivez les instruments avec lesquels on remédie aux vues faibles ou fatiguées.</item>
-             </list>
-             </div4>  
-             <div4 type="réponses">    
-             <p><term>L'œil</term> est l'organe de la vue. Extérieurement, il se compose d'un
-             <lb/>globe rempli d'humeurs plus ou moins liquides, et protégé par les <term>pau-
-             <lb/>pières</term>, membranes bordées de poils appelés cils. La partie antérieure 
-             <lb/>de l'œil, désignée sous le nom de <term>cornée</term>, est transparente ; derrière 
-             <lb/>elle, on aperçoit une sorte de cloison, l’iris, colorée diversement selon 
-             <lb/>les personnes, et présentant dans son milieu une ouverture circulaire 
-             <lb/>nommée <term>pupille</term>.</p>
-             <p>Presque immédiatement en arrière de la pupille, se trouve une len-
-             <lb/>tille transparente, le <term>cristallin</term>, logée dans une petite poche et com-
-             <lb/>posée d'une multitude de couches de dureté variable. Le reste de 
-             <lb/>l'œil est rempli d'une substance gélatineuse et diaphane, analogue au
-             <lb/>blanc d'œuf, qu'entoure une membrane appelée <term>rétine</term>.</p>
-             <p>L'image des objets se peint sur la rétine, à la surface de laquelle
-             <lb/>s'épanouit un nerf qui transmet au cerveau les impressions qu'il 
-             <lb/>reçoit par la rétine; ce qui nous donne la sensation de la vue des 
-             <lb/>objets.</p>
-             <p>Les <term>sourcils</term> et les <term>cils</term> protègent le globe de l'œil contre les pous-
-             <lb/>sières dont l'air est souvent rempli.</p>
-             <p>On remédie aux vues faibles, mauvaises ou fatiguées, par les <term>lunettes</term>, 
-             <lb/>instruments formés de deux verres convexes ou concaves qui éloignent 
-             <lb/>ou rapprochent les objets que l'on considère, de manière à en donner 
-             <lb/>la vision claire et nette. Ces verres sont enchâssés chacun dans un 
-             <lb/>ovale d'acier que des tiges flexibles de même métal assujettissent à la 
-             <lb/>place convenable.</p>
-             <fw type="footer">(1) Un <term>avocat</term> est une personne qui fait profession de défendre les accusés et les 
-             <lb/>causes devant les tribunaux.</fw>
-             </div4>
-             </div3>
-             </div2>
-             </div1>
+            </div1>
         </body>
     </text>
 </TEI>

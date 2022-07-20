@@ -5,7 +5,7 @@
          xmlns="http://relaxng.org/ns/structure/1.0"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2021-11-11T21:22:16Z. .
+Schema generated from ODD source 2021-11-18T15:06:16Z. .
 TEI Edition: Version 3.6.0. Last updated on
 	16th July 2019, revision daa3cc0b9
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.6.0/
@@ -135,7 +135,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.6.0/
             </choice>
          </zeroOrMore>
       </element>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d9e100774-constraint">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d9e100776-constraint">
          <rule context="tei:content">
             <report test="descendant::*[not(namespace-uri(.) =               ('http://relaxng.org/ns/structure/1.0', 'http://www.tei-c.org/ns/1.0'))]">content descendants must be in the
               namespaces
@@ -184,7 +184,7 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.6.0/
             </choice>
          </zeroOrMore>
       </element>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d9e101979-constraint">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d9e101981-constraint">
          <rule context="tei:datatype">
             <report test="descendant::*[not(namespace-uri(.) =               ('http://relaxng.org/ns/structure/1.0', 'http://www.tei-c.org/ns/1.0'))]">datatype descendants must be in the
               namespaces
@@ -12025,10 +12025,10 @@ Suggested values include: 1] paper; 2] parch (parchment); 3] mixed</a:documentat
             <attribute name="type">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the element in some sense, using any convenient classification scheme or typology.</a:documentation>
                <choice>
-                  <value>real</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Real</a:documentation>
+                  <value>historique</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">historique</a:documentation>
                   <value>fictif</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Fictif</a:documentation>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">fictif</a:documentation>
                </choice>
             </attribute>
          </optional>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href=" https://raw.githubusercontent.com/BucknellDSC/suzette/master/CSS/suzette_cwrc.css"?>
 <?xml-model href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/out/suzette-NewCustom.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/CSS/suzette_cwrc.css"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -73,53 +73,50 @@
     </teiHeader>
     <text>
         <body>
-            <div1 type="chapitre" xml:lang="fr" corresp="#ch031">
-                <head type="chapitre">31. — Le prince <persName type="historique">Kang-Hi</persName>. (Élève, p. 73.)</head>
-                <pb type="110" />
+            <div1 type="chapitre" xml:lang="fr" n="ch031">
+                <pb type="page" n="110" />
+                <head>31. — Le prince <persName type="historique">Kang-Hi</persName>. (Élève, p. 73.)</head>
                 <div2 type="récit">
                     <p>Ils rentrèrent. <persName type="fictif">Suzette</persName> les attendait avec le diner prêt, <lb />et un livre qui devait servir de dessert. Elle était allée <lb />le demander à
                         la bibliothèque de l'école et l'avait déjà <lb />parcouru aux trois quarts.</p>
-                    <p>Le repas achevé, elle s'empressa de l'ouvrir et lut <lb />tout haut ceci :</p>
-                    <p>
-                        <lb />« Histoire tirée du « Grand recueil sur l'agriculture », <lb />livre antique* <gloss>Antique. Qui a été composé, fait, à une époque très éloignée de nous.</gloss>
-                        chinois, d'après les Mémoires domestiques* <gloss>Domestique. Qui est de la maison.</gloss>
+                    <p>Le repas achevé, elle s'empressa de l'ouvrir et lut <lb />tout haut ceci : </p>
+                    <p> « Histoire tirée du « Grand recueil sur l'agriculture » , <lb />livre antique* <gloss>Antique. Qui a été composé, fait, à une époque très éloignée de nous.</gloss> chinois,
+                        d'après les Mémoires domestiques* <gloss>Domestique. Qui est de la maison.</gloss>
                         <lb />du prince.</p>
-                    <p>« Aux premiers jours de la sixième lune*<gloss>Lune. Le temps pendant lequel la lune effectue sa révolution autour de la terre; il dure 27 jours et demi.</gloss>, dit l'em-
+                    <p> « Aux premiers jours de la sixième lune*<gloss>Lune. Le temps pendant lequel la lune effectue sa révolution autour de la terre; il dure 27 jours et demi.</gloss>, dit l'em-
                         <lb />pereur <persName type="historique">Kang- <lb />Hi</persName>, je me pro- <lb />menais dans <lb />des champs où <lb />l'on avait semé <lb />du riz qui ne <lb />devait
                         donner <lb />sa moisson <lb />qu'à la neuviè- <lb />me lune. Je re- <lb />marquai par <lb />hasard un pied <lb />de riz. Il s'éle- <lb />vait au-dessus <lb />de tous les au-
-                        <lb />tres, était déjà <lb />monté en épi <lb />et mûr. Je me <lb />le fis apporter. <figure type="illustration">
+                        <lb />tres, était déjà <lb />monté en épi <lb />et mûr. Je me <lb />le fis apporter. <figure>
                             <caption>
-                                <lb />Cuiture et récolte du riz, <lb />en <placeName>Chine</placeName>. <lb />—Le riz est un farineux <lb />dont on fait une excellente <lb />nourriture, en outre de
-                                ses <lb />nombreuses applications à <lb />l'industrie.</caption>
+                                <lb />Cuiture et récolte du riz, <lb />en <placeName><bloc ref="asie"><country ref="chine">Chine</country></bloc></placeName>. <lb />—Le riz est un farineux <lb />dont
+                                on fait une excellente <lb />nourriture, en outre de ses <lb />nombreuses applications à <lb />l'industrie.</caption>
                         </figure>
                         <lb />Le grain en <lb />était très beau et bien nourri. Cela me donna la pensée <lb />de le garder pour un essai, et de voir si, l'année sui- <lb />vante, il conserverait ainsi
                         sa précocité*<gloss>Précocité. Floraison hâtive.</gloss>.</p>
-                    <fw type="header">LE PRINCE KANG-HI. 111</fw>
                     <pb type="page" n="111" />
-                    <p>« Il la conserva en effet. Tous les pieds qui en étaient <lb />provenus* <gloss>Provenu. Venu de... </gloss> montèrent en épis avant le temps ordinaire, <lb />et donnèrent leur
+                    <fw type="header">LE PRINCE KANG-HI. 111</fw>
+                    <p> « Il la conserva en effet. Tous les pieds qui en étaient <lb />provenus* <gloss>Provenu. Venu de... </gloss> montèrent en épis avant le temps ordinaire, <lb />et donnèrent leur
                         moisson à la sixième lune.</p>
-                    <p>
-                        <lb />« Chaque année, dès lors, a accru la récolte de la <lb />précédente, et, depuis trente ans, c'est le riz qu'on sert <lb />sur ma table.</p>
-                    <p>
-                        <lb />« Le grain en est allongé, la couleur un peu rou- <lb />geâtre ; il a un parfum fort doux et une saveur très <lb />agréable. On le nomme le riz impérial,
-                            <term>Yu-mi</term>, parce que <lb />c'est dans mes jardins qu'il a commencé à être cultivé.</p>
-                    <p>
-                        <lb />« C'est le seul qui puisse mûrir au nord de la grande <lb />muraille*<gloss>Grande muraille. Mur fortifié de plus de 2,000 kilomètres de long, entre la
-                                <placeName>Chine</placeName> et la <placeName>Mongolie</placeName>.</gloss>, où les froids finissent très tard et recommen- <lb />cent de fort bonne heure. Mais dans
-                        les provinces du <lb />midi, où le climat est plus doux et la terre plus fertile, <lb />on peut aisément en avoir deux moissons par an. Et <lb />c'est une bien douce
-                        consolation pour moi d'avoir pro- <lb />curé cet avantage à mon pays. »</p>
+                    <p> « Chaque année, dès lors, a accru la récolte de la <lb />précédente, et, depuis trente ans, c'est le riz qu'on sert <lb />sur ma table.</p>
+                    <p> « Le grain en est allongé, la couleur un peu rou- <lb />geâtre ; il a un parfum fort doux et une saveur très <lb />agréable. On le nomme le riz impérial, <term>Yu-mi</term>,
+                        parce que <lb />c'est dans mes jardins qu'il a commencé à être cultivé.</p>
+                    <p> « C'est le seul qui puisse mûrir au nord de la grande <lb />muraille*<gloss>Grande muraille. Mur fortifié de plus de 2,000 kilomètres de long, entre la <placeName><bloc
+                                    ref="asie"><country ref="chine">Chine</country></bloc></placeName> et la <placeName><bloc ref="asie"><country ref="mongolie"
+                            >Mongolie</country></bloc></placeName>.</gloss>, où les froids finissent très tard et recommen- <lb />cent de fort bonne heure. Mais dans les provinces du <lb />midi, où le
+                        climat est plus doux et la terre plus fertile, <lb />on peut aisément en avoir deux moissons par an. Et <lb />c'est une bien douce consolation pour moi d'avoir pro- <lb />curé
+                        cet avantage à mon pays. »</p>
                 </div2>
                 <div2 type="questionnaire">
                     <head>Questionnaire</head>
                     <list>
-                        <item>— D'où provenait le livre que tenait <persName type="fictif">Suzette</persName> ?</item>
-                        <item>— Quel étaitle titre du chapitre qu'elle se disposait à lire ?</item>
-                        <item>— Que remarqua l'empereur <persName type="historique">Kang-Hi</persName> en se promenant parmi les champs de riz ?</item>
-                        <item>— Que fit-il du riz qu'il avait remarqué ?</item>
-                        <item>— Que donnèrent les grains semés par ordre de <persName type="historique">Kang-Hi</persName> ?</item>
-                        <item>— Comment ce dernier parvint-il a multiplier cette nouvelle espèce de riz ?</item>
-                        <item>— Quelles sont les propriétés du riz impérial ?</item>
-                        <item>— Quels avantages trouve-t-on à le cultiver ?</item>
+                        <item>— D'où provenait le livre que tenait <persName type="fictif">Suzette</persName> ? </item>
+                        <item>— Quel étaitle titre du chapitre qu'elle se disposait à lire ? </item>
+                        <item>— Que remarqua l'empereur <persName type="historique">Kang-Hi</persName> en se promenant parmi les champs de riz ? </item>
+                        <item>— Que fit-il du riz qu'il avait remarqué ? </item>
+                        <item>— Que donnèrent les grains semés par ordre de <persName type="historique">Kang-Hi</persName> ? </item>
+                        <item>— Comment ce dernier parvint-il a multiplier cette nouvelle espèce de riz ? </item>
+                        <item>— Quelles sont les propriétés du riz impérial ? </item>
+                        <item>— Quels avantages trouve-t-on à le cultiver ? </item>
                     </list>
                 </div2>
                 <div2 type="exercices">
@@ -134,7 +131,7 @@
                                 <item>— Que pensez-vous de ceux qui dédaignent les cultivateurs et les personnes de leur famille ? </item>
                             </list>
                         </div4>
-                        <div4 type="réponses" ana="#extérieurs">
+                        <div4 type="réponses">
                             <p>La plus utile des protessions manuelles est celle d'agricuiteur. En <lb />effet, le premier besoin auquel il faut pourvoir dans les sociétés <lb />humaines est la
                                 nourriture de chaque individu ; d'où la nécessité indis- <lb />pensable de cultiver le sol, puisque la chasse et la pèche scraient tout <lb />a fait insuffisantes ;
                                 d'où encore l'importance des professions agricoles.</p>
@@ -146,56 +143,62 @@
                                 rendent coupables d'un tel oubli des convenances.</p>
                         </div4>
                     </div3>
-                    <fw type="header">
-                        <lb />112 SUZETTE.</fw>
                     <pb type="page" n="112" />
-                    <div3 type="géographie" subtype="asie">
+                    <fw type="header">112 SUZETTE.</fw>
+                    <div3 type="géographie">
                         <head type="sujets">Géographie.</head>
                         <div4 type="questions">
-                            <list type="exercices">
-                                <item>— Où se trouve la <placeName>Chine</placeName> ?</item>
+                            <list>
+                                <item>— Où se trouve la <placeName><bloc ref="asie"><country ref="chine">Chine</country></bloc></placeName> ? </item>
                                 <item>— Donnez une idée de la grandeur, de la population, des produits de cet immense empire.</item>
-                                <item> — Quels produits en retirons-nous ?</item>
-                                <item>— Que savez-vous du costume et des usages des habitants de la <placeName>Chine</placeName> ?</item>
+                                <item> — Quels produits en retirons-nous ? </item>
+                                <item>— Que savez-vous du costume et des usages des habitants de la <placeName><bloc ref="asie"><country ref="chine">Chine</country></bloc></placeName> ? </item>
                             </list>
                         </div4>
-                        <div4 type="réponses" ana="#asie">
+                        <div4 type="réponses">
                             <p>
-                                <lb />La <placeName>Chine</placeName>, située à l'est de l'<placeName>Asie</placeName>, a une étendue à peu près égale à <lb />celle de l'<placeName>Europe</placeName>,
-                                et sa population dépasse trois cents millions d'habi- <lb />tants. Elle renferme un grand nombre de villes populeuses, indus- <lb />trielles, commerçantes ; telles sont
-                                : <placeName>Péhing</placeName>, 1, 200,000 âmes ; <placeName>Han- <lb />kéou</placeName>, 4,000,000; <placeName>Nan-king</placeName>, 1,000,000;
-                                    <placeName>Nan-tchang</placeName>, 1,000,000; <placeName>Sou- <lb />tchéou</placeName>, 3,000,000; <placeName>Shang-haî</placeName>, 800,000; cette ville fait un
-                                commerce <lb />annuel qui dépasse 700 millions ; <placeName>Canton</placeName>, 1,200,000; <placeName>Tien-Tsin</placeName>, 400,000.</p>
-                            <p>
-                                <lb />Nul pays au monde n'est mieux cultivé que la <placeName>Chine</placeName>, et ne renferme <lb />de plus riches mines de houille. Nous en tirons du riz, du thé, de
-                                la <lb />soie, des porcelaines. Les habitants portent des robes et conservent <lb />leurs cheveux qu'ils tressent en une longue queue; ils sont intelligents,
-                                <lb />laborieux, sobres, économes et montrent une aptitude singulière pour <lb />les arts industriels et lè commerce. Les enfants y témoignent toute <lb />leur vie une
-                                soumission entière à leurs parents et un respect dont on <lb />est malheureusement bien éloigné dans nombre de familles appartenant <lb />à des pays plus civilisés.</p>
+                                <lb />La <placeName><bloc ref="asie"><country ref="chine">Chine</country></bloc></placeName>, située à l'est de l'<placeName><bloc ref="asie">Asie</bloc></placeName>, a
+                                une étendue à peu près égale à <lb />celle de l'<placeName><bloc ref="europe">Europe</bloc></placeName>, et sa population dépasse trois cents millions d'habi-
+                                <lb />tants. Elle renferme un grand nombre de villes populeuses, indus- <lb />trielles, commerçantes ; telles sont : <placeName><bloc ref="asie"><country ref="chine"
+                                                ><settlement ref="péhing">Péhing</settlement></country></bloc></placeName>, 1, 200,000 âmes ; <placeName><bloc ref="asie"><country ref="chine"
+                                                ><settlement ref="hankéou">Han- <lb />kéou</settlement></country></bloc></placeName>, 4,000,000 ; <placeName><bloc ref="asie"><country ref="chine"
+                                                ><settlement ref="nan-king">Nan-king</settlement></country></bloc></placeName>, 1,000,000 ; <placeName><bloc ref="asie"><country ref="chine"><settlement
+                                                ref="nan-tchang">Nan-tchang</settlement></country></bloc></placeName>, 1,000,000; <placeName><bloc ref="asie"><country ref="chine"><settlement
+                                                ref="soutchéou">Sou- <lb />tchéou</settlement></country></bloc></placeName>, 3,000,000; <placeName><bloc ref="asie"><country ref="chine"><settlement
+                                                ref="shang-haî">Shang-haî</settlement></country></bloc></placeName>, 800,000; cette ville fait un commerce <lb />annuel qui dépasse 700 millions ;
+                                        <placeName><bloc ref="asie"><country ref="chine"><settlement ref="canton">Canton</settlement></country></bloc></placeName>, 1,200,000; <placeName><bloc
+                                        ref="asie"><country ref="chine"><settlement ref="tien-tsin">Tien-Tsin</settlement></country></bloc></placeName>, 400,000.</p>
+                            <p>Nul pays au monde n'est mieux cultivé que la <placeName><bloc ref="asie"><country ref="chine">Chine</country></bloc></placeName>, et ne renferme <lb />de plus riches
+                                mines de houille. Nous en tirons du riz, du thé, de la <lb />soie, des porcelaines. Les habitants portent des robes et conservent <lb />leurs cheveux qu'ils tressent en
+                                une longue queue; ils sont intelligents, <lb />laborieux, sobres, économes et montrent une aptitude singulière pour <lb />les arts industriels et lè commerce. Les
+                                enfants y témoignent toute <lb />leur vie une soumission entière à leurs parents et un respect dont on <lb />est malheureusement bien éloigné dans nombre de familles
+                                appartenant <lb />à des pays plus civilisés.</p>
                         </div4>
                     </div3>
                     <div3 type="complexe">
                         <head type="sujets">Agriculture.</head>
                         <div4 type="questions">
                             <list type="exercices">
-                                <item>— Qu'est-ce que le riz?</item>
-                                <item>— Comment cultive-t-on le riz ?</item>
-                                <item>— Quels terrains conviennent à cette plante ?</item>
-                                <item>— Quels peuples en font la base de leur nourriture ?</item>
-                                <item>— Dans quelles contrées de l'<placeName>Europe</placeName> cette céréale est-elle cultivée ?</item>
+                                <item>— Qu'est-ce que le riz ? </item>
+                                <item>— Comment cultive-t-on le riz ? </item>
+                                <item>— Quels terrains conviennent à cette plante ? </item>
+                                <item>— Quels peuples en font la base de leur nourriture ? </item>
+                                <item>— Dans quelles contrées de l'<placeName><bloc ref="europe">Europe</bloc></placeName> cette céréale est-elle cultivée ? </item>
                             </list>
                         </div4>
-                        <div4 type="réponses" ana="#céréales">
+                        <div4 type="réponses">
                             <p><term>Le riz</term> est une céréale que l'on cultive dans les terrains humides et <lb />marécageux des pays chauds ; on en tire un grain farineux qu'on <lb />appelle
                                 également riz, et qu'on mange cuit à l'état naturel ou en <lb />farine. On le sème au printemps dans des sillons ; puis on inonde le <lb />sol à diverses reprises, et
-                                au milieu de l'été ou au commencement de <lb />l'automne, on le récolte. L'<placeName>Hindoustan</placeName>, la <placeName>Chine</placeName>,
-                                    l'<placeName>Indo-Chine</placeName>, le <placeName>Japon</placeName>
+                                au milieu de l'été ou au commencement de <lb />l'automne, on le récolte. L'<placeName><bloc ref="inde">Hindoustan</bloc></placeName>, la <placeName><bloc ref="asie"
+                                            ><country ref="chine">Chine</country></bloc></placeName>, l'<placeName><bloc ref="asie"><country type="colonie" ref="indo_chine"
+                                    >Indo-Chine</country></bloc></placeName>, le <placeName><bloc ref="asie"><country ref="japon">Japon</country></bloc></placeName>
                                 <lb />en produisent des quantités considérables et il y forme la base de la <lb />nourriture des habitants ; on cultive encore cette plante dans les riches
-                                <lb />plaines de la <placeName>Lombardie</placeName> qu'arrose le <placeName>Pô</placeName>.</p>
+                                <lb />plaines de la <placeName><bloc ref="europe"><country ref="italie"><region type="province" ref="lombardie">Lombardie</region></country></bloc></placeName>
+                                qu'arrose le <placeName><geogFeat type="riviére"><geogName ref="pô">Pô</geogName></geogFeat></placeName>.</p>
                         </div4>
                     </div3>
                     <div3 type="économie_domestique">
-                        <head type="sujets">
-                            <lb />Économie domestique.</head>
+                        <head type="sujets">Économie domestique.</head>
                         <div4 type="questions">
                             <list type="exercices">
                                 <item>— Comment cuit-on le riz ?</item>
@@ -204,7 +207,7 @@
                                 <item>— Le riz est-il une denrée économique ? Dites-en le prix.</item>
                             </list>
                         </div4>
-                        <div4 type="réponses" ana="#aliments_cuisine">
+                        <div4 type="réponses">
                             <p>Le riz, après avoir été débarrassé de la pellicule qui recouvre <lb />chaque grain, peut être cuit à l'eau ou au lait. Il se gonfle dans le <lb />liquide et crève. On en
                                 prépare des potages.</p>
                             <p>Pour cet objet, on fait fondre du beurre de bonne qualité dans une <lb />casserole, et l'on y met cuire et roussir un oignon afin de pouvoir le <lb />passer. Ajoutez la

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/out/suzette-NewCustom.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/CSS/suzette_cwrc.css"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/out/suzette-NewCustom.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -52,9 +52,7 @@
             <sourceDesc>
                 <biblStruct>
                     <monogr>
-                        <title>Suzette: Livre de Lecture Courante à l’Usage des Jeunes Filles.
-                            Morale—Leçon de choses, Economie Domestique – Ménage – Cuisine –
-                            Couture</title>
+                        <title>Suzette: Livre de Lecture Courante à l’Usage des Jeunes Filles. Morale—Leçon de choses, Economie Domestique – Ménage – Cuisine – Couture</title>
                         <author>Robert Halt</author>
                         <textLang>French</textLang>
                         <imprint>
@@ -75,264 +73,165 @@
     </teiHeader>
     <text>
         <body>
-            <div1 type="chapitre" >
-               
-                <head > 43. — Cours, mon aiguille !... (Élève, p. 93.)</head>
-                <pb type="page" n="150"/>
+            <div1 type="chapitre" xml:lang="fr" n="ch043">
+                <head> 43. — Cours, mon aiguille !... (Élève, p. 93.)</head>
+                <pb type="page" n="150" />
                 <div2 type="récit">
-                    <p>« Cours, mon aiguille, dans la laine », 
-                        <lb/>et dans le coton et dans la toile, partout où tu as à faire! Car le rapié-
-                        <lb/>cetage* 
-                        <gloss>Rapiécetage. Action de mettre des pièces à des vêtements.</gloss> 
-                        d'une maisonnée de deux hommes et de deux 
-                        <lb/>gamins est une rude besogne.</p>
-                    <p>Le meilleur de la garde-robe* <gloss>Garde-robe. Les vêtements, les hardes de jour et de nuit. </gloss> avait brûlé; et ce qu'il 
-                        <lb/>en restait devait être soigné comme la prunelle des yeux, 
-                        <lb/>afin de pouvoir durer le plus longtemps possible, jus-
-                        <lb/>qu'à ce qu'on eût gagné 
-                        <lb/>quelque argent.</p>
-                    <p>De bon matin, avant 
-                        <lb/>le ménage, et tard, 
-                        <lb/>après la journée faite, 
-                        <lb/>la main industrieuse * <gloss>Main industrieuse. Qui sait faire les choses avec soin et économie.</gloss> 
-                        <lb/>de la couturière allait, 
-                        <lb/>vive et leste, décou-
-                        <lb/>sant, rapiéçant, faufi-
-                        <lb/>lant, cousant, sans dé-
-                        <lb/>brider.</p>
-                    <p>M. François, à lui 
-                        <lb/>seul, l'eût empochée de 
-                        <lb/>chômer. Oublieux de 
-                        <lb/>son crime et aussi des 
-                        <lb/>constantes recomman-
-                        <lb/>dations de ménager son 
-                        <lb/>pantalon, ses chaussu-
-                        <lb/>res, sa veste, il repren-
-                        <lb/>ait bonne vie de coureur des bois. </p>
-                    <p>Suzette avait beau lever les bras au ciel, gémir, se 
-                        <figure>
-                            <caption>La main industrieuse de |a couturière allait, 
-                                <lb/>vive et leste.</caption>
+                    <p>« Cours, mon aiguille, dans la laine », <lb />et dans le coton et dans la toile, partout où tu as à faire! Car le rapié- <lb />cetage* <gloss>Rapiécetage. Action de mettre des
+                            pièces à des vêtements.</gloss> d'une maisonnée de deux hommes et de deux <lb />gamins est une rude besogne.</p>
+                    <p>Le meilleur de la garde-robe*<gloss>Garde-robe. Les vêtements, les hardes de jour et de nuit.</gloss> avait brûlé; et ce qu'il <lb />en restait devait être soigné comme la
+                        prunelle des yeux, <lb />afin de pouvoir durer le plus longtemps possible, jus- <lb />qu'à ce qu'on eût gagné <lb />quelque argent.</p>
+                    <p>De bon matin, avant <lb />le ménage, et tard, <lb />après la journée faite, <lb />la main industrieuse*<gloss>Main industrieuse. Qui sait faire les choses avec soin et
+                            économie.</gloss>
+                        <lb />de la couturière allait, <lb />vive et leste, décou- <lb />sant, rapiéçant, faufi- <lb />lant, cousant, sans dé- <lb />brider.</p>
+                    <p>M. <persName type="fictif" key="françois">François</persName>, à lui <lb />seul, l'eût empochée de <lb />chômer. Oublieux de <lb />son crime et aussi des <lb />constantes
+                        recomman- <lb />dations de ménager son <lb />pantalon, ses chaussu- <lb />res, sa veste, il repren- <lb />ait bonne vie de coureur des bois. </p>
+                    <p><persName type="fictif" key="suzette">Suzette</persName> avait beau lever les bras au ciel, gémir, se <figure>
+                            <caption>La main industrieuse de |a couturière allait, <lb />vive et leste.</caption>
                         </figure>
                         <fw type="header">COURS, MON AIGUILLE! 151</fw>
-                        <pb type="page" n="151"/> 
-                        <lb/>fâcher devant chaque nouvelle déchirure; la déchirure 
-                        <lb/>ne guérissait pas sur de simples discours; il y fallait l'ai-
-                        <lb/>guille, François avait, d'ailleurs, sa façon de s'excuser:</p>
-                    <p>— Je t'assure, Suzette, qu'en grimpant à l'arbre, j'ai 
-                        <lb/>pris mille précautions! C'est le drap qui ne vaut rien.</p>
-                    <p>Cependant, Monsieur ne manquait pas de coquetterie. 
-                        <lb/>Un soir que sa soeur appliquait au bon endroit d'un pan-
-                        <lb/>talon gris une pièce verte, d'un vert assez passé :</p>
-                    <p>— Qu'est-ce que c'est que ça? demanda-t-il avec 
-                        <lb/>mauvaise humeur.</p>
-                    <p>— Ça, Monsieur? répondit-elle vivement, un peu 
-                        <lb/>piquée, car elle savait bien qu'elle ne faisait pas là un 
-                        <lb/>chef-d'oeuvre* <gloss>Chef-d'œuvre. Œuvre supérieure.</gloss>, 
-                        ça, Monsieur, ce n'est pas de la tôle; et 
-                        <lb/>c'est grand dommage, la tôle étant le drap qui convien-
-                        <lb/>drait à un muscadin * <gloss>Muscadin. Jeune homme prétentieux et élégant.</gloss> de votre sorte!</p>
-                    <p>— Je ne mettrai pas ce pantalon, je t'en réponds 
-                        <lb/>bien!... Je t'en fais cadeau.</p>
+                        <pb type="page" n="151" />
+                        <lb />fâcher devant chaque nouvelle déchirure; la déchirure <lb />ne guérissait pas sur de simples discours; il y fallait l'ai- <lb />guille, <persName type="fictif"
+                            key="françois">François</persName> avait, d'ailleurs, sa façon de s'excuser:</p>
+                    <p>— Je t'assure, <persName type="fictif" key="suzette">Suzette</persName>, qu'en grimpant à l'arbre, j'ai <lb />pris mille précautions! C'est le drap qui ne vaut rien.</p>
+                    <p>Cependant, Monsieur ne manquait pas de coquetterie. <lb />Un soir que sa sœur appliquait au bon endroit d'un pan- <lb />talon gris une pièce verte, d'un vert assez passé :</p>
+                    <p>— Qu'est-ce que c'est que ça? demanda-t-il avec <lb />mauvaise humeur.</p>
+                    <p>— Ça, Monsieur? répondit-elle vivement, un peu <lb />piquée, car elle savait bien qu'elle ne faisait pas là un <lb />chef-d'œuvre*<gloss>Chef-d'œuvre. Œuvre supérieure.</gloss>,
+                        ça, Monsieur, ce n'est pas de la tôle; et <lb />c'est grand dommage, la tôle étant le drap qui convien- <lb />drait à un muscadin*<gloss>Muscadin. Jeune homme prétentieux et
+                            élégant.</gloss> de votre sorte!</p>
+                    <p>— Je ne mettrai pas ce pantalon, je t'en réponds <lb />bien!... Je t'en fais cadeau.</p>
                     <p>— Merci; je vous donnerai un jupon on échange.</p>
-                    <p>Le père, Jacques et Chariot venaient d'entrer pour 
-                        <lb/>le souper. M, Dumay regarda de loin le travail de
-                        <lb/>Suzette, et s'approcha pour regarder encore :</p>
-                    <p>— Je ne me trompe pas, non, c'est l'habit vert! Où 
-                        <lb/>as-tu trouvé cette pièce-là, Suzette?</p>
-                    <p>— Dans un paquet de vieux chiffons sauvés de l'in-
-                        <lb/>cendie.</p>
-                    <p>— Eh bien ! ma -fille, reprit-il en souriant, voilà le reste 
-                        <lb/>d'un vêtement célèbre.</p>
+                    <p>Le père, <persName type="fictif" key="jacques">Jacques</persName> et <persName type="fictif" key="charlot">Charlot</persName> venaient d'entrer pour <lb />le souper. <persName
+                            type="fictif" key="m_dumay">M. Dumay</persName> regarda de loin le travail de <lb /><persName type="fictif" key="suzette">Suzette</persName>, et s'approcha pour regarder
+                        encore :</p>
+                    <p>— Je ne me trompe pas, non, c'est l'habit vert! Où <lb />as-tu trouvé cette pièce-là, <persName type="fictif" key="suzette">Suzette</persName>?</p>
+                    <p>— Dans un paquet de vieux chiffons sauvés de l'in- <lb />cendie.</p>
+                    <p>— Eh bien ! ma fille, reprit-il en souriant, voilà le reste <lb />d'un vêtement célèbre.</p>
                     <p>— Célèbre! Racontez-nous ça, père, je vous en prie!</p>
-                    <p>À ce moment parut le vieux Benoit, le père de Ludi-
-                        <lb/>vine, un vieux, tout ratatiné* <gloss>Ratatiné, Rapetissé par l'âge, ridé.</gloss>, en bonnet de coton bleu, qui 
-                        <lb/>venait de temps en temps fumer sa pipe en compagnie. 
-                        <lb/>Dès qu'il fut assis :</p>
+                    <p>À ce moment parut le vieux <persName type="fictif" key="benoît">Benoit</persName>, le père de <persName type="fictif" key="ludivine">Ludi- <lb />vine</persName>, un vieux, tout
+                            ratatiné*<gloss>Ratatiné, Rapetissé par l'âge, ridé.</gloss>, en bonnet de coton bleu, qui <lb />venait de temps en temps fumer sa pipe en compagnie. <lb />Dès qu'il fut
+                        assis :</p>
                     <p>— Papa, racontez! répétèrent les enfants.</p>
-
-
                 </div2>
-
                 <div2 type="questionnaire">
                     <head>Questionnaire.</head>
                     <list>
-                        <item>— Que disait Suzette pour s'encourager au raccommodage?</item>
-                        <item>— Que savez-vous de la garderobe de la famille?</item>
-                        <item>— Dites comment Suzette se montrait laborieuse.</item>
-                        <item>— Quelle était la façon d'agir do François?</item>
-                        <item>— Que faisait Suzette on constatant le mauvais état des vêtements de
-                            son frère?</item>
-                        <item>— Que <cb/> répondait ce dernier?</item>
-                        <item>— Reproduisez la conversation qu'ils eurent ensemble à propos d'une
-                            pièce verte.</item>
-                        <item>— Que dit le papa en regardant le travail de la jeune
-                            couturière?</item>
-                        <item>— Qui entra sur ces entrefaites?</item>
-                        <item>— Faites le portrait du père Benoît.</item>
+                        <item>— Que disait <persName type="fictif" key="suzette">Suzette</persName> pour s'encourager au raccommodage ? </item>
+                        <item>— Que savez-vous de la garderobe de la famille ? </item>
+                        <item>— Dites comment <persName type="fictif" key="suzette">Suzette</persName> se montrait laborieuse.</item>
+                        <item>— Quelle était la façon d'agir do <persName type="fictif" key="françois">François</persName> ? </item>
+                        <item>— Que faisait <persName type="fictif" key="suzette">Suzette</persName> on constatant le mauvais état des vêtements de son frère ? </item>
+                        <item>— Que répondait ce dernier ? </item>
+                        <item>— Reproduisez la conversation qu'ils eurent ensemble à propos d'une pièce verte.</item>
+                        <item>— Que dit le papa en regardant le travail de la jeune couturière ? </item>
+                        <item>— Qui entra sur ces entrefaites ? </item>
+                        <item>— Faites le portrait du père <persName type="fictif" key="benoît">Benoît</persName>.</item>
                     </list>
-
                 </div2>
-
                 <fw type="header"> 152 SUZETTE.</fw>
-                <pb type="page" n="152"/>
+                <pb type="page" n="152" />
                 <div2 type="exercices">
                     <head>DÉVELOPPEMENT DES SUJETS PROPOSÉS POUR EXERCICES</head>
                     <div3 type="morale">
-                        <head >Morale.</head>
-
+                        <head type="sujets">Morale.</head>
                         <div4 type="questions">
-                            <list >
+                            <list>
                                 <head>— DU TRAVAIL.</head>
-                                <item>— Quels travaux, quelles occupations sont le lot de la femme
-                                    dans son ménage, 1° si elle n'a pas de fortune,</item>
+                                <item>— Quels travaux, quelles occupations sont le lot de la femme dans son ménage, 1° si elle n'a pas de fortune,</item>
                                 <item>— 2° si elle est obligée de se faire servir?</item>
-                                <item>— Conséquences heureuses du travail de la femme et de la bonne
-                                    direction qu'elle donne à son intérieur.</item>
-
+                                <item>— Conséquences heureuses du travail de la femme et de la bonne direction qu'elle donne à son intérieur.</item>
                             </list>
                         </div4>
-
-                        <div4 type="réponses" >
-                            <p>Parmi les femmes qui ont à coeur leurs devoirs et qui comprennent
-                                <lb/>leurs responsabilités, il n'en est aucune qui reste oisive dans son
-                                <lb/>ménage.</p>
-                            <p>Si elle ne peut se faire servir, quo d'occupations s'imposent à elle!
-                                <lb/>Tenir propres les enfants, le linge, la maison; préparer la cuisine;
-                                <lb/>mettre le couvert, laver la vaisselle; raccommoder les vêtements, faire 
-                                <lb/>les achats, enfin partager avec son mari les soins que réclament l'édu-
-                                <lb/>cation des enfants et leur santé* Souvent, à cette tâche écrasante 
-                                <lb/>s'ajoute, à la campagne, la tenue de la basse-cour et du potager ; à la 
-                                <lb/>ville; la pratique d'un métier. Dans ces conditions, la vie de la femme 
-                                <lb/>est bien méritoire et digne de tous les respects.</p>
-                            <p>La plupart des femmes qui peuvent se faire servir, sont déchargées
-                                <lb/>des travaux les plus fatigants du ménage, mais leur responsabilité
-                                <lb/>augmente par suite des devoirs que leur imposent la direction et la sur-
-                                <lb/>veillance des domestiques, Cependant elles ne sauraient rester étran-
-                                <lb/>gères aux soins que réclament leurs enfants, quelque pénibles, qu'ils 
-                                <lb/>soient. Elles ont également à s'occuper de la tenue de leur maison, à 
-                                <lb/>régler les dépenses de façon à éviter le gaspillage, à recevoir les per-
-                                <lb/>sonnes avec lesquelles elles sont en relation, à participer aux bonnes 
-                                <lb/>oeuvres qui incombent à tous ceux que la fortune favorisé.</p>
-                            <p>C'est la femme qui fait la maison, c'est-à-dire qui l'enrichit ou la
-                                <lb/>ruine. Le mari apporte le fruit de son travail et la femme administré. 
-                                <lb/>C'est à elle, qu'en tout temps, revient d'ailleurs la plus forte part dans 
-                                <lb/>l'éducation des enfants et le soin de former ses filles à leur rôle futur.</p>
-                            <p>Les femmes que rien ne saurait fixer dans leur intérieur et qui, pour
-                                <lb/>leur distraction et leur agrément, passent la meilleure partie du jour 
-                                <lb/>en promenade et en visites, ne sont dignes ni du titre d'épouses ni 
-                                <lb/>du beau nom de mères.</p>
+                        <div4 type="réponses">
+                            <p>Parmi les femmes qui ont à cœur leurs devoirs et qui comprennent <lb />leurs responsabilités, il n'en est aucune qui reste oisive dans son <lb />ménage.</p>
+                            <p>Si elle ne peut se faire servir, quo d'occupations s'imposent à elle! <lb />Tenir propres les enfants, le linge, la maison; préparer la cuisine; <lb />mettre le couvert,
+                                laver la vaisselle; raccommoder les vêtements, faire <lb />les achats, enfin partager avec son mari les soins que réclament l'édu- <lb />cation des enfants et leur
+                                santé. Souvent, à cette tâche écrasante <lb />s'ajoute, à la campagne, la tenue de la basse-cour et du potager ; à la <lb />ville; la pratique d'un métier. Dans ces
+                                conditions, la vie de la femme <lb />est bien méritoire et digne de tous les respects.</p>
+                            <p>La plupart des femmes qui peuvent se faire servir, sont déchargées <lb />des travaux les plus fatigants du ménage, mais leur responsabilité <lb />augmente par suite des
+                                devoirs que leur imposent la direction et la sur- <lb />veillance des domestiques. Cependant elles ne sauraient rester étran- <lb />gères aux soins que réclament leurs
+                                enfants, quelque pénibles, qu'ils <lb />soient. Elles ont également à s'occuper de la tenue de leur maison, à <lb />régler les dépenses de façon à éviter le gaspillage,
+                                à recevoir les per- <lb />sonnes avec lesquelles elles sont en relation, à participer aux bonnes <lb />œuvres qui incombent à tous ceux que la fortune favorisé.</p>
+                            <p>C'est la femme qui fait la maison, c'est-à-dire qui l'enrichit ou la <lb />ruine. Le mari apporte le fruit de son travail et la femme administré. <lb />C'est à elle,
+                                qu'en tout temps, revient d'ailleurs la plus forte part dans <lb />l'éducation des enfants et le soin de former ses filles à leur rôle futur.</p>
+                            <p>Les femmes que rien ne saurait fixer dans leur intérieur et qui, pour <lb />leur distraction et leur agrément, passent la meilleure partie du jour <lb />en promenade et
+                                en visites, ne sont dignes ni du titre d'épouses ni <lb />du beau nom de mères.</p>
                         </div4>
                     </div3>
-
                     <div3 type="industrie">
-                        <head>Industrie.</head>
+                        <head type="sujets">Industrie.</head>
                         <div4 type="questions">
                             <list>
                                 <item>— Qu'est-ce qu'une aiguille ?</item>
-                                <item>— Comment fabrique-t-on les aiguilles?</item>
+                                <item>— Comment fabrique-t-on les aiguilles ?</item>
                                 <item>— Qualités d'une bonne aiguille à coudre.</item>
                                 <item>— Diverses sortes d'aiguilles.</item>
                                 <item>— Mêmes questions pour les épingles. </item>
                             </list>
-                        </div4> 
-
+                        </div4>
                         <div4 type="réponses">
                             <head>AIGUILLES.</head>
-                            <p>— Une <term>aiguille</term> est une petite tige d'acier ou d'un autre 
-                                <lb/>métal pointue par un bout et percée par l'autre; on s'en sert pour 
-                                <lb/>coudre, pour broder ou pour fixer les objets de toilette dans une po-
-                                <lb/>sition déterminée.</p>
-                            <p><term>La fabrication des aiguilles</term> est une opération compliquée qui né-
-                                <lb/>cessite le concours de nombreux ouvriers. On prépare des fils d'ex-
-                                <lb/>cellent acier qu'on assemble on bottes, et un ouvrier les coupe eh brins 
-                                <lb/>d'une longueur-égale à celle de deux aiguilles (1). Un second ouvrier 
-                                <lb/>placé devant une meule qui tourne rapidement, les aiguisé à chaque 
-                                <lb/>extrémité, et les passe à un autre qui les coupe par le milieu.</p>
-                            <p>Ensuite on aplatit l'extrémité opposée à la pointe au moyen d'un
-                                <lb/>marteau, et l'on y pratique une rainure qui dirigera le fil et le main-
-                                <lb/>tient droit. Des enfants sont chargés de ropèràtion délicate de percer 
-                                <lb/>le trou ou chas par lequel passera le fil ; on polit l'intérieur de cette 
-                                <lb/>ouverture et enfin, après avoir fait rougir les aiguilles on les jette 
-                                <fw type="footer">(1) En une heure, il en peut couper do 36 à 40,000.</fw>
+                            <p>— Une <term>aiguille</term> est une petite tige d'acier ou d'un autre <lb />métal pointue par un bout et percée par l'autre; on s'en sert pour <lb />coudre, pour broder
+                                ou pour fixer les objets de toilette dans une po- <lb />sition déterminée.</p>
+                            <p><term>La fabrication des aiguilles</term> est une opération compliquée qui né- <lb />cessite le concours de nombreux ouvriers. On prépare des fils d'ex- <lb />cellent
+                                acier qu'on assemble on bottes, et un ouvrier les coupe eh brins <lb />d'une longueur-égale à celle de deux aiguilles (1). Un second ouvrier <lb />placé devant une
+                                meule qui tourne rapidement, les aiguisé à chaque <lb />extrémité, et les passe à un autre qui les coupe par le milieu.</p>
+                            <p>Ensuite on aplatit l'extrémité opposée à la pointe au moyen d'un <lb />marteau, et l'on y pratique une rainure qui dirigera le fil et le main- <lb />tient droit. Des
+                                enfants sont chargés de ropèràtion délicate de percer <lb />le trou ou chas par lequel passera le fil ; on polit l'intérieur de cette <lb />ouverture et enfin, après
+                                avoir fait rougir les aiguilles on les jette <fw type="footer">(1) En une heure, il en peut couper do 36 à 40,000.</fw>
                                 <fw type="header">LE VIEIL HABIT VERT. 153</fw>
-                                <pb type="page" n="153"/> 
-                                <lb/>toutes brillantes dans un bain d'eau glacée, ce qui leur donne une ex-
-                                <lb/>trême dureté.</p>
-                            <p>Le dégraissage, le polissage et la mise en paquets sont les dernières
-                                <lb/>opérations.</p>
-                            <p>— <term>La fabrication des épingles</term>  est beaucoup moins com-
-                                <lb/>pliquée et analogue à celle qu'on a écrite pour les aiguilles.</p>
-                            <p>Un ouvrier coupe les fils de laiton en longueurs égales à celle de
-                                <lb/>trois ou quatre épingles; un autre les divise ; un troisième forme la 
-                                <lb/>pointe sur une moulo ; d'autres font la tôte, soit on roulant un fil de laiton 
-                                <lb/>autour du sommet de la potito tige, soit en aplatissant une extrémité de 
-                                <lb/>cette dernière. Il ne reste plus qu'à nettoyer les épingles, à les ôter, 
-                                <lb/>à les polir et à les réunir on paquets, à moins qu'on ne les entasse dans 
-                                <lb/>des boîtes d'un poids déterminé.</p>
+                                <pb type="page" n="153" />
+                                <lb />toutes brillantes dans un bain d'eau glacée, ce qui leur donne une ex- <lb />trême dureté.</p>
+                            <p>Le dégraissage, le polissage et la mise en paquets sont les dernières <lb />opérations.</p>
+                            <p>— <term>La fabrication des épingles</term> est beaucoup moins com- <lb />pliquée et analogue à celle qu'on a écrite pour les aiguilles.</p>
+                            <p>Un ouvrier coupe les fils de laiton en longueurs égales à celle de <lb />trois ou quatre épingles; un autre les divise ; un troisième forme la <lb />pointe sur une moulo
+                                ; d'autres font la tôte, soit on roulant un fil de laiton <lb />autour du sommet de la potito tige, soit en aplatissant une extrémité de <lb />cette dernière. Il ne
+                                reste plus qu'à nettoyer les épingles, à les ôter, <lb />à les polir et à les réunir on paquets, à moins qu'on ne les entasse dans <lb />des boîtes d'un poids
+                                déterminé.</p>
                             <p>Les épingles d'acier sont d'un usage très restreint.</p>
                         </div4>
                     </div3>
-
                     <div3 type="économie_domestique">
-                        <head>Économie domestique.</head>
+                        <head type="sujets">Économie domestique.</head>
                         <div4 type="questions">
                             <list>
-                                <item>— Quels travaux peut-on exécuter avec une aiguille à
-                                    coudre?</item>
-                                <item>— Quels travaux peut-on exécuter avec une aiguille à
-                                    tricoter?</item>
+                                <item>— Quels travaux peut-on exécuter avec une aiguille à coudre?</item>
+                                <item>— Quels travaux peut-on exécuter avec une aiguille à tricoter?</item>
                                 <item>— Combien y a-t-il d'aiguilles dans un paquet?</item>
-                                <item>— Quel est le prix d'un paquet d'aiguilles de qualité
-                                    moyenne?</item>
+                                <item>— Quel est le prix d'un paquet d'aiguilles de qualité moyenne?</item>
                                 <item>— Quelles sont les qualités des épingles en acier?</item>
-                                <item>— Quelles épingles sont préférables pour les usages
-                                    ordinaires?</item>
+                                <item>— Quelles épingles sont préférables pour les usages ordinaires?</item>
                             </list>
                         </div4>
-
                         <div4 type="réponses">
-                            <p>Les travaux que l'on peut exécuter avoc uno aiguille à coudre sont :
-                                <lb/>les ourlets, les surjets, les reprises, les piqûres, les broderies, les 
-                                <lb/>boutonnières, etc.</p>
-                            <p>Avec une aiguille à tricoter, on confectionne des bas, des chaussettes, 
-                                <lb/>des mitaines, des poignets, des fichus, des cache-nez, des bretelles, 
-                                <lb/>des jupons, etc.</p>
-                            <p>N. B. — On a jugé stipo fiu do donner la matière des réponses qui
-                                <lb/>terminent le paragraphe, mosdamos les institutrices étant d'excellents 
-                                <lb/>juges en la matière.</p>
+                            <p>Les travaux que l'on peut exécuter avec une aiguille à coudre sont : <lb />les ourlets, les surjets, les reprises, les piqûres, les broderies, les <lb />boutonnières,
+                                etc.</p>
+                            <p>Avec une aiguille à tricoter, on confectionne des bas, des chaussettes, <lb />des mitaines, des poignets, des fichus, des cache-nez, des bretelles, <lb />des jupons,
+                                etc.</p>
+                            <p>N. B. — On a jugé superflu de donner la matière des réponses qui <lb />terminent le paragraphe, mosdamos les institutrices étant d'excellents <lb />juges en la
+                                matière.</p>
                         </div4>
                     </div3>
-
-                    <div3 type="calcul" >
-                        <head >Calcul.</head>
+                    <div3 type="calcul">
+                        <head type="sujets">Calcul.</head>
                         <div4 type="questions">
-                            <list >
-                                <item>— Que gagne-t-on à raccommoder, à repriser et à
-                                    rapiécer?</item>
-                                <item>— Prenez pour base de votre calcul un tablier, toi corsage,
-                                    six paires de bas de coton, une paire de chaussons.</item>
+                            <list>
+                                <item>— Que gagne-t-on à raccommoder, à repriser et à rapiécer?</item>
+                                <item>— Prenez pour base de votre calcul un tablier, toi corsage, six paires de bas de coton, une paire de chaussons.</item>
                             </list>
                         </div4>
-
-                        <div4 type="réponses" >
-                            <p>Un tablier non raccommodé, non rapiécé est hors de service après 
-                                <lb/>..... mois d'usage. Si on le raccommode, si l'on y mot dos pièces, on 
-                                <lb/>dépensera on fil ....., en étoffe ....., etc.; total ..... Mais le tablier 
-                                <lb/>pourra faire encore un bon usage pendant mois.</p>
-                                <p>L'usage d'un tablier qu'on ne raccommode pas, revient à ..... par 
-                                <lb/>mois.</p>
+                        <div4 type="réponses">
+                            <p>Un tablier non raccommodé, non rapiécé est hors de service après <lb />..... mois d'usage. Si on le raccommode, si l'on y mot dos pièces, on <lb />dépensera on fil
+                                ....., en étoffe ....., etc.; total ..... Mais le tablier <lb />pourra faire encore un bon usage pendant mois.</p>
+                            <p>L'usage d'un tablier qu'on ne raccommode pas, revient à ..... par <lb />mois.</p>
                             <p>On le fait durer do plus. Bénéfice brut.......</p>
                             <p>A déduire le prix du fil ot dos pièces. ..... ....</p>
                             <p>Bénéfice net. . ....</p>
                             <p>(Procéder de la même manière pour les autres objets.)</p>
                         </div4>
                     </div3>
-
                 </div2>
             </div1>
-
-
         </body>
     </text>
 </TEI>

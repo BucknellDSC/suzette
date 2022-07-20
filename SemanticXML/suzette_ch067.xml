@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/out/suzette-NewCustom.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/CSS/suzette_cwrc.css"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/out/suzette-NewCustom.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -73,7 +73,7 @@
     </teiHeader>
     <text>
         <body>
-            <div1 type="chapitre" n="067">
+            <div1 type="chapitre" xml:lang="fr" n="ch067">
                 <head>67. — L'interrogatoire. (Élève, p. 145.)</head>
                 <div2 type="récit">
                     <p>Mais l'intrépide parleur de tout à l'heure ne se pres- <lb />sait pas de rouvrir la bouche.</p>
@@ -116,7 +116,7 @@
                 <div2 type="exercices">
                     <head>DÉVELOPPEMENT DES SUJETS PROPOSÉS POUR EXERCICES.</head>
                     <div3 type="morale">
-                        <head>Morale.</head>
+                        <head type="sujets">Morale.</head>
                         <div4 type="questions">
                             <list>
                                 <item>— En vous inspirant de vos souvenirs des lectures précédentes, dites ce que vous pensez et savez des conséquences du mensonge.</item>
@@ -138,7 +138,7 @@
                         </div4>
                     </div3>
                     <div3 type="instruction_civique">
-                        <head>Instruction civique.</head>
+                        <head type="sujets">Instruction civique.</head>
                         <div4 type="questions">
                             <list>
                                 <item>— Qu'est-ce qu'une veuve ?</item>
@@ -163,7 +163,7 @@
                         </div4>
                     </div3>
                     <div3 type="géographie" subtype="afrique">
-                        <head>Géographie.</head>
+                        <head type="sujets">Géographie.</head>
                         <div4 type="questions">
                             <list>
                                 <item>— Que savez-vous des principaux explorateurs de l'Afrique, d'après vos lectures antérieures ?</item>

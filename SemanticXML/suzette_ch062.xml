@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/out/suzette-NewCustom.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/CSS/suzette_cwrc.css"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/out/suzette-NewCustom.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -79,33 +79,38 @@
                 <head>62. — Le pays de la peur. (Élève, p. 133.)</head>
                 <div2 type="récit">
                     <p>— Grande, magnifique, pleine de monuments, de poudre <lb />d'or... j'aurais voulu la <lb />voir ainsi ! Mais la vérité <lb />m'oblige à dire qu'elle ré- <lb />pond à la
-                        description faite <lb />par le fameux René Cail- <lb />lié, que l'amour des voya- <lb />ges emporta loin de la <lb />France à l'âge de seize <lb />ans.</p>
-                    <p>— Comme vous, in- <lb />terrompit M. Dumay avec <lb />une pointe de malice.</p>
-                    <p>— Comme moi. René <lb />Caillié ne vit à Tombouc- <lb />tou que de misérables <figure>
+                        description faite <lb />par le fameux <persName type="historique">René Cail- <lb />lié</persName>, que l'amour des voya- <lb />ges emporta loin de la <lb /><placeName
+                            type="réel"><bloc ref="europe"><country ref="france">France </country></bloc></placeName>à l'âge de seize <lb />ans.</p>
+                    <p>— Comme vous, in- <lb />terrompit M. <persName type="fictif" key="m_dumay">Dumay</persName> avec <lb />une pointe de malice.</p>
+                    <p>— Comme moi. <persName type="historique">René <lb />Caillié</persName> ne vit à <placeName type="réel"><bloc ref="afrique"><country ref="mali"><settlement ref="tombouctou"
+                                        >Tombouc- <lb />tou</settlement></country></bloc></placeName> que de misérables <figure>
                             <caption>Les oasis sont des endroits cultivés et <lb />arrosés, au milieu du désert, où peuvent <lb />se reposer les caravanes.</caption>
                         </figure>
                         <lb />masures habitées par dix ou douze mille nègres et mar- <lb />chands qui échangent l'or, <lb />l'ivoire, les esclaves contre <lb />les cotonnades, les laines, <lb />les
                         épices et surtout le sel, <lb />bien autrement rare dans <lb />ce pays que l'or dans le <lb />nôtre.</p>
                     <p>Il y avait six semaines <lb />que nous étions privés de <lb />ce condiment*<gloss>Condiment. Substance qui sert à assaisonner les mets.</gloss> quand nous <lb />arrivâmes à
-                        Tombouctou. <lb />Oh ! le premier morceau de <lb />viande de chevreau salé à <lb />point que nous goûtâmes <lb />là, quel régal ! hein ? Syl- <lb />vain !</p>
+                            <placeName type="réel"><bloc ref="afrique"><country ref="mali"><settlement ref="tombouctou">Tombouctou</settlement></country></bloc></placeName>. <lb />Oh ! le premier
+                        morceau de <lb />viande de chevreau salé à <lb />point que nous goûtâmes <lb />là, quel régal ! hein ? <persName type="fictif" key="sylvain">Syl- <lb />vain</persName> !</p>
                     <figure>
-                        <caption>Les Touaregs forment des tribus no- <lb />mades qui errent dans le Sahara et sont <lb />très redoutées des caravanes.</caption>
+                        <caption>Les Touaregs forment des tribus no- <lb />mades qui errent dans le <geogFeat type="désert" ref="sahara">Sahara</geogFeat> et sont <lb />très redoutées des
+                            caravanes.</caption>
                     </figure>
-                    <p>—Il y manquait du poivre <lb />et une pointe d'ail, répondit Sylvain, doucement.</p>
-                    <p>— Nous ne demeurâmes guère dans ce rendez-vous <lb />des caravanes qui traversent le Soudan ; je voulais voir <pb type="page" n="216" />
+                    <p>—Il y manquait du poivre <lb />et une pointe d'ail, répondit <persName type="fictif" key="sylvain">Sylvain</persName>, doucement.</p>
+                    <p>— Nous ne demeurâmes guère dans ce rendez-vous <lb />des caravanes qui traversent le <placeName type="réel"><bloc ref="afrique">Soudan</bloc></placeName> ; je voulais voir <pb
+                            type="page" n="216" />
                         <fw>216 SUZETTE.</fw>
-                        <lb />le Grand Désert et les oasis, malgré les dangers de la <lb />soif, des Touaregs et du simoun.</p>
+                        <lb />le <geogFeat type="désert" ref="sahara">Grand Désert</geogFeat> et les oasis, malgré les dangers de la <lb />soif, des Touaregs et du simoun.</p>
                     <p>Et la soif commença dès le sixième jour de marche <lb />à travers les immenses plaines de sable brûlant et aveu- <lb />glant. L'air embrasé s'enveloppait d'un brouillard rouge ;
                         <lb />on eût cru à un incendie ; nous allions <lb />lentement, douloureusement accrou- <lb />pis sur nos montures somnolentes*<gloss>Somnolent. Qui est à demi endormi tout en
                             agissant ou marchant.</gloss> ; <lb />un cri retentit :</p>
                     <p>— Les Touaregs ! les Touaregs !</p>
-                    <p><lb />Alors, courez, volez, nos cha- <lb />meaux ! De la force qui nous reste <lb />nous les excitons ! Mais les méharis, <lb />les chameaux de guerre des terribles
-                        <lb />pillards, sont plus rapides que les <lb />nôtres; ils nous atteignent. Leurs <lb />cavaliers, au visage couvert d'un <lb />voile noir, font peur ; ils fondent <lb />sur
-                        nous avec leurs longues lances, <lb />leurs épées à double tranchant, bril- <lb />lantes au soleil comme des éclairs. <lb />Quelques-uns nous couchent en joue <lb />avec des
-                        fusils volés à d'autres cara- <lb />vanes. Nous tentons de résister ; mais quatre des nôtres <lb />sont déjà tombés ; il faut traiter !</p>
+                    <p>Alors, courez, volez, nos cha- <lb />meaux ! De la force qui nous reste <lb />nous les excitons ! Mais les méharis, <lb />les chameaux de guerre des terribles <lb />pillards,
+                        sont plus rapides que les <lb />nôtres; ils nous atteignent. Leurs <lb />cavaliers, au visage couvert d'un <lb />voile noir, font peur ; ils fondent <lb />sur nous avec leurs
+                        longues lances, <lb />leurs épées à double tranchant, bril- <lb />lantes au soleil comme des éclairs. <lb />Quelques-uns nous couchent en joue <lb />avec des fusils volés à
+                        d'autres cara- <lb />vanes. Nous tentons de résister ; mais quatre des nôtres <lb />sont déjà tombés ; il faut traiter !</p>
                     <figure>
-                        <caption>Autruche. <lb />Dans l'lnde, on élève des <lb />troupeaux d'autruches en <lb />vue de recueillir leurs <lb />plumes, qui servent à <lb />orner les coiffures des
-                            <lb />femmes, à confectionner <lb />des panaches, etc.</caption>
+                        <caption>Autruche. <lb />Dans l'<placeName type="réel"><bloc ref="asie"><country ref="inde">Inde</country></bloc></placeName>, on élève des <lb />troupeaux d'autruches en
+                            <lb />vue de recueillir leurs <lb />plumes, qui servent à <lb />orner les coiffures des <lb />femmes, à confectionner <lb />des panaches, etc.</caption>
                     </figure>
                     <p>Celui qui nous commande abandonne six noirs sur <lb />douze qu'il menait comme esclaves, huit chameaux, un <lb />sac d'or, une balle de plumes d'autruches.</p>
                     <p>A ce prix, notre caravane mutilée*<gloss>Mutilée. Privée d'une partie de son personnel.</gloss>, ruinée, peut dé- <lb />guerpir.</p>
@@ -120,15 +125,16 @@
                 <div2 type="questionnaire">
                     <head>Questionnaire.</head>
                     <list>
-                        <item>— Que raconta Pascal sur Tombouctou ?</item>
-                        <item> — Qu'en a dit le Français René Caillié ?</item>
+                        <item>— Que raconta <persName type="fictif" key="pascal">Pascal</persName> sur <placeName type="réel"><bloc ref="afrique"><country ref="mali"><settlement ref="tombouctou"
+                                            >Tombouctou</settlement></country></bloc></placeName> ? </item>
+                        <item> — Qu'en a dit le Français <persName type="historique">René Caillié </persName> ? </item>
                         <item>— Quel régal firent, dans cette ville, nos jeunes explorateurs ? </item>
-                        <item>— Quel mot malicieux ajouta Sylvain au récit de Pascal ?</item>
+                        <item>— Quel mot malicieux ajouta <persName type="fictif" key="sylvain">Sylvain</persName> au récit de <persName type="fictif" key="pascal">Pascal</persName> ? </item>
                         <item>— Où se dirigèrent-ils ensuite ? </item>
                         <item>— Que souffrirent-ils dans le désert ? </item>
                         <item>— Racontez l'attaque des Touaregs.</item>
                         <item> — A quelles conditions la caravane put-elle continuer sa route ? </item>
-                        <item>— Quel phénomene trompeur apparait souvent dans le désert aux voyageurs alteres?</item>
+                        <item>— Quel phénomene trompeur apparait souvent dans le désert aux voyageurs alteres ? </item>
                     </list>
                 </div2>
                 <div2 type="exercices">
@@ -137,7 +143,7 @@
                         <head>éographie.</head>
                         <div4 type="questions">
                             <list>
-                                <item>— Quelle idée vous faites-vous du Grand Désert ?</item>
+                                <item>— Quelle idée vous faites-vous du <geogFeat type="désert" ref="sahara">Grand Désert</geogFeat> ?</item>
                                 <item> — Quels dangers en présente la traversée ? </item>
                                 <item>— Indiquez les régions et la mer qui le limitent.</item>
                                 <item>— Qu'est-ce qu'une oasis ? </item>
@@ -146,26 +152,30 @@
                             </list>
                         </div4>
                         <div4 type="réponses">
-                            <p>Le grand désert du Sahara est une contrée sablonneuse recouverte, <lb />en grande partie, par une épaisse couche de sable que le vent amon- <lb />celle en dunes
-                                mouvantes. La chaleur y est affreuse pendant le jour <lb />(+ 67°) et parfois néanmoins la température de la nuit descend à celle <lb />de la glace. Les régions
-                                dépourvues d'oasis offrent un aspect formi- <lb />dable et sont effrayantes à traverser ; quand la végétation ne manque <lb />pas complètement, elle n'est représentée
-                                que par des buissons épineux <lb />ou des chardons ; la lumière aveuglante éblouit les yeux, et les objets <lb />semblent revêtus d'une teinte sombre et infernale. Des
-                                mares infectes <lb />ou bien des puits creuses à grand'peine dans les bas-fonds donnent <lb />une eau rare et saumâtre aux malheureuses caravanes.</p>
+                            <p>Le grand désert du <geogFeat type="désert" ref="sahara">Sahara</geogFeat> est une contrée sablonneuse recouverte, <lb />en grande partie, par une épaisse couche de sable
+                                que le vent amon- <lb />celle en dunes mouvantes. La chaleur y est affreuse pendant le jour <lb />(+ 67°) et parfois néanmoins la température de la nuit descend à celle
+                                <lb />de la glace. Les régions dépourvues d'oasis offrent un aspect formi- <lb />dable et sont effrayantes à traverser ; quand la végétation ne manque <lb />pas
+                                complètement, elle n'est représentée que par des buissons épineux <lb />ou des chardons ; la lumière aveuglante éblouit les yeux, et les objets <lb />semblent revêtus
+                                d'une teinte sombre et infernale. Des mares infectes <lb />ou bien des puits creuses à grand'peine dans les bas-fonds donnent <lb />une eau rare et saumâtre aux
+                                malheureuses caravanes.</p>
                             <p>Outre les souffrances de la soif, le désert présente de grands dan- <lb />gers. Les dunes soulevées par les vents d'orage engloutissent les voya- <lb />geurs ou,
                                 recouvrant les traces auxquelles on reconnaît la route à <lb />suivre, les laissent égarés parmi les rochers et les sables dans lesquels <lb />ils périssent de folie
                                 après avoir subi toutes les tortures de la chaleur.</p>
-                            <p>Le Grand Désert est limité au nord par le Maroc, l'Algerie et la ré- <lb />gence de Tripoli ; à l'est par les déserts d'Égypte et de Nubie, au sud <lb />par la région
-                                fertile connue sous le nom de Nigritie, et à l'ouest par <lb />l'Atlantique.</p>
-                            <p>Dans toutes les parties du Sahara où l'eau jaillit en source, il se forme <lb />une oasis, île de verdure dont le riant aspect contraste d'une manière <lb />frappante
-                                avec l'aridité des sables environnants. On compte les oasis <lb />par centaines dans le Grand Désert et elles comprennent une surface <lb />égale au tiers de cette
-                                immense contrée. C'est, par excellence, le <lb />pays des dattiers. Au-dessous de leur large éventail de feuilles se <lb />pressent les abricotiers, les pêchers, les
-                                grenadiers, les orangers ; les <lb />vignes s'enlacent autour des troncs ; le maïs, le froment, l'orge mûris- <lb />sent sous l'ombrage de cette forêt splendide.</p>
+                            <p>Le <geogFeat type="désert" ref="sahara">Grand Désert</geogFeat> est limité au nord par le <placeName type="réel"><bloc ref="afrique"><country ref="maroc"
+                                        >Maroc</country></bloc></placeName>, l'<placeName type="réel"><bloc ref="afrique"><country ref="algérie">Algerie</country></bloc></placeName> et la ré-
+                                <lb />gence de <placeName type="réel"><bloc ref="afrique"><country ref="libye">Tripoli</country></bloc></placeName> ; à l'est par les déserts d'Égypte et de Nubie, au
+                                sud <lb />par la région fertile connue sous le nom de Nigritie, et à l'ouest par <lb />l'<geogFeat type="océan" ref="atlantique">Atlantique</geogFeat>.</p>
+                            <p>Dans toutes les parties du <geogFeat type="désert" ref="sahara">Sahara</geogFeat> où l'eau jaillit en source, il se forme <lb />une oasis, île de verdure dont le riant
+                                aspect contraste d'une manière <lb />frappante avec l'aridité des sables environnants. On compte les oasis <lb />par centaines dans le <geogFeat type="désert"
+                                    ref="sahara">Grand Désert</geogFeat> et elles comprennent une surface <lb />égale au tiers de cette immense contrée. C'est, par excellence, le <lb />pays des
+                                dattiers. Au-dessous de leur large éventail de feuilles se <lb />pressent les abricotiers, les pêchers, les grenadiers, les orangers ; les <lb />vignes s'enlacent
+                                autour des troncs ; le maïs, le froment, l'orge mûris- <lb />sent sous l'ombrage de cette forêt splendide.</p>
                             <p>L'eau est l'élément de la fertilité des oasis, et on augmente l'étendue <lb />de ces terrains privilégiés par le forage de puits artésiens qui amènent <lb />de
                                 véritables rivières à la surface du sol.</p>
                         </div4>
                     </div3>
                     <div3 type="sciences_naturelles">
-                        <head>Sciences naturelles.</head>
+                        <head type="sujets">Sciences naturelles.</head>
                         <div4 type="questions">
                             <list>
                                 <item>— A quel produit animal donne-t-on le nom d'ivoire ? </item>
@@ -175,7 +185,8 @@
                                 <item> — Citez les mines les plus fameuses avce quelques détails.</item>
                                 <item>— D'où extrait-on le sel ? </item>
                                 <item>— Qu'entendez-vous par marais salants ? </item>
-                                <item>— Citez des villes de France célèbres par leurs sources salées.</item>
+                                <item>— Citez des villes de <placeName type="réel"><bloc ref="europe"><country ref="france">France</country></bloc></placeName> célèbres par leurs sources
+                                    salées.</item>
                             </list>
                         </div4>
                         <fw type="footer">SUZETTE (Maîtresse). <fw type="sig">13</fw></fw>
@@ -188,24 +199,41 @@
                             <p>LE SEL. — Le sel est une substance solide, analogue à la pierre, qui <lb />possède une saveur particulière et agréable ; il a été formé dans la na- <lb />ture par le
                                 mélange du chlore et de la soude.</p>
                             <p> « Il n'existe point de produit minéral plus universellement répandu <lb />et plus utile aux animaux ; il leur est presque aussi indispensable que <lb />l'air qu'ils
-                                respirent. » (BOUCHARDAT.) C'est une substance nécessaire à <lb />la digestion pour dissoudre les aliments solides dans l'estomac.</p>
+                                respirent. » (<persName type="historique">BOUCHARDAT</persName>.) C'est une substance nécessaire à <lb />la digestion pour dissoudre les aliments solides dans
+                                l'estomac.</p>
                             <p>Le sel se montre sous deux états ; ou en dissolution dans les eaux, <lb />et particulièrement dans celles de la mer, ou en couches plus ou moins <lb />épaisses au sein
-                                de la terre. Il y a des mines de sel gemme (sous forme <lb />de pierre) dans presque tous les pays : en Pologne, en Espagne, en Al- <lb />gérie, au Pérou, au Chili, aux
-                                Etats-Unis notamment. Les mines les <lb />plus célèbres de l'Europe sont celles de Wieliczka et de Bochnia, près <lb />de Cracovie (Pologne) ; elles ont une longueur de
-                                plus de 1,000 kilo- <lb />mètres sur 400 de largeur. Découvertes vers le milieu du treizième <lb />siècle, elles sont depuis une source inépuisable de richesses. La
-                                quantité <lb />de sel qu'on en a tirée jusqu'à ce jour atteint près de ?00 millions de <lb />quintaux.</p>
+                                de la terre. Il y a des mines de sel gemme (sous forme <lb />de pierre) dans presque tous les pays : en <placeName type="réel"><bloc ref="europe"><country ref="pologne"
+                                            >Pologne</country></bloc></placeName>, en <placeName type="réel"><bloc ref="europe"><country ref="espagne">Espagne</country></bloc></placeName>, en
+                                    <placeName type="réel"><bloc ref="afrique"><country ref="algérie">Al- <lb />gérie</country></bloc></placeName>, au <placeName type="réel"><bloc ref="amérique_sud"
+                                            ><country ref="pérou">Pérou</country></bloc></placeName>, au <placeName type="réel"><bloc ref="amérique_sud"><country ref="chili"
+                                    >Chili</country></bloc></placeName>, aux <placeName type="réel"><bloc ref="amérique_nord"><country ref="etats_unis">Etats-Unis</country></bloc></placeName>
+                                notamment. Les mines les <lb />plus célèbres de l'<placeName type="réel"><bloc ref="europe">Europe</bloc></placeName> sont celles de <placeName type="réel"><bloc
+                                        ref="europe"><country ref="pologne"><settlement ref="wieliczka">Wieliczka</settlement></country></bloc></placeName> et de <placeName type="réel"><bloc
+                                        ref="europe"><country ref="pologne"><settlement ref="bochnia">Bochnia</settlement></country></bloc></placeName>, près <lb />de <placeName type="réel"><bloc
+                                        ref="europe"><country ref="pologne"><settlement ref="cracovie">Cracovie</settlement></country></bloc></placeName> (<placeName type="réel"><bloc ref="europe"
+                                            ><country ref="pologne">Pologne</country></bloc></placeName>) ; elles ont une longueur de plus de 1,000 kilo- <lb />mètres sur 400 de largeur. Découvertes
+                                vers le milieu du treizième <lb />siècle, elles sont depuis une source inépuisable de richesses. La quantité <lb />de sel qu'on en a tirée jusqu'à ce jour atteint près
+                                de 700 millions de <lb />quintaux.</p>
                             <p>On extrait le sel des eaux de la mer et de celles des sources salées <lb />qu'on yoit jaillir en un grand nombre de lieux.</p>
-                            <p>Dans le midi de la France, on fait arriver l'eau de la mer dans des <lb />espaces particuliers, soigneusement nivelés et divisés en comparti- <lb />ments où l'eau
-                                s'évapore par suite de la chaleur du climat, en laissant <lb />une couche de sel. Ce sont les marais salants. Dans le Nord, on vapo- <lb />rise l'eau des fontaines
-                                salées au moyen du fou ; mais auparavant on <lb />l'obtient à un certain état de concentration en l'élevant dans des bâ- <lb />timents où on la fait descendre à l'état
-                                de grande division au travers <lb />de fagots. Le sel est produit à si bon marché dans les marais salants <lb />que 100 kilogrammes s'y vendent 40 à 50 centimes au
-                                plus.</p>
-                            <p>Les localités les plus connues par leurs sources salées sont : Châ- <lb />teau-Salins, Dieuze et Vic, en Lorraine ; Lons-le-Saunier et Salins, <lb />en Franche-Comté ;
-                                Salies, en Béarn.</p>
+                            <p>Dans le midi de la <placeName type="réel"><bloc ref="europe"><country ref="france">France</country></bloc></placeName>, on fait arriver l'eau de la mer dans des
+                                <lb />espaces particuliers, soigneusement nivelés et divisés en comparti- <lb />ments où l'eau s'évapore par suite de la chaleur du climat, en laissant <lb />une couche
+                                de sel. Ce sont les marais salants. Dans le Nord, on vapo- <lb />rise l'eau des fontaines salées au moyen du fou ; mais auparavant on <lb />l'obtient à un certain état
+                                de concentration en l'élevant dans des bâ- <lb />timents où on la fait descendre à l'état de grande division au travers <lb />de fagots. Le sel est produit à si bon
+                                marché dans les marais salants <lb />que 100 kilogrammes s'y vendent 40 à 50 centimes au plus.</p>
+                            <p>Les localités les plus connues par leurs sources salées sont : <placeName type="réel"><bloc ref="europe"><country ref="france"><settlement ref="château-salins">Châ-
+                                                <lb />teau-Salins</settlement></country></bloc></placeName>, <placeName type="réel"><bloc ref="europe"><country ref="france"><settlement ref="dieuze"
+                                                >Dieuze</settlement></country></bloc></placeName> et <placeName type="réel"><bloc ref="europe"><country ref="france"><settlement ref="vic"
+                                                >Vic</settlement></country></bloc></placeName>, en <placeName type="réel"><bloc ref="europe"><country ref="france"><region ref="lorraine"
+                                                >Lorraine</region></country></bloc></placeName> ; <placeName type="réel"><bloc ref="europe"><country ref="france"><settlement ref="lons-le-saunier"
+                                                >Lons-le-Saunier</settlement></country></bloc></placeName> et <placeName type="réel"><bloc ref="europe"><country ref="france"><settlement ref="salins"
+                                                >Salins</settlement></country></bloc></placeName>, <lb />en <placeName type="réel"><bloc ref="europe"><country ref="france"><region ref="franche-comté"
+                                                >Franche-Comté</region></country></bloc></placeName> ; <placeName type="réel"><bloc ref="europe"><country ref="france"><settlement ref="salies"
+                                                >Salies</settlement></country></bloc></placeName>, en <placeName type="réel"><bloc ref="europe"><country ref="france"><region ref="béarn"
+                                            >Béarn</region></country></bloc></placeName>.</p>
                         </div4>
                     </div3>
                     <div3 type="hygiène">
-                        <head>Hygiène.</head>
+                        <head type="sujets">Hygiène.</head>
                         <div4 type="questions">
                             <list>
                                 <item>— Quel besoin est la soif ?</item>

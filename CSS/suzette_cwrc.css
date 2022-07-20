@@ -17,7 +17,7 @@
  *
  */
 /* Use Arial for default font */
-TEI{
+TEI {
     margin: 10px 25px;
     font-family: Arial, sans_serif;
     line-height: 1.9em;
@@ -25,17 +25,17 @@ TEI{
 }
 font
 /*  added <ab> styling - adding left margin */
-ab{
+ab {
     display: block;
     margin-bottom: 0.5em;
     margin-left: 2em;
 }
 
-abbr{
+abbr {
     display: inline;
 }
 
-add{
+add {
     display: inline;
     background-color: inherit;
     text-decoration: underline;
@@ -60,26 +60,26 @@ addrLine {
     display : block;
     white-space : nowrap;
 }*/
-anchor{
+anchor {
     display: none;
 }
-argument{
+argument {
     display: block;
     margin-bottom: 0.5em;
 }
-att{
+att {
     display: inline;
     font-family: sans-serif;
     color: blue;
     background-color: inherit;
 }
-att:before{
+att:before {
     content: "@";
 }
-author{
+author {
     display: inline;
 }
-back{
+back {
     display: block;
     border: thin black solid;
     margin-top: 1em;
@@ -88,21 +88,21 @@ back{
     padding-right: 0.5em;
     padding-bottom: 0.5em;
 }
-bibl{
+bibl {
     display: inline;
 }
 
-div[type = "works"]{
+div[type = "works"] {
     text-indent: -2em;
     margin: 0 0 0 2em;
 }
-bibl > note{
+bibl > note {
     display: inline;
 }
-bibl > title[type = "alternate"]{
+bibl > title[type = "alternate"] {
     content: "Alternate Title: " !important;
 }
-bibl > title[type = "subtitle"]{
+bibl > title[type = "subtitle"] {
     content: "";
 }
 argument > bibl,
@@ -119,11 +119,11 @@ div6 > bibl,
 div7 > bibl,
 epigraph > bibl,
 listBibl > bibl > bibl,
-taxonomy > bibl{
+taxonomy > bibl {
     display: block;
     margin-bottom: 0.5em;
 }
-biblFull{
+biblFull {
     display: inline;
 }
 argument > biblFull,
@@ -140,61 +140,68 @@ div6 > biblFull,
 div7 > biblFull,
 epigraph > biblFull,
 listBibl > biblFull > biblFull,
-taxonomy > biblFull{
+taxonomy > biblFull {
     display: block;
     margin-bottom: 0.5em;
 }
-listBibl > bibl{
+listBibl > bibl {
     display: block;
     margin-left: 2em;
     margin-bottom: 0.5em;
     text-indent: -2em
 }
-biblScope{
+biblScope {
     display: inline;
 }
-imprint > biblScope{
+imprint > biblScope {
     display: block;
 }
-body{
+body {
     margin-top: 5px;
     padding: 0 2em 0 0;
     display: block;
     counter-reset: div1;
 }
-byline{
+byline {
     display: block;
     font-style: italic;
     margin-bottom: 0.5em;
 }
-category{
+
+caption {
+    display: block;
+    font-size: small;
+    font-style: italic;
+    color: gray;
+}
+category {
     display: block;
     margin-bottom: 1em;
 }
-catRef{
+catRef {
     display: none;
 }
 
-cell{
+cell {
     display: table-cell;
     border: 1px solid #EEEFEE;
     padding: 3px;
     color: inherit;
     background-color: inherit;
 }
-cell[role = 'label']{
+cell[role = 'label'] {
     color: inherit;
     background-color: #BBBBBB;
 }
-cell[role = 'data']{
+cell[role = 'data'] {
     text-align: right;
 }
-change{
+change {
     display: block;
     margin-bottom: 1em;
     margin-left: 2em;
 }
-cit{
+cit {
     display: inline;
 }
 argument > cit,
@@ -208,7 +215,7 @@ div4 > cit,
 div5 > cit,
 div6 > cit,
 div7 > cit,
-epigraph > cit{
+epigraph > cit {
     display: block;
     margin-bottom: 0.5em;
     margin-top: 0.5em;
@@ -216,157 +223,157 @@ epigraph > cit{
 
 /* indicating where a choice has been made from original to corrected spelling */
 choice {
-        text-decoration : underline;
+    text-decoration: underline;
 }
 
-classCode{
+classCode {
     display: block;
 }
 elementSpec,
 macroSpec,
-classSpec{
+classSpec {
     display: block;
     margin-bottom: 1em;
 }
-closer{
+closer {
     display: block;
     margin-bottom: 1em;
     width: 95%;
 }
-code{
+code {
     display: inline;
     font-family: monospace;
 }
-corr{
+corr {
     display: inline;
     color: green;
     background-color: inherit;
 }
-creation{
+creation {
     display: block;
 }
 
 /* Testing change from block to inline for date */
-date{
+date {
     display: inline;
     color: blue;
 }
 change > date,
-publicationStmt > date{
+publicationStmt > date {
     display: inline;
     font-weight: bold;
 }
-dateline{
+dateline {
     display: inline;
 }
 /* Changed deletion strikethrough to gray from red for CWRC-REED London */
-del{
+del {
     display: inline;
     color: gray;
     background-color: inherit;
     text-decoration: line-through;
 }
-distributor{
+distributor {
     display: block;
     margin-bottom: 0.5em;
 }
-body > div{
+body > div {
     display: block;
     counter-increment: div1;
     counter-reset: div2;
     margin: 0 0 1.5em 0;
 }
-body > div > div{
+body > div > div {
     display: block;
     margin-bottom: 1em;
     counter-increment: div2;
     counter-reset: div3;
 }
-body > div > div > div{
+body > div > div > div {
     display: block;
     margin-bottom: 1em;
     counter-increment: div3;
 }
-body > div[type = "letter"]{
+body > div[type = "letter"] {
     margin-bottom: 2em !important;
 }
-div[type = "poem"]{
+div[type = "poem"] {
     counter-reset: line;
 }
 
-div1{
+div1 {
     display: block;
     margin-bottom: 1em;
     counter-increment: div1;
     counter-reset: div2;
 }
-div2{
+div2 {
     display: block;
     margin-bottom: 1em;
     counter-increment: div2;
     counter-reset: div3;
 }
-div3{
+div3 {
     display: block;
     margin-bottom: 1em;
     counter-increment: div3;
     counter-reset: div4;
 }
-div4{
+div4 {
     display: block;
     margin-bottom: 1em;
     counter-increment: div4;
     counter-reset: div5;
 }
-div5{
+div5 {
     display: block;
     margin-bottom: 1em;
     counter-increment: div5;
     counter-reset: div6;
 }
-div6{
+div6 {
     display: block;
     margin-bottom: 1em;
     counter-increment: div6;
     counter-reset: div7;
 }
-div7{
+div7 {
     display: block;
     margin-bottom: 1em;
     counter-increment: div7;
 }
-divGen{
+divGen {
     display: none;
 }
-docAuthor{
+docAuthor {
     display: block;
     margin-bottom: 0.5em;
 }
-byline docAuthor{
+byline docAuthor {
     display: inline;
 }
-titlePage docAuthor{
+titlePage docAuthor {
 }
-titlePage docTitle{
+titlePage docTitle {
 }
-edition{
+edition {
     display: block;
     margin-bottom: 0.5em;
 }
-bibl edition{
+bibl edition {
     display: inline;
 }
-editionStmt{
+editionStmt {
     display: block;
     margin-bottom: 1em;
 }
-editor{
+editor {
     display: block;
 }
-bibl editor{
+bibl editor {
     display: inline;
 }
-eg{
+eg {
     font-family: monospace;
     padding-top: 3mm;
     padding-left: 4pt;
@@ -389,61 +396,61 @@ div4 > eg,
 div5 > eg,
 div6 > eg,
 div7 > eg,
-epigraph > eg{
+epigraph > eg {
     display: block;
     margin-bottom: 1em;
 }
-emph{
+emph {
     display: inline;
     font-style: italic;
 }
-epigraph{
+epigraph {
     display: block;
     margin-bottom: 1em;
     text-align: center;
 }
 
 /* added <ex> with italic rendering */
-ex{
+ex {
     font-style: italic;
 }
 
-extent{
+extent {
     display: block;
     margin-bottom: 1em;
 }
-bibl extent{
+bibl extent {
     display: inline;
 }
 
 /* Suzette - formwords */
-fw{
-   display:block;
-   color: black;
-   font-style: italic;
-   margin-bottom: 1em;
-   margin-top: 1em;
-   font-size: 1.2em;
-   text-align:center;
+fw {
+    display: block;
+    color: black;
+    font-style: italic;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    font-size: 1.2em;
+    text-align: center;
 }
-graphic{
+graphic {
     color: gray;
     background-color: inherit;
     content: "{" attr(url) "}";
 }
-figure{
+figure {
     display: block;
     margin-bottom: 1em;
 }
-foreign{
+foreign {
     display: inline;
     font-style: italic;
 }
-formula{
+formula {
     display: inline;
     font-style: italic;
 }
-front{
+front {
     display: block;
     margin-bottom: 1em;
     padding-top: 0.5em;
@@ -451,47 +458,53 @@ front{
     padding-right: 0.5em;
     padding-bottom: 0.5em;
 }
-funder{
+funder {
     display: block;
     margin-bottom: 0.5em;
 }
 
 /* changed gap to display inline (from none) */
-gap{
+gap {
     display: inline;
 }
-gap:after{
+gap:after {
     content: "[...]";
     font-style: italic;
 }
 gi,
-tag{
+tag {
     display: inline;
     font-family: sans-serif;
     color: blue;
     background-color: inherit;
 }
 tag:before,
-gi:before{
+gi:before {
     content: "<";
 }
 tag:after,
-gi:after{
+gi:after {
     content: ">";
 }
+
+geogFeat {
+    color: green;
+    display: inline;
+}
+
 /* changed style to italic and color to grey */
-gloss{
+gloss {
     display: inline;
     font-style: italic;
     color: #999;
     vertical-align: super;
     font-size: smaller;
 }
-group{
+group {
     display: block;
     margin-bottom: 1em;
 }
-body > div > head{
+body > div > head {
     display: block;
     padding-top: 7px;
     padding-bottom: 10px;
@@ -501,10 +514,10 @@ body > div > head{
     margin-top: 1em;
     font-size: 18px;
 }
-body > div[type = "poem"] > head author{
+body > div[type = "poem"] > head author {
     font-weight: normal;
 }
-body > div > div > head{
+body > div > div > head {
     display: block;
     padding-top: 14px;
     padding-bottom: 10px;
@@ -516,7 +529,7 @@ body > div > div > head{
     margin-top: 11px;
 }
 /* Testing to see whether I can hide the grey background block */
-body > div > div > div > head{
+body > div > div > div > head {
     display: block;
     padding-top: 14px;
     padding-bottom: 10px;
@@ -529,52 +542,52 @@ body > div > div > div > head{
 
 }
 /*  testing dateline change from block to inline */
-div opener dateline{
+div opener dateline {
     display: inline;
     text-align: right;
     width: 95%;
 }
-div1 > head:before{
+div1 > head:before {
     /*    content : counter(div1) ". ";
 */
     color: black;
     background-color: inherit;
 }
-div1 > lb{ /* DKJ trying to get line breaks to render 09/16/21 */
-	display:block;
-	line-height: .5em;
+div1 > lb { /* DKJ trying to get line breaks to render 09/16/21 */
+    display: block;
+    line-height: .5em;
 }
-div2 > head:before{
+div2 > head:before {
     /*    content : counter(div1) "." counter(div2) ". ";
 */
     color: black;
     background-color: inherit;
 }
 
-div2 > lb{ /* DKJ trying to get line breaks to render 09/16/21 */
-	display:block;
-	line-height: .5em;
+div2 > lb { /* DKJ trying to get line breaks to render 09/16/21 */
+    display: block;
+    line-height: .5em;
 }
 
-div3 > head:before{
+div3 > head:before {
     /*    content : counter(div1) "." counter(div2) "." counter(div3) ". ";
 */
     color: black;
     background-color: inherit;
 }
-body > div > head:before{
+body > div > head:before {
     /*    content : counter(div1) ". ";
 */
     color: black;
     background-color: inherit;
 }
-body > div > div > head:before{
+body > div > div > head:before {
     /*    content : counter(div1) "." counter(div2) ". ";
 */
     color: black;
     background-color: inherit;
 }
-body > div > div > div > head:before{
+body > div > div > div > head:before {
     /*    content : counter(div1) "." counter(div2) "." counter(div3) ". ";
 */
     color: black;
@@ -586,123 +599,123 @@ head {
     color: black;
     font-weight: bold;
     font-size: 1.2em;
-        margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 
-hi{
+hi {
     display: inline;
     background-color: yellow;
     color: black;
 }
-hi[rend]{
+hi[rend] {
     background-color: inherit;
     color: inherit;
 }
 
-hi[rend = "bold"]{
+hi[rend = "bold"] {
     display: inline;
     font-weight: bold;
 }
-hi[rend = "italic"]{
+hi[rend = "italic"] {
     display: inline;
     font-style: italic;
 }
-hi[rend = "underline"]{
+hi[rend = "underline"] {
     display: inline;
     text-decoration: underline;
 }
-hi[rend = "it"]{
+hi[rend = "it"] {
     display: inline;
     font-style: italic;
 }
-hi[rend = "sc"]{
+hi[rend = "sc"] {
     display: inline;
     font-variant: small-caps;
 }
-hi[rend = "sup"]{
+hi[rend = "sup"] {
     display: inline;
     vertical-align: super;
     font-size: smaller;
 }
 
 /* added hi[rend = "superscript"] in addition to "sup" */
-hi[rend = "superscript"]{
+hi[rend = "superscript"] {
     display: inline;
     vertical-align: super;
     font-size: smaller;
     line-height: 0;
 }
 
-hi[rend = "sub"]{
+hi[rend = "sub"] {
     display: inline;
     vertical-align: sub;
     font-size: smaller;
 }
-hi[rend = "ul"]{
+hi[rend = "ul"] {
     display: inline;
     text-decoration: underline;
 }
-ident{
+ident {
     display: inline;
     font-family: monospace;
 }
-idno{
+idno {
     display: block;
     margin-bottom: 1em;
 }
-bibl idno{
+bibl idno {
     display: inline;
 }
-imprint{
+imprint {
     display: inline;
 }
-index{
+index {
     display: none;
 }
-interp{
+interp {
     display: none;
 }
-interpGrp{
+interpGrp {
     display: none;
 }
-list[type = "gloss"] item{
+list[type = "gloss"] item {
     display: block;
     margin-left: 1em;
 }
-list item{
+list item {
     display: list-item;
     margin-left: 12pt;
 }
-item{
+item {
     display: list-item;
     margin-left: 12pt;
     list-style-type: none;
 }
-item[n]:before{
+item[n]:before {
     content: attr(n) ". ";
     list-style: none;
 } /* should there be space after the content?
      And should default marker be suppressed
      when there is an @n attribute? --DRS */
-change item{
+change item {
     display: block;
     margin-bottom: 0.5em;
     margin-left: 1em;
     margin-top: 0.5em;
 }
-keywords{
+keywords {
     display: block;
     margin-bottom: 0.5em;
 }
-kw{
+kw {
     display: inline;
     font-style: italic;
 }
-l{
+l {
     display: block;
     white-space: nowrap;
 }
-l:after{
+l:after {
     content: counter(line);
     counter-increment: line;
     text-align: right;
@@ -710,11 +723,11 @@ l:after{
     color: silver;
     margin-right: 50px;
 }
-label{
+label {
     display: inline;
     font-weight: bold;
 }
-Label{
+Label {
     display: inline;
     font-weight: bold;
     color: #2F4F4F;
@@ -731,29 +744,29 @@ div4 > label,
 div5 > label,
 div6 > label,
 div7 > label,
-epigraph > label{
+epigraph > label {
     display: block;
     font-weight: bold;
 }
-langUsage{
+langUsage {
     display: block;
     margin-bottom: 1em;
 }
 
-lb{
+lb {
     display: block;
     margin-bottom: -1em; /* shrinks white space between lines */
 }
 
-lb:before{
+lb:before {
     content: "";
 }
 
-lg{
+lg {
     display: block;
     margin-bottom: 0.5em;
 }
-list{
+list {
     display: block;
     list-style-type: dash;
     list-style-position: outside;
@@ -761,41 +774,41 @@ list{
     margin-left: 2em;
     margin-top: 1em;
 }
-list[rend = "runon"]{
+list[rend = "runon"] {
     display: inline;
 }
-list[type = "bulleted"]{
+list[type = "bulleted"] {
     list-style-type: disc;
     list-style-position: outside;
 }
-list[type = "unordered"]{
+list[type = "unordered"] {
     list-style-type: disc;
     list-style-position: outside;
 }
-list[type = "ordered"]{
+list[type = "ordered"] {
     list-style-type: decimal;
     list-style-position: outside;
 }
-list[type = "numbered"]{
+list[type = "numbered"] {
     list-style-type: decimal;
     list-style-position: outside;
 }
-list[type = "none"]{
+list[type = "none"] {
     list-style-type: none;
 }
-listBibl{
+listBibl {
     display: block;
     margin-bottom: 0.5em;
 }
-mentioned{
+mentioned {
     display: inline;
     font-style: italic;
 }
-milestone{
+milestone {
     display: none;
 }
 
-note{
+note {
     display: block;
     color: #999;
 }
@@ -808,88 +821,89 @@ note[type]:before{
     content: attr(type) ': ';
 }
 */
-opener note{
+opener note {
     display: block;
     color: #999;
 }
-opener note:before{
+opener note:before {
     content: '';
     font-variant: normal;
 }
-opener note[type]:before{
+opener note[type]:before {
     content: '';
 }
 
-note[n]:before{
+note[n]:before {
     content: attr(n) " ";
     vertical-align: super;
 }
 div note persName,
 div note orgName,
 div note title,
-div note placeName{
+div note placeName {
     color: #6DB0CC !important;
 }
-note[place = "left"]{
+note[place = "left"] {
     float: left;
 }
-note[place = "right"]{
+note[place = "right"] {
     float: right;
 }
 note[place = "inline"],
-note[place = "unspecified"]{
+note[place = "unspecified"] {
     display: inline;
 }
-note[place = "inline"]:before{
+note[place = "inline"]:before {
     content: '('
 }
-note[place = "inline"]:after{
+note[place = "inline"]:after {
     content: ')'
 }
 
 /* added foot note type as inline rather than block - testing back as "block" DKJ 09/16/21 */
-note[type = "foot"]{
+note[type = "foot"] {
     display: block;
     vertical-align: super;
     font-size: smaller;
 }
-notesStmt{
+notesStmt {
     display: block;
 }
-num{
+num {
     display: inline;
 }
 
-objectName{
+objectName {
     color: green;
     display: inline;
 }
-opener{
+opener {
     display: block;
     margin-bottom: 0.5em;
 }
-opener p{
+opener p {
     text-align: justify !important;
     text-indent: 0 !important;
 }
-orig{
+orig {
     display: inline;
     color: gray;
     background-color: inherit;
 }
 
 /* Testing color for entity tags */
-orgName{
+orgName {
     display: inline;
-    color: red;
+    color: green;
+    font-weight: bold;
 }
-p{
+p {
     display: block;
     margin-bottom: 0.5em;
     line-height: 2em;
 }
 
-pb{
+pb {
     display: block;
     color: gray;
     font-style: italic;
@@ -897,14 +911,14 @@ pb{
 }
 
 /* Trying to add "Page" before page # */
-pb:before{
+pb:before {
     content: "Page ";
     color: gray;
     font-style: italic;
     font-size: .9em;
 }
 
-pb:after{
+pb:after {
     content: attr(n);
     font-weight: bold;
     margin-bottom: 1em;
@@ -913,61 +927,63 @@ pb:after{
 }
 
 
-persName{
+persName {
     color: blue;
     display: inline;
+    font-weight: bold;
 }
 
-placeName{
-    color: blue;
+placeName {
+    color: purple;
     display: inline;
+    font-weight: bold;
 }
 
 div persName,
 div placeName,
 div orgName,
-div title{
+div title {
     color: #336699;
 }
-principal{
+principal {
     display: block;
     margin-bottom: 0.5em;
 }
-ptr{
+ptr {
     color: navy;
     text-decoration: underline;
     background-color: inherit;
 }
-ptr:before{
+ptr:before {
     background-color: inherit;
     color: red;
     content: "[" attr(target) "]";
 }
-publicationStmt{
+publicationStmt {
     /*    display : block;
     margin-bottom : 0.5em;*/
 }
-publicationStmt p{
+publicationStmt p {
     display: block;
     margin-bottom: 0;
 }
-publisher{
+publisher {
     display: inline;
 }
 imprint > publisher,
-publicationStmt > publisher{
+publicationStmt > publisher {
     display: block;
     margin-bottom: 0.5em;
 }
-pubPlace{
+pubPlace {
     display: inline;
 }
 imprint > pubPlace,
-publicationStmt > pubPlace{
+publicationStmt > pubPlace {
     display: block;
     margin-bottom: 0.5em;
 }
-q{
+q {
     display: inline;
     quotes: '"' '"' "'" "'";
     margin-top: 0em;
@@ -988,61 +1004,61 @@ div4 > q,
 div5 > q,
 div6 > q,
 div7 > q,
-epigraph > q{
+epigraph > q {
     display: block;
     margin-bottom: 0.5em;
     margin-left: 3em;
     margin-right: 3em;
     quotes: none;
 }
-q:before{
+q:before {
     content: open-quote;
 }
-q:after{
+q:after {
     content: close-quote;
 }
-ref{
+ref {
     display: inline;
     color: blue;
     background-color: inherit;
 }
-ref:before{
+ref:before {
     color: gray;
     background-color: inherit;
     text-decoration: underline;
 }
-reg{
+reg {
     display: inline;
     font-style: italic;
 }
-rendition{
+rendition {
     display: block;
     margin-bottom: 0.5em;
 }
-resp{
+resp {
     display: block;
 }
-respStmt{
+respStmt {
     display: block;
     margin-left: 1em;
 }
-respStmt > name:before{
+respStmt > name:before {
     content: attr(role) ": ";
     display: block !important;
     font-variant: small-caps;
 }
-bibl respStmt{
+bibl respStmt {
     display: inline;
 }
-rdg:before{
+rdg:before {
     background-color: inherit;
     content: "[" attr(wit) "] ";
     color: red;
 }
-row{
+row {
     display: table-row;
 }
-row[role = 'label']{
+row[role = 'label'] {
     color: inherit;
     background-color: #BBBBBB;
 }
@@ -1051,154 +1067,155 @@ roleName {
     display: inline;
     color: brown;
 }
-rs{
+rs {
     display: inline;
 }
 
-rs[occupation]{
+rs[occupation] {
     display: inline;
     color: orange;
 }
 
-rs[office]{
+rs[office] {
     display: inline;
     color: orange;
 }
 
-s{
+s {
     display: inline;
 }
-salute{
+salute {
     display: block;
     margin-bottom: 0.5em;
     margin-top: 1em;
 }
-samplingDecl{
+samplingDecl {
     display: block;
     margin-bottom: 1em;
 }
-seg{
+seg {
     display: inline;
 }
 
 /*  added seg[type = "signed"] with text aligned right */
-seg[type = 'signed']{
+seg[type = 'signed'] {
     text-align: right;
 }
 
-seriesStmt{
+seriesStmt {
     display: block;
     margin-bottom: 1em;
 }
-sic{
+sic {
     display: inline;
     color: red;
     background-color: inherit;
 }
-sic:after{
+sic:after {
     content: " [sic]";
 }
-signed{
+signed {
     display: block;
     text-align: right;
 }
-soCalled{
+soCalled {
     display: inline;
     font-style: italic;
     quotes: "'" "'";
 }
-soCalled:before{
+soCalled:before {
     content: open-quote;
 }
-soCalled:after{
+soCalled:after {
     content: close-quote;
 }
-sp{
+sp {
     display: block;
     margin-bottom: 0.5em;
     margin-left: 2em;
 }
-div p{
+div p {
     text-align: justify;
     text-indent: 30px;
 }
-speaker{
+speaker {
     display: inline;
     font-weight: bold;
 }
-sponsor{
+sponsor {
     display: block;
     margin-bottom: 0.5em;
 }
-stage{
+stage {
     display: inline;
     font-style: italic;
 }
 
 /* changed text-align to left - this should be inherited by row and cell */
-table{
+table {
     text-align: left;
     display: table;
     margin: 1em
 }
-table > head{
+table > head {
     display: table-caption;
     font-style: italic;
     margin-bottom: 6pt;
 }
-tagUsage{
+tagUsage {
     display: block;
     margin-bottom: 0.5em;
 }
-taxonomy{
+taxonomy {
     display: block;
     margin-bottom: 0.5em;
 }
-term{
+term {
     font-family: sans-serif;
-    color: blue;
+    color: green;
     background-color: inherit;
     display: inline;
+    font-weight: bold;
 }
-textClass{
+textClass {
     display: block;
     margin-bottom: 0.5em;
 }
-time{
+time {
     display: inline;
 }
-title{
+title {
     display: inline;
 }
-title[type = "subtitle"]{
+title[type = "subtitle"] {
     display: block;
     font-weight: normal;
 }
 title[level = "m"],
-title[level = "j"]{
+title[level = "j"] {
     font-style: italic;
 }
-title[level = "s"]{
+title[level = "s"] {
     font-style: normal;
 }
 title[level = "a"],
-title[level = "u"]{
+title[level = "u"] {
     font-style: normal;
 }
 title[level = "a"]:before,
-title[level = "u"]:before{
+title[level = "u"]:before {
     content: open-quote;
 }
 title[level = "a"]:after,
-title[level = "u"]:after{
+title[level = "u"]:after {
     content: close-quote;
 }
 seriesStmt > title,
-titleStmt > title{
+titleStmt > title {
     color: gray;
     font-weight: bold;
 }
-titlePage{
+titlePage {
     display: block;
     border: thin black solid;
     margin-bottom: 2em;
@@ -1208,101 +1225,101 @@ titlePage{
     padding-right: 1em;
     padding-bottom: 1em;
 }
-titlePart{
+titlePart {
     display: block;
 }
-titleStmt{
+titleStmt {
     margin-bottom: 1em;
     color: #333;
 }
-trailer{
+trailer {
     display: block;
     margin-bottom: 1em;
 }
-unclear{
+unclear {
     display: inline;
     color: gray;
     background-color: inherit;
     font-style: italic;
 }
 /* header-related material -- DKJ testing hide teiHeader 09/19/21 */
-teiHeader{
+teiHeader {
     display: none;
     color: gray;
     background-color: rgb(251, 242, 234);
     padding: .5em;
 }
-teiHeader author:before{
+teiHeader author:before {
     font-variant: small-caps;
     content: "author: ";
 }
-teiHeader editor:before{
+teiHeader editor:before {
     font-variant: small-caps;
     content: "editor: ";
 }
-teiHeader title{
+teiHeader title {
     color: gray;
 }
-titleStmt > author{
+titleStmt > author {
     display: block;
     margin-left: 1em;
 }
-authority{
+authority {
     display: block;
     margin-bottom: 0.5em;
 }
-availability{
+availability {
     display: block;
     margin-bottom: 0.5em;
 }
-fileDesc{
+fileDesc {
     /*    display : block;
     margin-bottom : .5em;*/
 }
-sourceDesc{
+sourceDesc {
     /*    display : block;
     border : thin silver solid;
     padding : .5em .5em 0 .5em;*/
 }
-sourceDesc p{
+sourceDesc p {
     margin: 0;
 }
-revisionDesc{
+revisionDesc {
     display: block;
     margin-bottom: 1em;
 }
-catDesc{
+catDesc {
     display: block;
     margin-bottom: 0.5em;
 }
-encodingDesc{
+encodingDesc {
     display: block;
     margin-bottom: 1em;
 }
-profileDesc{
+profileDesc {
     display: block;
     margin-bottom: 1em;
 }
-projectDesc{
+projectDesc {
     display: block;
     margin-bottom: 1em;
 }
-docDate{
+docDate {
     display: block;
     margin-bottom: 0.5em;
 }
-docImprint docDate{
+docImprint docDate {
     display: inline;
 }
-docEdition{
+docEdition {
     display: block;
     margin-bottom: 0.5em;
 }
-docImprint{
+docImprint {
     display: block;
     margin-bottom: 0.5em;
 }
-docTitle{
+docTitle {
     display: block;
     font-weight: bold;
     margin-bottom: 0.5em;

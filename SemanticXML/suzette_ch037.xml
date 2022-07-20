@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/out/suzette-NewCustom.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/CSS/suzette_cwrc.css"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/out/suzette-NewCustom.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -73,11 +73,11 @@
     </teiHeader>
     <text>
         <body>
-            <div1 type="chapitre">
+            <div1 type="chapitre" xml:lang="fr" n="ch037">
                 <pb type="page" n="129" />
                 <head>37. — Fraternité. (Élève, p. 83.)</head>
                 <div2 type="récit">
-                    <p>Sous l’auvent* <gloss>Auvent. Petit toit en saillie au-dessus d'une porte ou d'un étalage.</gloss> du pignon de la grange détérioré* <gloss>Détérioré. En mauvais état,
+                    <p>Sous l’auvent*<gloss>Auvent. Petit toit en saillie au-dessus d'une porte ou d'un étalage.</gloss> du pignon de la grange détérioré*<gloss>Détérioré. En mauvais état,
                             gâté.</gloss> par <lb />la pompe à incendie, une hirondelle, tenant au bec <lb />un peu de boue, l’ajou- <lb />tait vivement à un pe- <lb />tit tas déjà amassé, <lb />puis
                         repartait.</p>
                     <p>Aussitôt une autre <lb />hirondelle vint fa- <lb />çonner ce commen- <lb />cement de nid, et <lb />avec une même ar- <lb />deur.</p>
@@ -94,13 +94,13 @@
                         </figure>
                         <pb type="page" n="130" />
                         <fw type="header">130 SUZETTE.</fw>
-                        <lb />père. Pour chacun le pain du jour est si dur à gagner!</p>
+                        <lb />père. Pour chacun le pain du jour est si dur à gagner ! </p>
                     <p>— Oui, mais pourquoi n'ont-ils pas encore songé à <lb />s'assurer*<gloss>S'assurer. Payer une somme convenue pour être remboursé de la valeur de certains objets.</gloss> entre
-                        eux contre le malheur frappant ici et là, <lb />aujourd'hui sur nous, demain sur le prochain !</p>
+                        eux contre le malheur frappant ici et là, <lb />aujourd'hui sur nous, demain sur le prochain ! </p>
                     <p>— Pourquoi? Parce que les idées les plus simples, <lb />les plus humaines ne nous viennent à l'esprit que les <lb />dernières, que trop souvent il faut être frappé soi-
-                        <lb />même dans son bien pour songer au bien général, et <lb />pour comprendre enfin que ce bien général c'est encore <lb />le meilleur bien particulier !</p>
-                    <p> — Mon père, dit <persName type="fictif" key="jacques">Jacques</persName>, il existe des compagnies <lb />d'assurances * <gloss>Compagnies d'assurances. Sociétés où l'on
-                            s'assure contre l'incendie, la grêle et autres risques.</gloss>... Il est vrai que ce n'est pas tout à fait <lb />la même chose.</p>
+                        <lb />même dans son bien pour songer au bien général, et <lb />pour comprendre enfin que ce bien général c'est encore <lb />le meilleur bien particulier ! </p>
+                    <p> — Mon père, dit <persName type="fictif" key="jacques">Jacques</persName>, il existe des compagnies <lb />d'assurances*<gloss>Compagnies d'assurances. Sociétés où l'on s'assure
+                            contre l'incendie, la grêle et autres risques.</gloss>... Il est vrai que ce n'est pas tout à fait <lb />la même chose.</p>
                     <p>— Non, ce n'est pas la même chose, mais j'aurais pu <lb />sans doute m'assurer à une de ces compagnies. Dans <lb />la conduite de sa vie, on néglige toujours quelque grave
                         <lb />détail, hélas !</p>
                 </div2>
@@ -115,13 +115,13 @@
                         <item>— Reproduisez la réponse du père.</item>
                         <item>— A quoi peut servir une assurance ? </item>
                         <item>— Pourquoi tant de gens négligent-ils de s'assurer ? </item>
-                        <item>— Quel regret exprima lo fermier ? </item>
+                        <item>— Quel regret exprima le fermier ? </item>
                     </list>
                 </div2>
                 <div2 type="exercices">
                     <head>DÉVELOPPEMENT DES SUJETS PROPOSÉS POUR EXERCICES.</head>
                     <div3 type="morale">
-                        <head>Morale.</head>
+                        <head type="sujets">Morale.</head>
                         <div4 type="questions">
                             <list>
                                 <item>— Quelle vertu pratiquent les hommes qui vivent entre eux comme des frères ? </item>
@@ -132,10 +132,11 @@
                         </div4>
                         <div4 type="réponses">
                             <p>Les hommes qui vivent entre eux comme les enfants d'un même <lb />père, c'est-à-dire qui se prêtent un mutuel concours dans les cir- <lb />constances difficiles,
-                                pratiquent la fraternité. Dans nul pays du monde <lb />on ne la pratique aussi largement ot aussi délicatement que dans notre <lb /><placeName>France</placeName>.</p>
+                                pratiquent la fraternité. Dans nul pays du monde <lb />on ne la pratique aussi largement ot aussi délicatement que dans notre <lb /><placeName><bloc ref="europe"
+                                            ><country ref="france">France</country></bloc></placeName>.</p>
                             <p>Parmi les élèves d'une même école, la fraternité ne règne pas <lb />toujours. Combien d'entre elles sont égoïstes, duros, moqueuses à <lb />l'égard de leurs compagnes,
                                 surtout quand ces dernières sont faibles, <lb />timides, disgraciées de la nature ! Ne devraient-elles pas toutes être <lb />indulgentes les unes pour les autres,
-                                prévenantes et disposées à partager <lb />leur superflu avec celles qui n'ont pas le nécessaire? Elles montreraient <lb />ainsi qu'elles se regardaient comme des sœurs
+                                prévenantes et disposées à partager <lb />leur superflu avec celles qui n'ont pas le nécessaire ? Elles montreraient <lb />ainsi qu'elles se regardaient comme des sœurs
                                 dans cette grande famille <lb />qu'on appelle l'école. </p>
                             <p>Mépriser, dédaigner la société d'une jeune fille douce, sage, bonne, <lb />parce qu'elle appartient à une famille peu favorisée de la fortune, c'est <lb />quelque chose
                                 à la fois de sot, de méchant et de lâche. Parce que <pb type="page" n="131" />
@@ -150,10 +151,10 @@
                         </div4>
                     </div3>
                     <div3 type="instruction_civique">
-                        <head>Instruction civique.</head>
+                        <head type="sujets">Instruction civique.</head>
                         <div4 type="questions">
                             <list>
-                                <item>— DES ASSURANCE.</item>
+                                <item>— DES ASSURANCES.</item>
                                 <item>— Qu'est-ce que faire une assurance contre l'incendie ? </item>
                                 <item>— Quel avantage en résulte ? </item>
                                 <item>— Qu'est-ce que faire une assurance sur la vie ? </item>
@@ -175,7 +176,7 @@
                         </div4>
                     </div3>
                     <div3 type="composition">
-                        <head>Composition.</head>
+                        <head type="sujets">Composition.</head>
                         <div4 type="questions">
                             <list>
                                 <item>— Un vigneron tombe malade au printemps, précisément à l'époque des travaux les plus importants : que pourraient faire ses voisins ? </item>
@@ -190,7 +191,7 @@
                         </div4>
                     </div3>
                     <div3 type="industrie">
-                        <head>Industrie.</head>
+                        <head type="sujets">Industrie.</head>
                         <div4 type="questions">
                             <list>
                                 <item>— UNE MAISON.</item>
@@ -213,226 +214,6 @@
                         </div4>
                     </div3>
                 </div2>
-            <pb type="page" n="129"/>    
-            <fw>37. — Fraternité. (Élève, p. 83.)</fw>
-            <div2 type="récit">
-            <p>Sous l’auvent* <gloss>Auvent. Petit toit en saillie au-dessus d'une porte ou d'un étalage.</gloss> du pignon de la grange détérioré* <gloss>Détérioré. En mauvais état, gâté.</gloss> par 
-            <lb/>la pompe à incendie, une hirondelle, tenant au bec 
-            <lb/>un peu de boue, l’ajou-
-            <lb/>tait vivement à un pe-
-            <lb/>tit tas déjà amassé, 
-            <lb/>puis repartait.</p>
-            <p>Aussitôt une autre 
-            <lb/>hirondelle vint fa-
-            <lb/>çonner ce commen-
-            <lb/>cement de nid, et
-            <lb/>avec une même ar-
-            <lb/>deur.</p>
-            <p>Mais, sans doute 
-            <lb/>la besogne ne mar-
-            <lb/>chait pas assez vite, 
-            <lb/>car, après une as-
-            <lb/>sez courte absence, 
-            <lb/>la première reparut 
-            <lb/>avec une bande d'a-
-            <lb/>mies qui aussitôt se mirent 
-            <lb/>à l'œuvre. Ce fut alors un 
-            <lb/>rapide, un joli travail de
-            <lb/>maçonnerie, au milieu de 
-            <lb/>l'agitation des maçons ai-
-            <lb/>lés, allant, venant, poussant, donnant du bec, refai-
-            <lb/>sant en grande hâte le nid détruit la veille.</p>
-            <p>Il avait été construit d'abord par un seul couple, 
-            <lb/>comme le sont tous les nids; mais, à cette heure de 
-            <lb/>misère pour deux pauvres sœurs, toutes les hiron-
-            <lb/>delles du voisinage accouraient contribuer à l'œuvre 
-            <lb/>de réédification.</p>
-            <p>Le travail de tous pour un seul, ce beau travail fra-
-            <lb/>ternel, la famille Dumay, rassemblée à quelques pas de 
-            <lb/>la grange, le contemplait avec une admiration attendrie : </p>
-            <p>— Pourquoi les hommes ne viennent-ils pas ainsi 
-            <lb/>en aide; à l'homme malheureux ? demanda <persName type="fictif" key="suzette">Suzette</persName>.</p>
-            <p>— Ils ont trop à faire, répondit douloureusement le 
-                
-            <figure>
-            <caption>
-            Toutes les hirondelles du voisinage 
-            <lb/>accouraient contribuer à l'œuvre de 
-            <lb/>réédification.
-            </caption>
-            </figure>
-                            
-            <pb type="page" n="130"/>   
-            <fw type="header">130 SUZETTE.</fw>
-                            
-            <lb/>père. Pour chacun le pain du jour est si dur à gagner ! </p>
-            <p>— Oui, mais pourquoi n'ont-ils pas encore songé à 
-            <lb/>s'assurer*<gloss>S'assurer. Payer une somme convenue pour être remboursé de la valeur de certains objets.</gloss> entre eux contre le malheur frappant ici et là, 
-            <lb/>aujourd'hui sur nous, demain sur le prochain ! </p>
-            <p>— Pourquoi ? Parce que les idées les plus simples, 
-            <lb/>les plus humaines ne nous viennent à l'esprit que les 
-            <lb/>dernières, que trop souvent il faut être frappé soi-
-            <lb/>même dans son bien pour songer au bien général, et 
-            <lb/>pour comprendre enfin que ce bien général c'est encore 
-            <lb/>le meilleur bien particulier ! </p>
-            <p> — Mon père, dit <persName type="fictif" key="jacques">Jacques</persName>, il existe des compagnies 
-            <lb/>d'assurances* <gloss>Compagnies d'assurances. Sociétés où l'on s'assure contre l'incendie, la  grêle et autres risques.</gloss>... Il est vrai que ce n'est pas tout à fait 
-            <lb/>la même chose.</p>
-            <p>— Non, ce n'est pas la même chose, mais j'aurais pu 
-            <lb/>sans doute m'assurer à une de ces compagnies. Dans 
-            <lb/>la conduite de sa vie, on néglige toujours quelque grave 
-            <lb/>détail, hélas ! </p>
-            </div2>
-            <div2 type="questionnaire">
-            <head>Questionnaire.</head>
-            <list>
-            <item>— Que faisait la petite hirondelle sous l'auvent du pignon ? </item>
-            <item>— Qui l'aidait dans son travail ? </item>
-            <item>— Comment le nid fut-il achevé rapidement ? </item>
-            <item>— Comparez cette façon de construire à celle du premier nid ? </item>
-            <item>— Quelle réflexion cette particularité, ce concours amical, inspira-t-il à <persName type="fictif" key="suzette">Suzette</persName> ? </item>
-            <item>— Reproduisez la réponse du père.</item>
-            <item>— A quoi peut servir une assurance ? </item>
-            <item>— Pourquoi tant de gens négligent-ils de s'assurer ? </item>
-            <item>— Quel regret exprima le fermier ? </item>
-            </list>
-            </div2>
-            <div2 type="exercices">
-            <head>DÉVELOPPEMENT DES SUJETS PROPOSÉS POUR EXERCICES.</head>
-            <div3 type="morale">
-            <head>Morale.</head>
-            <div4 type="questions">    
-            <list>
-            <item>— Quelle vertu pratiquent les hommes qui vivent entre eux comme des frères ? </item>
-            <item>— Pour que la fraternité règne entre élèves, comment doivent-elles être les unes pour les autres ? </item>
-            <item>— Pourquoi celles qui méprisent et dédaignent tes pauvres agissent-elles mal ? </item>
-            <item>— Pourquoi les égoïstes, les envieux, les médisants ne pratiquent-ils pas la fraternité ? </item>
-            </list>
-            </div4>    
-            <div4 type="réponses">    
-            <p>Les hommes qui vivent entre eux comme les enfants d'un même 
-            <lb/>père, c'est-à-dire qui se prêtent un mutuel concours dans les cir-
-            <lb/>constances difficiles, pratiquent la fraternité. Dans nul pays du monde 
-            <lb/>on ne la pratique aussi largement ot aussi délicatement que dans notre
-            <lb/><placeName type="france" subtype="pays">France</placeName>.</p>
-            <p>Parmi les élèves d'une même école, la fraternité ne règne pas 
-            <lb/>toujours. Combien d'entre elles sont égoïstes, dures, moqueuses à 
-            <lb/>l'égard de leurs compagnes, surtout quand ces dernières sont faibles, 
-            <lb/>timides, disgraciées de la nature ! Ne devraient-elles pas toutes être
-            <lb/>indulgentes les unes pour les autres, prévenantes et disposées à partager 
-            <lb/>leur superflu avec celles qui n'ont pas le nécessaire? Elles montreraient 
-            <lb/>ainsi qu'elles se regardaient comme des sœurs dans cette grande famille 
-            <lb/>qu'on appelle l'école. </p>
-            <p>Mépriser, dédaigner la société d'une jeune fille douce, sage, bonne,
-            <lb/>parce qu'elle appartient à une famille peu favorisée de la fortune, c'est 
-            <lb/>quelque chose à la fois de sot, de méchant et de lâche. Parce que
-            
-            <pb type="page" n="131"/>
-            <fw type="header">FRATERNITÉ. 131</fw>
-                
-            <lb/>cette pauvre enfant n’a pas une aussi jolie robe ; parce que sa coiffure 
-            <lb/>est moins fraîche, ses bottines moins élégantes ; parce qu'elle n'a pas 
-            <lb/>de bijoux à suspendre à ses oreilles ou de bagues pour orner sa main 
-            <lb/>laborieuse, on prend avec elle des airs de hauteur, on la regarde 
-            <lb/>avec mépris, on s'égaye à ses dépens, on s’en éloigne avec ostenta-
-            <lb/>tion. Une telle conduite, de tels procédés sont indignes et ne sauraient 
-            <lb/>être blâmés trop sévèrement.</p>
-            <p>L'<term>egoïste</term> ne songe qu'à lui et ne voit que ses intérêts ou sa conve-
-            <lb/>nance. Le <term>médisant</term> dévoile sans nécessité et avec un méchant plaisir 
-            <lb/>ce qui a été répréhensible dans la vie d'autrui, dans le but de 
-            <lb/>l'affliger et de lui nuire. L'envieux est chagrin toutes fois qu'il apprend 
-            <lb/>qu'une chose avantageuse survient à son prochain. De telles personnes 
-            <lb/>ignorent ce qu'est la fraternité ; et elles feraient de ce monde un enfer, 
-            <lb/>si elles étaient en majorité.</p>
-            </div4> 
-            </div3>
-            <div3 type="instruction_civique">
-            <head>Instruction civique.</head>
-            <div4 type="questions">    
-            <list>
-            <item>— DES ASSURANCE.</item>
-            <item>— Qu'est-ce que faire une assurance contre l'incendie ? </item>
-            <item>— Quel avantage en résulte ? </item>
-            <item>— Qu'est-ce que faire une assurance sur la vie ? </item>
-            <item>— Quelle sécurité, quelle consolation est-ce pour un père, pour une mère ? </item>
-            <item>— Quels avantages y a-t-il à faire une assurance sur la tête d'un enfant ? </item>
-            </list>
-            </div4>
-            <div4 type="réponses">    
-            <p>Faire une <term>assurance</term> contre l'incendie, contre la 
-            <lb/>grêle, contre la perte du bétail, c'est s'engager par un acte écrit à payer annuellement 
-            <lb/>une somme déterminée à une compagnie financière, afin d'être indem-
-            <lb/>nisé dans le cas où le feu consumerait tout ou partie de notre habita-
-            <lb/>tion, où la grêle détruirait nos récoltes, enfin où une épidémie ferait 
-            <lb/>périr notre bétail. Ainsi, grâce à un sacrifice peu considérable, on 
-            <lb/>évite les pertes ruineuses qui sont la conséquence d'événements de 
-            <lb/>cette sorte.</p>
-            <p>Faire <term>une assurance sur la vie</term>, c'est payer chaque année à une 
-            <lb/>société financière une somme déterminée pour toucher, à la mort de
-            <lb/>la personne sur laquelle a été contracté l'engagement, une somme 
-            <lb/>fixée par un règlement approuvé par l'administration supérieure. Pour 
-            <lb/>un père, une mère, peu favorisés de la fortune, c'est une consolation 
-            <lb/>de savoir qu'au prix d'un sacrifice modéré, ils assurent à leurs enfants 
-            <lb/>une certaine aisance lorsque la mort aura enlevé à ces derniers leurs
-            <lb/>soutiens naturels.</p>
-            <p>L'<term>assurance sur la tête d'un enfant</term> assuré à celui-ci, et ordinaire-
-            <lb/>ment pour l'époque de sa majorité, la jouissance d'un capital qui lui 
-            <lb/>permet de s'établir dans des conditions favorables. C'est un acte de 
-            <lb/>haute prévoyance de la part des parents.</p>
-            </div4>
-            </div3>
-            <div3 type="composition">
-            <head>Composition.</head>
-            <div4 type="questions">    
-            <list>
-            <item>— Un vigneron tombe malade au printemps, précisément à l'époque des travaux les plus importants : que pourraient faire ses voisins ? </item>
-            <item>— Qu'en résulterait-il ? </item>
-            <item>— (Exposer le sujet sous forme de récit.)</item>
-            </list>
-            </div4>
-            <div4 type="réponses">    
-            <p>Pour les élèves d'une ville: Une ouvrière tombe malade; elle est 
-            <lb/>veuve et chargée de trois enfants... (Comme précédemment.)</p>
-            <p>(Voir, pour la manière d'établir le plan de ce récit et pour donner les
-            <lb/>développements, page 150, Les vacances de Pâques, COURS DE COMPO-
-            <lb/>SITION FRANÇAISE (Degré élémentaire et moyen), par <persName type="historique">E. LAPORTE</persName>.)</p>
-            </div4>    
-            </div3>
-            <div3 type="industrie">
-            <head>Industrie.</head>
-            <div4 type="questions">
-            <list>
-            <item>— UNE MAISON.</item>
-            <item>— Parties d'une maison, 1° établies par les terrassiers ; — 2° bâties par les maçons ; — 3° faites par les charpentiers, les fumistes, les plâtriers, les menuisiers ; — 4° par d'autres ouvriers.</item>
-            </list>
-            </div4>  
-            <div4 type="réponses">
-            <p>Avant de commencer la construction d'une maison, on choisit un
-            <lb/>emplacement convenable, puis l'architecte trace le plan ot l'entrepre-
-            
-            <pb type="page" n="132"/>                    
-            <fw type="header">132 SUZETTE.</fw>
-                             
-            <lb/>neur en indique sur le sol les lignes principales au moyen de piquets 
-            <lb/>et de cordes tendues.</p>
-            <p>Les <term>terrassiers</term> viennent alors et creusent les fondations, la cave et 
-            <lb/>les fosses. Puis c'est le tour des maçons, qui établissent en grosses 
-            <lb/>pierres les fondations ; ils élèvent ensuite les murs extérieurs et inté-
-            <lb/>rieurs, construisent la voûte de la cave, le tuyau de chaque cheminée 
-            <lb/>et les escaliers, quand les marches sont de pierre.</p>
-            <p>Les <term>charpentiers</term> disposent les poutres, les solives et établissent les 
-            <lb/>planchers ; lorsque les murailles sont terminées, ils placent la char-
-            <lb/>pente qui supportera la toiture, dont la confection regarde les couvreurs. 
-            <lb/>Les <term>fumistes</term> arrangent le foyer et achèvent les cheminées; les <term>plâ-
-            <lb/>triers</term> recouvrent les murailles, cloisons et plafonds d'un enduit de 
-            <lb/>plâtre blanc ; ordinairement; ils se chargent encore du carrelage; les
-            <lb/><term>menuisiers</term> posent les escaliers de bois los boiseries, les portes, les 
-            <lb/>fenêtres, les parquets, les rayons des picards, etc. D'autres artisans 
-            <lb/>se chargent des papiers de tenture, de la serrurerie, des vitres, des 
-            <lb/>peintures, des tapis et des rideaux.</p>
-            </div4>
-            </div3>
-            </div2>
             </div1>
         </body>
     </text>
