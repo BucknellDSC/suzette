@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/djakacki/suzette/master/out/suzette-NewCustom.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Suzette: a Digital Edition</title>
+            <respStmt>
+               <persName>John Westbrook</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Editor</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Sarah Haber</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2020 - Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName xml:id="JAKA1">Diane Jakacki</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Project Manager</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annie Girton</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2018-2020</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Sarah Haber</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2020-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Rebecca Heintzelman</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2020-Present</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Bucknell University</distributor>
+            <pubPlace>
+               <address>
+                  <addrLine>One Dent Drive</addrLine>
+                  <addrLine>Lewisburg, PA 17837</addrLine>
+               </address>
+            </pubPlace>
+            <availability>
+               <licence>Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Suzette: Livre de Lecture Courante à l’Usage des Jeunes Filles.
+                     Morale—Leçon de choses, Economie Domestique – Ménage – Cuisine –
+                     Couture</title>
+                  <author>Robert Halt</author>
+                  <textLang>French</textLang>
+                  <imprint>
+                     <date>1889</date>
+                     <distributor>Libraire Classique Paul Delaplane</distributor>
+                     <pubPlace>Paris, France</pubPlace>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+            <list>
+               <item xml:id="âme">L'âme</item>
+               <item xml:id="enfant_école"> L'enfant dans école </item>
+               <item xml:id="enfant_famille"> L'enfant dans la famille </item>
+               <item xml:id="envers_dieu"> Devoirs envers Dieu </item>
+               <item xml:id="envers_semblables"> Devoirs envers nos semblables </item>
+               <item xml:id="envers_serviteur"> Devoirs envers les serviteurs </item>
+               <item xml:id="envers_soi-même"> Devoirs envers soi-même </item>
+               <item xml:id="extérieurs"> Les biens extérieurs </item>
+               <item xml:id="fréres_sœurs"> Devoirs des frères et sœurs </item>
+               <item xml:id="patrie"> La patrie </item>
+               <item xml:id="instruction_civique"> Instruction civique </item>
+               <item xml:id="civilité"> Civilité </item>
+               <item xml:id="français"> Français </item>
+               <item xml:id="descriptions"> Descriptions </item>
+               <item xml:id="lettres"> Lettres </item>
+               <item xml:id="récits"> Récits </item>
+               <item xml:id="récits_historiques"> Récits historiques </item>
+               <item xml:id="sujets-moraux_imagination"> Sujets-moraux ou d'imagination </item>
+               <item xml:id="histoire"> Histoire </item>
+               <item xml:id="afrique"> Afrique </item>
+               <item xml:id="amérique"> Amérique </item>
+               <item xml:id="asie"> Asie </item>
+               <item xml:id="europe"> Europe </item>
+               <item xml:id="france"> France </item>
+               <item xml:id="géographie"> Géographie </item>
+               <item xml:id="océanie"> Océanie </item>
+               <item xml:id="minéraux"> Minéraux </item>
+               <item xml:id="sciences_naturelles"> Sciences Naturelles </item>
+               <item xml:id="végétaux"> Végétaux </item>
+               <item xml:id="arbres_non_cultivés"> 1° Arbres Non Cultivés </item>
+               <item xml:id="herbes_plantes_sauvages"> 2° Herbes ou Plantes Sauvages </item>
+               <item xml:id="arbres_cultivés"> 3° Arbres Cultivés </item>
+               <item xml:id="arbustes_cultivés"> 4° Arbustes Cultivés </item>
+               <item xml:id="céréales"> 5° Céréales </item>
+               <item xml:id="legumes_racines"> 6° Légumes, Racines, etc. </item>
+               <item xml:id="divers_végétaux"> 7° Divers (Vegetaux) </item>
+               <item xml:id="homme"> 1° L'Homme </item>
+               <item xml:id="animaux_domestiques"> 2° Animaux Domestiques </item>
+               <item xml:id="animaux_sauvages"> 3° Animaux Sauvages </item>
+               <item xml:id="sciences_physiques"> Notions Relatives aux Sciences Physiques </item>
+               <item xml:id="matières_objets_fabriques"> Matières et objets fabriqués </item>
+               <item xml:id="construction"> Construction </item>
+               <item xml:id="machines_appareils"> Machines, appareils, ustensiles, vases </item>
+               <item xml:id="outils"> Outils </item>
+               <item xml:id="etoffes_habillement"> Étoffes, habillement </item>
+               <item xml:id="divers_industrie"> Divers (Industrie) </item>
+               <item xml:id="économie_domestique"> Économie Domestique </item>
+               <item xml:id="aliments_cuisine"> Aliments et cuisine </item>
+               <item xml:id="vêtements_domestiques"> Vêtements </item>
+               <item xml:id="basse-cour"> Basse-cour </item>
+               <item xml:id="corps_habitations"> Corps et habitations </item>
+               <item xml:id="vêtements_hygiene"> Vêtements (Hygiene) </item>
+               <item xml:id="aliments"> Aliments </item>
+               <item xml:id="maladies_remèdes"> Maladies, etc.; remèdes </item>
+            </list>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="fr">French</language>
+            <language ident="en">English</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb xml:id='Suzette_ch87-92-0001.jpg' n='1'/>
+               <p>
+                  
+                     87. — Les fraises du bois joli. (Élève, p. 183.)
+                     <lb/>Mme Richard portait au bras un panier ; Suzette un 
+                     <lb/>autre plus petit, Marthe, un troisième ; et M. Pascal 
+                  
+               </p>
+               <p>
+                  
+                     Fontaine des Innocents, à Paris.
+                  
+               </p>
+               <p>
+                  
+                     ne portait rien du 
+                     <lb/>tout. Il marchait, 
+                     <lb/>le nez au vent, les 
+                  
+               </p>
+               <p>
+                  
+                     mains dans les 
+                     <lb/>poches, comme 
+                     <lb/>il appartient aux 
+                     <lb/>messieurs quand 
+                     <lb/>ils accompa-
+                     <lb/>gnent les dames 
+                     <lb/>au marché.
+                     <lb/>Car on allait 
+                     <lb/>au marché ; Mme
+                     <lb/>Richard, ayant à 
+                     <lb/>renouveler ses 
+                     <lb/>provisions, avait 
+                     <lb/>voulu donner à 
+                     <lb/>Suzette le spec-
+                     <lb/>tacle des gran-
+                     <lb/>des Halles au 
+                     <lb/>matin.
+                     <lb/>C&apos;était à peine 
+                     <lb/>l&apos;aube ; la lune 
+                     <lb/>s&apos;effaçait. On ar-
+                  
+               </p>
+               <p>
+                  
+                     rivait par la rue Saint-Denis, quand apparut, dans un 
+                     <lb/>petit square*, la Fontaine des Innocents, cette merveille 
+                     <lb/>d&apos;architecture et de sculpture.
+                     <lb/>A la pâle lueur du gaz, elle se dessinait en silhouette*
+                     <lb/>si élégante que toute la troupe en fut frappée.
+                     <lb/>Les visages des belles nymphes*, éclairés d&apos;en bas, 
+                     <lb/>semblaient voilés d&apos;une grâce mystérieuse ; entre les 
+                  
+               </p>
+               <pb xml:id='Suzette_ch87-92-0002.jpg' n='2'/>
+               <p>
+                  
+                     LES FRAISES DU BOIS JOLI. 303
+                     <lb/>élégantes colonnes elles tenaient poétiquement leurs 
+                     <lb/>urnes ; de la vasque* du milieu, l&apos;eau coulait avec un 
+                     <lb/>clapotement doux et musical.
+                     <lb/>On s&apos;approcha, on fit le tour du monument.
+                     <lb/>De l&apos;autre côté, adossé au rebord du bassin, il y avait 
+                     <lb/>un autre personnage, mais, celui-là, en chair et en os.
+                     <lb/>C&apos;était une bonne grosse mère au visage rubicond enve-
+                     <lb/>loppé d&apos;une marmotte jaune à carreaux. La tête appuyée 
+                     <lb/>sur sa main, elle ronflait doucement entre des paniers 
+                     <lb/>couverts de larges feuilles vertes et d&apos;où montait un 
+                     <lb/>parfum suave.
+                     <lb/>— Des fraises ! s&apos;écria Pascal.
+                     <lb/>Et le voilà, au même instant, qui se met à entonner :
+                     <lb/>Quand de juin s&apos;éveille le mois, 
+                     <lb/>Allez voir les fraises des bois 
+                     <lb/>Qui rougissent dans la verdure, 
+                     <lb/>Plus rouges que le vif corail, 
+                     <lb/>Balançant comme un éventail 
+                     <lb/>Leur feuille à triple découpure.
+                     <lb/>Qui veut des fraises du bois joli ?
+                     <lb/>En voici, 
+                     <lb/>En voici mon panier tout rempli 
+                     <lb/>Des fraises du bois joli !
+                  
+               </p>
+               <p>
+                  
+                     Questionnaire. — Comment se 
+                     <lb/>rendit-on au marché ? — Que faisait 
+                     <lb/>Pascal ? — Pourquoi Mme Richard al
+                     <lb/>lait-elle aux Halles ? — Décrivez la 
+                     <lb/>Fontaine des Innocents. — Qui était 
+                  
+               </p>
+               <p>
+                  
+                     adossée au bassin ? — Que faisait-elle 
+                     <lb/>et quels objets l&apos;entouraient ? — Récitez 
+                     <lb/>le premier couplet de la chanson de 
+                     <lb/>Pascal.
+                  
+               </p>
+               <p>
+                  
+                     DÉVELOPPEMENT DES SUJETS PROPOSÉS POUR EXERCICES.
+                     <lb/>Sciences naturelles. — Qu&apos;est-ce que les fraises ? — Variétés 
+                     <lb/>de fraises : ce qui les distinque. — Comment plante-t-on, cultive-t
+                     <lb/>on, soigne-t-on les fraises ? — A combien peut-on évaluer le produit 
+                     <lb/>annuel d&apos;un are de fraises el la dépense qu&apos;il occasionne ?
+                     <lb/>La fraise est un fruit sucré et parfumé, de couleur rouge le plus 
+                     <lb/>souvént, qui croît spontanément dans les bois et que l&apos;on cultive dans 
+                     <lb/>les jardins. Il y en a diverses variétés ; la fraise de tous les mois, qui 
+                     <lb/>donne ses produits pendant la plus grande partie de l&apos;année ; la fraise 
+                     <lb/>des bois, petite et très parfumée ; la fraise musquée, les caperons aux 
+                     <lb/>fruits volumineux et abondants.
+                     <lb/>On plante les fraises sur un sol sain, légèrement fumé, par des 
+                     <lb/>rejetons qu&apos;on recueille sur les filets qui se détachent de la plante 
+                     <lb/>au cours de sa végétation. On bine, on arrose fréquemment et l&apos;on 
+                     <lb/>entoure les pieds de paille afin que la terre ne souille pas les fruits 
+                     <lb/>lorsqu&apos;il pleut.
+                  
+               </p>
+               <pb xml:id='Suzette_ch87-92-0003.jpg' n='3'/>
+               <p>
+                  
+                     304 SUZETTE.
+                     <lb/>(Pour ce qui concerne la seconde partie de la question, il faudra 
+                     <lb/>demander des renseignements à un jardinier de la localité, car les prix 
+                     <lb/>demandés varient selon les conditions et les facilités de la vente.)
+                     <lb/>LE CORAIL. — Donnez une idée du corail. — Comment le recueille-t-
+                     <lb/>on ? — Emplois du corail.
+                     <lb/>Le corail est le résultat du travail de certains êtres inférieurs de la 
+                     <lb/>mer qui tiennent le milieu entre l&apos;animal et la plante ; il se présente 
+                     <lb/>avec l&apos;apparence d&apos;une sorte de petit arbre à rameaux formés d&apos;une 
+                     <lb/>matière rouge, dure et susceptible d&apos;un beau poli, fixée au fond de la 
+                     <lb/>mer, et qu&apos;on recueille avec des instruments munis de crochets. Le 
+                     <lb/>corail est employé dans la bijouterie pour confectionner des colliers, 
+                     <lb/>des pendants d&apos;oreilles, des bracelets, des chapelets, etc.
+                     <lb/>Économie domestique. — Qu est-ce qu&apos;une halle pour marché ?
+                     <lb/>— Quels sont les meilleurs moments pour y acheter à bon compte, et 
+                     <lb/>pourquoi ? — Comment achète-t-on ? — Quels avantages présentent 
+                     <lb/>les marchés et les halles ?
+                     <lb/>Une halle pour marché est une vaste construction, une sorte de 
+                     <lb/>hangar aux parois à claire-voie pour la libre circulation de l&apos;air, que 
+                     <lb/>l&apos;on construit ordinairement en pierres de taille, en briques et en fer.
+                     <lb/>On y amène des denrées de toute sorte ; les marchands s&apos;y installent 
+                     <lb/>en des endroits déterminés et y vendent leurs produits aux habitants 
+                     <lb/>du quartier ou de la ville.
+                     <lb/>Comme nombre de marchands ne doivent occuper la place qui leur 
+                     <lb/>est concédée que pendant un temps déterminé, le moment le plus 
+                     <lb/>favorable pour acheter à bon compte ce qu&apos;ils apportent, est celui qui 
+                     <lb/>précède l&apos;heure à laquelle ils devront céder leur installation à d&apos;autres.
+                     <lb/>En effet, ils ont intérêt à se débarrasser de leurs denrées lorsqu&apos;elles 
+                     <lb/>ne peuvent se conserver, et ils sont disposés à faire des concessions 
+                     <lb/>quand ils s&apos;aperçoivent que le signal de leur départ va être donné. 
+                     <lb/>Pour acheter aux halles en de bonnes conditions, on conseille de 
+                     <lb/>circuler posément le long des étaux des marchands afin de se rendre 
+                     <lb/>compte de la qualité de leurs produits et des prix qu&apos;on réclame, 
+                     <lb/>sans se laisser troubler par les propositions et les offres de service des
+                     <lb/>intéressés. Une fois le choix arrêté, on demande les denrées et l&apos;on 
+                     <lb/>s&apos;informe du prix ; s&apos;il ne paraît pas exagéré, on conclut l&apos;affaire et l&apos;on 
+                     <lb/>part sans plus tarder.
+                     <lb/>Les halles et les marchés présentent de grands avantages, car on y
+                     <lb/>trouve réunies, sous la main pour ainsi dire, les provisions nécessaires 
+                     <lb/>à la cuisine du ménage ; il n&apos;est pas alors besoin d&apos;entreprendre de 
+                     <lb/>longues courses pour se les procurer, et leur quantité permet de faire 
+                     <lb/>un choix correspondant à la somme dont on peut disposer. Les habi-
+                     <lb/>tants des villes seraient on ne peut plus embarrassés et fatigués s&apos;il 
+                     <lb/>leur fallait se rendre successivement chez les producteurs ou chez 
+                     <lb/>divers marchands afin de se munir des choses variées qu&apos;exige la 
+                     <lb/>préparation d&apos;un repas.
+                  
+               </p>
+         </div>
+      </body>
+  </text>
+</TEI>

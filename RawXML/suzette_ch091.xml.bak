@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/djakacki/suzette/master/out/suzette-NewCustom.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="http://moravianlives.bucknell.edu.s3.amazonaws.com/data/ml_cwrc.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Suzette: a Digital Edition</title>
+            <respStmt>
+               <persName>John Westbrook</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Editor</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Sarah Haber</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2020 - Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName xml:id="JAKA1">Diane Jakacki</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Project Manager</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annie Girton</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2018-2020</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Sarah Haber</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2020-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Rebecca Heintzelman</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2020-Present</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Bucknell University</distributor>
+            <pubPlace>
+               <address>
+                  <addrLine>One Dent Drive</addrLine>
+                  <addrLine>Lewisburg, PA 17837</addrLine>
+               </address>
+            </pubPlace>
+            <availability>
+               <licence>Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Suzette: Livre de Lecture Courante à l’Usage des Jeunes Filles.
+                     Morale—Leçon de choses, Economie Domestique – Ménage – Cuisine –
+                     Couture</title>
+                  <author>Robert Halt</author>
+                  <textLang>French</textLang>
+                  <imprint>
+                     <date>1889</date>
+                     <distributor>Libraire Classique Paul Delaplane</distributor>
+                     <pubPlace>Paris, France</pubPlace>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+            <list>
+               <item xml:id="âme">L'âme</item>
+               <item xml:id="enfant_école"> L'enfant dans école </item>
+               <item xml:id="enfant_famille"> L'enfant dans la famille </item>
+               <item xml:id="envers_dieu"> Devoirs envers Dieu </item>
+               <item xml:id="envers_semblables"> Devoirs envers nos semblables </item>
+               <item xml:id="envers_serviteur"> Devoirs envers les serviteurs </item>
+               <item xml:id="envers_soi-même"> Devoirs envers soi-même </item>
+               <item xml:id="extérieurs"> Les biens extérieurs </item>
+               <item xml:id="fréres_sœurs"> Devoirs des frères et sœurs </item>
+               <item xml:id="patrie"> La patrie </item>
+               <item xml:id="instruction_civique"> Instruction civique </item>
+               <item xml:id="civilité"> Civilité </item>
+               <item xml:id="français"> Français </item>
+               <item xml:id="descriptions"> Descriptions </item>
+               <item xml:id="lettres"> Lettres </item>
+               <item xml:id="récits"> Récits </item>
+               <item xml:id="récits_historiques"> Récits historiques </item>
+               <item xml:id="sujets-moraux_imagination"> Sujets-moraux ou d'imagination </item>
+               <item xml:id="histoire"> Histoire </item>
+               <item xml:id="afrique"> Afrique </item>
+               <item xml:id="amérique"> Amérique </item>
+               <item xml:id="asie"> Asie </item>
+               <item xml:id="europe"> Europe </item>
+               <item xml:id="france"> France </item>
+               <item xml:id="géographie"> Géographie </item>
+               <item xml:id="océanie"> Océanie </item>
+               <item xml:id="minéraux"> Minéraux </item>
+               <item xml:id="sciences_naturelles"> Sciences Naturelles </item>
+               <item xml:id="végétaux"> Végétaux </item>
+               <item xml:id="arbres_non_cultivés"> 1° Arbres Non Cultivés </item>
+               <item xml:id="herbes_plantes_sauvages"> 2° Herbes ou Plantes Sauvages </item>
+               <item xml:id="arbres_cultivés"> 3° Arbres Cultivés </item>
+               <item xml:id="arbustes_cultivés"> 4° Arbustes Cultivés </item>
+               <item xml:id="céréales"> 5° Céréales </item>
+               <item xml:id="legumes_racines"> 6° Légumes, Racines, etc. </item>
+               <item xml:id="divers_végétaux"> 7° Divers (Vegetaux) </item>
+               <item xml:id="homme"> 1° L'Homme </item>
+               <item xml:id="animaux_domestiques"> 2° Animaux Domestiques </item>
+               <item xml:id="animaux_sauvages"> 3° Animaux Sauvages </item>
+               <item xml:id="sciences_physiques"> Notions Relatives aux Sciences Physiques </item>
+               <item xml:id="matières_objets_fabriques"> Matières et objets fabriqués </item>
+               <item xml:id="construction"> Construction </item>
+               <item xml:id="machines_appareils"> Machines, appareils, ustensiles, vases </item>
+               <item xml:id="outils"> Outils </item>
+               <item xml:id="etoffes_habillement"> Étoffes, habillement </item>
+               <item xml:id="divers_industrie"> Divers (Industrie) </item>
+               <item xml:id="économie_domestique"> Économie Domestique </item>
+               <item xml:id="aliments_cuisine"> Aliments et cuisine </item>
+               <item xml:id="vêtements_domestiques"> Vêtements </item>
+               <item xml:id="basse-cour"> Basse-cour </item>
+               <item xml:id="corps_habitations"> Corps et habitations </item>
+               <item xml:id="vêtements_hygiene"> Vêtements (Hygiene) </item>
+               <item xml:id="aliments"> Aliments </item>
+               <item xml:id="maladies_remèdes"> Maladies, etc.; remèdes </item>
+            </list>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="fr">French</language>
+            <language ident="en">English</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <p>
+               
+                  91. — Asperges d&apos;Argenteuil*. (Élève, p. 191.)
+                  <lb/>Il faisait maintenant grand jour. On sortit des pavil-
+               
+            </p>
+            <p>
+               
+                  lons. Et ce fut 
+                  <lb/>comme si, l&apos;on 
+                  <lb/>entrait dans un 
+               
+            </p>
+            <p>
+               
+                  autre im-
+                  <lb/>mense mar-
+                  <lb/>ché, celui-ci 
+                  <lb/>en plein air.
+                  <lb/>La file des 
+                  <lb/>chariots de 
+                  <lb/>cresson é-
+                  <lb/>tait partie.
+                  <lb/>Mais il y
+                  <lb/>avait un to-
+                  <lb/>hu-bohu* de 
+                  <lb/>charrettes, 
+                  <lb/>les unes vi-
+                  <lb/>des, les au-
+                  <lb/>tres pleines 
+                  <lb/>de légumes, 
+                  <lb/>produits des 
+                  <lb/>maraîchers* 
+                  <lb/>des envi- 
+                  <lb/>rons de Pa-
+               
+            </p>
+            <p>
+               
+                  ris, la concurren-
+                  <lb/>ce aux légumes 
+                  <lb/>venus de loin par 
+                  <lb/>chemin de fer.
+               
+            </p>
+            <p>
+               
+                  Et les maraîchers criaient gesticulaient, appelaient 
+                  <lb/>en hâte l&apos;acheteur.
+               
+            </p>
+            <p>
+               
+                  Et les maraîchers criaient, gesticulaient, appelaient 
+                  <lb/>en hâte l&apos;acheteur ; car ils devaient déguerpir au coup 
+               
+            </p>
+            <pb xml:id='Suzette_ch87-92-0015.jpg' n='15'/>
+            <p>
+               
+                  316  SUZETTE.
+                  <lb/>de huit heures sonnant à l&apos;église Saint-Eustache, pour 
+                  <lb/>rendre le pavé à la circulation. L&apos;heure approchait.
+                  <lb/>C&apos;est cet instant, qu&apos;avec patience, attend la ménagère 
+                  <lb/>soigneuse de ses deniers. Car elle sait que l&apos;orgueil du 
+                  <lb/>marchand et ses prix baissent au son de cette cloche ; 
+                  <lb/>il ne tient pas à remporter sa marchandise invendue.
+                  <lb/>Tout en mettant Suzette au courant de ce petit tour, 
+                  <lb/>Mme Richard guignait de l&apos;œil une superbe botte d&apos;as-
+                  <lb/>perges.
+                  <lb/>— Asperges d&apos;Argenteuil, lui dit-elle à l&apos;oreille ; je 
+                  <lb/>veux t&apos;en faire goûter... Fameuses !
+                  <lb/>Elle acheva l&apos;éloge par un de ces petits claquements 
+                  <lb/>de langue qui en disent plus long que des discours.
+                  <lb/>Huit heures moins cinq !
+                  <lb/>Suivies de Pascal, aux bras ballants, les trois dames 
+                  <lb/>et les trois paniers s&apos;avancèrent en bon ordre. Et la 
+                  <lb/>bataille s&apos;engagea avec les asperges d&apos;Argenteuil.
+                  <lb/>C&apos;étaient, en effet, de bien belles asperges, plus 
+                  <lb/>grosses que le pouce, régulières, et d&apos;un lilas rosé si 
+                  <lb/>fondu, si délicat !
+                  <lb/>Mais la marchande ne les valait pas. Elle avait une mous-
+                  <lb/>tache, des yeux revêches ; les os lui perçaient la peau.
+                  <lb/>— Combien cette botte ?
+                  <lb/>— Trois francs soixante-quinze.
+                  <lb/>Mme Richard leva au ciel ses bras et son panier :
+                  <lb/>— Trois francs soixante-quinze ! ! !
+                  <lb/>— Pas un sou de moins.
+                  <lb/>Après une minute de discussion, elle passa à trois cin-
+                  <lb/>quante. Mais à partir de ce moment, ce fut une barre 
+                  <lb/>de fer. La tante s&apos;égosilla en vain.
+                  <lb/>Suzette toucha du coude Pascal et lui dit en riant  
+                  <lb/>— Tu dois savoir la chanson des asperges ? Chante
+                  <lb/>la-lui.
+                  <lb/>— Bah ! celle-là n&apos;entend pas la musique, répondit le 
+                  <lb/>chanteur.
+                  <lb/>La bravoure de Mme Richard faiblissait devant l&apos;en-
+                  <lb/>nemi. Enfin, comme dernier et décisif argument, elle 
+                  <lb/>invoqua le coup de cloche de huit heures, qui sonnèrent 
+                  <lb/>juste, amicalement.
+               
+            </p>
+            <pb xml:id='Suzette_ch87-92-0016.jpg' n='16'/>
+            <p>
+               
+                  ASPERGES D&apos;ARGENTEUIL. 317
+                  <lb/>— Le coup de cloche ! s&apos;écria la paysanne, le coup de 
+                  <lb/>cloche, je m&apos;en moque comme d&apos;une guigne ! Je suis 
+                  <lb/>assez riche pour manger mes asperges, si je ne les 
+                  <lb/>vends pas !
+                  <lb/>Et, tout en montant dans sa charrette avec sa mar-
+                  <lb/>chandise, elle grommela contre les mauvais clients.
+                  <lb/>Mais on lui avait déjà tourné le dos.
+               
+            </p>
+            <p>
+               
+                  Questionnaire. — Où entra-t-on 
+                  <lb/>en sortant des pavillons ? — Qu&apos;est-ce qui 
+                  <lb/>avait remplace les chariets de cresson ?
+                  <lb/>Que faisaient les marachers, et pour
+                  <lb/>quoi ? — Quel moment attend avec im
+                  <lb/>patience la ménagère pour faire ses 
+                  <lb/>achats de lâgumes ? — Que dit Mme Ri
+               
+            </p>
+            <p>
+               
+                  chard à Suzette à propos d&apos;asperges ? — 
+                  <lb/>Comment était la marchande ? — Com
+                  <lb/>ment la tante essaya-t-elle d&apos;avoir une 
+                  <lb/>belle botte d&apos;asperges ? — Que dit la 
+                  <lb/>maussade marchande au coup de huit 
+                  <lb/>heures ?
+               
+            </p>
+            <p>
+               
+                  DÉVELOPPEMENT DES SUJETS PROPOSÉS POUR EXERCICES.
+                  <lb/>Civilité. — Que pensez-vous de la conduite de la marchande ? 
+                  <lb/>Qu&apos;aurait-elle dû faie et dire ? — Quand dit-on qu&apos;une personne est 
+                  <lb/>polie ? — Qu&apos;indiquent des manières polies ? — Quelles qualités sup-
+                  <lb/>pose la politesse ?
+                  <lb/>La conduite de la marchande est celle d&apos;une personne grossière et 
+                  <lb/>insolente. Si elle trouvait insuffisant le prix offert par Mme Richard, 
+                  <lb/>elle devait lui dire simplement : « Je ne puis céder la botte au-dessous 
+                  <lb/>de 3 fr, 75 ; il est inutile d&apos;insister. » 
+                  <lb/>On dit qu&apos;une personne est polie lorsqu&apos;elle observe toujours, mais 
+                  <lb/>sans affectation, les usages généralement adoptés dans la société pour 
+                  <lb/>rendre les relations agréables et faciles. Un enfant poli se gardera de 
+                  <lb/>la brusquerie, des manières hautaines, impérieuses et dédaigneuses ; 
+                  <lb/>il témoignera des égards surtout aux personnes faibles ou agées ; il
+                  <lb/>sera silencieux à table et attendra sans impatience qu&apos;on ait servi les 
+                  <lb/>autres ; il n&apos;interrompra jamais, contredira encore moins et évitera de 
+                  <lb/>parler sur un ton élevé, 
+                  <lb/>Les manières polies indiquent que l&apos;on sait concilier avec agrément 
+                  <lb/>ce qu&apos;on doit aux autres et ce qu on doit à soi-mème ; elles font par
+                  <lb/>donner bien des défauts et elles donnent plus de relief aux bonnes 
+                  <lb/>qualités.
+                  <lb/>La politesse suppose que l&apos;on a du cur, de l&apos;esprit et de la délica-
+                  <lb/>tesse dans les sentiments ; on prend toujours bonne opinion de ceux 
+                  <lb/>chez qui l&apos;on reconnaît des manières soignées et un langage poli ; c&apos;est 
+                  <lb/>mme ainsi qu&apos;on juge si quelqu&apos;un a reçu une bonne éducation.
+                  <lb/>Géographie. — De quelles localités de votre voisinage provien-
+                  <lb/>nent les légumes qu&apos;on achète au marché de votre résidence ? — 
+                  <lb/>Quelles communes de votre arrondissement sont connues pour four-
+                  <lb/>nir tels ou tels légumes ?
+                  <lb/>(Cette question étant exclusivement locale, l&apos;élève seule sera à 
+                  <lb/>même de la développer.)
+                  <lb/>Horticulture. — Dire quelques mots de la culture des asperqes, — 
+                  <lb/>de l&apos;aspect de la plante aux diverses époques de l&apos;année. — Quand 
+                  <lb/>coupe-t-on les asperges ?
+                  <lb/>Les asperges se cultivent dans les champs et les jardins ; mais les 
+                  <lb/>plus belles et les plus productives espèces réclament un terrain léger 
+                  <lb/>18.
+               
+            </p>
+            <pb xml:id='Suzette_ch87-92-0017.jpg' n='17'/>
+            <p>
+               
+                  318  SUZETTE.
+                  <lb/>et abondamment pourvu d&apos;engrais. Au printemps, le pied d&apos;asperges, 
+                  <lb/>qui se ramifie sous le sol en une multitude de racines, pousse des reje-
+                  <lb/>tons de la grosseur du doigt, tendres et de couleur verte avec des
+                  <lb/>nuances roses ; c&apos;est la partie de la plante qu&apos;on mange et que l&apos;on 
+                  <lb/>coupe dès qu&apos;elle peut donner une tige de 20 a 25 centimètres. En été, 
+                  <lb/>le pied d&apos;asperges présente l&apos;aspect d&apos;un joli arbuste au feuillage déli
+                  <lb/>cat, d&apos;un vert foncé, qui porte, en automne, des baies rouges de forme 
+                  <lb/>sphérique et de l&apos;effet le plus gracieux.
+                  <lb/>On commence à couper les asperges au mois d&apos;avril ou de mai selon 
+                  <lb/>que le printemps est plus ou moins précoce ; dans le Midi, c&apos;est dès 
+                  <lb/>le mois de mars que la plante commence à produire.
+                  <lb/>Économie domestique. — Combien un are de terrain peut-il 
+                  <lb/>produire de bottes d&apos;asperges par semaine, et pendant combien de 
+                  <lb/>temps ? — Prix d&apos;une botte ordinaire d&apos;asperges. — Revenu d&apos;un are 
+                  <lb/>planté en asperges, en supposant qu&apos;il nécessite 20 francs de frais. — 
+                  <lb/>Comment sert-on les asperges ? — Manière de préparer les diverses 
+                  <lb/>sauces auxquelles on mange ce léqume.
+                  <lb/>(N. B. — Les trois premières questions sont exclusivement locales, en 
+                  <lb/>ce sens que les produits du terrain et les prix de vente varient selon 
+                  <lb/>les régions, les départements et même les diverses localités ; les 
+                  <lb/>élèves devront prendre des renseignements auprès des personnes 
+                  <lb/>aptes à les instruire à cet égard.)
+                  <lb/>Aussitôt qu&apos;elles ont été cuites à l&apos;eau bouillante, les asperges sont 
+                  <lb/>servies dans un plat long après avoir été égouttées, et chaque convive 
+                  <lb/>en prend à la main, ou avec un ustensile particulier, la quantité qui 
+                  <lb/>lui convient.
+                  <lb/>Ce qui fait la bonne sauce blanche avec laquelle on mange les as-
+                  <lb/>perges, c&apos;est la qualité du beurre et l&apos;emploi du moins possible de 
+                  <lb/>farine. Mettez dans une casserole gros comme un œuf de beurre, du 
+                  <lb/>sel et du poivre blanc ; quand il est fondu, prenez une cuillerée à 
+                  <lb/>bouche de farine ; mêlez et versez petit à petit, en tournant toujours, 
+                  <lb/>presque un verre d&apos;eau bouillante. Quand le tout est délayé, retirez 
+                  <lb/>du feu, ajoutez un jaune d’œuf un peu battu avec un filet de vinaigre 
+                  <lb/>et servez.
+                  <lb/>On mange encore les asperges avec une sauce à l&apos;huile et au vinaigre 
+                  <lb/>exactement composée comme celle de la salade.
+               
+            </p>
+         </div>
+      </body>
+  </text>
+</TEI>
