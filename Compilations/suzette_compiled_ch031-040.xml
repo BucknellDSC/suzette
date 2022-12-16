@@ -1088,6 +1088,85 @@
 	}
 }]]>
         </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/djakacki/suzette/master/Compilations/suzette_compiled_ch031-040.xml?place_annotation_20221216135931957",
+	"type": "oa:Annotation",
+	"dcterms:created": "2022-12-16T18:59:31.957Z",
+	"dcterms:modified": "2022-12-16T19:00:13.515Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/djakacki",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Compilations/suzette_compiled_ch031-040.xml?place_annotation_20221216135931957#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Compilations/suzette_compiled_ch031-040.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "2.3.1"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Compilations/suzette_compiled_ch031-040.xml?place_annotation_20221216135931957#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div1/div2[3]/div3[2]/div4[2]/p/placeName[7]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q113491469",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "2.3.1"
+	}
+}]]>
+        </rdf:Description>
       </rdf:RDF></xenoData><profileDesc>
          <langUsage>
             <language ident="fr">French</language>
@@ -1198,7 +1277,7 @@
                         dépasse trois cents millions d'habitants. Elle renferme un grand nombre de villes populeuses,
                         industrielles, commerçantes ; telles sont : <placeName corresp="suzpl0092" key="Beijing" ref="http://www.wikidata.org/entity/Q956">Péking</placeName>, 1, 200,000 âmes ; 
                         <placeName corresp="suzpl0094" key="Hankou" ref="http://www.wikidata.org/entity/Q1208250">Han-kéou</placeName>, 4,000,000 ; <placeName corresp="suzpl0095" key="Nanjing" ref="http://www.wikidata.org/entity/Q113491483">Nan-king</placeName>, 1,000,000 ; 
-                        <placeName>Nan-tchang</placeName>, 1,000,000 ; <placeName>Sou-tchéou</placeName>, 3,000,000 ; 
+                        <placeName corresp="suzpl0096" key="Nanchang" ref="http://www.wikidata.org/entity/Q113491469">Nan-tchang</placeName>, 1,000,000 ; <placeName>Sou-tchéou</placeName>, 3,000,000 ; 
                         <placeName>Shang-haï</placeName>, 800,000 ; cette ville fait un commerce annuel
                         qui dépasse 700 millions ; <placeName>Canton</placeName>,
                         1,200,000 ; <placeName>Tien-Tsin</placeName>, 400,000.</p>
