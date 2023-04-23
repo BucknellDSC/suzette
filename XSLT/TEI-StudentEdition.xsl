@@ -7,11 +7,11 @@
     <xsl:output method="xml" encoding="utf-8" indent="yes"/>
     <xsl:strip-space elements="*"/>
     
-    <xsl:template match="/">
+<!--    <xsl:template match="/">
         <xsl:apply-templates/>
-    </xsl:template>
+    </xsl:template>-->
     
-<!--    <xsl:template match="tei:teiHeader">
+<xsl:template match="tei:teiHeader">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -76,43 +76,31 @@
         </fileDesc>
     </teiHeader>
         <xsl:apply-templates/>
-    </xsl:template>-->
-
-<!-- Changes div structure from div1+ to div @type
-    <xsl:template match="tei:profileDesc"/>-->
+    </xsl:template>
 
 
-<xsl:template match="tei:div1[@type] [@xml:lang] [@n]">
-    <div type="{@type}" xml:lang="{@xml:lang}" n="{@n}">
+
+
+
+<!--<xsl:template match="tei:div[@type='chapter']">
         <xsl:apply-templates/>
-    </div>
 </xsl:template>
+    
+    <xsl:template match="tei:div[@type='recit']">
+            <xsl:apply-templates/>        
+    </xsl:template>
+    
+    
+    <xsl:template match="tei:div[@type='questionnaire']"/>
 
-    
-    <xsl:template match="tei:div2[@type]">
-        <div type="{@type}">
-            <xsl:apply-templates/>
-        </div>
-    </xsl:template>
-    
-    
-    <xsl:template match="tei:div3[@type]">
-        <div type="{@type}">
-            <xsl:apply-templates/>
-        </div>
-    </xsl:template>
  
- <xsl:template match="tei:div4[@type]">
-     <div type="{@type}">
-         <xsl:apply-templates/>
-     </div>
- </xsl:template>
+ <xsl:template match="tei:div[@type='exercices']"/>
         
     <xsl:template match="@* | node()">
         <xsl:copy>
             <xsl:apply-templates select="@* | node()"/>
         </xsl:copy>
-    </xsl:template>
+    </xsl:template>-->
     
 
 </xsl:stylesheet>
