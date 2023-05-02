@@ -1,17 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tei="http://www.tei-c.org/ns/1.0"
     exclude-result-prefixes="xs tei"
     version="2.0">
     
+    <!-- This exports the .xml type -->
     <xsl:output method="xml" encoding="utf-8" indent="yes"/>
-    <xsl:strip-space elements="*"/>
     
+    <!--     <xsl:strip-space elements="*"/>-->
+    
+    
+    <!-- This adds the TEI All schema -->
     <xsl:template match="/">
+        <xsl:processing-instruction name="xml-model"> 
+            href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" 
+
+href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"? 
+	href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"
+        </xsl:processing-instruction>
         <xsl:apply-templates/>
     </xsl:template>
     
-<!--    <xsl:template match="tei:teiHeader">
+    
+    
+    <!-- This replaces the default teiHeader with the Heresies Project teiHeader -->
+    <xsl:template match="tei:teiHeader">
+        <teiHeader xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -76,43 +93,34 @@
         </fileDesc>
     </teiHeader>
         <xsl:apply-templates/>
-    </xsl:template>-->
-
-<!-- Changes div structure from div1+ to div @type
-    <xsl:template match="tei:profileDesc"/>-->
+    </xsl:template>
 
 
-<xsl:template match="tei:div1[@type] [@xml:lang] [@n]">
-    <div type="{@type}" xml:lang="{@xml:lang}" n="{@n}">
-        <xsl:apply-templates/>
-    </div>
+
+
+
+<xsl:template match="tei:div[@type='chapter']">
+        <div><xsl:apply-templates/>
+        </div>
 </xsl:template>
+    
+    <xsl:template match="tei:div[@type='recit']">
+           <div> 
+               <xsl:apply-templates/>
+           </div>        
+    </xsl:template>
+    
+    
+    <xsl:template match="tei:div[@type='questionnaire']"/>
 
-    
-    <xsl:template match="tei:div2[@type]">
-        <div type="{@type}">
-            <xsl:apply-templates/>
-        </div>
-    </xsl:template>
-    
-    
-    <xsl:template match="tei:div3[@type]">
-        <div type="{@type}">
-            <xsl:apply-templates/>
-        </div>
-    </xsl:template>
  
- <xsl:template match="tei:div4[@type]">
-     <div type="{@type}">
-         <xsl:apply-templates/>
-     </div>
- </xsl:template>
+ <xsl:template match="tei:div[@type='exercices']"/>
         
-    <xsl:template match="@* | node()">
+<!--   <xsl:template match="@* | node()">
         <xsl:copy>
             <xsl:apply-templates select="@* | node()"/>
         </xsl:copy>
-    </xsl:template>
+    </xsl:template>-->
     
 
 </xsl:stylesheet>
