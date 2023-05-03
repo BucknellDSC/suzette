@@ -23,7 +23,7 @@
         
 
             <xsl:text>"elementName", "elementContent", "typeAttributeIfPresent"</xsl:text>
-            <xsl:for-each select="//text//placeName | //text//geogFeat">
+            <xsl:for-each select="//text//persName | //text//placeName | //text//geogFeat">
                 
             <xsl:sort select="name()"/>
             <xsl:sort select="."/>
