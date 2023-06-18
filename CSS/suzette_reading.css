@@ -301,7 +301,7 @@ div[type = "poem"] {
     counter-reset: line;
 }
 
-div1 {
+/*div1 {
     display: block;
     margin-bottom: 1em;
     counter-increment: div1;
@@ -344,7 +344,7 @@ div7 {
 }
 divGen {
     display: none;
-}
+}*/
 docAuthor {
     display: block;
     margin-bottom: 0.5em;
@@ -545,33 +545,33 @@ div opener dateline {
     text-align: right;
     width: 95%;
 }
-div1 > head:before {
-    /*    content : counter(div1) ". "; */
+/*div1 > head:before {
+    /\*    content : counter(div1) ". "; *\/
     color: black;
     background-color: inherit;
 }
-div1 > lb { /* DKJ trying to get line breaks to render 09/16/21 */
+div1 > lb { /\* DKJ trying to get line breaks to render 09/16/21 *\/
     display: block;
     line-height: .5em;
 }
 div2 > head:before {
-    /*    content : counter(div1) "." counter(div2) ". ";
-*/
+    /\*    content : counter(div1) "." counter(div2) ". ";
+*\/
     color: black;
     background-color: inherit;
 }
 
-div2 > lb { /* DKJ trying to get line breaks to render 09/16/21 */
+div2 > lb { /\* DKJ trying to get line breaks to render 09/16/21 *\/
     display: block;
     line-height: .5em;
 }
 
 div3 > head:before {
-    /*    content : counter(div1) "." counter(div2) "." counter(div3) ". ";
-*/
+    /\*    content : counter(div1) "." counter(div2) "." counter(div3) ". ";
+*\/
     color: black;
     background-color: inherit;
-}
+}*/
 body > div > head:before {
     /*    content : counter(div1) ". ";
 */
@@ -630,13 +630,6 @@ hi[rend = "sc"] {
     display: inline;
     font-variant: small-caps;
 }
-hi[rend = "sup"] {
-    display: inline;
-    vertical-align: super;
-    font-size: smaller;
-}
-
-/* added hi[rend = "superscript"] in addition to "sup" */
 hi[rend = "superscript"] {
     display: inline;
     vertical-align: super;
@@ -838,12 +831,12 @@ note[n]:before {
     vertical-align: super;
 }
 
-div note persName,
+/*div note persName,
 div note orgName,
 div note title,
 div note placeName {
     color: #000000 !important;
-}
+}*/
 note[place = "left"] {
     float: left;
 }
@@ -1046,11 +1039,6 @@ row[role = 'label'] {
     color: inherit;
     background-color: #BBBBBB;
 }
-
-roleName {
-    display: inline;
-    color: brown;
-}
 rs {
     display: inline;
 }
@@ -1167,7 +1155,7 @@ time {
 title {
     display: inline;
 }
-title[type = "subtitle"] {
+/*title[type = "subtitle"] {
     display: block;
     font-weight: normal;
 }
@@ -1189,7 +1177,7 @@ title[level = "u"]:before {
 title[level = "a"]:after,
 title[level = "u"]:after {
     content: close-quote;
-}
+}*/
 seriesStmt > title,
 titleStmt > title {
     color: gray;
