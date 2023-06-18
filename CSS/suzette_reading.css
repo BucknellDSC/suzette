@@ -842,12 +842,13 @@ note[n]:before {
     content: attr(n) " ";
     vertical-align: super;
 }
-div note persName,
+/* hiding colored notes */
+/*div note persName,
 div note orgName,
 div note title,
 div note placeName {
     color: #6DB0CC !important;
-}
+}*/
 note[place = "left"] {
     float: left;
 }
@@ -898,6 +899,10 @@ p {
     line-height: 2em;
 }
 
+/* Hiding page break display */
+pb {
+    display: none;
+}
 /*pb {
     display: block;
     color: gray;
