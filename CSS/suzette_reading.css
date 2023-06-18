@@ -914,11 +914,11 @@ pb:after {
 }
 
 /* capturing all non-entity semantic terms in bold */
-persName,
-placeName,
-orgName,
-objectName {
-/*    color: blue;*/
+persName {
+    display: inline;
+    font-weight: bold;
+}
+placeName {
     display: inline;
     font-weight: bold;
 }
@@ -1152,7 +1152,6 @@ taxonomy {
 
 /* adding italic */
 term {
-    font-family: sans-serif;
     background-color: inherit;
     display: inline;
     /*font-weight: bold;*/
