@@ -6801,7 +6801,7 @@
 	"id": "https://raw.githubusercontent.com/djakacki/suzette/master/Edition/suzette_ch001-010.xml?place_annotation_20221202130803893",
 	"type": "oa:Annotation",
 	"dcterms:created": "2022-12-02T18:08:03.893Z",
-	"dcterms:modified": "2022-12-02T18:08:03.893Z",
+	"dcterms:modified": "2023-06-18T18:47:57.489Z",
 	"dcterms:creator": {
 		"@type": [
 			"cwrc:NaturalPerson",
@@ -6832,7 +6832,7 @@
 	},
 	"oa:hasBody": {
 		"@type": "cwrc:RealPlace",
-		"@id": "http://www.wikidata.org/entity/Q3411307",
+		"@id": "https://www.wikidata.org/wiki/Q12431",
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
@@ -6841,7 +6841,19 @@
 		"rdfs:label": "LEAF-Writer",
 		"schema:url": "https://leaf-writer.lincsproject.ca/",
 		"schema:softwareVersion": "3.0.1"
-	}
+	},
+	"dcterms:contributor": [
+		{
+			"dcterms:contributor": {
+				"@id": "https://github.com/djakacki",
+				"@type": [
+					"cwrc:NaturalPerson",
+					"schema:Person"
+				],
+				"cwrc:hasName": "Diane Jakacki"
+			}
+		}
+	]
 }]]>
         </rdf:Description>
       
@@ -7304,6 +7316,85 @@
 	"oa:hasBody": {
 		"@type": "cwrc:RealPlace",
 		"@id": "http://www.wikidata.org/entity/Q142",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.0.1"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/djakacki/suzette/master/Edition/suzette_ch001-010.xml?place_annotation_20230618144822923",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-06-18T18:48:22.923Z",
+	"dcterms:modified": "2023-06-18T18:48:22.923Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/djakacki",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Edition/suzette_ch001-010.xml?place_annotation_20230618144822923#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Edition/suzette_ch001-010.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.0.1"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Edition/suzette_ch001-010.xml?place_annotation_20230618144822923#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div[5]/div[3]/div/div[2]/p[6]/placeName/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "https://www.wikidata.org/wiki/Q12431",
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
@@ -8145,7 +8236,7 @@
                         sa force est très grande et il montre beaucoup
                         d'intelligence. Il se nourrit, de préférence, avec des racines et des fruits, et l'on a remarqué qu'il recherche le miel. 
                         On ne le trouve plus en <placeName key="France" ref="http://www.wikidata.org/entity/Q142" sameAs="#suzpl0016">France</placeName>
-                        que dans <placeName key="Les Alpes françaises (1940-1944) : des montagnes-refuges aux montagnes-maquis" ref="http://www.wikidata.org/entity/Q94573851" sameAs="#suzpl0303">les Alpes</placeName> et <placeName key="Pyrenees" ref="http://www.wikidata.org/entity/Q3411307" sameAs="#suzpl0304">les Pyrénées</placeName>. L'ours blanc des régions glaciales est connu pour sa 
+                        que dans <placeName key="Les Alpes françaises (1940-1944) : des montagnes-refuges aux montagnes-maquis" ref="http://www.wikidata.org/entity/Q94573851" sameAs="#suzpl0303">les Alpes</placeName> et <placeName key="Pyrenees" ref="https://www.wikidata.org/wiki/Q12431" sameAs="#suzpl0304">les Pyrénées</placeName>. L'ours blanc des régions glaciales est connu pour sa 
                         vigueur et sa férocité. </p>
                      <p><term>Les chacals</term>, qu'on rencontre seulement dans <placeName key="Africa" ref="http://www.wikidata.org/entity/Q15" sameAs="#suzpl0001">le nord de l'Afrique</placeName>, <placeName key="Syria" ref="http://www.wikidata.org/entity/Q858" sameAs="suzpl0214">la Syrie</placeName> et 
                         <placeName key="Central Asia" ref="http://www.wikidata.org/entity/Q27275" sameAs="suzpl0305">l'Asie centrale</placeName>,
@@ -8154,7 +8245,7 @@
                         de cuisine. </p>
                      <p><term>Le lynx</term> est un gros chat sauvage remarquable par le pinceau de poils qui termine ses oreilles ; il a un pelage roux 
                         tacheté de brun. On le trouve encore dans
-                        <placeName>les Pyrénées</placeName>, dans <placeName>l'Italie méridionale</placeName>, en <placeName>Afrique</placeName>. Il se
+                        <placeName><placeName key="les Pyrénées" ref="https://www.wikidata.org/wiki/Q12431">les Pyrénées</placeName></placeName>, dans <placeName>l'Italie méridionale</placeName>, en <placeName>Afrique</placeName>. Il se
                         réfugie sur les arbres les plus élevés et il
                         commet des dégâts considérables parmi les troupeaux et le gibier des campagnes. On dit que le lynx a la vue extrêmement perçante. </p>
                   </div>
