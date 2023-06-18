@@ -921,9 +921,12 @@ pb:after {
     text-align: center;
 }
 
-
-persName {
-    color: blue;
+/* capturing all non-entity semantic terms in bold */
+persName,
+placeName,
+orgName,
+objectName {
+/*    color: blue;*/
     display: inline;
     font-weight: bold;
 }
@@ -1161,12 +1164,12 @@ taxonomy {
     margin-bottom: 0.5em;
 }
 
-/* adding italic/bold */
+/* adding italic */
 term {
     font-family: sans-serif;
     background-color: inherit;
     display: inline;
-    font-weight: bold;
+    /*font-weight: bold;*/
     font-style: italic;
 }
 textClass {
