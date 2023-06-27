@@ -1,182 +1,261 @@
-<?xml version='1.0' encoding='utf-8'?>
-<ns0:div xmlns:ns0="http://www.tei-c.org/ns/1.0" type="chapitre" xml:lang="fr" n="ch024">
-            <ns0:head>24. — La bohémienne. <ns0:gloss>(Élève, p. 58.)</ns0:gloss></ns0:head>
-            <ns0:div type="récit">
-               <ns0:p>Après le coucher du soleil, comme elle causait sur la porte avec le patient*<ns0:note type="annotation">Le patient. Celui qui souffre.</ns0:note>, qui se trouvait mieux
-                  à l'air, tout à coup surgit*<ns0:note type="annotation">Surgir. Sortir de, s'élever
-                     au-dessus, apparaître sans être attendu.</ns0:note> à quelques pas une longue et
-                  <ns0:pb type="page" n="86" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_086.jpg" />
-                  <ns0:fw type="header">86 SUZETTE.</ns0:fw> maigre femme, au teint bronzé, avec des yeux
-                  hardis, perçants, une tignasse de cheveux, noirs comme aile de corbeau.</ns0:p>
-               <ns0:p>— La charité, s'il vous plaît ? dit-elle en tendant une main osseuse.</ns0:p>
-               <ns0:p>— <ns0:persName type="fictif" key="françois">François</ns0:persName>, dit <ns0:persName type="fictif" key="suzette">Suzette</ns0:persName>, va chercher un morceau de
-                  pain.</ns0:p>
-               <ns0:p>Pendant que <ns0:persName type="fictif" key="françois">François</ns0:persName> obéissait,
-                  la bohémienne, après avoir jeté un regard à l'enfant, s'approcha de <ns0:persName type="fictif" key="suzette">Suzette</ns0:persName> : </ns0:p>
-               <ns0:p>— Il est malade, le petit ?</ns0:p>
-               <ns0:p>— Oui, d'un bobo qui ne se presse pas de guérir.</ns0:p>
-               <ns0:p>— Et qui ne guérira pas ! repartit aussitôt l'étrange*<ns0:note type="annotation">Étrange. Qui n'est point comme les choses ou personnes ordinaires.</ns0:note>
-                  créature, avec un ton qui fit frissonner la jeune fille.</ns0:p>
-               <ns0:p>— Vous dites... qu'il ne guérira pas ? demanda <ns0:persName type="fictif" key="suzette">Suzette</ns0:persName>, la voix soudainement altérée.</ns0:p>
-               <ns0:p>— Je le dis !</ns0:p>
-               <ns0:p>En même temps, elle tendit l'index vers le ciel, d'où la nuit tombait déjà, et
-                     <ns0:persName type="fictif" key="suzette">Suzette</ns0:persName> vit, au-dessus de la
-                  maison, le vol tournoyant et silencieux de deux grandes ailes blanches.</ns0:p>
-               <ns0:p>— Connais-tu cet oiseau, ma fille ?</ns0:p>
-               <ns0:p>— C'est une chouette ! répondit <ns0:persName type="fictif" key="suzette">Suzette</ns0:persName>, toute tremblante.</ns0:p>
-               <ns0:p>— Oui, l'oiseau de malheur !...</ns0:p>
-               <ns0:p><ns0:persName type="fictif" key="françois">François</ns0:persName> revenait avec le
-                  morceau de pain qu'il était allé chercher.</ns0:p>
-               <ns0:p>— Si tu veux en savoir davantage, reprit la bohémienne, viens tout à l'heure,
-                  là-bas, seule.</ns0:p>
-               <ns0:p>Et, ce disant, elle montrait, à gauche de la ferme, une encoignure ombragée. Puis,
-                  prenant le pain que lui tendait l'enfant, elle s'éloigna.</ns0:p>
-               <ns0:p>Eh bien ! que faire ?</ns0:p>
-               <ns0:p>Très émue, <ns0:persName type="fictif" key="suzette">Suzette</ns0:persName> se demanda
-                  s'il était sage d'aller à ce rendez-vous.</ns0:p>
-               <ns0:p>Mais le pauvre petit <ns0:persName type="fictif" key="françois">François</ns0:persName>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/out/suzette-NewCustom.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/CSS/suzette_reading.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Suzette: a Digital Edition</title>
+            <respStmt>
+               <persName>John Westbrook</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Editor</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Diane Jakacki</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Project Manager</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annie Girton</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2018-2020</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Sarah Haber</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2020-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Rebecca Heintzelman</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2020-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Juliya Harnood</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2021-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Jaehoon Pyon</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2023-Present</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Bucknell University</distributor>
+            <pubPlace>
+               <address>
+                  <addrLine>One Dent Drive</addrLine>
+                  <addrLine>Lewisburg, PA 17837</addrLine>
+               </address>
+            </pubPlace>
+            <availability>
+               <licence>Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Suzette: Livre de Lecture Courante à l’Usage des Jeunes Filles.
+                     Morale—Leçon de choses, Economie Domestique – Ménage – Cuisine –
+                     Couture</title>
+                  <author>Robert Halt</author>
+                  <textLang>French</textLang>
+                  <imprint>
+                     <date>1889</date>
+                     <distributor>Libraire Classique Paul Delaplane</distributor>
+                     <pubPlace>Paris, France</pubPlace>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="fr">French</language>
+            <language ident="en">English</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+<div xmlns:ns0="http://www.tei-c.org/ns/1.0" type="chapitre" xml:lang="fr" n="ch024">
+            <head>24. — La bohémienne. <gloss>(Élève, p. 58.)</gloss></head>
+            <div type="récit">
+               <p>Après le coucher du soleil, comme elle causait sur la porte avec le patient*<note type="annotation">Le patient. Celui qui souffre.</note>, qui se trouvait mieux
+                  à l'air, tout à coup surgit*<note type="annotation">Surgir. Sortir de, s'élever
+                     au-dessus, apparaître sans être attendu.</note> à quelques pas une longue et
+                  <pb type="page" n="86" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_086.jpg" />
+                  <fw type="header">86 SUZETTE.</fw> maigre femme, au teint bronzé, avec des yeux
+                  hardis, perçants, une tignasse de cheveux, noirs comme aile de corbeau.</p>
+               <p>— La charité, s'il vous plaît ? dit-elle en tendant une main osseuse.</p>
+               <p>— <persName type="fictif" key="françois">François</persName>, dit <persName type="fictif" key="suzette">Suzette</persName>, va chercher un morceau de
+                  pain.</p>
+               <p>Pendant que <persName type="fictif" key="françois">François</persName> obéissait,
+                  la bohémienne, après avoir jeté un regard à l'enfant, s'approcha de <persName type="fictif" key="suzette">Suzette</persName> : </p>
+               <p>— Il est malade, le petit ?</p>
+               <p>— Oui, d'un bobo qui ne se presse pas de guérir.</p>
+               <p>— Et qui ne guérira pas ! repartit aussitôt l'étrange*<note type="annotation">Étrange. Qui n'est point comme les choses ou personnes ordinaires.</note>
+                  créature, avec un ton qui fit frissonner la jeune fille.</p>
+               <p>— Vous dites... qu'il ne guérira pas ? demanda <persName type="fictif" key="suzette">Suzette</persName>, la voix soudainement altérée.</p>
+               <p>— Je le dis !</p>
+               <p>En même temps, elle tendit l'index vers le ciel, d'où la nuit tombait déjà, et
+                     <persName type="fictif" key="suzette">Suzette</persName> vit, au-dessus de la
+                  maison, le vol tournoyant et silencieux de deux grandes ailes blanches.</p>
+               <p>— Connais-tu cet oiseau, ma fille ?</p>
+               <p>— C'est une chouette ! répondit <persName type="fictif" key="suzette">Suzette</persName>, toute tremblante.</p>
+               <p>— Oui, l'oiseau de malheur !...</p>
+               <p><persName type="fictif" key="françois">François</persName> revenait avec le
+                  morceau de pain qu'il était allé chercher.</p>
+               <p>— Si tu veux en savoir davantage, reprit la bohémienne, viens tout à l'heure,
+                  là-bas, seule.</p>
+               <p>Et, ce disant, elle montrait, à gauche de la ferme, une encoignure ombragée. Puis,
+                  prenant le pain que lui tendait l'enfant, elle s'éloigna.</p>
+               <p>Eh bien ! que faire ?</p>
+               <p>Très émue, <persName type="fictif" key="suzette">Suzette</persName> se demanda
+                  s'il était sage d'aller à ce rendez-vous.</p>
+               <p>Mais le pauvre petit <persName type="fictif" key="françois">François</persName>
                   était malade, il n'y avait pas à en douter ; le cliquet, fait d'une vieille
                   ferraille, était peut-être empoisonné ; et la chouette venait de paraître ici
-                  comme un avertissement de mort. C'est <ns0:persName type="fictif" key="françois">François</ns0:persName> qui était menacé ! car, en ce moment, point <ns0:pb type="page" n="87" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_087.jpg" />
-                  <ns0:fw type="header">LA BOHÉMIENNE. 87</ns0:fw> d'autre malade que lui au village. Ah !
-                  ne fallait-il pas tout tenter*<ns0:note type="annotation">Tenter une chose. Essayer ;
-                     mettre, pour réussir, un moyen quelconque en usage.</ns0:note> contre ce terrible
+                  comme un avertissement de mort. C'est <persName type="fictif" key="françois">François</persName> qui était menacé ! car, en ce moment, point <pb type="page" n="87" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_087.jpg" />
+                  <fw type="header">LA BOHÉMIENNE. 87</fw> d'autre malade que lui au village. Ah !
+                  ne fallait-il pas tout tenter*<note type="annotation">Tenter une chose. Essayer ;
+                     mettre, pour réussir, un moyen quelconque en usage.</note> contre ce terrible
                   souci ? Quand cette grande femme, qui semblait avoir quelque puissance
-                  mystérieuse, attendait là, à côté, pouvait-on se défendre d'aller la trouver ? </ns0:p>
-               <ns0:p>Une demi-heure avant le souper, <ns0:persName type="fictif" key="suzette">Suzette</ns0:persName> sortit à pas de loup* <ns0:note type="annotation">A pas de
-                     loup. Sans bruit et lentement.</ns0:note> et fut bientôt sous les arbres
-                  indiqués.</ns0:p>
-               <ns0:p>Assise sur la margelle*<ns0:note type="annotation">Margelle. Pierre creuse qui forme
-                     le rebord d'un puits.</ns0:note> d'un vieux puits, la femme l'attendait.</ns0:p>
-               <ns0:p>— Ah ! ah ! dit-elle avec un petit ricanement, tu as tardé ; tu ne voulais pas
-                  venir... tu vois que je sais tout ! Approche... Je peux sauver ton frère ! </ns0:p>
-               <ns0:p><ns0:persName type="fictif" key="suzette">Suzette</ns0:persName>, dont les jambes
-                  fléchissaient, s'accola au puits.</ns0:p>
-               <ns0:p>— Montre ta main.</ns0:p>
-               <ns0:p>La jeune fille tendit sa main droite :</ns0:p>
-               <ns0:p>— Croise-la avec de l'argent.</ns0:p>
-               <ns0:p>— Je ne comprends pas. </ns0:p>
-               <ns0:p>— Mets-y d l'argent.</ns0:p>
-               <ns0:p><ns0:persName type="fictif" key="suzette">Suzette</ns0:persName> avait dans sa poche cinq
-                  francs de monnaie ; elle tira vingt sous.</ns0:p>
-               <ns0:p>D’un rapide mouvement de chat, l'autre agrippa la pièce.</ns0:p>
-               <ns0:p>— Tu en as plus d'une ; donne le reste.</ns0:p>
-               <ns0:p>Sans se défendre, machinalement, <ns0:persName type="fictif" key="suzette">Suzette</ns0:persName> donna le reste des cinq francs.</ns0:p>
-               <ns0:figure type="illustration">
-                  <ns0:caption>— Connais-tu cet oiseau, ma fille ?</ns0:caption>
-               </ns0:figure>
-               <ns0:pb type="page" n="88" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_088.jpg" />
-               <ns0:fw type="header">88 SUZETTE.</ns0:fw>
-               <ns0:p>— C'est tout ?</ns0:p>
-               <ns0:p>— C'est tout.</ns0:p>
-               <ns0:p>— Bon. Qu'as-tu là au cou ? Un foulard ? donne-le. Elle prit le foulard avant que
-                  l'enfant eût pu obéir.</ns0:p>
-               <ns0:p>— Ce foulard et ces cent sous serviront à commencer les conjurations*<ns0:note type="annotation">Conjuration. Paroles et gestes par lesquels certains fripons
-                     prétendent guérir les gens ou les animaux malades.</ns0:note> nécessaires. Mais il
+                  mystérieuse, attendait là, à côté, pouvait-on se défendre d'aller la trouver ? </p>
+               <p>Une demi-heure avant le souper, <persName type="fictif" key="suzette">Suzette</persName> sortit à pas de loup* <note type="annotation">A pas de
+                     loup. Sans bruit et lentement.</note> et fut bientôt sous les arbres
+                  indiqués.</p>
+               <p>Assise sur la margelle*<note type="annotation">Margelle. Pierre creuse qui forme
+                     le rebord d'un puits.</note> d'un vieux puits, la femme l'attendait.</p>
+               <p>— Ah ! ah ! dit-elle avec un petit ricanement, tu as tardé ; tu ne voulais pas
+                  venir... tu vois que je sais tout ! Approche... Je peux sauver ton frère ! </p>
+               <p><persName type="fictif" key="suzette">Suzette</persName>, dont les jambes
+                  fléchissaient, s'accola au puits.</p>
+               <p>— Montre ta main.</p>
+               <p>La jeune fille tendit sa main droite :</p>
+               <p>— Croise-la avec de l'argent.</p>
+               <p>— Je ne comprends pas. </p>
+               <p>— Mets-y d l'argent.</p>
+               <p><persName type="fictif" key="suzette">Suzette</persName> avait dans sa poche cinq
+                  francs de monnaie ; elle tira vingt sous.</p>
+               <p>D’un rapide mouvement de chat, l'autre agrippa la pièce.</p>
+               <p>— Tu en as plus d'une ; donne le reste.</p>
+               <p>Sans se défendre, machinalement, <persName type="fictif" key="suzette">Suzette</persName> donna le reste des cinq francs.</p>
+               <figure type="illustration">
+                  <caption>— Connais-tu cet oiseau, ma fille ?</caption>
+               </figure>
+               <pb type="page" n="88" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_088.jpg" />
+               <fw type="header">88 SUZETTE.</fw>
+               <p>— C'est tout ?</p>
+               <p>— C'est tout.</p>
+               <p>— Bon. Qu'as-tu là au cou ? Un foulard ? donne-le. Elle prit le foulard avant que
+                  l'enfant eût pu obéir.</p>
+               <p>— Ce foulard et ces cent sous serviront à commencer les conjurations*<note type="annotation">Conjuration. Paroles et gestes par lesquels certains fripons
+                     prétendent guérir les gens ou les animaux malades.</note> nécessaires. Mais il
                   faut que demain, à la même heure, tu reviennes ici avec d'autre argent, autant que
                   tu pourras en prendre, au moins vingt francs, et sans avoir parlé de moi à
-                  personne... à personne ! tu entends ? </ns0:p>
-               <ns0:p><ns0:persName type="fictif" key="suzette">Suzette</ns0:persName> fit signe qu'elle
-                  entendait.</ns0:p>
-               <ns0:p>A ce moment, un sifflet strident troubla le silence de la nuit. La bohémienne se
-                  leva et fila comme un lièvre.</ns0:p>
-               <ns0:p>Comme <ns0:persName type="fictif" key="suzette">Suzette</ns0:persName> repassait le seuil
+                  personne... à personne ! tu entends ? </p>
+               <p><persName type="fictif" key="suzette">Suzette</persName> fit signe qu'elle
+                  entendait.</p>
+               <p>A ce moment, un sifflet strident troubla le silence de la nuit. La bohémienne se
+                  leva et fila comme un lièvre.</p>
+               <p>Comme <persName type="fictif" key="suzette">Suzette</persName> repassait le seuil
                   de sa maison, elle entendit le pas de plusieurs chevaux qui s'avançaient au grand
-                  trot. Bientôt ils parurent.</ns0:p>
-               <ns0:p>C'était la gendarmerie en tournée*<ns0:note type="annotation">Tournée (en). En
-                     excursion.</ns0:note>.</ns0:p>
-            </ns0:div>
-            <ns0:div type="questionnaire">
-               <ns0:head>Questionnaire.</ns0:head>
-               <ns0:list>
-                  <ns0:item>— Qui apparut à <ns0:persName type="fictif" key="suzette">Suzette</ns0:persName> à
-                     la fin du jour ? </ns0:item>
-                  <ns0:item>— Que demanda la femme ? </ns0:item>
-                  <ns0:item>— Reproduisez le début de la conversation entre elle et <ns0:persName type="fictif" key="suzette">Suzette</ns0:persName>.</ns0:item>
-                  <ns0:item>— Que lui montra la bohémienne et quelle signification cette dernière
-                     attribuait-elle à l'apparition de l'oiseau ? </ns0:item>
-                  <ns0:item>— Que proposa la femme à <ns0:persName type="fictif" key="suzette">Suzette</ns0:persName> ? </ns0:item>
-                  <ns0:item>— Cette dernière fut-elle sage de céder à ce qu'on lui demandait ? </ns0:item>
-                  <ns0:item>— Quel bon sentiment peut faire excuser la pauvre petite ? </ns0:item>
-                  <ns0:item>— Racontez comment la bohémienne eut les cinq francs et le foulard.</ns0:item>
-                  <ns0:item>— Qu'ajouta cette vilaine femme en quittant <ns0:persName type="fictif" key="suzette">Suzette</ns0:persName> ? </ns0:item>
-                  <ns0:item>— Qu'est-ce qui la porta à s'enfuir ? </ns0:item>
-               </ns0:list>
-            </ns0:div>
-            <ns0:div type="exercices">
-               <ns0:head>DÉVELOPPEMENT DES SUJETS PROPOSÉS POUR EXERCICES</ns0:head>
-               <ns0:div type="morale" xml:id="sujmor_024">
-                  <ns0:head>Morale.</ns0:head>
-                  <ns0:div type="questions">
-                     <ns0:list>
-                        <ns0:item>— Causes de nos maux.</ns0:item>
-                        <ns0:item>— Puisque nos maux viennent de nous-mêmes ou de choses bien connues,
-                           que pensez-vous des craintes superstitieuses de certaines gens ? </ns0:item>
-                        <ns0:item>— Citez des choses, des circonstances qu'on regarde sottement comme de
-                           mauvais augure.</ns0:item>
-                        <ns0:item>— Qu'appelle-t-on revenants ?</ns0:item>
-                        <ns0:item>— Y a-t-il vraiment des revenants ? </ns0:item>
-                        <ns0:item>— Que pensez-vous de ceux qui en rient ? </ns0:item>
-                     </ns0:list>
-                  </ns0:div>
-                  <ns0:div type="réponses">
-                     <ns0:p>Nos maux viennent de nos imprudences, de la vieillesse ou de causes et
+                  trot. Bientôt ils parurent.</p>
+               <p>C'était la gendarmerie en tournée*<note type="annotation">Tournée (en). En
+                     excursion.</note>.</p>
+            </div>
+            <div type="questionnaire">
+               <head>Questionnaire.</head>
+               <list>
+                  <item>— Qui apparut à <persName type="fictif" key="suzette">Suzette</persName> à
+                     la fin du jour ? </item>
+                  <item>— Que demanda la femme ? </item>
+                  <item>— Reproduisez le début de la conversation entre elle et <persName type="fictif" key="suzette">Suzette</persName>.</item>
+                  <item>— Que lui montra la bohémienne et quelle signification cette dernière
+                     attribuait-elle à l'apparition de l'oiseau ? </item>
+                  <item>— Que proposa la femme à <persName type="fictif" key="suzette">Suzette</persName> ? </item>
+                  <item>— Cette dernière fut-elle sage de céder à ce qu'on lui demandait ? </item>
+                  <item>— Quel bon sentiment peut faire excuser la pauvre petite ? </item>
+                  <item>— Racontez comment la bohémienne eut les cinq francs et le foulard.</item>
+                  <item>— Qu'ajouta cette vilaine femme en quittant <persName type="fictif" key="suzette">Suzette</persName> ? </item>
+                  <item>— Qu'est-ce qui la porta à s'enfuir ? </item>
+               </list>
+            </div>
+            <div type="exercices">
+               <head>DÉVELOPPEMENT DES SUJETS PROPOSÉS POUR EXERCICES</head>
+               <div type="morale" xml:id="sujmor_024">
+                  <head>Morale.</head>
+                  <div type="questions">
+                     <list>
+                        <item>— Causes de nos maux.</item>
+                        <item>— Puisque nos maux viennent de nous-mêmes ou de choses bien connues,
+                           que pensez-vous des craintes superstitieuses de certaines gens ? </item>
+                        <item>— Citez des choses, des circonstances qu'on regarde sottement comme de
+                           mauvais augure.</item>
+                        <item>— Qu'appelle-t-on revenants ?</item>
+                        <item>— Y a-t-il vraiment des revenants ? </item>
+                        <item>— Que pensez-vous de ceux qui en rient ? </item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p>Nos maux viennent de nos imprudences, de la vieillesse ou de causes et
                         d'accidents dont nous discernons parfaitement l'origine. Il est ridicule, il
                         est sot de les attribuer à des influences étrangères, comme le mauvais
                         vouloir d'une personne, l'apparition de certains oiseaux, ou d'un insecte
                         plus ou moins répugnant. C'est faire de la Providence, si juste, si sage, un
-                        être méchant et dépourvu de raison qui subordon-<ns0:figure>
-                           <ns0:caption>Chouette. Cet oiseau est fort utile à l'agriculture, en ce qu'il
-                              détruit une grande quantité de rongeurs.</ns0:caption>
-                        </ns0:figure>
-                        <ns0:pb type="page" n="89" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_089.jpg" />
-                        <ns0:fw type="header"> LA BOHÉMIENNE. 89</ns0:fw> nerait le bonheur ou le malheur de
+                        être méchant et dépourvu de raison qui subordon-<figure>
+                           <caption>Chouette. Cet oiseau est fort utile à l'agriculture, en ce qu'il
+                              détruit une grande quantité de rongeurs.</caption>
+                        </figure>
+                        <pb type="page" n="89" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_089.jpg" />
+                        <fw type="header"> LA BOHÉMIENNE. 89</fw> nerait le bonheur ou le malheur de
                         l'homme, non à ses bonnes ou à ses mauvaises actions, mais à des hasards ou
                         à des événements imprévus, ou bien encore aux intentions de gens
-                        méprisables.</ns0:p>
-                     <ns0:p>Il y a des ignorants qui s'effrayent quand, au matin, ils aperçoivent une
+                        méprisables.</p>
+                     <p>Il y a des ignorants qui s'effrayent quand, au matin, ils aperçoivent une
                         araignée ; qui tremblent sur l'issue d'un voyage lorsqu'il est entrepris le
                         vendredi ou un 13 ; qui pâlissent à la vue d'un couteau croisé sur la table
                         avec une fourchette ; qui n'oseraient prendre part à un repas s'il y avait
                         treize convives, etc., etc. On ne comprend pas que des êtres doués de raison
-                        aient de telles faiblesses d'esprit.</ns0:p>
-                     <ns0:p>Rien n'est plus comique que d'entendre les bonnes femmes parler des
-                           <ns0:term>revenants</ns0:term> en tremblant de frayeur ; elles s'imaginent que
+                        aient de telles faiblesses d'esprit.</p>
+                     <p>Rien n'est plus comique que d'entendre les bonnes femmes parler des
+                           <term>revenants</term> en tremblant de frayeur ; elles s'imaginent que
                         les morts reparaissent pour nous effrayer, surtout la nuit, surtout aux
                         environs du cimetière. Les seules apparitions bien constatées de revenants
                         sont dues à de mauvais plaisants qui, affublés d'un drap blanc, se
                         promenaient dans les ténèbres, et s'amusaient follement des terreurs des
-                        vieilles commères et des petites filles qui les rencontraient.</ns0:p>
-                     <ns0:p>Ceux qui rient lorsqu'on leur parle de revenants, font preuve de bon sens et
-                        d'un joyeux caractère ; choses qui ordinairement marchent de compagnie.</ns0:p>
-                  </ns0:div>
-               </ns0:div>
-               <ns0:div type="composition" xml:id="sujdom_024">
-                  <ns0:head>Composition.</ns0:head>
-                  <ns0:div type="questions">
-                     <ns0:list>
-                        <ns0:item>— Décrire une famille de bohémiens ou de vagabonds errants : leur
-                           voiture, leur mode de vie, leur façon d'élever leurs enfants.</ns0:item>
-                        <ns0:item>— Que doit-on penser de ces gens ? </ns0:item>
-                        <ns0:item>— Pourquoi faut-il s'en éloigner ? </ns0:item>
-                     </ns0:list>
-                  </ns0:div>
-                  <ns0:div type="réponses">
-                     <ns0:p>(Voir <ns0:title>COURS DE COMPOSITION FRANÇAISE, Degré supérieur, par <ns0:persName type="historique">E. LAPORTE</ns0:persName></ns0:title>, 5° exercice, page
-                        295, et 12e exercice, page 307.)</ns0:p>
-                  </ns0:div>
-               </ns0:div>
-               <ns0:div type="sciences_naturelles" xml:id="sujnat_024">
-                  <ns0:head>Sciences naturelles.</ns0:head>
-                  <ns0:div type="questions">
-                     <ns0:list>
-                        <ns0:item>— Qu'entend-on par oiseaux de nuit ? </ns0:item>
-                        <ns0:item>— Quels sont les principaux ? </ns0:item>
-                        <ns0:item>— Où nichent-ils ? </ns0:item>
-                     </ns0:list>
-                  </ns0:div>
-                  <ns0:div type="réponses">
-                     <ns0:p><ns0:term>Les oiseaux de nuit</ns0:term> sont ceux qui ne prennent leur vol qu'au
+                        vieilles commères et des petites filles qui les rencontraient.</p>
+                     <p>Ceux qui rient lorsqu'on leur parle de revenants, font preuve de bon sens et
+                        d'un joyeux caractère ; choses qui ordinairement marchent de compagnie.</p>
+                  </div>
+               </div>
+               <div type="composition" xml:id="sujdom_024">
+                  <head>Composition.</head>
+                  <div type="questions">
+                     <list>
+                        <item>— Décrire une famille de bohémiens ou de vagabonds errants : leur
+                           voiture, leur mode de vie, leur façon d'élever leurs enfants.</item>
+                        <item>— Que doit-on penser de ces gens ? </item>
+                        <item>— Pourquoi faut-il s'en éloigner ? </item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p>(Voir <title>COURS DE COMPOSITION FRANÇAISE, Degré supérieur, par <persName type="historique">E. LAPORTE</persName></title>, 5° exercice, page
+                        295, et 12e exercice, page 307.)</p>
+                  </div>
+               </div>
+               <div type="sciences_naturelles" xml:id="sujnat_024">
+                  <head>Sciences naturelles.</head>
+                  <div type="questions">
+                     <list>
+                        <item>— Qu'entend-on par oiseaux de nuit ? </item>
+                        <item>— Quels sont les principaux ? </item>
+                        <item>— Où nichent-ils ? </item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p><term>Les oiseaux de nuit</term> sont ceux qui ne prennent leur vol qu'au
                         moment du crépuscule ; tant que le soleil reste sur l'horizon, ils se
                         confinent dans des trous. Il est à remarquer qu'ils ont, en général, des
                         couleurs sombres et le plumage mœlleux, ce qui les favorise dans la chasse à
@@ -184,36 +263,38 @@
                         hiboux, les chouettes, les orfraies, les grands-ducs, qui se plaisent à
                         nicher dans les édifices solitaires ou abandonnés, dans les greniers et les
                         granges où ils détruisent un nombre prodigieux de rats, de souris et de
-                        mulots, sans compter les serpents.</ns0:p>
-                  </ns0:div>
-               </ns0:div>
-               <ns0:div type="économie_domestique" xml:id="sujeco_024">
-                  <ns0:head>Économie domestique.</ns0:head>
-                  <ns0:div type="questions">
-                     <ns0:list>
-                        <ns0:item>— Quel remède faut-il appliquer à une écorchure ; — à une coupure ; —
-                           à une contusion provenant d'une chute, d'un coup ? </ns0:item>
-                     </ns0:list>
-                  </ns0:div>
-                  <ns0:div type="réponses">
-                     <ns0:p>Pour guérir <ns0:term>une écorchure</ns0:term>, lavez la plaie à l'eau fraîche et,
+                        mulots, sans compter les serpents.</p>
+                  </div>
+               </div>
+               <div type="économie_domestique" xml:id="sujeco_024">
+                  <head>Économie domestique.</head>
+                  <div type="questions">
+                     <list>
+                        <item>— Quel remède faut-il appliquer à une écorchure ; — à une coupure ; —
+                           à une contusion provenant d'une chute, d'un coup ? </item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p>Pour guérir <term>une écorchure</term>, lavez la plaie à l'eau fraîche et,
                         si elle n'est pas très étendue ou exposée à des chocs et à des frottements,
                         laissez-la telle quelle ; autrement, posez dessus un linge doux, légèrement
-                        enduit de beurre et maintenu par une bande faiblement serrée.</ns0:p>
-                     <ns0:p>On lave à l'eau tiède la plaie qui résulte d'<ns0:term>une coupure</ns0:term>, et
+                        enduit de beurre et maintenu par une bande faiblement serrée.</p>
+                     <p>On lave à l'eau tiède la plaie qui résulte d'<term>une coupure</term>, et
                         l'on s'assure qu'il n'y reste aucun corps étranger. Si la blessure saigne
                         abondamment, user d'eau froide. Ensuite, on l'essuie avec un linge fin, et
                         l'on en rapproche les bords que l'on fixe avec du taffetas
-                           d'<ns0:placeName>Angleterre</ns0:placeName> ou du diachylon. Lorsque le mal est
-                        considérable, la présence du médecin devient obligatoire.</ns0:p>
-                     <ns0:p>Pour les <ns0:term>contusions ordinaires</ns0:term>, consistant dans le
+                           d'<placeName>Angleterre</placeName> ou du diachylon. Lorsque le mal est
+                        considérable, la présence du médecin devient obligatoire.</p>
+                     <p>Pour les <term>contusions ordinaires</term>, consistant dans le
                         meurtrissement des tissus par suite d'une chute ou d'un coup, il suffit de
                         combattre l'inflammation par l'application de l'eau froide, et d'envelopper
                         ensuite le membre atteint. Si l’enfant contusionné se trouvait indisposé à
                         la suite de l'accident, il serait bon de lui donner à boire quelque chose de
-                        chaud et de le mettre au lit. </ns0:p>
-                  </ns0:div>
-               </ns0:div>
-            </ns0:div>
-         </ns0:div>
-         
+                        chaud et de le mettre au lit. </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
