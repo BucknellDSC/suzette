@@ -1,235 +1,316 @@
-<?xml version='1.0' encoding='utf-8'?>
-<ns0:div xmlns:ns0="http://www.tei-c.org/ns/1.0" type="chapitre" xml:lang="fr" n="ch129">
-            <ns0:head>129. — Le Galibis. <ns0:gloss>(Élève, p. 272.)</ns0:gloss></ns0:head>
-            <ns0:div type="récit">
-               <ns0:p>On ne sait pour quelle cause, un homme de la race rouge, un Galibis, traversait
-                  par un beau dimanche une bourgade de <ns0:placeName>France</ns0:placeName>.</ns0:p>
-               <ns0:p>Il était d'une de ces lointaines et rares tribus*<ns0:note type="annotation">Tribu.
-                     Petit peuple ; réunion de familles sauvages.</ns0:note> de
-                     l'<ns0:placeName>Amérique</ns0:placeName> qui ne connaissent encore, pour étancher leur
-                  soif, que l'eau du ciel et des sources.</ns0:p>
-               <ns0:p>— Qu'est-ce donc, demanda-t-il, que ces maisons sur lesquelles je vois d'agréables
-                  devises et de plaisants tableaux ? </ns0:p>
-               <ns0:fw type="footer">(1) La levure est de l'écume de bière qu'on emploie commé
-                  levain.</ns0:fw>
-               <ns0:pb type="page" n="453" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_453.jpg" />
-               <ns0:fw>LE GALIBIS. 453</ns0:fw>
-               <ns0:p>— Ce sont, lui répondit-on, les cabarets où l'on s'assemble pour boire.</ns0:p>
-               <ns0:p>En ce moment les cabarets étaient bondés ; on y buvait, criait à tue-tête.</ns0:p>
-               <ns0:p>— Mais, reprit le Galibis, quelle est donc la cause de la grande soif de ce pays ?
-                  Il n'y fait pourtant pas si chaud.</ns0:p>
-               <ns0:p>On lui apprit qu'en ce pays-là l'usage était de boire sans soif, des liqueurs de
-                  toute sorte et qui coûtaient cher.</ns0:p>
-               <ns0:p>— Et aux frais de qui boit-on ainsi sans soif, s'il vous plait ?</ns0:p>
-               <ns0:p>— Mais aux frais des buveurs, qui y dépensent gros.</ns0:p>
-               <ns0:p>— Vous auriez dû m'avertir tout de suite, dit le sauvage, que je suis ici en pays
+<?xml-model href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/out/suzette-NewCustom.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/CSS/suzette_reading.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Suzette: a Digital Edition</title>
+            <respStmt>
+               <persName>John Westbrook</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Editor</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Diane Jakacki</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Project Manager</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annie Girton</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2018-2020</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Sarah Haber</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2020-2022</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Rebecca Heintzelman</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2020-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Juliya Harnood</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2021-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Jaehoon Pyon</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2023-Present</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Bucknell University</distributor>
+            <pubPlace>
+               <address>
+                  <addrLine>One Dent Drive</addrLine>
+                  <addrLine>Lewisburg, PA 17837</addrLine>
+               </address>
+            </pubPlace>
+            <availability>
+               <licence>Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Suzette: Livre de Lecture Courante à l’Usage des Jeunes Filles.
+                     Morale—Leçon de choses, Economie Domestique – Ménage – Cuisine –
+                     Couture</title>
+                  <author>Robert Halt</author>
+                  <textLang>French</textLang>
+                  <imprint>
+                     <date>1889</date>
+                     <distributor>Libraire Classique Paul Delaplane</distributor>
+                     <pubPlace>Paris, France</pubPlace>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="fr">French</language>
+            <language ident="en">English</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+<div xmlns:ns0="http://www.tei-c.org/ns/1.0" type="chapitre" xml:lang="fr" n="ch129">
+            <head>129. — Le Galibis. <gloss>(Élève, p. 272.)</gloss></head>
+            <div type="récit">
+               <p>On ne sait pour quelle cause, un homme de la race rouge, un Galibis, traversait
+                  par un beau dimanche une bourgade de <placeName>France</placeName>.</p>
+               <p>Il était d'une de ces lointaines et rares tribus*<note type="annotation">Tribu.
+                     Petit peuple ; réunion de familles sauvages.</note> de
+                     l'<placeName>Amérique</placeName> qui ne connaissent encore, pour étancher leur
+                  soif, que l'eau du ciel et des sources.</p>
+               <p>— Qu'est-ce donc, demanda-t-il, que ces maisons sur lesquelles je vois d'agréables
+                  devises et de plaisants tableaux ? </p>
+               <fw type="footer">(1) La levure est de l'écume de bière qu'on emploie commé
+                  levain.</fw>
+               <pb type="page" n="453" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_453.jpg" />
+               <fw>LE GALIBIS. 453</fw>
+               <p>— Ce sont, lui répondit-on, les cabarets où l'on s'assemble pour boire.</p>
+               <p>En ce moment les cabarets étaient bondés ; on y buvait, criait à tue-tête.</p>
+               <p>— Mais, reprit le Galibis, quelle est donc la cause de la grande soif de ce pays ?
+                  Il n'y fait pourtant pas si chaud.</p>
+               <p>On lui apprit qu'en ce pays-là l'usage était de boire sans soif, des liqueurs de
+                  toute sorte et qui coûtaient cher.</p>
+               <p>— Et aux frais de qui boit-on ainsi sans soif, s'il vous plait ?</p>
+               <p>— Mais aux frais des buveurs, qui y dépensent gros.</p>
+               <p>— Vous auriez dû m'avertir tout de suite, dit le sauvage, que je suis ici en pays
                   de millionnaires ne sachant que faire de leur argent. Si je n'aimais ma tribu, je
-                  m'établirais volontiers dans votre riche village.</ns0:p>
-               <ns0:p>Vinrent à passer des loqueteux*<ns0:note type="annotation">Loqueteux. Gens pauvrement
-                     vêtus.</ns0:note>, et des enfants aux joues creuses n'ayant contre le froid que de
-                  pauvres haillons. Ils mendiaient.</ns0:p>
-               <ns0:p>— Ah ! reprit le Galibis, ceux-ci viennent probablement de loin, d'une contrée
-                  misérable.</ns0:p>
-               <ns0:p>On lui dit que c'étaient les vieux parents, les femmes, les enfants des buveurs
+                  m'établirais volontiers dans votre riche village.</p>
+               <p>Vinrent à passer des loqueteux*<note type="annotation">Loqueteux. Gens pauvrement
+                     vêtus.</note>, et des enfants aux joues creuses n'ayant contre le froid que de
+                  pauvres haillons. Ils mendiaient.</p>
+               <p>— Ah ! reprit le Galibis, ceux-ci viennent probablement de loin, d'une contrée
+                  misérable.</p>
+               <p>On lui dit que c'étaient les vieux parents, les femmes, les enfants des buveurs
                   qu'il voyait là rassemblés, et que ces buveurs, au lieu de millions, n'avaient que
                   leur travail pour vivre. Leur maigre salaire, la pièce de monnaie lentement,
                   péniblement gagnée en six jours, le pain de la famille, la paix, la dignité du
-                  foyer, se noyaient ainsi dans les verres.</ns0:p>
-               <ns0:p>Une bataille qui s'éleva entre des ivrognes interrompit l'explication. Les
-                  bouteilles volèrent, les bouches hurlèrent, le sang coula.</ns0:p>
-               <ns0:p>Le Galibis leva les mains au ciel : </ns0:p>
-               <ns0:p>— Mais quel est, s'écria-t-il, quel est le despote*<ns0:note type="annotation">Despote. Souverain qui gouverne sans aucun contrôle.</ns0:note> abominable qui
+                  foyer, se noyaient ainsi dans les verres.</p>
+               <p>Une bataille qui s'éleva entre des ivrognes interrompit l'explication. Les
+                  bouteilles volèrent, les bouches hurlèrent, le sang coula.</p>
+               <p>Le Galibis leva les mains au ciel : </p>
+               <p>— Mais quel est, s'écria-t-il, quel est le despote*<note type="annotation">Despote. Souverain qui gouverne sans aucun contrôle.</note> abominable qui
                   condamne ainsi ces malheureux à la dégradation de leur humanité et de leur santé
-                  ?</ns0:p>
-               <ns0:figure>
-                  <ns0:caption>Un Galibis.</ns0:caption>
-               </ns0:figure>
-               <ns0:pb type="page" n="454" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_454.jpg" />
-               <ns0:fw>454 SUZETTE.</ns0:fw>
-               <ns0:p>Aucun despote. Ils étaient libres. De leur plein gré, ils couraient à cette
-                  misère, à cette honte.</ns0:p>
-               <ns0:p>Alors le sauvage secoua la poussière de ses pieds et partit en disant : </ns0:p>
-               <ns0:p>— Les animaux n'ont pas l'entendement qui a été donné à ceux-ci ; mais j'aimerais
-                  mieux faire ma compagnie des bêtes des bois que de pareils hommes !</ns0:p>
-            </ns0:div>
-            <ns0:div type="questionnaire">
-               <ns0:head>Questionnaire.</ns0:head>
-               <ns0:list>
-                  <ns0:item>— Qu'est-ce qu'un Galibis ? </ns0:item>
-                  <ns0:item>— D'où venait-il ? </ns0:item>
-                  <ns0:item>— Quelle question fit-il en traversant une bourgade ? </ns0:item>
-                  <ns0:item>— Qu'est-ce que faisaient les gens dans les cabarets ? </ns0:item>
-                  <ns0:item>— Que demanda le Galibis à propos de la soif de ces gens ? </ns0:item>
-                  <ns0:item>— Que pensait-il de la richesse du pays à la vue de tant de gens au cabaret
-                     ? </ns0:item>
-                  <ns0:item>— Qu'étaient les loqueteux et les enfants qui mendiaient autour des cabarets
-                     ? </ns0:item>
-                  <ns0:item>— A quoi les chefs de famille emploient-ils souvent le meilleur de leur gain
-                     ? </ns0:item>
-                  <ns0:item>— Quel hideux spectacle vit-on dans le cabaret ? </ns0:item>
-                  <ns0:item>— Quelle exclamation fit le sauvage ? </ns0:item>
-                  <ns0:item>— Que lui apprit-on ? </ns0:item>
-                  <ns0:item>— Que dit-il en partant ? </ns0:item>
-               </ns0:list>
-            </ns0:div>
-            <ns0:div type="exercices">
-               <ns0:head>DÉVELOPPEMENT DES SUJETS PROPOSÉS POUR EXERCICES.</ns0:head>
-               <ns0:div type="industrie">
-                  <ns0:head type="sujets">Industrie.</ns0:head>
-                  <ns0:div type="questions">
-                     <ns0:list>
-                        <ns0:item>— LES BOISSONS. </ns0:item>
-                        <ns0:item>— LE VIN : Donnez une idée de la récolte du raisin, de la fabrication
-                           du vin, de la fermentation qu'il subit et des fûts où on le place. </ns0:item>
-                        <ns0:item>— EAU-DE-VIE : Avec quoi fabrique-t-on cette liqueur ? </ns0:item>
-                        <ns0:item>— Quelle sensation produit-elle quand on l'absorbe ? </ns0:item>
-                        <ns0:item>— Citez les pays vignobles de France.</ns0:item>
-                     </ns0:list>
-                  </ns0:div>
-                  <ns0:div type="réponses">
-                     <ns0:p>On récolte le raisin en <ns0:placeName>France</ns0:placeName> vers la fin de
+                  ?</p>
+               <figure>
+                  <caption>Un Galibis.</caption>
+               </figure>
+               <pb type="page" n="454" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_454.jpg" />
+               <fw>454 SUZETTE.</fw>
+               <p>Aucun despote. Ils étaient libres. De leur plein gré, ils couraient à cette
+                  misère, à cette honte.</p>
+               <p>Alors le sauvage secoua la poussière de ses pieds et partit en disant : </p>
+               <p>— Les animaux n'ont pas l'entendement qui a été donné à ceux-ci ; mais j'aimerais
+                  mieux faire ma compagnie des bêtes des bois que de pareils hommes !</p>
+            </div>
+            <div type="questionnaire">
+               <head>Questionnaire.</head>
+               <list>
+                  <item>— Qu'est-ce qu'un Galibis ? </item>
+                  <item>— D'où venait-il ? </item>
+                  <item>— Quelle question fit-il en traversant une bourgade ? </item>
+                  <item>— Qu'est-ce que faisaient les gens dans les cabarets ? </item>
+                  <item>— Que demanda le Galibis à propos de la soif de ces gens ? </item>
+                  <item>— Que pensait-il de la richesse du pays à la vue de tant de gens au cabaret
+                     ? </item>
+                  <item>— Qu'étaient les loqueteux et les enfants qui mendiaient autour des cabarets
+                     ? </item>
+                  <item>— A quoi les chefs de famille emploient-ils souvent le meilleur de leur gain
+                     ? </item>
+                  <item>— Quel hideux spectacle vit-on dans le cabaret ? </item>
+                  <item>— Quelle exclamation fit le sauvage ? </item>
+                  <item>— Que lui apprit-on ? </item>
+                  <item>— Que dit-il en partant ? </item>
+               </list>
+            </div>
+            <div type="exercices">
+               <head>DÉVELOPPEMENT DES SUJETS PROPOSÉS POUR EXERCICES.</head>
+               <div type="industrie">
+                  <head type="sujets">Industrie.</head>
+                  <div type="questions">
+                     <list>
+                        <item>— LES BOISSONS. </item>
+                        <item>— LE VIN : Donnez une idée de la récolte du raisin, de la fabrication
+                           du vin, de la fermentation qu'il subit et des fûts où on le place. </item>
+                        <item>— EAU-DE-VIE : Avec quoi fabrique-t-on cette liqueur ? </item>
+                        <item>— Quelle sensation produit-elle quand on l'absorbe ? </item>
+                        <item>— Citez les pays vignobles de France.</item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p>On récolte le raisin en <placeName>France</placeName> vers la fin de
                         septembre et pendant la première quinzaine d'octobre ; cette époque de
-                        l'année s'appelle la vendange, et c'en est une des plus joyeuses.</ns0:p>
-                     <ns0:p>Au jour fixé, les vendangeurs, armés de serpettes, se rendent dans la vigne
+                        l'année s'appelle la vendange, et c'en est une des plus joyeuses.</p>
+                     <p>Au jour fixé, les vendangeurs, armés de serpettes, se rendent dans la vigne
                         ; ils coupent les grappes qu'ils déposent à mesure dans de larges paniers
                         d'osier dont le contenu est recueilli par des ouvriers portant des
-                        hottes.</ns0:p>
-                     <ns0:p>Les hottes sont vidées dans des tonneaux ou des cuves qu'on transporte au
+                        hottes.</p>
+                     <p>Les hottes sont vidées dans des tonneaux ou des cuves qu'on transporte au
                         pressoir. S'il s'agit de faire du vin blanc, le raisin de la récolte est
                         immédiatement écrasé, et le liquide qui en résulte versé dans des fûts neufs
                         de chêne. Il y commence et achève sa fermentation, durant laquelle les
                         impuretés du vin s'échappent par la bonde. On soutire ensuite, et l'on ferme
-                        avec soin les fûts.</ns0:p>
-                     <ns0:p>Si l'on entend fabriquer du vin rouge, on laisse les raisins fermenter dans
+                        avec soin les fûts.</p>
+                     <p>Si l'on entend fabriquer du vin rouge, on laisse les raisins fermenter dans
                         de grandes cuves, où on les foule quotidiennement à diverses reprises. Au
                         bout de huit à neuf jours, on soutire le liquide, qui s'est rendu à la
                         partie inférieure des cuves ; c'est du vin de première qualité, qu'on traite
                         comme le vin blanc. Les grappes restantes sont portées au pressoir et on les
-                        y écrase ; un vin de deuxième qualité est ainsi obtenu.</ns0:p>
-                     <ns0:p>L'<ns0:term>eau-de-vie</ns0:term> est le produit de la distillation du vin, du marc
+                        y écrase ; un vin de deuxième qualité est ainsi obtenu.</p>
+                     <p>L'<term>eau-de-vie</term> est le produit de la distillation du vin, du marc
                         de raisin ou de fruits sucrés, tels que les cerises, les prunes. C'est un
                         liquide incolore, de saveur chaude et même brûlante. La plus renommée est
                         celle qui provient de la ville et des environs de
-                           <ns0:placeName>Cognac</ns0:placeName>. Le <ns0:term>rhum</ns0:term> se tire du jus des
-                        cannes à sucre ; le <ns0:term>kirsch</ns0:term>, des cerises amères écrasées avec
-                        leurs noyaux ; le <ns0:term>marasquin</ns0:term>, des pêches et des prunes. Les
-                        Chinois font de l'eau-de-vie de riz.</ns0:p>
-                     <ns0:p>Les principaux pays vignobles de France sont : la
-                           <ns0:placeName>Champagne</ns0:placeName>, la vallée de la  et
+                           <placeName>Cognac</placeName>. Le <term>rhum</term> se tire du jus des
+                        cannes à sucre ; le <term>kirsch</term>, des cerises amères écrasées avec
+                        leurs noyaux ; le <term>marasquin</term>, des pêches et des prunes. Les
+                        Chinois font de l'eau-de-vie de riz.</p>
+                     <p>Les principaux pays vignobles de France sont : la
+                           <placeName>Champagne</placeName>, la vallée de la  et
                         celle de la , la
-                           <ns0:placeName>Bourgogne</ns0:placeName>, la <ns0:placeName>Franche-<ns0:pb type="page" n="455" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_455.jpg" />
-                           <ns0:fw>LE GALIBIS. 455</ns0:fw> Comté</ns0:placeName>,
-                           l'<ns0:placeName>Orléanais</ns0:placeName>, la vallée de la <ns0:placeName>Loire</ns0:placeName>,
-                           l'<ns0:placeName>Auvergne</ns0:placeName>, la <ns0:placeName>Gascogne</ns0:placeName> et
-                        notamment le <ns0:placeName>Bordelais</ns0:placeName>, les
-                           <ns0:placeName>Charentes</ns0:placeName>, la région du
-                           <ns0:placeName>Languedoc</ns0:placeName> baignée par la , et enfin la
-                           vallée du .</ns0:p>
-                  </ns0:div>
-               </ns0:div>
-               <ns0:div type="agriculture">
-                  <ns0:head type="sujets">Agriculture.</ns0:head>
-                  <ns0:div type="questions">
-                     <ns0:list>
-                        <ns0:item>— Décrire un cep de vigne, les rameaux ou sarments, les bourgeons, les
-                           fleurs, les feuilles.</ns0:item>
-                        <ns0:item>— Détails sur les raisins et leurs variétés.</ns0:item>
-                        <ns0:item>— Qu'est-ce que le chasselas ? Qualités de ce raisin.</ns0:item>
-                        <ns0:item>— Où obtient-on les meilleurs chasselas ? </ns0:item>
-                     </ns0:list>
-                  </ns0:div>
-                  <ns0:div type="réponses">
-                     <ns0:p>Un cep ou pied de vigne est un arbrisseau à tige noueuse, ordinairement
+                           <placeName>Bourgogne</placeName>, la <placeName>Franche-<pb type="page" n="455" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_455.jpg" />
+                           <fw>LE GALIBIS. 455</fw> Comté</placeName>,
+                           l'<placeName>Orléanais</placeName>, la vallée de la <placeName>Loire</placeName>,
+                           l'<placeName>Auvergne</placeName>, la <placeName>Gascogne</placeName> et
+                        notamment le <placeName>Bordelais</placeName>, les
+                           <placeName>Charentes</placeName>, la région du
+                           <placeName>Languedoc</placeName> baignée par la , et enfin la
+                           vallée du .</p>
+                  </div>
+               </div>
+               <div type="agriculture">
+                  <head type="sujets">Agriculture.</head>
+                  <div type="questions">
+                     <list>
+                        <item>— Décrire un cep de vigne, les rameaux ou sarments, les bourgeons, les
+                           fleurs, les feuilles.</item>
+                        <item>— Détails sur les raisins et leurs variétés.</item>
+                        <item>— Qu'est-ce que le chasselas ? Qualités de ce raisin.</item>
+                        <item>— Où obtient-on les meilleurs chasselas ? </item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p>Un cep ou pied de vigne est un arbrisseau à tige noueuse, ordinairement
                         tortue où il pousse des rameaux grimpants, longs et flexibles appelés
                         sarments. La vigne porte des feuilles découpées et des rameaux appelés
                         vrilles ; les fleurs sont nombreuses, d'une odeur suave, disposées en
-                        grappes qui se transforment en raisins.</ns0:p>
-                     <ns0:p>Ce végétal croit avec rapidité, et de ses bourgeons délicats naissent des
+                        grappes qui se transforment en raisins.</p>
+                     <p>Ce végétal croit avec rapidité, et de ses bourgeons délicats naissent des
                         tiges et des branches qui grimpent jusqu'au sommet des plus grands arbres.
                         Sa culture et la préparation du vin remontent à l'antiquité la plus reculée
                         ; ce sont les Phéniciens qui l'apportèrent sur les côtes
-                           d'<ns0:placeName>Espagne</ns0:placeName> et de <ns0:placeName>France</ns0:placeName>.</ns0:p>
-                     <ns0:p>Il y a d'innombrables variétés de raisins. En <ns0:placeName>France</ns0:placeName>,
-                        on distingue d'abord les <ns0:term>raisins blancs</ns0:term> et les <ns0:term>raisins
-                           noirs</ns0:term>, et, parmi les variétés ou cépages : le
-                           <ns0:term>chasselas</ns0:term> et le <ns0:term>muscat</ns0:term>, qui sont pour la table,
-                        — le <ns0:term>pineau</ns0:term>, le <ns0:term>gamay</ns0:term>, le <ns0:term>verreau</ns0:term>, le
-                           <ns0:term>gouais</ns0:term>, qui donnent des vins de différentes qualités.</ns0:p>
-                     <ns0:p>Le chasselas est un beau raisin blanc qui atteint de grandes dimensions et
+                           d'<placeName>Espagne</placeName> et de <placeName>France</placeName>.</p>
+                     <p>Il y a d'innombrables variétés de raisins. En <placeName>France</placeName>,
+                        on distingue d'abord les <term>raisins blancs</term> et les <term>raisins
+                           noirs</term>, et, parmi les variétés ou cépages : le
+                           <term>chasselas</term> et le <term>muscat</term>, qui sont pour la table,
+                        — le <term>pineau</term>, le <term>gamay</term>, le <term>verreau</term>, le
+                           <term>gouais</term>, qui donnent des vins de différentes qualités.</p>
+                     <p>Le chasselas est un beau raisin blanc qui atteint de grandes dimensions et
                         dont les grains se colorent d'un blond doré sous l'influence du soleil. Il
                         est sucré et parfumé. L'espèce la plus estimée se récolte dans les environs
-                        de <ns0:placeName>Fontainebleau</ns0:placeName>, à <ns0:placeName>Thomery</ns0:placeName>
-                        principalement.</ns0:p>
-                  </ns0:div>
-               </ns0:div>
-               <ns0:div type="hygiène">
-                  <ns0:head type="sujets">Hygiène.</ns0:head>
-                  <ns0:div type="questions">
-                     <ns0:list>
-                        <ns0:item>— Quel est le résultat de l'abus des boissons au point de vue de la
+                        de <placeName>Fontainebleau</placeName>, à <placeName>Thomery</placeName>
+                        principalement.</p>
+                  </div>
+               </div>
+               <div type="hygiène">
+                  <head type="sujets">Hygiène.</head>
+                  <div type="questions">
+                     <list>
+                        <item>— Quel est le résultat de l'abus des boissons au point de vue de la
                            santé, de la durée de la vie ? Son influence fatale sur l'esprit, la
-                           raison et le caractère.</ns0:item>
-                     </ns0:list>
-                  </ns0:div>
-                  <ns0:div type="réponses">
-                     <ns0:p>Si les boissons alcooliques prises en quantité modérée et convenablement
+                           raison et le caractère.</item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p>Si les boissons alcooliques prises en quantité modérée et convenablement
                         étendues d'eau sont saines et produisent une action favorable sur notre
                         organisme tout entier qu'elles réchauffent et stimulent, leur abus trouble
                         les fonctions de l'estomac, surexcite les nerfs et amène le tremblement des
-                        membres ; il provoque enfin des congestions presque toujours mortelles.</ns0:p>
-                     <ns0:p>L'abus des boissons alcooliques a les plus déplorables effets sur l'homme au
-                        point de vue moral et intellectuel. « Il tarit les sources de <ns0:l>«
-                           l'intelligence, brise, anéantit la volonté, et amène rapidement avec </ns0:l>
-                        <ns0:l>« la paresse, sa compagne obligée, la misère. Il porte les plus rudes </ns0:l>
-                        <ns0:l>« atteintes à la raison, et quand elle ne succombe pas complètement, </ns0:l>
-                        <ns0:l>« le sens moral est perverti au point de ne plus laisser subsister la </ns0:l>
-                        <ns0:l>« notion du bien et du mal : état d'abrutissement qui mène au crime </ns0:l>
-                        <ns0:l>« et au suicide.</ns0:l></ns0:p>
-                     <ns0:p><ns0:l>« Le mal produit par la passion de l'ivrognerie n'atteint pas seule-</ns0:l>
-                        <ns0:l>« ment le malheureux qui en est la victime honteuse ; l'altération des </ns0:l>
-                        <ns0:l>« facultés de l'intelligence et du cœur, la folie, les penchants vicieux </ns0:l>
-                        <ns0:l>« et coupables, se transmettent aux enfants, et assurent à la
-                           famille,</ns0:l>
-                        <ns0:l>« comme au pays, d'indignes soutiens et une population nombreuse </ns0:l>
-                        <ns0:l>« pour les hôpitaux et les bagnes. » (D'après le <ns0:persName type="historique">Dr RIANT</ns0:persName>.)</ns0:l></ns0:p>
-                  </ns0:div>
-               </ns0:div>
-               <ns0:div type="économie_domestique">
-                  <ns0:head type="sujets">Économie domestique.</ns0:head>
-                  <ns0:div type="questions">
-                     <ns0:list>
-                        <ns0:item>— Qu'entend-on par liqueurs de ménage ? </ns0:item>
-                        <ns0:item>— Comment fabriqueriez-vous un litre de cassis, de brou de noix, de
-                           ratafia ? </ns0:item>
-                        <ns0:item>— Prix de revient de ces liqueurs.</ns0:item>
-                     </ns0:list>
-                  </ns0:div>
-                  <ns0:pb type="page" n="456" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_456.jpg" />
-                  <ns0:fw>456 SUZETTE.</ns0:fw>
-                  <ns0:div type="réponses">
-                     <ns0:p>On entend par <ns0:term>liqueurs de ménage</ns0:term> celles dont la fabrication
+                        membres ; il provoque enfin des congestions presque toujours mortelles.</p>
+                     <p>L'abus des boissons alcooliques a les plus déplorables effets sur l'homme au
+                        point de vue moral et intellectuel. « Il tarit les sources de <l>«
+                           l'intelligence, brise, anéantit la volonté, et amène rapidement avec </l>
+                        <l>« la paresse, sa compagne obligée, la misère. Il porte les plus rudes </l>
+                        <l>« atteintes à la raison, et quand elle ne succombe pas complètement, </l>
+                        <l>« le sens moral est perverti au point de ne plus laisser subsister la </l>
+                        <l>« notion du bien et du mal : état d'abrutissement qui mène au crime </l>
+                        <l>« et au suicide.</l></p>
+                     <p><l>« Le mal produit par la passion de l'ivrognerie n'atteint pas seule-</l>
+                        <l>« ment le malheureux qui en est la victime honteuse ; l'altération des </l>
+                        <l>« facultés de l'intelligence et du cœur, la folie, les penchants vicieux </l>
+                        <l>« et coupables, se transmettent aux enfants, et assurent à la
+                           famille,</l>
+                        <l>« comme au pays, d'indignes soutiens et une population nombreuse </l>
+                        <l>« pour les hôpitaux et les bagnes. » (D'après le <persName type="historique">Dr RIANT</persName>.)</l></p>
+                  </div>
+               </div>
+               <div type="économie_domestique">
+                  <head type="sujets">Économie domestique.</head>
+                  <div type="questions">
+                     <list>
+                        <item>— Qu'entend-on par liqueurs de ménage ? </item>
+                        <item>— Comment fabriqueriez-vous un litre de cassis, de brou de noix, de
+                           ratafia ? </item>
+                        <item>— Prix de revient de ces liqueurs.</item>
+                     </list>
+                  </div>
+                  <pb type="page" n="456" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_456.jpg" />
+                  <fw>456 SUZETTE.</fw>
+                  <div type="réponses">
+                     <p>On entend par <term>liqueurs de ménage</term> celles dont la fabrication
                         très simple ne nécessite rien autre chose que les matières dont on use pour
                         la nourriture ordinaire. Elles reviennent beaucoup moins cher que les
-                        autres.</ns0:p>
-                     <ns0:p>CASSIS. — Égrenez et écrasez un kilogramme et demi de grains de cassis très
+                        autres.</p>
+                     <p>CASSIS. — Égrenez et écrasez un kilogramme et demi de grains de cassis très
                         mûrs ; mettez-les dans une cruche avec 4 litres et demi d'eau-de-vie blanche
                         ordinaire à 52°, 250 grammes de framboises, deux clous de girofle et 4
                         grammes de cannelle. Au bout de deux mois, tirez la liqueur et pressez les
                         grains ; remettez le jus dans un vase avec un kilogramme de sucre et filtrez
-                        (1).</ns0:p>
-                     <ns0:p>BROU DE NOIX. — Prenez 80 noix un peu grosses, mais assez peu formées pour
+                        (1).</p>
+                     <p>BROU DE NOIX. — Prenez 80 noix un peu grosses, mais assez peu formées pour
                         qu'une épingle puisse passer à travers ; pilez-les et faites-les infuser
                         deux mois dans 4 litres d'eau-de-vie. Égouttez-les dans un tamis ; mettez
                         dans cette liqueur 1 kilogramme de sucre ; laissez reposer encore trois mois
-                        et filtrez.</ns0:p>
-                     <ns0:p>RATAFIA DE FRAMBOISES. — Faites fondre un kilogramme de sucre dans le jus de
+                        et filtrez.</p>
+                     <p>RATAFIA DE FRAMBOISES. — Faites fondre un kilogramme de sucre dans le jus de
                         600 grammes de framboises, 125 grammes de cerises et 4 litres d'eau-de-vie ;
-                        pressez et filtrez.</ns0:p>
-                     <ns0:p>(On établira le prix de revient du litre de chacune de ces liqueurs en
+                        pressez et filtrez.</p>
+                     <p>(On établira le prix de revient du litre de chacune de ces liqueurs en
                         calculant, proportionnellement à la quantité employée, ce que coûtent
-                        séparément les matières qui les composent.)</ns0:p>
-                  </ns0:div>
-               </ns0:div>
-            </ns0:div>
-         </ns0:div>
-         
+                        séparément les matières qui les composent.)</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

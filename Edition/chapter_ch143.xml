@@ -1,224 +1,303 @@
-<?xml version='1.0' encoding='utf-8'?>
-<ns0:div xmlns:ns0="http://www.tei-c.org/ns/1.0" type="chapitre" xml:lang="fr" n="ch143">
-            <ns0:pb type="page" n="512" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_512.jpg" />
-            <ns0:fw>512 SUZETTE.</ns0:fw>
-            <ns0:head>143. — Salut à la fermière ! <ns0:gloss>(Élève, p. 309.)</ns0:gloss></ns0:head>
-            <ns0:div type="récit">
-               <ns0:p>Il avait fait une de ces chaudes journées de juillet, belles doreuses d'épis. La
-                  nuit tombait. <ns0:persName key="m_dumay" type="fictif">M. Dumay</ns0:persName> et
-                     <ns0:persName key="charlot" type="fictif">Charlot</ns0:persName>, après le grand labeur
-                  d'un premier jour de moisson, somnolaient, accoudés sur la table du souper.</ns0:p>
-               <ns0:p>Assise dans la cour, à la délicieuse fraicheur du soir, <ns0:persName key="suzette" type="fictif">Suzette</ns0:persName> révait, les yeux sur la profondeur du
-                  firmament.</ns0:p>
-               <ns0:p>La lune, montant de l'horizon, éclairait de sa blancheur la cour et la campagne
-                  endormies.</ns0:p>
-               <ns0:p>Tout à coup, sur la route une voix s'éleva, une voix claire qui chantait : </ns0:p>
-               <ns0:lg>
-                  <ns0:l>« Salut à la fermière ! elle est</ns0:l>
-                  <ns0:l>Si gentille et si douce ! </ns0:l>
-                  <ns0:l>C'est l'oiseau des bois qui se plait </ns0:l>
-                  <ns0:l>Loin du bruit, dans la mousse.</ns0:l>
-                  <ns0:l>Vieux vagabond qui tends la main, </ns0:l>
-                  <ns0:l>Enfant pauvre et sans mère,</ns0:l>
-                  <ns0:l>Puissiez-vous trouver en chemin</ns0:l>
-                  <ns0:l>La ferme et la fermière ! » </ns0:l>
-               </ns0:lg>
-               <ns0:p><ns0:persName key="suzette" type="fictif">Suzette</ns0:persName> s'était dressée,
-                  l'oreille tendue : </ns0:p>
-               <ns0:p>La voix de <ns0:persName key="jacques" type="fictif">Jacques</ns0:persName> ? Ce serait la
-                  voix de <ns0:persName key="jacques" type="fictif">Jacques</ns0:persName> ? Mais non ! Il
-                  n'arrivait que dans huit jours ; sa dernière lettre le disait.</ns0:p>
-               <ns0:p>Et aussitôt une autre voix, celle-là un peu tremblante, reprit :</ns0:p>
-               <ns0:lg>
-                  <ns0:l>« De l'escabeau vide au foyer,</ns0:l>
-                  <ns0:l>Là, le pauvre s'empare,</ns0:l>
-                  <ns0:l>Et le grand bahut de noyer,</ns0:l>
-                  <ns0:l>Pour lui, n'est pas avare.</ns0:l>
-                  <ns0:l>C'est là qu'un jour je vins m'asseoir,</ns0:l>
-                  <ns0:l>Les pieds blancs de poussière ; </ns0:l>
-                  <ns0:l>Un jour.., puis en marche, et bonsoir</ns0:l>
-                  <ns0:l>La ferme et la fermière ! » </ns0:l>
-                  <ns0:l>(<ns0:persName ref="http://viaf.org/viaf/71475811/" role="aut">HÉGÉSIPPE
-                        MOREAU</ns0:persName>.)</ns0:l>
-               </ns0:lg>
-               <ns0:p>Un bruit de pas suivit la chanson. <ns0:persName key="suzette" type="fictif">Suzette</ns0:persName>, tout émue, courut à la porte.</ns0:p>
-               <ns0:p>Sur la route, sous les arbres, s'apercevaient deux ombres. Elles arrivèrent en
+<?xml-model href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/out/suzette-NewCustom.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/CSS/suzette_reading.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Suzette: a Digital Edition</title>
+            <respStmt>
+               <persName>John Westbrook</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Editor</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Diane Jakacki</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Project Manager</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annie Girton</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2018-2020</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Sarah Haber</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2020-2022</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Rebecca Heintzelman</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2020-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Juliya Harnood</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2021-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Jaehoon Pyon</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2023-Present</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Bucknell University</distributor>
+            <pubPlace>
+               <address>
+                  <addrLine>One Dent Drive</addrLine>
+                  <addrLine>Lewisburg, PA 17837</addrLine>
+               </address>
+            </pubPlace>
+            <availability>
+               <licence>Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Suzette: Livre de Lecture Courante à l’Usage des Jeunes Filles.
+                     Morale—Leçon de choses, Economie Domestique – Ménage – Cuisine –
+                     Couture</title>
+                  <author>Robert Halt</author>
+                  <textLang>French</textLang>
+                  <imprint>
+                     <date>1889</date>
+                     <distributor>Libraire Classique Paul Delaplane</distributor>
+                     <pubPlace>Paris, France</pubPlace>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="fr">French</language>
+            <language ident="en">English</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+<div xmlns:ns0="http://www.tei-c.org/ns/1.0" type="chapitre" xml:lang="fr" n="ch143">
+            <pb type="page" n="512" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_512.jpg" />
+            <fw>512 SUZETTE.</fw>
+            <head>143. — Salut à la fermière ! <gloss>(Élève, p. 309.)</gloss></head>
+            <div type="récit">
+               <p>Il avait fait une de ces chaudes journées de juillet, belles doreuses d'épis. La
+                  nuit tombait. <persName key="m_dumay" type="fictif">M. Dumay</persName> et
+                     <persName key="charlot" type="fictif">Charlot</persName>, après le grand labeur
+                  d'un premier jour de moisson, somnolaient, accoudés sur la table du souper.</p>
+               <p>Assise dans la cour, à la délicieuse fraicheur du soir, <persName key="suzette" type="fictif">Suzette</persName> révait, les yeux sur la profondeur du
+                  firmament.</p>
+               <p>La lune, montant de l'horizon, éclairait de sa blancheur la cour et la campagne
+                  endormies.</p>
+               <p>Tout à coup, sur la route une voix s'éleva, une voix claire qui chantait : </p>
+               <lg>
+                  <l>« Salut à la fermière ! elle est</l>
+                  <l>Si gentille et si douce ! </l>
+                  <l>C'est l'oiseau des bois qui se plait </l>
+                  <l>Loin du bruit, dans la mousse.</l>
+                  <l>Vieux vagabond qui tends la main, </l>
+                  <l>Enfant pauvre et sans mère,</l>
+                  <l>Puissiez-vous trouver en chemin</l>
+                  <l>La ferme et la fermière ! » </l>
+               </lg>
+               <p><persName key="suzette" type="fictif">Suzette</persName> s'était dressée,
+                  l'oreille tendue : </p>
+               <p>La voix de <persName key="jacques" type="fictif">Jacques</persName> ? Ce serait la
+                  voix de <persName key="jacques" type="fictif">Jacques</persName> ? Mais non ! Il
+                  n'arrivait que dans huit jours ; sa dernière lettre le disait.</p>
+               <p>Et aussitôt une autre voix, celle-là un peu tremblante, reprit :</p>
+               <lg>
+                  <l>« De l'escabeau vide au foyer,</l>
+                  <l>Là, le pauvre s'empare,</l>
+                  <l>Et le grand bahut de noyer,</l>
+                  <l>Pour lui, n'est pas avare.</l>
+                  <l>C'est là qu'un jour je vins m'asseoir,</l>
+                  <l>Les pieds blancs de poussière ; </l>
+                  <l>Un jour.., puis en marche, et bonsoir</l>
+                  <l>La ferme et la fermière ! » </l>
+                  <l>(<persName ref="http://viaf.org/viaf/71475811/" role="aut">HÉGÉSIPPE
+                        MOREAU</persName>.)</l>
+               </lg>
+               <p>Un bruit de pas suivit la chanson. <persName key="suzette" type="fictif">Suzette</persName>, tout émue, courut à la porte.</p>
+               <p>Sur la route, sous les arbres, s'apercevaient deux ombres. Elles arrivèrent en
                   pleine clarté de la lune : et c'étaient deux soldats de l'infanterie de
-                  marine.</ns0:p>
-               <ns0:pb type="page" n="513" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_513.jpg" />
-               <ns0:fw>SALUT A LA FERMIERE ! 513</ns0:fw>
-               <ns0:p><ns0:persName key="suzette" type="fictif">Suzette</ns0:persName> poussa un grand cri : </ns0:p>
-               <ns0:p>— Père ! les voilà ! les voilà ! </ns0:p>
-               <ns0:p>Et elle courut se jeter au cou de son frère ; puis elle tendit la main à <ns0:persName key="sylvain" type="fictif">Sylvain</ns0:persName>.</ns0:p>
-               <ns0:figure>
-                  <ns0:caption>Sur la route, sous les arbres, s'apercevaient deux ombres.</ns0:caption>
-               </ns0:figure>
-               <ns0:p>Le père était déjà là avec <ns0:persName key="charlot" type="fictif">Charlot</ns0:persName> : </ns0:p>
-               <ns0:p>— Mon fils ! mon <ns0:persName key="jacques" type="fictif">Jacques</ns0:persName> ! Ah !
-                  que je te presse sur mon cœur... Et vous aussi, <ns0:persName key="sylvain" type="fictif">Sylvain</ns0:persName> ! mon brave <ns0:persName key="sylvain" type="fictif">Sylvain</ns0:persName> ! </ns0:p>
-               <ns0:p>On entra dans la maison ; on haussa la flamme de la lampe. Ah ! qu'ils étaient
+                  marine.</p>
+               <pb type="page" n="513" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_513.jpg" />
+               <fw>SALUT A LA FERMIERE ! 513</fw>
+               <p><persName key="suzette" type="fictif">Suzette</persName> poussa un grand cri : </p>
+               <p>— Père ! les voilà ! les voilà ! </p>
+               <p>Et elle courut se jeter au cou de son frère ; puis elle tendit la main à <persName key="sylvain" type="fictif">Sylvain</persName>.</p>
+               <figure>
+                  <caption>Sur la route, sous les arbres, s'apercevaient deux ombres.</caption>
+               </figure>
+               <p>Le père était déjà là avec <persName key="charlot" type="fictif">Charlot</persName> : </p>
+               <p>— Mon fils ! mon <persName key="jacques" type="fictif">Jacques</persName> ! Ah !
+                  que je te presse sur mon cœur... Et vous aussi, <persName key="sylvain" type="fictif">Sylvain</persName> ! mon brave <persName key="sylvain" type="fictif">Sylvain</persName> ! </p>
+               <p>On entra dans la maison ; on haussa la flamme de la lampe. Ah ! qu'ils étaient
                   beaux dans leur vareuse bleue, à boutons d'or ! à galons d'or ! Grandis, barbus,
-                  de vrais hommes ; et leur honnête cœur brillait sur leur visage épanoui.</ns0:p>
-               <ns0:p>Ils avaient mis trois semaines seulement en mer au lieu de quatre ; et voilà la
+                  de vrais hommes ; et leur honnête cœur brillait sur leur visage épanoui.</p>
+               <p>Ils avaient mis trois semaines seulement en mer au lieu de quatre ; et voilà la
                   raison de la surprise ! Ils arrivaient de la ville à pied; n'ayant pas voulu
-                  attendre le courrier, qui n'en partait qu'à minuit.</ns0:p>
-               <ns0:fw type="footer"><ns0:fw type="sig">29.</ns0:fw></ns0:fw>
-               <ns0:pb type="page" n="514" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_514.jpg" />
-               <ns0:fw>514 SUZETTE.</ns0:fw>
-               <ns0:p><ns0:persName key="suzette" type="fictif">Suzette</ns0:persName> avait déjà placé sur la
+                  attendre le courrier, qui n'en partait qu'à minuit.</p>
+               <fw type="footer"><fw type="sig">29.</fw></fw>
+               <pb type="page" n="514" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_514.jpg" />
+               <fw>514 SUZETTE.</fw>
+               <p><persName key="suzette" type="fictif">Suzette</persName> avait déjà placé sur la
                   table tout ce qui restait de vivres. Et tandis que les voyageurs causaient et
                   mangeaient en gens qui viennent de faire quinze cents lieues, on admirait de
-                  nouveau leur belle mine et leurs galons, les galons de sergent-major de <ns0:persName key="sylvain" type="fictif">Sylvain</ns0:persName>, dont on rappela la cause, et
-                  les galons de sergent de Jacques.</ns0:p>
-               <ns0:p>A la fin du repas, <ns0:persName key="suzette" type="fictif">Suzette</ns0:persName> se
-                  plaignit de n'avoir pas de dessert à donner. Alors <ns0:persName key="sylvain" type="fictif">Sylvain</ns0:persName> alla prendre un paquet qu'il avait, en
-                  entrant, posé sur une chaise. Il l'ouvrit :</ns0:p>
-               <ns0:p>Mademoiselle <ns0:persName key="suzette" type="fictif">Suzette</ns0:persName>, dit-il, je
+                  nouveau leur belle mine et leurs galons, les galons de sergent-major de <persName key="sylvain" type="fictif">Sylvain</persName>, dont on rappela la cause, et
+                  les galons de sergent de Jacques.</p>
+               <p>A la fin du repas, <persName key="suzette" type="fictif">Suzette</persName> se
+                  plaignit de n'avoir pas de dessert à donner. Alors <persName key="sylvain" type="fictif">Sylvain</persName> alla prendre un paquet qu'il avait, en
+                  entrant, posé sur une chaise. Il l'ouvrit :</p>
+               <p>Mademoiselle <persName key="suzette" type="fictif">Suzette</persName>, dit-il, je
                   vous rapporte la petite bourriche que vous me confiâtes au départ. Mais les
-                  pommes, les poires, le petit pot de miel n'y sont <ns0:figure>
-                     <ns0:caption>Gingembre. Cette plante est cultivée dans les contrées tropicales de
+                  pommes, les poires, le petit pot de miel n'y sont <figure>
+                     <caption>Gingembre. Cette plante est cultivée dans les contrées tropicales de
                         l'Amérique ; on l'utilise en médecine et en cuisine. En Angleterre et en
                         Allemagne, on fait une grande consommation de racines fraiches de gingembre
                         confites au sucre ; on en prépare aussi une sorte de confitures. Avec la
                         poudre de gingembre, on fabrique de la bière et un vin de
-                        gingembre.</ns0:caption>
-                  </ns0:figure> plus. Pourtant, il y a du dessert, si vous me permettez de vous
-                  l'offrir.</ns0:p>
-               <ns0:p>Elle prit la bourriche, l'ouvrit. Et là se trouvaient un beau régime*<ns0:note type="annotation">Régime. Rameau de bananier avec ses fruits.</ns0:note> de
+                        gingembre.</caption>
+                  </figure> plus. Pourtant, il y a du dessert, si vous me permettez de vous
+                  l'offrir.</p>
+               <p>Elle prit la bourriche, l'ouvrit. Et là se trouvaient un beau régime*<note type="annotation">Régime. Rameau de bananier avec ses fruits.</note> de
                   bananes, encore suspendu à sa branche, plusieurs bouts de canne à sucre, une noix
                   de coco, d'odorantes gousses de vanille enveloppées de papier d'étain, et deux
-                  pots de confitures de cédrat*<ns0:note type="annotation">Cédrat. Citron d'une odeur
-                     fort agréable.</ns0:note>.</ns0:p>
-               <ns0:p><ns0:persName key="jacques" type="fictif">Jacques</ns0:persName>, lui aussi, avait un
+                  pots de confitures de cédrat*<note type="annotation">Cédrat. Citron d'une odeur
+                     fort agréable.</note>.</p>
+               <p><persName key="jacques" type="fictif">Jacques</persName>, lui aussi, avait un
                   paquet, dont il tira un sac de café vert, un autre de manioc en poudre et de la
-                  confiture de gingembre.</ns0:p>
-               <ns0:p>Les deux Martinicains voulaient qu'on goûtât tout de suite aux confitures ; mais
+                  confiture de gingembre.</p>
+               <p>Les deux Martinicains voulaient qu'on goûtât tout de suite aux confitures ; mais
                   le père et la fille remirent la fête au surlendemain, où l'on inviterait
-                     <ns0:orgName>les Valon</ns0:orgName> et <ns0:orgName>les Cartier</ns0:orgName>.</ns0:p>
-               <ns0:p>Car depuis la première visite de M. Cartier on s'était lié avec lui. Il ne lui
-                  restait qu'une fille, <ns0:persName key="cécile" type="fictif">Cécile</ns0:persName>,
-                  après la perte de sa femme et de deux garçons. <ns0:persName key="suzette" type="fictif">Suzette</ns0:persName> et Mlle <ns0:persName key="cécile" type="fictif">Cécile</ns0:persName>, une bonne personne, avec du naturel, qui est la plus
-                  aimable des grâces, s'étaient plu à première vue.</ns0:p>
-               <ns0:pb type="page" n="515" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_515.jpg" />
-               <ns0:fw>SALUT A LA FERMIERE ! 515</ns0:fw>
-               <ns0:p>Comme on parlait d'elle, une voiture s'arrête à la porte ; et voilà que <ns0:persName key="m_cartier" type="fictif">M. Cartier</ns0:persName> et sa fille en descendent ;
-                  la seconde d'après, <ns0:persName key="m_valon">M</ns0:persName>. et <ns0:persName key="mme_valon" type="fictif">Mme Valon</ns0:persName> arrivent de leur côté.</ns0:p>
-               <ns0:p>Ce furent de nouvelles embrassades, de nouvelles poignées de main.</ns0:p>
-               <ns0:p>Hé ! s'écria M. <ns0:persName key="m_cartier" type="fictif">Cartier</ns0:persName> avec
+                     <orgName>les Valon</orgName> et <orgName>les Cartier</orgName>.</p>
+               <p>Car depuis la première visite de M. Cartier on s'était lié avec lui. Il ne lui
+                  restait qu'une fille, <persName key="cécile" type="fictif">Cécile</persName>,
+                  après la perte de sa femme et de deux garçons. <persName key="suzette" type="fictif">Suzette</persName> et Mlle <persName key="cécile" type="fictif">Cécile</persName>, une bonne personne, avec du naturel, qui est la plus
+                  aimable des grâces, s'étaient plu à première vue.</p>
+               <pb type="page" n="515" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_515.jpg" />
+               <fw>SALUT A LA FERMIERE ! 515</fw>
+               <p>Comme on parlait d'elle, une voiture s'arrête à la porte ; et voilà que <persName key="m_cartier" type="fictif">M. Cartier</persName> et sa fille en descendent ;
+                  la seconde d'après, <persName key="m_valon">M</persName>. et <persName key="mme_valon" type="fictif">Mme Valon</persName> arrivent de leur côté.</p>
+               <p>Ce furent de nouvelles embrassades, de nouvelles poignées de main.</p>
+               <p>Hé ! s'écria M. <persName key="m_cartier" type="fictif">Cartier</persName> avec
                   bonne humeur, ai-je eu bon nez de passer par ici en revenant du
-                     <ns0:placeName>Catelet</ns0:placeName> !</ns0:p>
-               <ns0:p>On causa quelques instants et après avoir accepté pour le surlendemain
-                  l'invitation à dîner de M. <ns0:persName key="m_dumay" type="fictif">Dumay</ns0:persName>,
-                  M. <ns0:persName key="m_cartier" type="fictif">Cartier</ns0:persName> emmena <ns0:persName key="sylvain" type="fictif">Sylvain</ns0:persName>.</ns0:p>
-               <ns0:p>En s'en retournant, <ns0:persName key="mme_valon" type="fictif">Mme Valon</ns0:persName>
-                  dit à son mari : </ns0:p>
-               <ns0:p>— Je crois bien que nous irons cette année à la noce.</ns0:p>
-               <ns0:p>— Et même à une double noce, répondit <ns0:persName key="m_valon" type="fictif">M.
-                     Valon</ns0:persName>.</ns0:p>
-               <ns0:p>Elle ajouta : </ns0:p>
-               <ns0:p>Sylvain est un cœur honnête et généreux ; le choix de ma <ns0:persName key="suzette" type="fictif">Suzette</ns0:persName> ne me fâchera pas.</ns0:p>
-            </ns0:div>
-            <ns0:div type="questionnaire">
-               <ns0:head>Questionnaire.</ns0:head>
-               <ns0:list>
-                  <ns0:item>— Comment avait été la journée ? </ns0:item>
-                  <ns0:item>— Que faisaient <ns0:persName type="fictif" key="m_dumay">M. Dumay</ns0:persName> et
-                        <ns0:persName type="fictif" key="charlot">Charlot</ns0:persName>, accoudés sur la
-                     table du souper ? </ns0:item>
-                  <ns0:item>— Où était <ns0:persName key="suzette" type="fictif">Suzette</ns0:persName> ? </ns0:item>
-                  <ns0:item>— Récitez le couplet qu'elle entendit chanter.</ns0:item>
-                  <ns0:item>— Quelle voix reconnut <ns0:persName type="fictif" key="suzette">Suzette</ns0:persName> dans celle du chanteur ? </ns0:item>
-                  <ns0:item>— Que chanta ensuite une autre voix ? </ns0:item>
-                  <ns0:item>— Qu'apereut la jeune fille sur la route ? </ns0:item>
-                  <ns0:item>— Racontez la scène touchante du retour.</ns0:item>
-                  <ns0:item>— Où entra-t-on ? </ns0:item>
-                  <ns0:item>— Comment étaient les jeunes soldats ? </ns0:item>
-                  <ns0:item>— Quelle était la raison de leur retour imprèvu ? </ns0:item>
-                  <ns0:item>— Comment se passa le souper des nouveaux arrivants ? </ns0:item>
-                  <ns0:item>— A quelle occasion et en quels termes <ns0:persName type="fictif" key="sylvain">Sylvain</ns0:persName> offrit-il une bourriche à <ns0:persName type="fictif" key="suzette">Suzette</ns0:persName> ? </ns0:item>
-                  <ns0:item>— Qu'est-ce qui s'y trouvait ? </ns0:item>
-                  <ns0:item>— Qu'avait apporté <ns0:persName type="fictif" key="jacques">Jacques</ns0:persName>
-                     ? </ns0:item>
-                  <ns0:item>— Que voulaient les deux Martinicains ? </ns0:item>
-                  <ns0:item>— Quelle décision prit-on ? </ns0:item>
-                  <ns0:item>— Quelles relations s'étaient établies avec la <ns0:orgName>famille
-                        Cartier</ns0:orgName> ? </ns0:item>
-                  <ns0:item>— Quelles personnes survinrent ? </ns0:item>
-                  <ns0:item>— Racontez les incidents de cette dernière partie de la soirée.</ns0:item>
-               </ns0:list>
-            </ns0:div>
-            <ns0:div type="exercices">
-               <ns0:head>DÉVELOPPEMENT DES SUJETS PROPOSÉS POUR EXERCICES.</ns0:head>
-               <ns0:div type="complexe">
-                  <ns0:head type="sujets">Géographie et Cosmographie.</ns0:head>
-                  <ns0:div type="questions">
-                     <ns0:list>
-                        <ns0:item>— Quel nom donne-t-on à une bande blanchâtre, semée d'étoiles, qui
-                           traverse le ciel ? </ns0:item>
-                        <ns0:item>— De quoi est-elle formée ? </ns0:item>
-                        <ns0:item>— Qu'est le soleil ? </ns0:item>
-                        <ns0:item>— Donnez une idée de la vitesse de propagation de la lumière.</ns0:item>
-                        <ns0:item>— Combien la lumière met-elle de temps pour nous parvenir des étoiles
-                           les plus rapprochées ? </ns0:item>
-                     </ns0:list>
-                  </ns0:div>
-                  <ns0:div type="réponses">
-                     <ns0:p>Pendant les belles nuits, on aperçoit dans le ciel, et à peu près dans la
+                     <placeName>Catelet</placeName> !</p>
+               <p>On causa quelques instants et après avoir accepté pour le surlendemain
+                  l'invitation à dîner de M. <persName key="m_dumay" type="fictif">Dumay</persName>,
+                  M. <persName key="m_cartier" type="fictif">Cartier</persName> emmena <persName key="sylvain" type="fictif">Sylvain</persName>.</p>
+               <p>En s'en retournant, <persName key="mme_valon" type="fictif">Mme Valon</persName>
+                  dit à son mari : </p>
+               <p>— Je crois bien que nous irons cette année à la noce.</p>
+               <p>— Et même à une double noce, répondit <persName key="m_valon" type="fictif">M.
+                     Valon</persName>.</p>
+               <p>Elle ajouta : </p>
+               <p>Sylvain est un cœur honnête et généreux ; le choix de ma <persName key="suzette" type="fictif">Suzette</persName> ne me fâchera pas.</p>
+            </div>
+            <div type="questionnaire">
+               <head>Questionnaire.</head>
+               <list>
+                  <item>— Comment avait été la journée ? </item>
+                  <item>— Que faisaient <persName type="fictif" key="m_dumay">M. Dumay</persName> et
+                        <persName type="fictif" key="charlot">Charlot</persName>, accoudés sur la
+                     table du souper ? </item>
+                  <item>— Où était <persName key="suzette" type="fictif">Suzette</persName> ? </item>
+                  <item>— Récitez le couplet qu'elle entendit chanter.</item>
+                  <item>— Quelle voix reconnut <persName type="fictif" key="suzette">Suzette</persName> dans celle du chanteur ? </item>
+                  <item>— Que chanta ensuite une autre voix ? </item>
+                  <item>— Qu'apereut la jeune fille sur la route ? </item>
+                  <item>— Racontez la scène touchante du retour.</item>
+                  <item>— Où entra-t-on ? </item>
+                  <item>— Comment étaient les jeunes soldats ? </item>
+                  <item>— Quelle était la raison de leur retour imprèvu ? </item>
+                  <item>— Comment se passa le souper des nouveaux arrivants ? </item>
+                  <item>— A quelle occasion et en quels termes <persName type="fictif" key="sylvain">Sylvain</persName> offrit-il une bourriche à <persName type="fictif" key="suzette">Suzette</persName> ? </item>
+                  <item>— Qu'est-ce qui s'y trouvait ? </item>
+                  <item>— Qu'avait apporté <persName type="fictif" key="jacques">Jacques</persName>
+                     ? </item>
+                  <item>— Que voulaient les deux Martinicains ? </item>
+                  <item>— Quelle décision prit-on ? </item>
+                  <item>— Quelles relations s'étaient établies avec la <orgName>famille
+                        Cartier</orgName> ? </item>
+                  <item>— Quelles personnes survinrent ? </item>
+                  <item>— Racontez les incidents de cette dernière partie de la soirée.</item>
+               </list>
+            </div>
+            <div type="exercices">
+               <head>DÉVELOPPEMENT DES SUJETS PROPOSÉS POUR EXERCICES.</head>
+               <div type="complexe">
+                  <head type="sujets">Géographie et Cosmographie.</head>
+                  <div type="questions">
+                     <list>
+                        <item>— Quel nom donne-t-on à une bande blanchâtre, semée d'étoiles, qui
+                           traverse le ciel ? </item>
+                        <item>— De quoi est-elle formée ? </item>
+                        <item>— Qu'est le soleil ? </item>
+                        <item>— Donnez une idée de la vitesse de propagation de la lumière.</item>
+                        <item>— Combien la lumière met-elle de temps pour nous parvenir des étoiles
+                           les plus rapprochées ? </item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p>Pendant les belles nuits, on aperçoit dans le ciel, et à peu près dans la
                         direction du nord au sud, une grande trainée lummeuse qui se divise en deux
                         branches principales, sur près de moitié de sa longueur ; c'est la voie
-                        lactée. Elle forme comme un cercle dont nous ne verrions que la moitié.</ns0:p>
-                     <ns0:p>La voie lactée est une immense agrégation d'étoiles ; on estime qu'elle n'en
+                        lactée. Elle forme comme un cercle dont nous ne verrions que la moitié.</p>
+                     <p>La voie lactée est une immense agrégation d'étoiles ; on estime qu'elle n'en
                         contient pas moins de 18 millions dans la partie accessible à nos regards.
                         Le soleil est l'une de ces étoiles, et il paraît comme perdu, dans cette
                         fourmilière de mondes, avec son cortège de pianêtes ; c'est un atome dans la
-                        poussière lumineuse de la voie lactée.</ns0:p>
-                     <ns0:p>On sait que la lumière parcourt en une seconde au moins 300,000 kilomêtres,
+                        poussière lumineuse de la voie lactée.</p>
+                     <p>On sait que la lumière parcourt en une seconde au moins 300,000 kilomêtres,
                         soit environ huit fois la circonférence du globe ; or les dimensions de la
-                        voie lactée sont si prodigieuses que, pour franchir l'espace <ns0:pb type="page" n="516" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_516.jpg" />
-                        <ns0:fw>516 SUZETTE.</ns0:fw> qui sépare ses deux extrémités, un rayon lumineux
+                        voie lactée sont si prodigieuses que, pour franchir l'espace <pb type="page" n="516" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_516.jpg" />
+                        <fw>516 SUZETTE.</fw> qui sépare ses deux extrémités, un rayon lumineux
                         mettrait plus de dix mille années. Cependant elle-même n'est qu'un point
                         dans l'immensité du ciel, où l'on a déjà reconnu près de 4,500 amas
                         semblablès d'étoiles. Quelques-uns sont si éloignés que leur lumière met
-                        deux millions d'années à nous parvenir.</ns0:p>
-                     <ns0:p>La lumière des étoiles emploie un temps considérable à franchir la distance
+                        deux millions d'années à nous parvenir.</p>
+                     <p>La lumière des étoiles emploie un temps considérable à franchir la distance
                         qui les sépare de la terre : ainsi, celle de la plus proche de nous met 3
                         ans et demi ; il faut 21 ans à celle de l'éclatant Sirius, le plus bel astre
                         du ciel ; à celle de l'étoile polaire, 50 ans ; à celle de la ; Chèvre, 72
-                        ans.</ns0:p>
-                     <ns0:p>L'imagination est confondue en face de tels nombres et de ces espaces
+                        ans.</p>
+                     <p>L'imagination est confondue en face de tels nombres et de ces espaces
                         prodigieux où l'œil de l'homme n'avance que pour rencontrer d'autres
                         éspaces, et où la pensée se perd anéantie devant la toute-puissance du
-                        Créateur.</ns0:p>
-                  </ns0:div>
-               </ns0:div>
+                        Créateur.</p>
+                  </div>
+               </div>
 
-               <ns0:div type="sciences_naturelles">
-                  <ns0:head type="sujets">Sciences naturelles.</ns0:head>
-                  <ns0:div type="questions">
-                     <ns0:list>
-                        <ns0:item>— Que savez-vous des bananes ? — des noix de coco? — des cédrats, du
-                           gingembre ? </ns0:item>
-                        <ns0:item>— Où croit le thé ? </ns0:item>
-                        <ns0:item>— Que recherche-t-on dans cet arbrisseau ? </ns0:item>
+               <div type="sciences_naturelles">
+                  <head type="sujets">Sciences naturelles.</head>
+                  <div type="questions">
+                     <list>
+                        <item>— Que savez-vous des bananes ? — des noix de coco? — des cédrats, du
+                           gingembre ? </item>
+                        <item>— Où croit le thé ? </item>
+                        <item>— Que recherche-t-on dans cet arbrisseau ? </item>
 
-                     </ns0:list>
-                  </ns0:div>
-                  <ns0:div type="réponses">
-                     <ns0:p>Les bananes sont des fruits des pays tropicaux qui croissent par groupes ou
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p>Les bananes sont des fruits des pays tropicaux qui croissent par groupes ou
                         régimes sur un arbre appelé bananier. Elles ressemblent à des concombres de
                         0m,10 à 0m,12 dé longueur ; leur couleur est jaunâtre, leur saveur douce et
                         sucrée : c'est le fond de l'alimentation de la classe laborieuse dans les
-                        pays chauds de l'Amérique.</ns0:p>
-                     <ns0:p>On appelle noix de coco le fruit du cocotier. Elle est composée d'une
+                        pays chauds de l'Amérique.</p>
+                     <p>On appelle noix de coco le fruit du cocotier. Elle est composée d'une
                         enveloppe filamenteuse, ovale et très dure, qui renferme une amande creuse,
                         blanche et succulente, laquelle contient une liqueur laiteuse, agréable au
-                        goût.</ns0:p>
-                     <ns0:p>Le cédrat est un citron d'une odeur fort agréable.</ns0:p>
-                     <ns0:p>Le gingembre est une plante originaire des Indes dont la racine est d'un
-                        goût approchant de celui du poivre.</ns0:p>
-                     <ns0:p>Le thé, arbrisseau de la famille des camélias, est originaire de la
-                              <ns0:placeName><ns0:country ref="chine">Chine</ns0:country></ns0:placeName> et du
-                              <ns0:placeName><ns0:country ref="japon">Japon</ns0:country></ns0:placeName> ; il
+                        goût.</p>
+                     <p>Le cédrat est un citron d'une odeur fort agréable.</p>
+                     <p>Le gingembre est une plante originaire des Indes dont la racine est d'un
+                        goût approchant de celui du poivre.</p>
+                     <p>Le thé, arbrisseau de la famille des camélias, est originaire de la
+                              <placeName><country ref="chine">Chine</country></placeName> et du
+                              <placeName><country ref="japon">Japon</country></placeName> ; il
                         s'élève à une hauteur de 1m,30 à 2 mêtres. On n'en utilise que les feuilles,
                         lesquelles sont récoltées deux fois par an, au printemps et en automne,
                         lorsqu’elles commencent à s'épanouir. Après les avoir fait sécher un peu au
@@ -227,57 +306,57 @@
                         opérations, et lorsque le thé, bien desséché, a été privé du principe âcre
                         qu'il renfermait, on le met dans des caisses doublées de lames de plomb où
                         on le tasse autant que possible, pour l'expédier en
-                           <ns0:placeName>Europe</ns0:placeName> et on <ns0:placeName>Amérique</ns0:placeName>.
+                           <placeName>Europe</placeName> et on <placeName>Amérique</placeName>.
                         L'usage du thé a été introduit en Occident vers la fin du dix-septième
                          siècle ; on en fait surtout
-                        usage en <ns0:placeName><ns0:country ref="angleterre">Angleterre</ns0:country></ns0:placeName>, en <ns0:placeName>Hollande</ns0:placeName> et
-                        aux <ns0:placeName>Etats-Unis</ns0:placeName>.</ns0:p>
-                  </ns0:div>
-               </ns0:div>
-               <ns0:div type="économie_domestique">
-                  <ns0:head type="sujets">Économie domestique.</ns0:head>
-                  <ns0:div type="questions">
-                     <ns0:list>
-                        <ns0:item>— Comment prépare-t-on une tasse ou infusion de thé ? </ns0:item>
-                        <ns0:item>— Usages de cette infusion.</ns0:item>
-                        <ns0:item>— Comment sert-on le thé ? </ns0:item>
-                        <ns0:item>— De quoi se compose un dessert ? </ns0:item>
-                        <ns0:item>— Comment sert-on et mange-t-on les gâteaux, les fruits, les
-                           confitures ? </ns0:item>
-                     </ns0:list>
-                  </ns0:div>
-                  <ns0:div type="réponses">
-                     <ns0:p>Il y a lieu de rappeler que les espèces vertes de thé ont plus de force et
+                        usage en <placeName><country ref="angleterre">Angleterre</country></placeName>, en <placeName>Hollande</placeName> et
+                        aux <placeName>Etats-Unis</placeName>.</p>
+                  </div>
+               </div>
+               <div type="économie_domestique">
+                  <head type="sujets">Économie domestique.</head>
+                  <div type="questions">
+                     <list>
+                        <item>— Comment prépare-t-on une tasse ou infusion de thé ? </item>
+                        <item>— Usages de cette infusion.</item>
+                        <item>— Comment sert-on le thé ? </item>
+                        <item>— De quoi se compose un dessert ? </item>
+                        <item>— Comment sert-on et mange-t-on les gâteaux, les fruits, les
+                           confitures ? </item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p>Il y a lieu de rappeler que les espèces vertes de thé ont plus de force et
                         d'arome que les espéces noires ; mais elles irritent et agitent les nerfs ;
-                        leur mélange par moitié n'a pas ces inconvénients.</ns0:p>
-                     <ns0:p>On met dans la théière la quantité de thé nécessaire, laquelle varie selon
+                        leur mélange par moitié n'a pas ces inconvénients.</p>
+                     <p>On met dans la théière la quantité de thé nécessaire, laquelle varie selon
                         le goût ou le besoin que l'on a d'une infusion plus ou moins forte (1). On
-                        verse dessus de l'eau bouillante, et l'infusion est parfaite <ns0:fw type="footer">(1) Il faut environ 8 grammes de thé ou une forte cuillerée
+                        verse dessus de l'eau bouillante, et l'infusion est parfaite <fw type="footer">(1) Il faut environ 8 grammes de thé ou une forte cuillerée
                            à café pour 2 tasses ; pour 4 tasses, 12 grammes ; 30 grammes suffisent
-                           pour 12 tasses.</ns0:fw>
-                        <ns0:pb type="page" n="517" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_517.jpg" />
-                        <ns0:fw>TROIS ANS APRÈS. 517</ns0:fw> aussitôt que les feuilles sont développées et
+                           pour 12 tasses.</fw>
+                        <pb type="page" n="517" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_517.jpg" />
+                        <fw>TROIS ANS APRÈS. 517</fw> aussitôt que les feuilles sont développées et
                         tombées au fond (de 5 à 10 minutes). On verse alors le thé dans une tasse ;
                         on sucre et l'on additionne quelquefois de lait ou d'une petite quantité de
-                        rhum.</ns0:p>
-                     <ns0:p>Le thé, pris après le repas, facilite la digestion des aliments. Presque
+                        rhum.</p>
+                     <p>Le thé, pris après le repas, facilite la digestion des aliments. Presque
                         indispensable aux grands mangeurs, il est très utile aux gens sobres dont
                         les forces digestives ont décliné ; aux personnes replètes, lymphatiques ;
                         aux constitutions rhumatismales ; à ceux qui se nourrissent d'aliments gras,
                         huileux ou farineux ; aux habitants de climats humides ; enfin, aux
                         vieillards. Il agit avec une merveilleuse efficacité dans les fatigues
                         d'estomac, dans la paresse de digestion qui succèdent aux excès de table et
-                        aux veilles.</ns0:p>
-                     <ns0:p>Quelquefois le thé sert de demi-repas, de collation, comme pour le premier
+                        aux veilles.</p>
+                     <p>Quelquefois le thé sert de demi-repas, de collation, comme pour le premier
                         déjeuner et le second souper. Alors il est accompagné de pâtisseries et de
                         pains au beurre, qu'on pose sur la table en même temps qu'un pot de lait et
-                        un flacon de rhum. Il constitue ainsi un aliment réparateur.</ns0:p>
-                     <ns0:p>Un dessert se compose de fromages, de pâtisseries, telles que brioches,
+                        un flacon de rhum. Il constitue ainsi un aliment réparateur.</p>
+                     <p>Un dessert se compose de fromages, de pâtisseries, telles que brioches,
                         babas, gâteaux feuilletés, biscuits de Savoie, biscuits en caisse, nougats,
                         massepains, macarons, meringues ; de compotes diverses, de tranches de
                         pêches au sucre, de prunes, d'oranges, de pommes, de poires, etc., de
-                        gelées, de raisins, de conserves, etc.</ns0:p>
-                     <ns0:p>Pour bien servir un dessert, on l'apprête à l'avance en arrangeant sur
+                        gelées, de raisins, de conserves, etc.</p>
+                     <p>Pour bien servir un dessert, on l'apprête à l'avance en arrangeant sur
                         chacune des assiettes le couvert et le couteau destinés aux convives, et on
                         les dispose en attendant sur une desserte ou une table supplémentaire. On
                         garnit ensuite de grandes assiettes à fruits ayec des feuilles vertes ou de
@@ -287,16 +366,18 @@
                         deux extrémités sont des vases en cristal pour les fruits à l'eau-de-vie et
                         les confitures ; les autres assiettes sont placées dans les intervalles des
                         lumières, des bouteilles et carafons. Une assiette doit toujours avoir son
-                        assiette correspondante.</ns0:p>
-                     <ns0:p>On sert dans l'ordre suivant : le fromage, les pâtisseries, les fruits, les
-                        compotes, les petits fours et les sucreries.</ns0:p>
-                     <ns0:p>On mange les gâteaux en les portant délicatement à la bouche avec la main
+                        assiette correspondante.</p>
+                     <p>On sert dans l'ordre suivant : le fromage, les pâtisseries, les fruits, les
+                        compotes, les petits fours et les sucreries.</p>
+                     <p>On mange les gâteaux en les portant délicatement à la bouche avec la main
                         droite ; les fruits doivent être pelés et coupés auparavant, excepté, bien
                         entendu, les cerises, les raisins et autres analogues. Quant aux confitures,
                         on les mange à l'aide d'une cuiller à dessert et jamais avec son
-                        couteau.</ns0:p>
-                  </ns0:div>
-               </ns0:div>
-            </ns0:div>
-         </ns0:div>
-         
+                        couteau.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
