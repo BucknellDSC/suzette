@@ -1,186 +1,267 @@
-<?xml version='1.0' encoding='utf-8'?>
-<ns0:div xmlns:ns0="http://www.tei-c.org/ns/1.0" type="chapitre" xml:lang="fr" n="ch133">
-            <ns0:head>133. — Un départ. <ns0:gloss>(Élève, p. 281.)</ns0:gloss></ns0:head>
-            <ns0:div type="récit">
-               <ns0:p>Comme on allait se lever de table, quelqu'un frappa à la porte. C'était <ns0:persName type="fictif" key="sylvain">Sylvain</ns0:persName>. On présenta ce compagnon
-                  d'exploration de M. <ns0:persName type="fictif" key="pascal">Pascal</ns0:persName> aux
-                  mariés, qui lui serrèrent la main. Après quoi <ns0:persName type="fictif" key="m_dumay">M. Dumay</ns0:persName>, l'interpellant : </ns0:p>
-               <ns0:p>— Hé ! quel jour est-ce donc au calendrier de votre ferme, <ns0:persName type="fictif" key="sylvain">Sylvain</ns0:persName>, que je vous vois endimanché ? </ns0:p>
-               <ns0:p><ns0:persName type="fictif" key="sylvain">Sylvain</ns0:persName> tendit un papier au
-                  fermier ; </ns0:p>
-               <ns0:p>— On a reçu sa feuille de route : on part !</ns0:p>
-               <ns0:p>Sa voix trembla un peu sur ce dernier mot. Il baissa les yeux, mais pour les
-                  relever aussitôt avec un brave sourire.</ns0:p>
-               <ns0:p>— Mon fils <ns0:persName type="fictif" key="jacques">Jacques</ns0:persName> avait tiré le
-                  numéro 12 ; notre ami <ns0:persName type="fictif" key="sylvain">Sylvain</ns0:persName> l'a
-                  dépassé, il a pris le 11, dit <ns0:persName type="fictif" key="m_dumay">M.
-                     Dumay</ns0:persName>.</ns0:p>
-               <ns0:p>Et regardant le papier : </ns0:p>
-               <ns0:p>— Mais je vois qu'on part pour <ns0:placeName>Cherbourg</ns0:placeName>.</ns0:p>
-               <ns0:p>— Oui, Monsieur.</ns0:p>
-               <ns0:p>— On va retrouver <ns0:persName type="fictif" key="jacques">Jacques</ns0:persName>, être
-                  son frère d'armes *<ns0:note type="annotation">Frère d'armes. Celui qui combat avec
-                     nous pour la même cause.</ns0:note> ! Il en sera heureux comme nous le sommes.
-                  Quand partez-vous ? </ns0:p>
-               <ns0:p>— Dans une demi-heure.</ns0:p>
-               <ns0:p>Alors, pendant qu'on faisait asseoir <ns0:persName type="fictif" key="sylvain">Sylvain</ns0:persName>, <ns0:persName type="fictif" key="suzette">Suzette</ns0:persName>
-                  se leva et sortit.</ns0:p>
-               <ns0:p>Quand elle rentra, ce fut avec une petite bourriche : </ns0:p>
-               <ns0:p>— Monsieur <ns0:persName type="fictif" key="sylvain">Sylvain</ns0:persName>, dit-elle,
+<?xml-model href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/out/suzette-NewCustom.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/CSS/suzette_reading.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Suzette: a Digital Edition</title>
+            <respStmt>
+               <persName>John Westbrook</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Editor</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Diane Jakacki</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Project Manager</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annie Girton</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2018-2020</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Sarah Haber</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2020-2022</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Rebecca Heintzelman</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2020-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Juliya Harnood</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2021-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Jaehoon Pyon</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2023-Present</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Bucknell University</distributor>
+            <pubPlace>
+               <address>
+                  <addrLine>One Dent Drive</addrLine>
+                  <addrLine>Lewisburg, PA 17837</addrLine>
+               </address>
+            </pubPlace>
+            <availability>
+               <licence>Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Suzette: Livre de Lecture Courante à l’Usage des Jeunes Filles.
+                     Morale—Leçon de choses, Economie Domestique – Ménage – Cuisine –
+                     Couture</title>
+                  <author>Robert Halt</author>
+                  <textLang>French</textLang>
+                  <imprint>
+                     <date>1889</date>
+                     <distributor>Libraire Classique Paul Delaplane</distributor>
+                     <pubPlace>Paris, France</pubPlace>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="fr">French</language>
+            <language ident="en">English</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+<div xmlns:ns0="http://www.tei-c.org/ns/1.0" type="chapitre" xml:lang="fr" n="ch133">
+            <head>133. — Un départ. <gloss>(Élève, p. 281.)</gloss></head>
+            <div type="récit">
+               <p>Comme on allait se lever de table, quelqu'un frappa à la porte. C'était <persName type="fictif" key="sylvain">Sylvain</persName>. On présenta ce compagnon
+                  d'exploration de M. <persName type="fictif" key="pascal">Pascal</persName> aux
+                  mariés, qui lui serrèrent la main. Après quoi <persName type="fictif" key="m_dumay">M. Dumay</persName>, l'interpellant : </p>
+               <p>— Hé ! quel jour est-ce donc au calendrier de votre ferme, <persName type="fictif" key="sylvain">Sylvain</persName>, que je vous vois endimanché ? </p>
+               <p><persName type="fictif" key="sylvain">Sylvain</persName> tendit un papier au
+                  fermier ; </p>
+               <p>— On a reçu sa feuille de route : on part !</p>
+               <p>Sa voix trembla un peu sur ce dernier mot. Il baissa les yeux, mais pour les
+                  relever aussitôt avec un brave sourire.</p>
+               <p>— Mon fils <persName type="fictif" key="jacques">Jacques</persName> avait tiré le
+                  numéro 12 ; notre ami <persName type="fictif" key="sylvain">Sylvain</persName> l'a
+                  dépassé, il a pris le 11, dit <persName type="fictif" key="m_dumay">M.
+                     Dumay</persName>.</p>
+               <p>Et regardant le papier : </p>
+               <p>— Mais je vois qu'on part pour <placeName>Cherbourg</placeName>.</p>
+               <p>— Oui, Monsieur.</p>
+               <p>— On va retrouver <persName type="fictif" key="jacques">Jacques</persName>, être
+                  son frère d'armes *<note type="annotation">Frère d'armes. Celui qui combat avec
+                     nous pour la même cause.</note> ! Il en sera heureux comme nous le sommes.
+                  Quand partez-vous ? </p>
+               <p>— Dans une demi-heure.</p>
+               <p>Alors, pendant qu'on faisait asseoir <persName type="fictif" key="sylvain">Sylvain</persName>, <persName type="fictif" key="suzette">Suzette</persName>
+                  se leva et sortit.</p>
+               <p>Quand elle rentra, ce fut avec une petite bourriche : </p>
+               <p>— Monsieur <persName type="fictif" key="sylvain">Sylvain</persName>, dit-elle,
                   j'ai choisi les plus belles poires, les plus belles pommes du jardin ; vous les
                   partagerez avec mon frère. Il y a là aussi un petit pot de miel ; nos abeilles
-                  l'ont fait dans vos ruches. Vous penserez à nous.</ns0:p>
-               <ns0:p>Il était tout ému et put à peine répondre.</ns0:p>
-               <ns0:p>Peu d'instants après, il dit adieu, et <ns0:persName type="fictif" key="m_dumay">M.
-                     Dumay</ns0:persName> l'embrassa.</ns0:p>
-            </ns0:div>
-            <ns0:div type="questionnaire">
-               <ns0:head>Questionnaire.</ns0:head>
-               <ns0:list>
-                  <ns0:item>— Pourquoi <ns0:persName type="fictif" key="sylvain">Sylvain</ns0:persName>
-                     rendait-il une visite à la famille <ns0:persName type="fictif">Dumay</ns0:persName> ? </ns0:item>
-                  <ns0:item>— De quel ton annonça-t-il qu'il avait reçu sa feuille de route ? </ns0:item>
-                  <ns0:item>— Quel numére avait-il tiré ? </ns0:item>
-                  <ns0:item>— Où se rendait-il ? </ns0:item>
-                  <ns0:item>— Comment le dit-il à <ns0:persName type="fictif" key="m_dumay">M.
-                        Dumay</ns0:persName> ? </ns0:item>
-                  <ns0:item>— Que lui prépara <ns0:persName type="fictif" key="suzette">Suzette</ns0:persName> ?
-                  </ns0:item>
-               </ns0:list>
-            </ns0:div>
-            <ns0:pb type="page" n="468" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_468.jpg" />
-            <ns0:fw>468 SUZETTE.</ns0:fw>
-            <ns0:div type="exercices">
-               <ns0:head>DÉVELOPPEMENT DES SUJETS PROPOSÉS POUR EXERCICES.</ns0:head>
-               <ns0:div type="morale">
-                  <ns0:head type="sujets">Morale.</ns0:head>
-                  <ns0:div type="questions">
-                     <ns0:list>
-                        <ns0:item>— DES PRÉSENTS.</ns0:item>
-                        <ns0:item>— Qu'est-ce qu'un présent ? </ns0:item>
-                        <ns0:item>— A qui offre-t-on des présents ? </ns0:item>
-                        <ns0:item>— Pour quels motifs ? </ns0:item>
-                        <ns0:item>— Comment convient-il de les remettre ? </ns0:item>
-                        <ns0:item>— Un présent fait dans un but intéressé doit-il être accepté ? </ns0:item>
-                        <ns0:item>— Pourquoi ? </ns0:item>
-                        <ns0:item>— Pourriez-vous raconter une historiette à l'appui ? </ns0:item>
-                     </ns0:list>
-                  </ns0:div>
-                  <ns0:div type="réponses">
-                     <ns0:p>On désigne sous le nom de présent ou de cadeau ce que l'on donne
-                        gratuitement.</ns0:p>
-                     <ns0:p>Les présents ou cadeaux s'offrent aux parents, aux amies en diverses
+                  l'ont fait dans vos ruches. Vous penserez à nous.</p>
+               <p>Il était tout ému et put à peine répondre.</p>
+               <p>Peu d'instants après, il dit adieu, et <persName type="fictif" key="m_dumay">M.
+                     Dumay</persName> l'embrassa.</p>
+            </div>
+            <div type="questionnaire">
+               <head>Questionnaire.</head>
+               <list>
+                  <item>— Pourquoi <persName type="fictif" key="sylvain">Sylvain</persName>
+                     rendait-il une visite à la famille <persName type="fictif">Dumay</persName> ? </item>
+                  <item>— De quel ton annonça-t-il qu'il avait reçu sa feuille de route ? </item>
+                  <item>— Quel numére avait-il tiré ? </item>
+                  <item>— Où se rendait-il ? </item>
+                  <item>— Comment le dit-il à <persName type="fictif" key="m_dumay">M.
+                        Dumay</persName> ? </item>
+                  <item>— Que lui prépara <persName type="fictif" key="suzette">Suzette</persName> ?
+                  </item>
+               </list>
+            </div>
+            <pb type="page" n="468" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_468.jpg" />
+            <fw>468 SUZETTE.</fw>
+            <div type="exercices">
+               <head>DÉVELOPPEMENT DES SUJETS PROPOSÉS POUR EXERCICES.</head>
+               <div type="morale">
+                  <head type="sujets">Morale.</head>
+                  <div type="questions">
+                     <list>
+                        <item>— DES PRÉSENTS.</item>
+                        <item>— Qu'est-ce qu'un présent ? </item>
+                        <item>— A qui offre-t-on des présents ? </item>
+                        <item>— Pour quels motifs ? </item>
+                        <item>— Comment convient-il de les remettre ? </item>
+                        <item>— Un présent fait dans un but intéressé doit-il être accepté ? </item>
+                        <item>— Pourquoi ? </item>
+                        <item>— Pourriez-vous raconter une historiette à l'appui ? </item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p>On désigne sous le nom de présent ou de cadeau ce que l'on donne
+                        gratuitement.</p>
+                     <p>Les présents ou cadeaux s'offrent aux parents, aux amies en diverses
                         circonstances, telles que fêtes, anniversaires, premier jour de l'année ; on
                         prie encore d'en accepter certaines personnes dont le dévouement et les
-                        services nous touchent particulièrement.</ns0:p>
-                     <ns0:p>Les cadeaux les plus favorablement appréciés sont les produits de notre
+                        services nous touchent particulièrement.</p>
+                     <p>Les cadeaux les plus favorablement appréciés sont les produits de notre
                         travail personnel : dessins, ouvrages à l'aiguille, cadres en cheveux. On
                         envoie encore des fruits à l'automne, et du gibier dans la saison de la
-                        chasse.</ns0:p>
-                     <ns0:p>Aux yeux des personnes délicates, les cadeaux n'ont de prix que par la
+                        chasse.</p>
+                     <p>Aux yeux des personnes délicates, les cadeaux n'ont de prix que par la
                         manière dont ils sont offerts ; ils doivent exciter la surprise, le plaisir
                         ; aussi devez-vous en faire un mystère et les présenter avec une joyeuse
                         amabilité. Quand vous aurez fait votre offrande et que les remerciements
                         seront épuisés, ne ramenez jamais la conversation sur cet objet ;
                         gardez-vous bien surtout de le faire valoir. Au contraire, lorsqu’on en
                         relèvera le mérite, dites que la chose tient tout son prix de vos
-                        sentiments.</ns0:p>
-                     <ns0:p>Quelque peu d'agrément que puisse avoir un cadeau, ne pas témoigner beaucoup
+                        sentiments.</p>
+                     <p>Quelque peu d'agrément que puisse avoir un cadeau, ne pas témoigner beaucoup
                         de plaisir en le recevant serait une grossièreté. Il faut encore, quand une
                         occasion se présente d'en parler, ne pas manquer de dire au donateur combien
                         son attention vous a été agréable. La délicatesse la plus vulgaire exige que
                         l'on ne provoque jamais un cadeau par des éloges ou des allusions
-                        indirectes.</ns0:p>
-                     <ns0:p>Un présent fait dans un but intéressé, comme il arrive parfois entre
+                        indirectes.</p>
+                     <p>Un présent fait dans un but intéressé, comme il arrive parfois entre
                         inférieurs et supérieurs, doit être refusé froidement, mais poliment : se
-                        prêter à un tel marché a quelque chose de honteux et de déshonorant.</ns0:p>
-                  </ns0:div>
-               </ns0:div>
-               <ns0:div type="civilité">
-                  <ns0:head type="sujets">Civilité.</ns0:head>
-                  <ns0:div type="questions">
-                     <ns0:list>
-                        <ns0:item>— Que doit faire une jeune fille qui a été reçue dans une maison ou
-                           qui va s'éloigner de son pays pour quelque temps ? </ns0:item>
-                        <ns0:item>— Sera-t-elle seule pour faire ses visites ? </ns0:item>
-                        <ns0:item>— Quelles convenances observe-t-on selon les personnes auxquelles on
-                           rend visite ? </ns0:item>
-                        <ns0:item>— Qu'entend-on par cartes de visite ? </ns0:item>
-                     </ns0:list>
-                  </ns0:div>
-                  <ns0:div type="réponses">
-                     <ns0:p>Une jeune fille qui a été reçue dans une maison ou qui va s'éloigner de son
+                        prêter à un tel marché a quelque chose de honteux et de déshonorant.</p>
+                  </div>
+               </div>
+               <div type="civilité">
+                  <head type="sujets">Civilité.</head>
+                  <div type="questions">
+                     <list>
+                        <item>— Que doit faire une jeune fille qui a été reçue dans une maison ou
+                           qui va s'éloigner de son pays pour quelque temps ? </item>
+                        <item>— Sera-t-elle seule pour faire ses visites ? </item>
+                        <item>— Quelles convenances observe-t-on selon les personnes auxquelles on
+                           rend visite ? </item>
+                        <item>— Qu'entend-on par cartes de visite ? </item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p>Une jeune fille qui a été reçue dans une maison ou qui va s'éloigner de son
                         pays pour quelque temps, est tenue de rendre visite à la personne qui l'a
                         reçue et à celles avec qui elle a des relations fréquentes, comme ses
-                        parents, son institutrice, ses meilleures amies de classe.</ns0:p>
-                     <ns0:p>Les convenances lui prescrivent de ne jamais faire seule ses visites ; elle
+                        parents, son institutrice, ses meilleures amies de classe.</p>
+                     <p>Les convenances lui prescrivent de ne jamais faire seule ses visites ; elle
                         doit accompagner sa mère, à moins qu'elle n'ait été confiée à une amie de la
                         famille ou à une parente. Il n'est pas d'usage qu'une toute jeune fille ait
                         des cartes de visite personnelles ; si sa mère a coutume d'en remettre, elle
-                        inscrit au-dessous du sien le nom de celle-ci.</ns0:p>
-                     <ns0:p>Chacun sait que les cartes de visite sont de petites feuilles d'un carton
+                        inscrit au-dessous du sien le nom de celle-ci.</p>
+                     <p>Chacun sait que les cartes de visite sont de petites feuilles d'un carton
                         léger sur lesquelles le nom d'une personne est gravé ou imprimé ; elles sont
                         déposées à la maison où l'on fait une visite, lorsque les maîtres en sont
                         absents. Elles s'envoient également par la poste le premier janvier, aux
                         anniversaires, à l'occasion d'événements heureux ou malheureux, aux
-                        personnes avec qui l'on entretient des relations.</ns0:p>
-                     <ns0:pb type="page" n="469" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_469.jpg" />
-                     <ns0:fw>PLAISIRS DES CHAMPS. 469</ns0:fw>
-                     <ns0:p>La convenance dans le maintien est indispensable à une jeune fille en visite
+                        personnes avec qui l'on entretient des relations.</p>
+                     <pb type="page" n="469" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_469.jpg" />
+                     <fw>PLAISIRS DES CHAMPS. 469</fw>
+                     <p>La convenance dans le maintien est indispensable à une jeune fille en visite
                         ; on juge ainsi de son mérite et de sa bonne éducation. Après avoir salué
                         gracieusement, elle acceptera le siège qui lui est offert et s'y tiendra de
                         façon à se présenter un peu de côté à la personne à laquelle elle fait
                         vis-à-vis. Elle ne doit ni croiser les jambes, ni se pencher, encore moins
                         s'appuyer sur le dos de la chaise ou du fauteuil ; elle ne sera ni trop
                         remuante ni trop immobile, et se gardera des airs hardis ou dédaigneux ; sa
-                        physionomie doit respirer la franchise, la modestie et la satisfaction.</ns0:p>
-                  </ns0:div>
-                  <ns0:div type="questions">
-                     <ns0:list>
-                        <ns0:item>Quelle part une jeune fille doit-elle prendre à la conversation dans
+                        physionomie doit respirer la franchise, la modestie et la satisfaction.</p>
+                  </div>
+                  <div type="questions">
+                     <list>
+                        <item>Quelle part une jeune fille doit-elle prendre à la conversation dans
                            les reunions de famille ou autres ? (Tenue, gestes, art d'écouter et de
-                           bien répondre.) </ns0:item>
-                        <ns0:item>— Qu'observera-t-elle pour la correction du langage ? </ns0:item>
-                     </ns0:list>
-                  </ns0:div>
-                  <ns0:div type="réponses">
-                     <ns0:p>La part que peut prendre une jeune fille à la conversation, au cours d'une
+                           bien répondre.) </item>
+                        <item>— Qu'observera-t-elle pour la correction du langage ? </item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p>La part que peut prendre une jeune fille à la conversation, au cours d'une
                         visite, se résume souvent dans l'art d'écouter et de répondre à propos ;
-                        elle se gardera surtout de parler la première.</ns0:p>
-                     <ns0:p>Au cours d'un entretien où elle est appelée à participer, elle regardera à
+                        elle se gardera surtout de parler la première.</p>
+                     <p>Au cours d'un entretien où elle est appelée à participer, elle regardera à
                         demi la personne qui lui parle, l'écoutera avec attention et témoignera par
                         des gestes discrets l'intérêt que lui inspire le sujet. Elle ne se permettra
                         jamais une interruption ; rien ne donne une preuve plus évidente de légèreté
                         ou de mauvaise éducation. Si le narrateur s'égare dans de longs détails, il
                         faut montrer de la patience, et cette condescendance est de rigueur envers
-                        un vieillard ou une dame âgée.</ns0:p>
-                     <ns0:p>Lorsqu’on a besoin de se faire expliquer quelque circonstance ou si l'on ne
+                        un vieillard ou une dame âgée.</p>
+                     <p>Lorsqu’on a besoin de se faire expliquer quelque circonstance ou si l'on ne
                         saisit pas bien l'explication, on ne demandera à la personne de répéter
                         qu'avec des ménagements polis : Je vous demande bien pardon ; — Je
                         craindrais de perdre quelque chose de votre récit ; — Si vous vouliez
                         répéter, etc. Choisissez pour cela un moment opportun, par exemple, lorsque
                         cette personne fait une pause, cherche une expression, prend son
-                        mouchoir.</ns0:p>
-                     <ns0:p>Si l'on vous raconte une imposture évidente, prenez un air froid, de manière
+                        mouchoir.</p>
+                     <p>Si l'on vous raconte une imposture évidente, prenez un air froid, de manière
                         à ne passer ni pour une sotte ni pour une malhonnête, car il serait vilain
-                        de donner un démenti.</ns0:p>
-                     <ns0:p>L'interruption n'est pardonnable que s'il s'agit de prouver ou d'éclaircir
-                        un fait en faveur d'un absent.</ns0:p>
-                     <ns0:p>Gardez-vous d'écouter en hochant la tête, en gesticulant, en demeurant les
+                        de donner un démenti.</p>
+                     <p>L'interruption n'est pardonnable que s'il s'agit de prouver ou d'éclaircir
+                        un fait en faveur d'un absent.</p>
+                     <p>Gardez-vous d'écouter en hochant la tête, en gesticulant, en demeurant les
                         yeux fixes et la bouche béante, d'avoir l'air distrait ou rêveur, de bâiller
                         sans cacher avec la main ou le mouchoir ce témoignage d'ennui et de fatigue,
                         de regarder fréquemment la pendule ; toutes ces manières pèchent contre les
-                        convenances.</ns0:p>
-                     <ns0:p>En parlant à votre tour, évitez les longues phrases, les répétitions, les et
+                        convenances.</p>
+                     <p>En parlant à votre tour, évitez les longues phrases, les répétitions, les et
                         puis, les alors qui sont si fatigants, les imparfaits de subjonctif en asse
                         et isse qu'il faut savoir remplacer par d'autres tournures, les liaisons
                         affectées et multipliées. Attachez-vous à avoir un langage clair, correct et
                         préférez les mots et les expressions adoptés par les personnes sérieuses ;
                         enfin, n'ayez jamais l'air de vous apercevoir des fautes de français ou de
                         prononciation des autres, encore moins de vous permettre un sourire ou un
-                        regard moqueur.</ns0:p>
-                  </ns0:div>
-               </ns0:div>
-            </ns0:div>
-         </ns0:div>
-         
+                        regard moqueur.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
