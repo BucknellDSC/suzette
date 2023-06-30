@@ -1,4 +1,4 @@
-<?xml-model href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/out/suzette-NewCustom.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/CSS/suzette_reading.css"?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/out/suzette-NewCustom.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/CSS/suzette_reading.css"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <teiHeader>
       <fileDesc>
@@ -22,7 +22,7 @@
             <respStmt>
                <persName>Sarah Haber</persName>
                <orgName>Bucknell University</orgName>
-               <resp>Research Assistant and Encoder, 2020-2022</resp>
+               <resp>Research Assistant and Encoder, 2020-Present</resp>
             </respStmt>
             <respStmt>
                <persName>Rebecca Heintzelman</persName>
@@ -76,26 +76,14 @@
          </langUsage>
       </profileDesc>
    </teiHeader>
-   <text>
-      <front>
-         <titlePage>
-            <docTitle>
-               <titlePart type="main">Suzette</titlePart>
-               <titlePart type="sub">Livre de lecture courante a l'usage des jeunes
-                  filles</titlePart>
-            </docTitle>
-            <docAuthor>par M<hi rend="superscript">me</hi> Marie Robert Halt</docAuthor>
-            <docEdition>Livre de la maitresse</docEdition>
-         </titlePage>
-      </front>
-      <body>
-         <div type="chapitre" xml:lang="fr" n="ch001">
-            <pb type="page" n="1"/>
+<text>
+   <body>
+<div xmlns:ns0="http://www.tei-c.org/ns/1.0" type="chapitre" xml:lang="fr" n="ch001">
+            <pb type="page" n="1" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_001.jpg" />
             <head>1. — A l'abandon. </head>
             <div type="récit">
                <p> Par terre, devant l'âtre*<note type="annotation">Âtre. L'endroit de la cheminée
-                  où l'on fait le feu.</note>, une grosse soupière blanche à ramages*<note
-                     type="annotation">Ramages. Représentation de rameaux, de feuillages, de fleurs
+                     où l'on fait le feu.</note>, une grosse soupière blanche à ramages*<note type="annotation">Ramages. Représentation de rameaux, de feuillages, de fleurs
                      sur vases ou étoffes.</note> rouges et verts s'étalait entre un grand chaudron
                   noir et une paire de bottes dont les semelles avaient apporté avec elles un assez
                   lourd morceau du chemin boueux. Tout autour, une jonchée de fétus de paille, de
@@ -109,7 +97,7 @@
                   exercices soit oraux, soit écrits. </note>
                <fw type="footer"> SUZETTE (Maîtresse). <fw type="sig">1</fw>
                </fw>
-               <pb type="page" n="2"/>
+               <pb type="page" n="2" facs=" https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_002.jpg" />
                <fw type="header">2 SUZETTE.</fw>
                <p> Sous la crémaillère brûlait un restant de bûche ; à côté, un gros chat et un
                   chien roux, tous deux couchés, clignaient paresseusement des yeux vers une grande
@@ -136,17 +124,15 @@
                   rousseur, n'en était pas moins un franc et honnête visage. Ces deux garçons-là
                   semblaient savoir comment on tient sa cuiller. Une fillette, qui leur faisait
                   face, la maniait encore plus joliment qu'eux. Elle avait une dizaine d'années, une
-                  physionomie*<note type="annotation">Physionomie. Les traits du visage.</note>
-                  vive, des yeux frais, très ouverts, pleins d'affa- <pb type="page" n="3"/>
-                  <fw type="header"> A L'ABANDON. 3 </fw> bilité* <note type="annotation"
-                     >Affabilité. Qualité de celui qui reçoit ou écoute avec bonté ceux qui
+                     physionomie*<note type="annotation">Physionomie. Les traits du visage.</note>
+                  vive, des yeux frais, très ouverts, pleins d'affa- <pb type="page" n="3" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_003.jpg" />
+                  <fw type="header"> A L'ABANDON. 3 </fw> bilité* <note type="annotation">Affabilité. Qualité de celui qui reçoit ou écoute avec bonté ceux qui
                      s'adressent à lui.</note>. Ce n'était pas une beauté, mais bien une de ces
                   bonnes et aimables têtes qu'on aime à voir sur les épaules d'une petite fille. </p>
                <p> Non, il n'y avait pas à cette table une seule figure de méchant enfant. Et tant
                   mieux ! tant mieux pour le père qui présidait le repas, et qui, à la façon pensive
                   et lasse dont il courbait la tête, semblait avoir assez d'autres soucis en ce
-                  monde pour se passer de celui d'une mauvaise lignée* <note type="annotation"
-                     >Lignée. Les descendants d'un ancêtre ou les enfants d'un père ou d'une
+                  monde pour se passer de celui d'une mauvaise lignée* <note type="annotation">Lignée. Les descendants d'un ancêtre ou les enfants d'un père ou d'une
                      mère.</note>. </p>
                <p> On mangeait en silence ; le couvert à peine mis n'était pas plus engageant que
                   l'odeur fade des légumes bouillis à la <term>va-te-promener</term> qui emplissait
@@ -172,7 +158,7 @@
             </div>
             <div type="exercices">
                <head>DÉVELOPPEMENT DES SUJETS PROPOSÉS POUR EXERCICES</head>
-               <div type="morale">
+               <div type="morale" xml:id="sujmor_001">
                   <head type="sujets">Morale.</head>
                   <div type="questions">
                      <list type="exercices">
@@ -197,18 +183,18 @@
                         seront rangées le long des murs ; la vaisselle s’alignera sur les rayons du
                         dressoir ; les vêtements seront suspendus, l'un à côté de l'autre, dans la
                         garde-robe ; enfin, le linge reposera sur les tablettes de l'armoire. —
-                        <term>Avoir du soin</term>, c'est apporter beaucoup d'attention et
+                           <term>Avoir du soin</term>, c'est apporter beaucoup d'attention et
                         d'application à ce qu'on fait. Une jeune fille soigneuse n'oubliera pas de
                         recoudre un bouton, de nouer un lacet, de surveiller le lait qu'elle met
                         bouillir, de ponctuer ses devoirs, etc.</p>
-                     <pb type="page" n="4"/>
+                     <pb type="page" n="4" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_004.jpg" />
                      <fw type="header"> 4 SUZETTE. </fw>
                      <p>L'enfant du fermier qui me semble le plus à plaindre, est le bébé. A son
                         âge, on a tant besoin de la maman ! et la sienne n’est plus auprès de lui et
                         elle ne reviendra jamais dans la maison de famille.</p>
                   </div>
                </div>
-               <div type="sciences_naturelles">
+               <div type="sciences_naturelles" xml:id="sujnat_001">
                   <head>Sciences naturelles.</head>
                   <div type="questions">
                      <list>
@@ -248,7 +234,7 @@
                         chiens d'agrément.</p>
                   </div>
                </div>
-               <div type="civilité">
+               <div type="civilité" xml:id="sujciv_001">
                   <head>Civilité.</head>
                   <div type="questions">
                      <list>
@@ -278,6 +264,6 @@
                </div>
             </div>
          </div>
-      </body>
-   </text>
-</TEI>
+   </body>
+</text>
+</TEI>         
