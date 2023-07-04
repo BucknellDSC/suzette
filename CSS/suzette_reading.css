@@ -791,7 +791,7 @@ list[type = "none"] {
 }
 listBibl:before {
     content: 'Chapitre: ' ;
-    display: inline;
+    display: inline-block;
     margin-bottom: 0.5em;
 }
 mentioned {
@@ -802,7 +802,7 @@ milestone {
     display: none;
 }
 
-nationality {
+nationality:before {
     content: 'Nationalité: ';
     display: inline-block;
 }
@@ -819,7 +819,7 @@ note[type]:before{
     content: attr(type) ': ';
 }
 */
-occupation {
+occupation:before {
     content: 'Profession: ';
     display: inline-block;
 }
