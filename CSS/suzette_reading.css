@@ -789,7 +789,7 @@ list[type = "numbered"] {
 list[type = "none"] {
     list-style-type: none;
 }
-listBibl {
+listBibl:before {
     content: 'Chapitre: ' ;
     display: block;
     margin-bottom: 0.5em;
@@ -802,7 +802,7 @@ milestone {
     display: none;
 }
 
-nationality {
+nationality:before {
     content: 'Nationalité: ';
     display: block;
 }
@@ -819,7 +819,7 @@ note[type]:before{
     content: attr(type) ': ';
 }
 */
-occupation {
+occupation:before {
     content: 'Profession: ';
     display: block;
 }
@@ -920,7 +920,7 @@ persName {
     display: inline;
     font-weight: bold;
 }
-persName [type = 'standard'] {
+persName [type = 'preferred'] {
     display: none;
 }
 person {
