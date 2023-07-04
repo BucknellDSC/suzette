@@ -802,10 +802,14 @@ milestone {
     display: none;
 }
 
-nationality {
-    content: 'Nationalité: ';
+nationality {    
     display: block;
 }
+
+nationality:before {
+    content: 'Nationalité: ';
+}
+    
 note {
     display: block;
     color: #999;
@@ -820,8 +824,11 @@ note[type]:before{
 }
 */
 occupation {
-    content: 'Profession: ';
+    
     display: block;
+}
+occupation:before {
+    content: 'Profession: ';
 }
 opener note {
     display: block;
