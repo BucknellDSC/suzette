@@ -790,6 +790,7 @@ list[type = "none"] {
     list-style-type: none;
 }
 listBibl {
+    content: 'Chapitre: ' ;
     display: block;
     margin-bottom: 0.5em;
 }
@@ -801,6 +802,10 @@ milestone {
     display: none;
 }
 
+nationality {
+    content: 'Nationalité: ';
+    display: block;
+}
 note {
     display: block;
     color: #999;
@@ -814,6 +819,10 @@ note[type]:before{
     content: attr(type) ': ';
 }
 */
+occupation {
+    content: 'Profession: ';
+    display: block;
+}
 opener note {
     display: block;
     color: #999;
@@ -910,6 +919,9 @@ pb:after {
 persName {
     display: inline;
     font-weight: bold;
+}
+persName [type = 'standard'] {
+    display: none;
 }
 person {
     display: block;
