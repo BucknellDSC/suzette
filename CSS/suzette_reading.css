@@ -804,7 +804,7 @@ milestone {
 
 nationality:before {
     content: 'Nationalité: ';
-    display: inline-block;
+    display: block;
 }
 note {
     display: block;
@@ -821,7 +821,7 @@ note[type]:before{
 */
 occupation:before {
     content: 'Profession: ';
-    display: inline-block;
+    display: block;
 }
 opener note {
     display: block;
@@ -917,7 +917,7 @@ pb:after {
 
 /* capturing all non-entity semantic terms in bold */
 persName[type = 'standard'] {
-    display: inline;
+    display: inline-block;
     font-weight: bold;
 }
 persName[type = 'preferred'] {
