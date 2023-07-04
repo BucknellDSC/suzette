@@ -806,8 +806,8 @@ nationality {
     display: block;
 }
 
-nationality:before {
-    content: 'Nationalité: ';
+nationality::before {
+    content: "Nationalité: ";
 }
     
 note {
@@ -823,12 +823,11 @@ note[type]:before{
     content: attr(type) ': ';
 }
 */
-occupation {
-    
+occupation {   
     display: block;
 }
-occupation:before {
-    content: 'Profession: ';
+occupation::before {
+    content: "Profession: ";
 }
 opener note {
     display: block;
