@@ -802,7 +802,7 @@ milestone {
     display: none;
 }
 
-nationality:before {
+nationality {
     content: 'Nationalité: ';
     display: block;
 }
@@ -819,7 +819,7 @@ note[type]:before{
     content: attr(type) ': ';
 }
 */
-occupation:before {
+occupation {
     content: 'Profession: ';
     display: block;
 }
@@ -917,7 +917,7 @@ pb:after {
 
 /* capturing all non-entity semantic terms in bold */
 persName[type = 'standard'] {
-    display: inline-block;
+    display: block;
     font-weight: bold;
 }
 persName[type = 'preferred'] {
