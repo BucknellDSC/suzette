@@ -789,10 +789,11 @@ list[type = "numbered"] {
 list[type = "none"] {
     list-style-type: none;
 }
-listBibl:before {
-    content: 'Chapitre: ' ;
-    display: inline-block;
-    margin-bottom: 0.5em;
+listBibl::before {
+    content: 'Chapitre(s): ' ;
+}
+listBibl {
+    display: inline;
 }
 mentioned {
     display: inline;
@@ -1019,7 +1020,7 @@ q:after {
 ref {
     display: inline;
     color: blue;
-    background-color: inherit;
+/*   background-color: inherit; */
 }
 ref:before {
     color: gray;
