@@ -18,12 +18,12 @@
       </sourceDesc>
     </fileDesc>
     <revisionDesc>
-      <change when="2024-01-19" who="#JAKA1">Began adding the object taxonomy</change>
+      <change when="2024-01-19" who="#JAKA1">Reconfigured schema file</change>
     </revisionDesc>
   </teiHeader>
   <text>
     <body>
-      <schemaSpec ident="suzette-NewCustom" start="TEI teiCorpus" targetLang="en" docLang="en">
+      <schemaSpec ident="suzette" start="TEI teiCorpus" targetLang="en" docLang="en">
         <!--removing prefix_tei-->
         <moduleRef key="tei" />
         <!-- required -->
@@ -42,83 +42,79 @@
         <moduleRef key="textstructure" />
         <moduleRef key="transcr" />
         <moduleRef key="tagdocs" />
-        <!-- Customize DIV1 with @type chapitre -->
-        <elementSpec ident="div1" mode="change">
+        <!-- Customize DIV with @type  -->
+        <elementSpec ident="div" mode="change">
           <attList>
             <attDef ident="type" mode="change">
               <valList type="closed" mode="change">
                 <valItem mode="add" ident="chapitre">
-                  <desc versionDate="2020-05-06">Chapitre</desc>
+                  <desc>Chapitre</desc>
                 </valItem>
-                <valItem mode="add" ident="autre">
-                  <desc versionDate="2020-05-06">Autre (if used often, add another value)</desc>
-                </valItem>
-                <valItem mode="add" ident="chapter">
-                  <desc versionDate="2023-04-22">Chapter (for Dynamic Table of Contexts)</desc>
-                </valItem>
-              </valList>
-            </attDef>
-          </attList>
-        </elementSpec>
-        <!-- Customize DIV2 to distinguish three kinds of content: Récit, Questionnaire, and Exercices -->
-        <elementSpec ident="div2" mode="change">
-          <attList>
-            <attDef ident="type" mode="change">
-              <valList type="closed" mode="change">
                 <valItem ident="exercices" mode="add">
-                  <desc versionDate="2020-06-06" xml:lang="fr">Exercices</desc>
+                  <desc>Exercices</desc>
                 </valItem>
                 <valItem mode="add" ident="questionnaire">
-                  <desc versionDate="2020-06-06" xml:lang="fr">Questionnaire</desc>
+                  <desc>Questionnaire</desc>
                 </valItem>
                 <valItem mode="add" ident="récit">
-                  <desc versionDate="2020-06-06" xml:lang="fr">Récit</desc>
+                  <desc>Récit</desc>
                 </valItem>
-              </valList>
-            </attDef>
-          </attList>
-        </elementSpec>
-        <!-- Customize DIV3 to add key terms from Classification -->
-        <elementSpec ident="div3" mode="change">
-          <attList>
-            <attDef ident="type" mode="change">
-              <valList type="closed" mode="change">
-                <valItem ident="morale" mode="add" />
-                <valItem ident="instruction_civique" mode="add" />
-                <valItem ident="civilité" mode="add" />
-                <valItem ident="français" mode="add" />
-                <valItem ident="composition" mode="add" />
-                <valItem ident="histoire" mode="add" />
-                <valItem ident="horticulture" mode="add" />
-                <valItem ident="géographie" mode="add" />
-                <valItem ident="sciences_naturelles" mode="add" />
-                <valItem ident="sciences_physiques" mode="add" />
-                <valItem ident="industrie" mode="add" />
-                <valItem ident="économie_domestique" mode="add" />
-                <valItem ident="hygiène" mode="add" />
-                <valItem ident="agriculture" mode="add" />
-                <valItem ident="calcul" mode="add" />
-                <valItem ident="complexe" mode="add" />
-              </valList>
-            </attDef>
-          </attList>
-        </elementSpec>
-        <!-- Within DIV4 cutomize @type to distinguish questions and réponses -->
-        <elementSpec ident="div4" mode="change">
-          <attList>
-            <attDef ident="type" mode="change">
-              <valList type="closed" mode="change">
+                <valItem ident="morale" mode="add">
+                  <desc>Morale</desc>
+                </valItem>
+                <valItem ident="instruction_civique" mode="add">
+                  <desc>Instruction civique</desc>
+                </valItem>
+                <valItem ident="civilité" mode="add">
+                  <desc>Civilité</desc>
+                </valItem>
+                <valItem ident="français" mode="add">
+                  <desc>Français</desc>
+                </valItem>
+                <valItem ident="composition" mode="add">
+                  <desc>Composition</desc>
+                </valItem>
+                <valItem ident="histoire" mode="add">
+                  <desc>Histoire</desc>
+                </valItem>
+                <valItem ident="horticulture" mode="add">
+                  <desc>Horticulture</desc>
+                </valItem>
+                <valItem ident="géographie" mode="add">
+                  <desc>Géographie</desc>
+                </valItem>
+                <valItem ident="sciences_naturelles" mode="add">
+                  <desc>Sciences naturelle</desc>
+                </valItem>
+                <valItem ident="sciences_physiques" mode="add">
+                  <desc>Sciences physiques</desc>
+                </valItem>
+                <valItem ident="industrie" mode="add">
+                  <desc>Industrie</desc>
+                </valItem>
+                <valItem ident="économie_domestique" mode="add">
+                  <desc>Économie domestique</desc>
+                </valItem>
+                <valItem ident="hygiène" mode="add">
+                  <desc>Hygiène</desc>
+                </valItem>
+                <valItem ident="agriculture" mode="add">
+                  <desc>Agriculture</desc>
+                </valItem>
+                <valItem ident="calcul" mode="add">
+                  <desc>Calcul</desc>
+                </valItem>
                 <valItem ident="questions" mode="add">
-                  <desc versionDate="2020-06-02" xml:lang="fr">Questions</desc>
+                  <desc>Questions</desc>
                 </valItem>
                 <valItem ident="réponses" mode="add">
-                  <desc versionDate="2020-06-02" xml:lang="fr">Réponses</desc>
+                  <desc>Réponses</desc>
                 </valItem>
               </valList>
             </attDef>
           </attList>
         </elementSpec>
-
+        
         <!-- persName: add  @type -->
         <elementSpec ident="persName" mode="change">
           <attList>
@@ -196,49 +192,11 @@
                 <valItem ident="fictif" mode="add">
                   <desc xml:lang="fr">fictif</desc>
                 </valItem>
-                <valItem ident="authority" mode="add">
-                  <desc>authority place name</desc>
-                </valItem>
-                <valItem ident="variant" mode="add">
-                  <desc>variant place name</desc>
-                </valItem>
                 <valItem ident="région_de_production" mode="add">
                   <desc>région de production</desc>
                 </valItem>
                 <valItem ident="région_culinaire" mode="add">
                   <desc>région culinaire</desc>
-                </valItem>
-              </valList>
-            </attDef>
-          </attList>
-        </elementSpec>
-        <!-- div3: add  @subtype where type is geographie (list of places from classification) -->
-        <elementSpec ident="div3" mode="change">
-          <classes mode="change">
-            <memberOf key="att.datable" mode="delete" />
-            <memberOf key="att.editLike" mode="delete" />
-            <memberOf key="att.personal" mode="delete" />
-          </classes>
-          <attList>
-            <attDef ident="subtype" mode="change">
-              <valList type="closed" mode="change">
-                <valItem ident="afrique" mode="add">
-                  <desc>Afrique</desc>
-                </valItem>
-                <valItem ident="amérique" mode="add">
-                  <desc>Amérique</desc>
-                </valItem>
-                <valItem ident="asie" mode="add">
-                  <desc>Asie</desc>
-                </valItem>
-                <valItem ident="europe" mode="add">
-                  <desc>Europe</desc>
-                </valItem>
-                <valItem ident="france" mode="add">
-                  <desc>France</desc>
-                </valItem>
-                <valItem ident="océanie" mode="add">
-                  <desc>Océanie</desc>
                 </valItem>
               </valList>
             </attDef>
@@ -267,10 +225,10 @@
             <attDef ident="type" mode="change">
               <valList mode="add" type="closed">
                 <valItem ident="exercices" mode="add">
-                  <desc versionDate="2020-06-02" xml:lang="fr">Exercices</desc>
+                  <desc>Exercices</desc>
                 </valItem>
                 <valItem ident="questionnaire" mode="add">
-                  <desc versionDate="2020-06-02" xml:lang="fr">Questionnaire</desc>
+                  <desc>Questionnaire</desc>
                 </valItem>
               </valList>
             </attDef>
