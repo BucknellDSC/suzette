@@ -534,6 +534,7 @@ body > div > head {
 body > div[type = "poem"] > head author {
     font-weight: normal;
 }
+
 body > div > div > head {
     display: block;
     padding-top: 14px;
@@ -556,8 +557,20 @@ body > div > div > div > head {
     font-weight: bold;
     margin-bottom: 0.5em;
     margin-top: 1em;
-
 }
+
+body > div > div > div > head[type="sujets"] {
+    display: block;
+    padding-top: 14px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    color: inherit;
+/*  background-color: #BBBBBB; */
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+    }
+
 /*  testing dateline change from block to inline */
 div opener dateline {
     display: inline;
