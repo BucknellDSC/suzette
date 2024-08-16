@@ -1,319 +1,85 @@
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rng="http://relaxng.org/ns/structure/1.0" xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>Suzette ODD</title>
-        <author>Diane Jakacki</author>
+        <title>Suzette</title>
+        <author>John Westbrook</author>
       </titleStmt>
       <publicationStmt>
         <publisher>TEI Consortium</publisher>
         <availability status="free">
-          <p>TEI material can be licensed differently depending on the use you intend to make of it. Hence it is made available under both the CC+BY and BSD-2 licences. The CC+BY licence is generally
-            appropriate for usages which treat TEI content as data or documentation. The BSD-2 licence is generally appropriate for usage of TEI content in a software environment. For further
-            information or clarification, please contact the TEI Consortium (info@tei-c.org).</p>
+          <p>TEI material can be licensed differently depending on the
+          use you intend to make of it. Hence it is made available
+          under both the CC+BY and BSD-2 licences. The CC+BY licence
+          is generally appropriate for usages which treat TEI content
+          as data or documentation. The BSD-2 licence is generally
+          appropriate for usage of TEI content in a software
+          environment. For further information or clarification,
+          please contact the TEI Consortium (info@tei-c.org).</p>
         </availability>
       </publicationStmt>
       <sourceDesc>
         <p>Written from scratch.</p>
       </sourceDesc>
-    </fileDesc>
-    <revisionDesc>
-      <change when="2024-01-19" who="#JAKA1">Reconfigured schema file</change>
-    </revisionDesc>
+    </fileDesc><encodingDesc><appInfo><application ident="RomaJS" version="1.1.1" when="2024-08-16T18:40:29.497Z"><desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc></application></appInfo></encodingDesc>
   </teiHeader>
   <text>
     <body>
-      <schemaSpec ident="suzette" start="TEI teiCorpus" targetLang="en" docLang="en">
-        <!--removing prefix_tei-->
-        <moduleRef key="tei" />
-        <!-- required -->
-        <moduleRef key="core" />
-        <moduleRef key="analysis" />
-        <moduleRef key="certainty" />
-        <moduleRef key="corpus" />
-        <moduleRef key="dictionaries" />
-        <moduleRef key="drama" />
-        <moduleRef key="figures" />
-        <moduleRef key="header" />
-        <moduleRef key="linking" />
-        <moduleRef key="msdescription" />
-        <moduleRef key="namesdates" />
-        <moduleRef key="textcrit" />
-        <moduleRef key="textstructure" />
-        <moduleRef key="transcr" />
-        <moduleRef key="tagdocs" />
-        <!-- Customize DIV with @type  -->
-        <elementSpec ident="div" mode="change">
-          <attList>
-            <attDef ident="type" mode="change">
-              <valList type="closed" mode="change">
-                <valItem mode="add" ident="chapitre">
-                  <desc>Chapitre</desc>
-                </valItem>
-                <valItem ident="exercices" mode="add">
-                  <desc>Exercices</desc>
-                </valItem>
-                <valItem mode="add" ident="questionnaire">
-                  <desc>Questionnaire</desc>
-                </valItem>
-                <valItem mode="add" ident="récit">
-                  <desc>Récit</desc>
-                </valItem>
-                <valItem ident="morale" mode="add">
-                  <desc>Morale</desc>
-                </valItem>
-                <valItem ident="instruction_civique" mode="add">
-                  <desc>Instruction civique</desc>
-                </valItem>
-                <valItem ident="civilité" mode="add">
-                  <desc>Civilité</desc>
-                </valItem>
-                <valItem ident="français" mode="add">
-                  <desc>Français</desc>
-                </valItem>
-                <valItem ident="composition" mode="add">
-                  <desc>Composition</desc>
-                </valItem>
-                <valItem ident="histoire" mode="add">
-                  <desc>Histoire</desc>
-                </valItem>
-                <valItem ident="horticulture" mode="add">
-                  <desc>Horticulture</desc>
-                </valItem>
-                <valItem ident="géographie" mode="add">
-                  <desc>Géographie</desc>
-                </valItem>
-                <valItem ident="sciences_naturelles" mode="add">
-                  <desc>Sciences naturelle</desc>
-                </valItem>
-                <valItem ident="sciences_physiques" mode="add">
-                  <desc>Sciences physiques</desc>
-                </valItem>
-                <valItem ident="industrie" mode="add">
-                  <desc>Industrie</desc>
-                </valItem>
-                <valItem ident="économie_domestique" mode="add">
-                  <desc>Économie domestique</desc>
-                </valItem>
-                <valItem ident="hygiène" mode="add">
-                  <desc>Hygiène</desc>
-                </valItem>
-                <valItem ident="agriculture" mode="add">
-                  <desc>Agriculture</desc>
-                </valItem>
-                <valItem ident="calcul" mode="add">
-                  <desc>Calcul</desc>
-                </valItem>
-                <valItem ident="questions" mode="add">
-                  <desc>Questions</desc>
-                </valItem>
-                <valItem ident="réponses" mode="add">
-                  <desc>Réponses</desc>
-                </valItem>
-              </valList>
-            </attDef>
-          </attList>
-        </elementSpec>
-        
-        <!-- persName: add  @type -->
-        <elementSpec ident="persName" mode="change">
-          <attList>
-            <attDef ident="type" mode="change">
-              <valList type="closed" mode="change">
-                <valItem ident="historique" mode="add">
-                  <desc xml:lang="fr">historique</desc>
-                </valItem>
-                <valItem ident="fictif" mode="add">
-                  <desc xml:lang="fr">fictif</desc>
-                </valItem>
-                <valItem ident="standard" mode="add">
-                  <desc xml:lang="en">standard</desc>
-                </valItem>
-                <valItem ident="preferred" mode="add">
-                  <desc xml:lang="en">standard</desc>
-                </valItem>
-                <valItem ident="variant" mode="add">
-                  <desc xml:id="en">variant</desc>
-                </valItem>
-              </valList>
-            </attDef>
-            <attDef ident="xml:space" mode="delete" />
-            <attDef ident="xml:base" mode="delete" />
-            <attDef ident="rendition" mode="delete" />
-            <attDef ident="style" mode="delete" />
-            <attDef ident="rend" mode="delete" />
-            <attDef ident="corresp" mode="delete" />
-            <attDef ident="synch" mode="delete" />
-            <attDef ident="sameAs" mode="delete" />
-            <attDef ident="copyOf" mode="delete" />
-            <attDef ident="next" mode="delete" />
-            <attDef ident="prev" mode="delete" />
-            <attDef ident="exclude" mode="delete" />
-            <attDef ident="select" mode="delete" />
-            <attDef ident="facs" mode="delete" />
-            <attDef ident="change" mode="delete" />
-            <attDef ident="nymRef" mode="delete" />
-            <attDef ident="sort" mode="delete" />
-            <attDef ident="full" mode="delete" />
-            <attDef ident="instant" mode="delete" />
-            <attDef ident="evidence" mode="delete" />
-            <attDef ident="datingMethod" mode="delete" />
-            <attDef ident="datingPoint" mode="delete" />
-            <attDef ident="to-custom" mode="delete" />
-            <attDef ident="from-custom" mode="delete" />
-            <attDef ident="notAfter-custom" mode="delete" />
-            <attDef ident="notBefore-custom" mode="delete" />
-            <attDef ident="when-custom" mode="delete" />
-            <attDef ident="to-iso" mode="delete" />
-            <attDef ident="from-iso" mode="delete" />
-            <attDef ident="notAfter-iso" mode="delete" />
-            <attDef ident="notBefore-iso" mode="delete" />
-            <attDef ident="when-iso" mode="delete" />
-            <attDef ident="to" mode="delete" />
-            <attDef ident="from" mode="delete" />
-            <attDef ident="notAfter" mode="delete" />
-            <attDef ident="notBefore" mode="delete" />
-            <attDef ident="when" mode="delete" />
-            <attDef ident="period" mode="delete" />
-            <attDef ident="calendar" mode="delete" />
-            <attDef ident="source" mode="delete" />
-          </attList>
-        </elementSpec>
-        
-        <!-- ALL PLACE ATTRIBUTE VALUES -->
-        <!-- placeName: @type (real or fictif) -->
-        <elementSpec ident="placeName" mode="change">
-          <attList>
-            <attDef ident="type" mode="change">
-              <valList type="closed" mode="change">
-                <valItem ident="réel" mode="add">
-                  <desc xml:lang="fr">réel</desc>
-                </valItem>
-                <valItem ident="fictif" mode="add">
-                  <desc xml:lang="fr">fictif</desc>
-                </valItem>
-                <valItem ident="région_de_production" mode="add">
-                  <desc>région de production</desc>
-                </valItem>
-                <valItem ident="région_culinaire" mode="add">
-                  <desc>région culinaire</desc>
-                </valItem>
-              </valList>
-            </attDef>
-          </attList>
-        </elementSpec>
-        
-        <!-- Customize FIGURE to include @type illustration or sujets -->
-        <elementSpec ident="figure" mode="change">
-          <attList>
-            <attDef ident="type" mode="change">
-              <valList mode="change" type="closed">
-                <valItem ident="illustration" mode="add">
-                  <desc versionDate="2020-06-07" xml:lang="fr">Illustration</desc>
-                </valItem>
-                <valItem ident="sujets" mode="add">
-                  <desc versionDate="2020-06-07" xml:lang="fr">Sujets</desc>
-                </valItem>
-              </valList>
-            </attDef>
-          </attList>
-        </elementSpec>
-
-        <!-- Customize LIST @type to distinguish between exercices and questionnaire  -->
-        <elementSpec ident="list" mode="change">
-          <attList>
-            <attDef ident="type" mode="change">
-              <valList mode="add" type="closed">
-                <valItem ident="exercices" mode="add">
-                  <desc>Exercices</desc>
-                </valItem>
-                <valItem ident="questionnaire" mode="add">
-                  <desc>Questionnaire</desc>
-                </valItem>
-              </valList>
-            </attDef>
-          </attList>
-        </elementSpec>
-        
-        <!-- Starting objectName taxonomy -->
-        <elementSpec ident="objectName" mode="change">
-          <attList>
-            <attDef ident="type" mode="change">
-              <valList mode="add" type="closed">
-                <valItem ident="argile" mode="add">
-                  <desc>Argile</desc>
-                </valItem>
-                <valItem ident="sable" mode="add">
-                  <desc>Sable</desc>
-                </valItem>
-                <valItem ident="pierres" mode="add">
-                  <desc>Pierres</desc>
-                </valItem>
-                <valItem ident="cliaux" mode="add">
-                  <desc>Cliaux</desc>
-                </valItem>
-                <valItem ident="plâtre" mode="add">
-                  <desc>Plâtre</desc>
-                </valItem>
-                <valItem ident="pierres_précieuses">
-                  <desc>Pierres précieuses</desc>
-                </valItem>
-                <valItem ident="houille" mode="add">
-                  <desc>Houille</desc>
-                </valItem>
-                <valItem ident="pétrole" mode="add">
-                  <desc>Pétrole</desc>
-                </valItem>
-                <valItem ident="carbone" mode="add">
-                  <desc>Carbone</desc>
-                </valItem>
-                <valItem ident="eau_composition" mode="add">
-                  <desc>Eau, sa composition</desc>
-                </valItem>
-                <valItem ident="puits" mode="add">
-                  <desc>Puits</desc>
-                </valItem>
-                <valItem ident="eau_potable" mode="add">
-                  <desc>Eau potable</desc>
-                </valItem>
-                <valItem ident="granit" mode="add">
-                  <desc>Granit</desc>
-                </valItem>
-                <valItem ident="silex" mode="add">
-                  <desc>Silex</desc>
-                </valItem>
-                <valItem ident="sel" mode="add">
-                  <desc>sel</desc>
-                </valItem>
-                <valItem ident="marais_salants" mode="add">
-                  <desc>Marais salants</desc>
-                </valItem>
-                <valItem ident="corail" mode="add">
-                  <desc>Le corail</desc>
-                </valItem>
-                <valItem ident="fer" mode="add">
-                  <desc>Le fer</desc>
-                </valItem>
-                <valItem ident="cuivre" mode="add">
-                  <desc>Le cuivre</desc>
-                </valItem>
-                <valItem ident="bronze" mode="add">
-                  <desc>Le bronze</desc>
-                </valItem>
-                <valItem ident="plomb" mode="add">
-                  <desc>Le plomb</desc>
-                </valItem>
-                <valItem ident="argent" mode="add">
-                  <desc>L'argent</desc>
-                </valItem>
-                <valItem ident="or" mode="add">
-                  <desc>L'or</desc>
-                </valItem>
-              </valList>
-            </attDef>
-          </attList>
-        </elementSpec>
-      </schemaSpec>
+      <head>TEI Complete</head>
+      <p>This TEI customization describes a schema that includes
+      <emph>all</emph> of the TEI P5 modules. This is a very useful
+      starting place for manually creating your own customizations —
+      it is much easier to delete the modules you do not want than to
+      add the modules you do. Furthermore this customization often
+      proves helpful for testing TEI software.</p>
+      <p>However, this particular TEI customization is <emph>not
+      recommended</emph> for actual use for encoding documents. It
+      produces schemas and reference documentation that will be much
+      larger and include many more elements than almost anyone could
+      conceivably ever need. Tempting though it may be simply to have
+      absolutely everything, and <q>just ignore</q> elements not
+      required, experience has shown that their presence makes the
+      documentation harder to read and use, and makes a schema that is
+      far more lax than desired.</p>
+      <p>The <att>n</att> attribute of each <gi>moduleRef</gi> below
+      reflects the chapter number of the TEI <title>Guidelines</title>
+      in which the module being referenced is defined. Note that the
+      modules are generally referred to in the order defined, with the
+      exception that the module for <title level="a">Simple Analytic
+      Mechanisms</title> is referred to before the module for <title level="a">Dictionaries</title>. This is because the class <name type="class">att.lexicographic.normalized</name> (which is
+      defined in <name type="module">analysis</name>) needs to be
+      specified before the class <name type="class">att.lexicographic</name> (which is defined in <name type="module">dictionaries</name>).</p>
+      <p>The first four modules are often
+      called the <soCalled>required</soCalled> modules. However, these
+      modules are not themselves technically required to create a TEI
+      conformant markup language (let alone a useful non-TEI
+      conformant markup language). Rather, they each contain one or
+      more <emph>elements</emph> which are required for TEI
+      conformance.</p>
+      <schemaSpec ident="tei_all" start="TEI teiCorpus" prefix="" targetLang="en" docLang="en">
+        <moduleRef n="01" key="tei"/>
+        <moduleRef n="02" key="header"/>
+        <moduleRef n="03" key="core"/>
+        <moduleRef n="04" key="textstructure"/>
+        <moduleRef n="05" key="gaiji"/>
+        <moduleRef n="06" key="verse"/>
+        <moduleRef n="07" key="drama"/>
+        <moduleRef n="08" key="spoken"/>
+        <moduleRef n="09" key="cmc"/>
+        <moduleRef n="18" key="analysis"/>
+        <moduleRef n="10" key="dictionaries"/>
+        <moduleRef n="11" key="msdescription"/>
+        <moduleRef n="12" key="transcr"/>
+        <moduleRef n="13" key="textcrit"/>
+        <moduleRef n="14" key="namesdates"/>
+        <moduleRef n="15" key="figures"/>
+        <moduleRef n="16" key="corpus"/>
+        <moduleRef n="17" key="linking"/>
+        <moduleRef n="19" key="iso-fs"/>
+        <moduleRef n="20" key="nets"/>
+        <moduleRef n="22" key="certainty"/>
+        <moduleRef n="23" key="tagdocs"/>
+      <elementSpec ident="objectName" mode="change"><attList><attDef ident="type" mode="change"><valList type="closed" mode="change"><valItem mode="add" ident="ingrédient"><desc versionDate="2024-08-16" xml:lang="en">ingrédient</desc></valItem><valItem mode="add" ident="ustensile"><desc versionDate="2024-08-16" xml:lang="en">ustensile</desc></valItem><valItem mode="add" ident="plat"><desc versionDate="2024-08-16" xml:lang="en">plat</desc></valItem></valList></attDef></attList></elementSpec><elementSpec ident="actName" ns="http://www.example.org/ns/tei_all" mode="add" module="namesdates"><classes><memberOf key="att.typed"/></classes><attList><attDef ident="type" usage="opt"><datatype><dataRef key="teidata.enumerated"/></datatype><valList type="closed"><valItem ident=""/><valItem ident="transformation"><desc versionDate="2024-08-16" xml:lang="en">transformation</desc></valItem><valItem ident="dissemination"><desc versionDate="2024-08-16" xml:lang="en">dissemination</desc></valItem><valItem ident="acquisition"><desc versionDate="2024-08-16" xml:lang="en">acquisition</desc></valItem></valList></attDef></attList></elementSpec><elementSpec ident="evalName" ns="http://www.example.org/ns/tei_all" mode="add" module="namesdates"><desc versionDate="2024-08-16" xml:lang="en">Used for evaluative language related to cuisine</desc><classes><memberOf key="att.typed"/><memberOf key="att.naming"/><memberOf key="att.global.analytic"/></classes></elementSpec></schemaSpec>
     </body>
   </text>
 </TEI>
