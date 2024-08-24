@@ -71,66 +71,7 @@
         <moduleRef n="13" key="textcrit"/>
         <moduleRef n="14" key="namesdates"/>
         <moduleSpec ident="tei" mode="add"/>
-          <elementSpec ident="actName" ns="http://www.example.org/ns/tei_all" mode="add">
-            <classes>
-              <memberOf key="att.typed"/>
-            </classes>
-            <attList>
-              <attDef ident="type" usage="opt">
-                <datatype>
-                  <dataRef key="teidata.enumerated"/>
-                </datatype>
-                <valList type="closed">
-                  <valItem ident=""/>
-                  <valItem ident="transformation">
-                    <desc versionDate="2024-08-16" xml:lang="en">transformation</desc>
-                  </valItem>
-                  <valItem ident="dissemination">
-                    <desc versionDate="2024-08-16" xml:lang="en">dissemination</desc>
-                  </valItem>
-                  <valItem ident="acquisition">
-                    <desc versionDate="2024-08-16" xml:lang="en">acquisition</desc>
-                  </valItem>
-                </valList>
-              </attDef>
-            </attList>
-          </elementSpec>
-          <elementSpec ident="evalName" ns="http://www.example.org/ns/tei_all" mode="add"
-            module="namesdates">
-            <desc versionDate="2024-08-16" xml:lang="en">Used for evaluative language related to
-              cuisine</desc>
-            <classes>
-              <memberOf key="att.typed"/>
-              <memberOf key="att.naming"/>
-              <memberOf key="att.global.analytic"/>
-            </classes>
-          </elementSpec>          
-        <moduleRef n="15" key="figures"/>
-        <moduleRef n="16" key="corpus"/>
-        <moduleRef n="17" key="linking"/>
-        <moduleRef n="19" key="iso-fs"/>
-        <moduleRef n="20" key="nets"/>
-        <moduleRef n="22" key="certainty"/>
-        <moduleRef n="23" key="tagdocs"/>
-        <elementSpec ident="objectName" mode="change">
-          <attList>
-            <attDef ident="type" mode="change">
-              <valList type="closed" mode="change">
-                <valItem mode="add" ident="ingrédient">
-                  <desc versionDate="2024-08-16" xml:lang="en">ingrédient</desc>
-                </valItem>
-                <valItem mode="add" ident="ustensile">
-                  <desc versionDate="2024-08-16" xml:lang="en">ustensile</desc>
-                </valItem>
-                <valItem mode="add" ident="plat">
-                  <desc versionDate="2024-08-16" xml:lang="en">plat</desc>
-                </valItem>
-              </valList>
-            </attDef>
-          </attList>
-        </elementSpec>
-        <elementSpec ident="actName" ns="http://www.example.org/ns/tei_all" mode="add"
-          module="namesdates">
+        <elementSpec ident="actName" mode="add" module="namesdates">
           <classes>
             <memberOf key="att.typed"/>
           </classes>
@@ -153,7 +94,40 @@
               </valList>
             </attDef>
           </attList>
-        </elementSpec>      
+        </elementSpec>
+        <elementSpec ident="evalName" mode="add" module="namesdates">
+          <desc versionDate="2024-08-16" xml:lang="en">Used for evaluative language related to
+            cuisine</desc>
+          <classes>
+            <memberOf key="att.typed"/>
+            <memberOf key="att.naming"/>
+            <memberOf key="att.global.analytic"/>
+          </classes>
+        </elementSpec>
+        <elementSpec ident="objectName" mode="change" module="namesdates">
+          <attList>
+            <attDef ident="type" mode="change">
+              <valList type="closed" mode="change">
+                <valItem mode="add" ident="ingrédient">
+                  <desc versionDate="2024-08-16" xml:lang="en">ingrédient</desc>
+                </valItem>
+                <valItem mode="add" ident="ustensile">
+                  <desc versionDate="2024-08-16" xml:lang="en">ustensile</desc>
+                </valItem>
+                <valItem mode="add" ident="plat">
+                  <desc versionDate="2024-08-16" xml:lang="en">plat</desc>
+                </valItem>
+              </valList>
+            </attDef>
+          </attList>
+        </elementSpec>
+        <moduleRef n="15" key="figures"/>
+        <moduleRef n="16" key="corpus"/>
+        <moduleRef n="17" key="linking"/>
+        <moduleRef n="19" key="iso-fs"/>
+        <moduleRef n="20" key="nets"/>
+        <moduleRef n="22" key="certainty"/>
+        <moduleRef n="23" key="tagdocs"/>
       </schemaSpec>
     </body>
   </text>
