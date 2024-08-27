@@ -54,7 +54,7 @@
         these modules are not themselves technically required to create a TEI conformant markup
         language (let alone a useful non-TEI conformant markup language). Rather, they each contain
         one or more <emph>elements</emph> which are required for TEI conformance.</p>
-      <schemaSpec ident="tei_all" start="TEI teiCorpus" prefix="" targetLang="en" docLang="en">
+      <schemaSpec ident="tei_all" start="TEI teiCorpus" prefix="suzette" targetLang="en" docLang="en">
         <moduleRef n="01" key="tei"/>
         <moduleRef n="02" key="header"/>
         <moduleRef n="03" key="core"/>
@@ -75,6 +75,9 @@
           <classes>
             <memberOf key="att.typed"/>
           </classes>
+          <content>
+            <macroRef key="macro.phraseSeq"/>
+          </content>
           <attList>
             <attDef ident="type" usage="opt">
               <datatype>
@@ -95,7 +98,7 @@
             </attDef>
           </attList>
         </elementSpec>
-        <elementSpec ident="evalName" mode="add" module="namesdates">
+<!--        <elementSpec ident="evalName" mode="add" module="namesdates">
           <desc versionDate="2024-08-16" xml:lang="en">Used for evaluative language related to
             cuisine</desc>
           <classes>
@@ -103,7 +106,10 @@
             <memberOf key="att.naming"/>
             <memberOf key="att.global.analytic"/>
           </classes>
-        </elementSpec>
+          <content>
+            <macroRef key="macro.phraseSeq"/>
+          </content>
+        </elementSpec>-->
         <elementSpec ident="objectName" mode="change" module="namesdates">
           <attList>
             <attDef ident="type" mode="change">
