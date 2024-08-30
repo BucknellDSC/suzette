@@ -1,0 +1,1780 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:tei="http://www.tei-c.org/ns/1.0"
+         xmlns:teix="http://www.tei-c.org/ns/Examples"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+         ns="http://www.tei-c.org/ns/1.0"><!--
+Schema generated from ODD source 2024-08-29T14:23:59Z. . 
+TEI Edition: P5 Version 4.7.0. Last updated on 16th November 2023, revision e5dd73ed0 
+TEI Edition Location: https://www.tei-c.org/Vault/P5/4.7.0/ 
+  
+--><!--This material is dual-licensed.
+[http://creativecommons.org/licenses/by-sa/3.0/] Distributed under a Creative Commons Attribution-ShareAlike 3.0 Unported License  [http://www.opensource.org/licenses/BSD-2-Clause] Copyright 2013 TEI Consortium. All rights reserved. Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. This software is provided by the copyright holders and contributors "as is" and any express or implied warranties, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose are disclaimed. In no event shall the copyright holder or contributors be liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including, but not limited to, procurement of substitute goods or services; loss of use, data, or profits; or business interruption) however caused and on any theory of liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way out of the use of this software, even if advised of the possibility of such damage. TEI material can be licensed differently depending on the use you intend to make of it. Hence it is made available under both the CC+BY and BSD-2 licences. The CC+BY licence is generally appropriate for usages which treat TEI content as data or documentation. The BSD-2 licence is generally appropriate for usage of TEI content in a software environment. For further information or clarification, please contact the  TEI Consortium .-->
+   <define name="tei_suzettemacro.paraContent">
+      <zeroOrMore>
+         <choice>
+            <text/>
+            <ref name="tei_suzettemodel.paraPart"/>
+         </choice>
+      </zeroOrMore>
+   </define>
+   <define name="tei_suzetteatt.canonical.attributes">
+      <ref name="tei_suzetteatt.canonical.attribute.key"/>
+      <ref name="tei_suzetteatt.canonical.attribute.ref"/>
+   </define>
+   <define name="tei_suzetteatt.canonical.attribute.key">
+      <optional>
+         <attribute name="key">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">provides an externally-defined means of identifying the entity (or entities) being named, using a coded value of some kind.</a:documentation>
+            <data type="string"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_suzetteatt.canonical.attribute.ref">
+      <optional>
+         <attribute name="ref">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(reference) provides an explicit means of locating a full definition or identity for the entity being named by means of one or more URIs.</a:documentation>
+            <list>
+               <oneOrMore>
+                  <data type="anyURI">
+                     <param name="pattern">\S+</param>
+                  </data>
+               </oneOrMore>
+            </list>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_suzetteatt.written.attributes">
+      <ref name="tei_suzetteatt.written.attribute.hand"/>
+   </define>
+   <define name="tei_suzetteatt.written.attribute.hand">
+      <optional>
+         <attribute name="hand">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">points to a <code xmlns="http://www.w3.org/1999/xhtml">&lt;handNote&gt;</code> element describing the hand considered responsible for the content of the element concerned.</a:documentation>
+            <data type="anyURI">
+               <param name="pattern">\S+</param>
+            </data>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_suzetteatt.datable.w3c.attributes">
+      <ref name="tei_suzetteatt.datable.w3c.attribute.when"/>
+      <ref name="tei_suzetteatt.datable.w3c.attribute.notBefore"/>
+      <ref name="tei_suzetteatt.datable.w3c.attribute.notAfter"/>
+      <ref name="tei_suzetteatt.datable.w3c.attribute.from"/>
+      <ref name="tei_suzetteatt.datable.w3c.attribute.to"/>
+   </define>
+   <define name="tei_suzetteatt.datable.w3c.attribute.when">
+      <optional>
+         <attribute name="when">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">supplies the value of the date or time in a standard form, e.g. yyyy-mm-dd.</a:documentation>
+            <choice>
+               <data type="date"/>
+               <data type="gYear"/>
+               <data type="gMonth"/>
+               <data type="gDay"/>
+               <data type="gYearMonth"/>
+               <data type="gMonthDay"/>
+               <data type="time"/>
+               <data type="dateTime"/>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_suzetteatt.datable.w3c.attribute.notBefore">
+      <optional>
+         <attribute name="notBefore">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the earliest possible date for the event in standard form, e.g. yyyy-mm-dd.</a:documentation>
+            <choice>
+               <data type="date"/>
+               <data type="gYear"/>
+               <data type="gMonth"/>
+               <data type="gDay"/>
+               <data type="gYearMonth"/>
+               <data type="gMonthDay"/>
+               <data type="time"/>
+               <data type="dateTime"/>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_suzetteatt.datable.w3c.attribute.notAfter">
+      <optional>
+         <attribute name="notAfter">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the latest possible date for the event in standard form, e.g. yyyy-mm-dd.</a:documentation>
+            <choice>
+               <data type="date"/>
+               <data type="gYear"/>
+               <data type="gMonth"/>
+               <data type="gDay"/>
+               <data type="gYearMonth"/>
+               <data type="gMonthDay"/>
+               <data type="time"/>
+               <data type="dateTime"/>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_suzetteatt.datable.w3c.attribute.from">
+      <optional>
+         <attribute name="from">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the starting point of the period in standard form, e.g. yyyy-mm-dd.</a:documentation>
+            <choice>
+               <data type="date"/>
+               <data type="gYear"/>
+               <data type="gMonth"/>
+               <data type="gDay"/>
+               <data type="gYearMonth"/>
+               <data type="gMonthDay"/>
+               <data type="time"/>
+               <data type="dateTime"/>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_suzetteatt.datable.w3c.attribute.to">
+      <optional>
+         <attribute name="to">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the ending point of the period in standard form, e.g. yyyy-mm-dd.</a:documentation>
+            <choice>
+               <data type="date"/>
+               <data type="gYear"/>
+               <data type="gMonth"/>
+               <data type="gDay"/>
+               <data type="gYearMonth"/>
+               <data type="gMonthDay"/>
+               <data type="time"/>
+               <data type="dateTime"/>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+            id="tei_minimal-att.datable.w3c-att-datable-w3c-when-constraint-rule-1">
+      <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                xmlns:xi="http://www.w3.org/2001/XInclude"
+                context="tei:*[@when]">
+         <sch:report test="@notBefore|@notAfter|@from|@to" role="nonfatal">The @when attribute cannot be used with any other att.datable.w3c attributes.</sch:report>
+      </sch:rule>
+   </pattern>
+   <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+            id="tei_minimal-att.datable.w3c-att-datable-w3c-from-constraint-rule-2">
+      <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                xmlns:xi="http://www.w3.org/2001/XInclude"
+                context="tei:*[@from]">
+         <sch:report test="@notBefore" role="nonfatal">The @from and @notBefore attributes cannot be used together.</sch:report>
+      </sch:rule>
+   </pattern>
+   <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+            id="tei_minimal-att.datable.w3c-att-datable-w3c-to-constraint-rule-3">
+      <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                xmlns:xi="http://www.w3.org/2001/XInclude"
+                context="tei:*[@to]">
+         <sch:report test="@notAfter" role="nonfatal">The @to and @notAfter attributes cannot be used together.</sch:report>
+      </sch:rule>
+   </pattern>
+   <define name="tei_suzetteatt.datable.attributes">
+      <ref name="tei_suzetteatt.datable.w3c.attributes"/>
+      <ref name="tei_suzetteatt.datable.attribute.period"/>
+   </define>
+   <define name="tei_suzetteatt.datable.attribute.period">
+      <optional>
+         <attribute name="period">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">supplies pointers to one or more definitions of named periods of time (typically <code xmlns="http://www.w3.org/1999/xhtml">&lt;category&gt;</code>s, <code xmlns="http://www.w3.org/1999/xhtml">&lt;date&gt;</code>s or <code xmlns="http://www.w3.org/1999/xhtml">&lt;event&gt;</code>s) within which the datable item is understood to have occurred.</a:documentation>
+            <list>
+               <oneOrMore>
+                  <data type="anyURI">
+                     <param name="pattern">\S+</param>
+                  </data>
+               </oneOrMore>
+            </list>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_suzetteatt.declarable.attributes">
+      <ref name="tei_suzetteatt.declarable.attribute.default"/>
+   </define>
+   <define name="tei_suzetteatt.declarable.attribute.default">
+      <optional>
+         <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+                    name="default"
+                    a:defaultValue="false">
+            <a:documentation>indicates whether or not this element is selected by default when its parent is selected.</a:documentation>
+            <choice>
+               <value>true</value>
+               <a:documentation>This element is selected if its parent is selected</a:documentation>
+               <value>false</value>
+               <a:documentation>This element can only be selected explicitly, unless it is the only one of its kind, in which case it is selected if its parent is selected.</a:documentation>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_suzetteatt.declaring.attributes">
+      <ref name="tei_suzetteatt.declaring.attribute.decls"/>
+   </define>
+   <define name="tei_suzetteatt.declaring.attribute.decls">
+      <optional>
+         <attribute name="decls">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(declarations) identifies one or more declarable elements within the header, which are understood to apply to the element bearing this attribute and its content.</a:documentation>
+            <list>
+               <oneOrMore>
+                  <data type="anyURI">
+                     <param name="pattern">\S+</param>
+                  </data>
+               </oneOrMore>
+            </list>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_suzetteatt.fragmentable.attributes">
+      <ref name="tei_suzetteatt.fragmentable.attribute.part"/>
+   </define>
+   <define name="tei_suzetteatt.fragmentable.attribute.part">
+      <optional>
+         <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+                    name="part"
+                    a:defaultValue="N">
+            <a:documentation>specifies whether or not its parent element is fragmented in some way, typically by some other overlapping structure: for example a speech which is divided between two or more verse stanzas, a paragraph which is split across a page division, a verse line which is divided between two speakers.</a:documentation>
+            <choice>
+               <value>Y</value>
+               <a:documentation>(yes) the element is fragmented in some (unspecified) respect</a:documentation>
+               <value>N</value>
+               <a:documentation>(no) the element is not fragmented, or no claim is made as to its completeness</a:documentation>
+               <value>I</value>
+               <a:documentation>(initial) this is the initial part of a fragmented element</a:documentation>
+               <value>M</value>
+               <a:documentation>(medial) this is a medial part of a fragmented element</a:documentation>
+               <value>F</value>
+               <a:documentation>(final) this is the final part of a fragmented element</a:documentation>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_suzetteatt.global.responsibility.attributes">
+      <ref name="tei_suzetteatt.global.responsibility.attribute.cert"/>
+      <ref name="tei_suzetteatt.global.responsibility.attribute.resp"/>
+   </define>
+   <define name="tei_suzetteatt.global.responsibility.attribute.cert">
+      <optional>
+         <attribute name="cert">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(certainty) signifies the degree of certainty associated with the intervention or interpretation.</a:documentation>
+            <choice>
+               <data type="double"/>
+               <choice>
+                  <value>high</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>medium</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>low</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>unknown</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               </choice>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_suzetteatt.global.responsibility.attribute.resp">
+      <optional>
+         <attribute name="resp">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(responsible party) indicates the agency responsible for the intervention or interpretation, for example an editor or transcriber.</a:documentation>
+            <list>
+               <oneOrMore>
+                  <data type="anyURI">
+                     <param name="pattern">\S+</param>
+                  </data>
+               </oneOrMore>
+            </list>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_suzetteatt.global.rendition.attributes">
+      <ref name="tei_suzetteatt.global.rendition.attribute.rend"/>
+      <ref name="tei_suzetteatt.global.rendition.attribute.style"/>
+      <ref name="tei_suzetteatt.global.rendition.attribute.rendition"/>
+   </define>
+   <define name="tei_suzetteatt.global.rendition.attribute.rend">
+      <optional>
+         <attribute name="rend">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(rendition) indicates how the element in question was rendered or presented in the source text.</a:documentation>
+            <list>
+               <oneOrMore>
+                  <data type="token">
+                     <param name="pattern">[^\p{C}\p{Z}]+</param>
+                  </data>
+               </oneOrMore>
+            </list>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_suzetteatt.global.rendition.attribute.style">
+      <optional>
+         <attribute name="style">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains an expression in some formal style definition language which defines the rendering or presentation used for this element in the source text</a:documentation>
+            <data type="string"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_suzetteatt.global.rendition.attribute.rendition">
+      <optional>
+         <attribute name="rendition">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">points to a description of the rendering or presentation used for this element in the source text.</a:documentation>
+            <list>
+               <oneOrMore>
+                  <data type="anyURI">
+                     <param name="pattern">\S+</param>
+                  </data>
+               </oneOrMore>
+            </list>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_suzetteatt.global.source.attributes">
+      <ref name="tei_suzetteatt.global.source.attribute.source"/>
+   </define>
+   <define name="tei_suzetteatt.global.source.attribute.source">
+      <optional>
+         <attribute name="source">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the source from which some aspect of this element is drawn.</a:documentation>
+            <list>
+               <oneOrMore>
+                  <data type="anyURI">
+                     <param name="pattern">\S+</param>
+                  </data>
+               </oneOrMore>
+            </list>
+         </attribute>
+      </optional>
+   </define>
+   <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+            id="tei_minimal-att.global.source-source-only_1_ODD_source-constraint-rule-4">
+      <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                xmlns:xi="http://www.w3.org/2001/XInclude"
+                context="tei:*[@source]">
+         <sch:let name="srcs" value="tokenize( normalize-space(@source),' ')"/>
+         <sch:report test="( self::tei:classRef               | self::tei:dataRef               | self::tei:elementRef               | self::tei:macroRef               | self::tei:moduleRef               | self::tei:schemaSpec )               and               $srcs[2]">
+              When used on a schema description element (like
+              <sch:value-of select="name(.)"/>), the @source attribute
+              should have only 1 value. (This one has <sch:value-of select="count($srcs)"/>.)
+            </sch:report>
+      </sch:rule>
+   </pattern>
+   <define name="tei_suzetteatt.global.attributes">
+      <ref name="tei_suzetteatt.global.rendition.attributes"/>
+      <ref name="tei_suzetteatt.global.responsibility.attributes"/>
+      <ref name="tei_suzetteatt.global.source.attributes"/>
+      <ref name="tei_suzetteatt.global.attribute.xmlid"/>
+      <ref name="tei_suzetteatt.global.attribute.n"/>
+      <ref name="tei_suzetteatt.global.attribute.xmllang"/>
+      <ref name="tei_suzetteatt.global.attribute.xmlbase"/>
+      <ref name="tei_suzetteatt.global.attribute.xmlspace"/>
+   </define>
+   <define name="tei_suzetteatt.global.attribute.xmlid">
+      <optional>
+         <attribute name="xml:id">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(identifier) provides a unique identifier for the element bearing the attribute.</a:documentation>
+            <data type="ID"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_suzetteatt.global.attribute.n">
+      <optional>
+         <attribute name="n">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(number) gives a number (or other label) for an element, which is not necessarily unique within the document.</a:documentation>
+            <data type="string"/>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_suzetteatt.global.attribute.xmllang">
+      <optional>
+         <attribute name="xml:lang">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(language) indicates the language of the element content using a tag generated according to <a xmlns="http://www.w3.org/1999/xhtml"
+                  href="http://www.rfc-editor.org/rfc/bcp/bcp47.txt">BCP 47</a>.</a:documentation>
+            <choice>
+               <data type="language"/>
+               <choice>
+                  <value/>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               </choice>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_suzetteatt.global.attribute.xmlbase">
+      <optional>
+         <attribute name="xml:base">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">provides a base URI reference with which applications can resolve relative URI references into absolute URI references.</a:documentation>
+            <data type="anyURI">
+               <param name="pattern">\S+</param>
+            </data>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_suzetteatt.global.attribute.xmlspace">
+      <optional>
+         <attribute name="xml:space">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">signals an intention about how white space should be managed by applications.</a:documentation>
+            <choice>
+               <value>default</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">signals that the application's default white-space processing modes are acceptable</a:documentation>
+               <value>preserve</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the intent that applications preserve all white space</a:documentation>
+            </choice>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_suzetteatt.typed.attributes">
+      <ref name="tei_suzetteatt.typed.attribute.type"/>
+      <ref name="tei_suzetteatt.typed.attribute.subtype"/>
+   </define>
+   <define name="tei_suzetteatt.typed.attribute.type">
+      <optional>
+         <attribute name="type">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the element in some sense, using any convenient classification scheme or typology.</a:documentation>
+            <data type="token">
+               <param name="pattern">[^\p{C}\p{Z}]+</param>
+            </data>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_suzetteatt.typed.attribute.subtype">
+      <optional>
+         <attribute name="subtype">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(subtype) provides a sub-categorization of the element, if needed</a:documentation>
+            <data type="token">
+               <param name="pattern">[^\p{C}\p{Z}]+</param>
+            </data>
+         </attribute>
+      </optional>
+   </define>
+   <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+            id="tei_minimal-att.typed-subtypeTyped-constraint-rule-5">
+      <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                xmlns:xi="http://www.w3.org/2001/XInclude"
+                context="tei:*[@subtype]">
+         <sch:assert test="@type">The <sch:name/> element should not be categorized in detail with @subtype unless also categorized in general with @type</sch:assert>
+      </sch:rule>
+   </pattern>
+   <define name="tei_suzettemodel.nameLike.agent">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.nameLike.agent_alternation">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.nameLike.agent_sequence">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.nameLike.agent_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.nameLike.agent_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.nameLike.agent_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.segLike">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.segLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.segLike_sequence">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.segLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.segLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.segLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.hiLike">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.hiLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.hiLike_sequence">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.hiLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.hiLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.hiLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.emphLike">
+      <choice>
+         <ref name="tei_suzettetitle"/>
+      </choice>
+   </define>
+   <define name="tei_suzettemodel.emphLike_alternation">
+      <choice>
+         <ref name="tei_suzettetitle"/>
+      </choice>
+   </define>
+   <define name="tei_suzettemodel.emphLike_sequence">
+      <ref name="tei_suzettetitle"/>
+   </define>
+   <define name="tei_suzettemodel.emphLike_sequenceOptional">
+      <optional>
+         <ref name="tei_suzettetitle"/>
+      </optional>
+   </define>
+   <define name="tei_suzettemodel.emphLike_sequenceOptionalRepeatable">
+      <zeroOrMore>
+         <ref name="tei_suzettetitle"/>
+      </zeroOrMore>
+   </define>
+   <define name="tei_suzettemodel.emphLike_sequenceRepeatable">
+      <oneOrMore>
+         <ref name="tei_suzettetitle"/>
+      </oneOrMore>
+   </define>
+   <define name="tei_suzettemodel.highlighted">
+      <choice>
+         <ref name="tei_suzettemodel.hiLike"/>
+         <ref name="tei_suzettemodel.emphLike"/>
+      </choice>
+   </define>
+   <define name="tei_suzettemodel.highlighted_alternation">
+      <choice>
+         <ref name="tei_suzettemodel.hiLike_alternation"/>
+         <ref name="tei_suzettemodel.emphLike_alternation"/>
+      </choice>
+   </define>
+   <define name="tei_suzettemodel.highlighted_sequence">
+      <ref name="tei_suzettemodel.hiLike_sequence"/>
+      <ref name="tei_suzettemodel.emphLike_sequence"/>
+   </define>
+   <define name="tei_suzettemodel.highlighted_sequenceOptional">
+      <optional>
+         <ref name="tei_suzettemodel.hiLike_sequenceOptional"/>
+      </optional>
+      <optional>
+         <ref name="tei_suzettemodel.emphLike_sequenceOptional"/>
+      </optional>
+   </define>
+   <define name="tei_suzettemodel.highlighted_sequenceOptionalRepeatable">
+      <zeroOrMore>
+         <ref name="tei_suzettemodel.hiLike_sequenceOptionalRepeatable"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="tei_suzettemodel.emphLike_sequenceOptionalRepeatable"/>
+      </zeroOrMore>
+   </define>
+   <define name="tei_suzettemodel.highlighted_sequenceRepeatable">
+      <oneOrMore>
+         <ref name="tei_suzettemodel.hiLike_sequenceRepeatable"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="tei_suzettemodel.emphLike_sequenceRepeatable"/>
+      </oneOrMore>
+   </define>
+   <define name="tei_suzettemodel.dateLike">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.dateLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.dateLike_sequence">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.dateLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.dateLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.dateLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.measureLike">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.measureLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.measureLike_sequence">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.measureLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.measureLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.measureLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.egLike">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.egLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.egLike_sequence">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.egLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.egLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.egLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.graphicLike">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.graphicLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.graphicLike_sequence">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.graphicLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.graphicLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.graphicLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.offsetLike">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.offsetLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.offsetLike_sequence">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.offsetLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.offsetLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.offsetLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.pPart.msdesc">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.pPart.msdesc_alternation">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.pPart.msdesc_sequence">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.pPart.msdesc_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.pPart.msdesc_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.pPart.msdesc_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.pPart.editorial">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.pPart.editorial_alternation">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.pPart.editorial_sequence">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.pPart.editorial_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.pPart.editorial_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.pPart.editorial_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.pPart.transcriptional">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.pPart.transcriptional_alternation">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.pPart.transcriptional_sequence">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.pPart.transcriptional_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.pPart.transcriptional_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.pPart.transcriptional_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.pPart.edit">
+      <choice>
+         <ref name="tei_suzettemodel.pPart.editorial"/>
+         <ref name="tei_suzettemodel.pPart.transcriptional"/>
+      </choice>
+   </define>
+   <define name="tei_suzettemodel.pPart.edit_alternation">
+      <choice>
+         <ref name="tei_suzettemodel.pPart.editorial_alternation"/>
+         <ref name="tei_suzettemodel.pPart.transcriptional_alternation"/>
+      </choice>
+   </define>
+   <define name="tei_suzettemodel.pPart.edit_sequence">
+      <ref name="tei_suzettemodel.pPart.editorial_sequence"/>
+      <ref name="tei_suzettemodel.pPart.transcriptional_sequence"/>
+   </define>
+   <define name="tei_suzettemodel.pPart.edit_sequenceOptional">
+      <optional>
+         <ref name="tei_suzettemodel.pPart.editorial_sequenceOptional"/>
+      </optional>
+      <optional>
+         <ref name="tei_suzettemodel.pPart.transcriptional_sequenceOptional"/>
+      </optional>
+   </define>
+   <define name="tei_suzettemodel.pPart.edit_sequenceOptionalRepeatable">
+      <zeroOrMore>
+         <ref name="tei_suzettemodel.pPart.editorial_sequenceOptionalRepeatable"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="tei_suzettemodel.pPart.transcriptional_sequenceOptionalRepeatable"/>
+      </zeroOrMore>
+   </define>
+   <define name="tei_suzettemodel.pPart.edit_sequenceRepeatable">
+      <oneOrMore>
+         <ref name="tei_suzettemodel.pPart.editorial_sequenceRepeatable"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="tei_suzettemodel.pPart.transcriptional_sequenceRepeatable"/>
+      </oneOrMore>
+   </define>
+   <define name="tei_suzettemodel.ptrLike">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.ptrLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.ptrLike_sequence">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.ptrLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.ptrLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.ptrLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.lPart">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.lPart_alternation">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.lPart_sequence">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.lPart_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.lPart_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.lPart_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.global.meta">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.global.meta_alternation">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.global.meta_sequence">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.global.meta_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.global.meta_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.global.meta_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.milestoneLike">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.milestoneLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.milestoneLike_sequence">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.milestoneLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.milestoneLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.milestoneLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.gLike">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.oddDecl">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.oddDecl_alternation">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.oddDecl_sequence">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.oddDecl_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.oddDecl_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.oddDecl_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.phrase.xml">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.phrase.xml_alternation">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.phrase.xml_sequence">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.phrase.xml_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.phrase.xml_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.phrase.xml_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.specDescLike">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.specDescLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.specDescLike_sequence">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.specDescLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.specDescLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.specDescLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.biblLike">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.biblLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.biblLike_sequence">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.biblLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.biblLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.biblLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.headLike">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.headLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.headLike_sequence">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.headLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.headLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.headLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.labelLike">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.labelLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.labelLike_sequence">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.labelLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.labelLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.labelLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.listLike">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.listLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.listLike_sequence">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.listLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.listLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.listLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.noteLike">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.noteLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.noteLike_sequence">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.noteLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.noteLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.noteLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.lLike">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.lLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.lLike_sequence">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.lLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.lLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.lLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.pLike">
+      <choice>
+         <ref name="tei_suzettep"/>
+      </choice>
+   </define>
+   <define name="tei_suzettemodel.pLike_alternation">
+      <choice>
+         <ref name="tei_suzettep"/>
+      </choice>
+   </define>
+   <define name="tei_suzettemodel.pLike_sequence">
+      <ref name="tei_suzettep"/>
+   </define>
+   <define name="tei_suzettemodel.pLike_sequenceOptional">
+      <optional>
+         <ref name="tei_suzettep"/>
+      </optional>
+   </define>
+   <define name="tei_suzettemodel.pLike_sequenceOptionalRepeatable">
+      <zeroOrMore>
+         <ref name="tei_suzettep"/>
+      </zeroOrMore>
+   </define>
+   <define name="tei_suzettemodel.pLike_sequenceRepeatable">
+      <oneOrMore>
+         <ref name="tei_suzettep"/>
+      </oneOrMore>
+   </define>
+   <define name="tei_suzettemodel.stageLike">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.stageLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.stageLike_sequence">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.stageLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.stageLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.stageLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.global.edit">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.global.edit_alternation">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.global.edit_sequence">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.global.edit_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.global.edit_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.global.edit_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.divPart">
+      <choice>
+         <ref name="tei_suzettemodel.lLike"/>
+         <ref name="tei_suzettemodel.pLike"/>
+      </choice>
+   </define>
+   <define name="tei_suzettemodel.placeNamePart">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.placeNamePart_alternation">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.placeNamePart_sequence">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.placeNamePart_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.placeNamePart_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.placeNamePart_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.placeStateLike">
+      <choice>
+         <ref name="tei_suzettemodel.placeNamePart"/>
+      </choice>
+   </define>
+   <define name="tei_suzettemodel.placeStateLike_alternation">
+      <choice>
+         <ref name="tei_suzettemodel.placeNamePart_alternation"/>
+      </choice>
+   </define>
+   <define name="tei_suzettemodel.placeStateLike_sequence">
+      <ref name="tei_suzettemodel.placeNamePart_sequence"/>
+   </define>
+   <define name="tei_suzettemodel.placeStateLike_sequenceOptional">
+      <optional>
+         <ref name="tei_suzettemodel.placeNamePart_sequenceOptional"/>
+      </optional>
+   </define>
+   <define name="tei_suzettemodel.placeStateLike_sequenceOptionalRepeatable">
+      <zeroOrMore>
+         <ref name="tei_suzettemodel.placeNamePart_sequenceOptionalRepeatable"/>
+      </zeroOrMore>
+   </define>
+   <define name="tei_suzettemodel.placeStateLike_sequenceRepeatable">
+      <oneOrMore>
+         <ref name="tei_suzettemodel.placeNamePart_sequenceRepeatable"/>
+      </oneOrMore>
+   </define>
+   <define name="tei_suzettemodel.publicationStmtPart.agency">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.publicationStmtPart.detail">
+      <choice>
+         <ref name="tei_suzettemodel.ptrLike"/>
+      </choice>
+   </define>
+   <define name="tei_suzettemodel.quoteLike">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.quoteLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.quoteLike_sequence">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.quoteLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.quoteLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.quoteLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.attributable">
+      <choice>
+         <ref name="tei_suzettemodel.quoteLike"/>
+      </choice>
+   </define>
+   <define name="tei_suzettemodel.attributable_alternation">
+      <choice>
+         <ref name="tei_suzettemodel.quoteLike_alternation"/>
+      </choice>
+   </define>
+   <define name="tei_suzettemodel.attributable_sequence">
+      <ref name="tei_suzettemodel.quoteLike_sequence"/>
+   </define>
+   <define name="tei_suzettemodel.attributable_sequenceOptional">
+      <optional>
+         <ref name="tei_suzettemodel.quoteLike_sequenceOptional"/>
+      </optional>
+   </define>
+   <define name="tei_suzettemodel.attributable_sequenceOptionalRepeatable">
+      <zeroOrMore>
+         <ref name="tei_suzettemodel.quoteLike_sequenceOptionalRepeatable"/>
+      </zeroOrMore>
+   </define>
+   <define name="tei_suzettemodel.attributable_sequenceRepeatable">
+      <oneOrMore>
+         <ref name="tei_suzettemodel.quoteLike_sequenceRepeatable"/>
+      </oneOrMore>
+   </define>
+   <define name="tei_suzettemodel.respLike">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.divWrapper">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.divTopPart">
+      <choice>
+         <ref name="tei_suzettemodel.headLike"/>
+      </choice>
+   </define>
+   <define name="tei_suzettemodel.divTop">
+      <choice>
+         <ref name="tei_suzettemodel.divWrapper"/>
+         <ref name="tei_suzettemodel.divTopPart"/>
+      </choice>
+   </define>
+   <define name="tei_suzettemodel.divBottomPart">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.divBottom">
+      <choice>
+         <ref name="tei_suzettemodel.divWrapper"/>
+         <ref name="tei_suzettemodel.divBottomPart"/>
+      </choice>
+   </define>
+   <define name="tei_suzettemodel.addressLike">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.addressLike_alternation">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.addressLike_sequence">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.addressLike_sequenceOptional">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.addressLike_sequenceOptionalRepeatable">
+      <empty/>
+   </define>
+   <define name="tei_suzettemodel.addressLike_sequenceRepeatable">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.nameLike">
+      <choice>
+         <ref name="tei_suzettemodel.nameLike.agent"/>
+         <ref name="tei_suzettemodel.offsetLike"/>
+         <ref name="tei_suzettemodel.placeStateLike"/>
+      </choice>
+   </define>
+   <define name="tei_suzettemodel.nameLike_alternation">
+      <choice>
+         <ref name="tei_suzettemodel.nameLike.agent_alternation"/>
+         <ref name="tei_suzettemodel.offsetLike_alternation"/>
+         <ref name="tei_suzettemodel.placeStateLike_alternation"/>
+      </choice>
+   </define>
+   <define name="tei_suzettemodel.nameLike_sequence">
+      <ref name="tei_suzettemodel.nameLike.agent_sequence"/>
+      <ref name="tei_suzettemodel.offsetLike_sequence"/>
+      <ref name="tei_suzettemodel.placeStateLike_sequence"/>
+   </define>
+   <define name="tei_suzettemodel.nameLike_sequenceOptional">
+      <optional>
+         <ref name="tei_suzettemodel.nameLike.agent_sequenceOptional"/>
+      </optional>
+      <optional>
+         <ref name="tei_suzettemodel.offsetLike_sequenceOptional"/>
+      </optional>
+      <optional>
+         <ref name="tei_suzettemodel.placeStateLike_sequenceOptional"/>
+      </optional>
+   </define>
+   <define name="tei_suzettemodel.nameLike_sequenceOptionalRepeatable">
+      <zeroOrMore>
+         <ref name="tei_suzettemodel.nameLike.agent_sequenceOptionalRepeatable"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="tei_suzettemodel.offsetLike_sequenceOptionalRepeatable"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="tei_suzettemodel.placeStateLike_sequenceOptionalRepeatable"/>
+      </zeroOrMore>
+   </define>
+   <define name="tei_suzettemodel.nameLike_sequenceRepeatable">
+      <oneOrMore>
+         <ref name="tei_suzettemodel.nameLike.agent_sequenceRepeatable"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="tei_suzettemodel.offsetLike_sequenceRepeatable"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="tei_suzettemodel.placeStateLike_sequenceRepeatable"/>
+      </oneOrMore>
+   </define>
+   <define name="tei_suzettemodel.global">
+      <choice>
+         <ref name="tei_suzettemodel.global.meta"/>
+         <ref name="tei_suzettemodel.milestoneLike"/>
+         <ref name="tei_suzettemodel.noteLike"/>
+         <ref name="tei_suzettemodel.global.edit"/>
+      </choice>
+   </define>
+   <define name="tei_suzettemodel.pPart.data">
+      <choice>
+         <ref name="tei_suzettemodel.dateLike"/>
+         <ref name="tei_suzettemodel.measureLike"/>
+         <ref name="tei_suzettemodel.addressLike"/>
+         <ref name="tei_suzettemodel.nameLike"/>
+      </choice>
+   </define>
+   <define name="tei_suzettemodel.pPart.data_alternation">
+      <choice>
+         <ref name="tei_suzettemodel.dateLike_alternation"/>
+         <ref name="tei_suzettemodel.measureLike_alternation"/>
+         <ref name="tei_suzettemodel.addressLike_alternation"/>
+         <ref name="tei_suzettemodel.nameLike_alternation"/>
+      </choice>
+   </define>
+   <define name="tei_suzettemodel.pPart.data_sequence">
+      <ref name="tei_suzettemodel.dateLike_sequence"/>
+      <ref name="tei_suzettemodel.measureLike_sequence"/>
+      <ref name="tei_suzettemodel.addressLike_sequence"/>
+      <ref name="tei_suzettemodel.nameLike_sequence"/>
+   </define>
+   <define name="tei_suzettemodel.pPart.data_sequenceOptional">
+      <optional>
+         <ref name="tei_suzettemodel.dateLike_sequenceOptional"/>
+      </optional>
+      <optional>
+         <ref name="tei_suzettemodel.measureLike_sequenceOptional"/>
+      </optional>
+      <optional>
+         <ref name="tei_suzettemodel.addressLike_sequenceOptional"/>
+      </optional>
+      <optional>
+         <ref name="tei_suzettemodel.nameLike_sequenceOptional"/>
+      </optional>
+   </define>
+   <define name="tei_suzettemodel.pPart.data_sequenceOptionalRepeatable">
+      <zeroOrMore>
+         <ref name="tei_suzettemodel.dateLike_sequenceOptionalRepeatable"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="tei_suzettemodel.measureLike_sequenceOptionalRepeatable"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="tei_suzettemodel.addressLike_sequenceOptionalRepeatable"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="tei_suzettemodel.nameLike_sequenceOptionalRepeatable"/>
+      </zeroOrMore>
+   </define>
+   <define name="tei_suzettemodel.pPart.data_sequenceRepeatable">
+      <oneOrMore>
+         <ref name="tei_suzettemodel.dateLike_sequenceRepeatable"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="tei_suzettemodel.measureLike_sequenceRepeatable"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="tei_suzettemodel.addressLike_sequenceRepeatable"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="tei_suzettemodel.nameLike_sequenceRepeatable"/>
+      </oneOrMore>
+   </define>
+   <define name="tei_suzettemodel.inter">
+      <choice>
+         <ref name="tei_suzettemodel.egLike"/>
+         <ref name="tei_suzettemodel.oddDecl"/>
+         <ref name="tei_suzettemodel.biblLike"/>
+         <ref name="tei_suzettemodel.labelLike"/>
+         <ref name="tei_suzettemodel.listLike"/>
+         <ref name="tei_suzettemodel.stageLike"/>
+         <ref name="tei_suzettemodel.attributable"/>
+      </choice>
+   </define>
+   <define name="tei_suzettemodel.common">
+      <choice>
+         <ref name="tei_suzettemodel.divPart"/>
+         <ref name="tei_suzettemodel.inter"/>
+      </choice>
+   </define>
+   <define name="tei_suzettemodel.phrase">
+      <choice>
+         <ref name="tei_suzettemodel.segLike"/>
+         <ref name="tei_suzettemodel.highlighted"/>
+         <ref name="tei_suzettemodel.graphicLike"/>
+         <ref name="tei_suzettemodel.pPart.msdesc"/>
+         <ref name="tei_suzettemodel.pPart.edit"/>
+         <ref name="tei_suzettemodel.ptrLike"/>
+         <ref name="tei_suzettemodel.lPart"/>
+         <ref name="tei_suzettemodel.phrase.xml"/>
+         <ref name="tei_suzettemodel.specDescLike"/>
+         <ref name="tei_suzettemodel.pPart.data"/>
+      </choice>
+   </define>
+   <define name="tei_suzettemodel.paraPart">
+      <choice>
+         <ref name="tei_suzettemodel.gLike"/>
+         <ref name="tei_suzettemodel.lLike"/>
+         <ref name="tei_suzettemodel.global"/>
+         <ref name="tei_suzettemodel.inter"/>
+         <ref name="tei_suzettemodel.phrase"/>
+      </choice>
+   </define>
+   <define name="tei_suzettemodel.divLike">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.divGenLike">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.div1Like">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.teiHeaderPart">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.sourceDescPart">
+      <notAllowed/>
+   </define>
+   <define name="tei_suzettemodel.resource">
+      <choice>
+         <ref name="tei_suzettetext"/>
+      </choice>
+   </define>
+   <define name="tei_suzettep">
+      <element name="p">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(paragraph) marks paragraphs in prose. [3.1. Paragraphs 7.2.5. Speech Contents]</a:documentation>
+         <ref name="tei_suzettemacro.paraContent"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="tei_minimal-p-abstractModel-structure-p-in-ab-or-p-constraint-report-5">
+            <rule context="tei:p">
+               <sch:report xmlns="http://www.tei-c.org/ns/1.0"
+                           xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                           xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                           test="(ancestor::tei:ab or ancestor::tei:p) and not( ancestor::tei:floatingText |parent::tei:exemplum |parent::tei:item |parent::tei:note |parent::tei:q |parent::tei:quote |parent::tei:remarks |parent::tei:said |parent::tei:sp |parent::tei:stage |parent::tei:cell |parent::tei:figure )">
+        Abstract model violation: Paragraphs may not occur inside other paragraphs or ab elements.
+      </sch:report>
+            </rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="tei_minimal-p-abstractModel-structure-p-in-l-or-lg-constraint-report-6">
+            <rule context="tei:p">
+               <sch:report xmlns="http://www.tei-c.org/ns/1.0"
+                           xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                           xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                           test="(ancestor::tei:l or ancestor::tei:lg) and not( ancestor::tei:floatingText |parent::tei:figure |parent::tei:note )">
+        Abstract model violation: Lines may not contain higher-level structural elements such as div, p, or ab, unless p is a child of figure or note, or is a descendant of floatingText.
+      </sch:report>
+            </rule>
+         </pattern>
+         <ref name="tei_suzetteatt.global.attributes"/>
+         <ref name="tei_suzetteatt.declaring.attributes"/>
+         <ref name="tei_suzetteatt.fragmentable.attributes"/>
+         <ref name="tei_suzetteatt.written.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_suzettetitle">
+      <element name="title">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(title) contains a title for any kind of work. [3.12.2.2. Titles, Authors, and Editors 2.2.1. The Title Statement 2.2.5. The Series Statement]</a:documentation>
+         <ref name="tei_suzettemacro.paraContent"/>
+         <ref name="tei_suzetteatt.global.attributes"/>
+         <ref name="tei_suzetteatt.typed.attribute.subtype"/>
+         <ref name="tei_suzetteatt.canonical.attributes"/>
+         <ref name="tei_suzetteatt.datable.attributes"/>
+         <optional>
+            <attribute name="type">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">classifies the title according to some convenient typology.
+Sample values include: 1] main; 2] sub (subordinate); 3] alt (alternate); 4] short; 5] desc (descriptive)</a:documentation>
+               <data type="token">
+                  <param name="pattern">[^\p{C}\p{Z}]+</param>
+               </data>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="calendar">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates one or more systems or calendars to which the date represented by the content of this element belongs.</a:documentation>
+               <list>
+                  <oneOrMore>
+                     <data type="anyURI">
+                        <param name="pattern">\S+</param>
+                     </data>
+                  </oneOrMore>
+               </list>
+            </attribute>
+         </optional>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="tei_minimal-title-calendar-calendar-check-title-constraint-rule-6">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      context="tei:*[@calendar]">
+               <sch:assert test="string-length( normalize-space(.) ) gt 0"> @calendar indicates one or more
+                        systems or calendars to which the date represented by the content of this element belongs,
+                        but this <sch:name/> element has no textual content.</sch:assert>
+            </sch:rule>
+         </pattern>
+         <optional>
+            <attribute name="level">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the bibliographic level for a title, that is, whether it identifies an article, book, journal, series, or unpublished material.</a:documentation>
+               <choice>
+                  <value>a</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(analytic) the title applies to an analytic item, such as an article, poem, or other work published as part of a larger item.</a:documentation>
+                  <value>m</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(monographic) the title applies to a monograph such as a book or other item considered to be a distinct publication, including single volumes of multi-volume works</a:documentation>
+                  <value>j</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(journal) the title applies to any serial or periodical publication such as a journal, magazine, or newspaper</a:documentation>
+                  <value>s</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(series) the title applies to a series of otherwise distinct publications such as a collection</a:documentation>
+                  <value>u</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(unpublished) the title applies to any unpublished material (including theses and dissertations unless published by a commercial press)</a:documentation>
+               </choice>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_suzetteteiHeader">
+      <element name="teiHeader">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(TEI header) supplies descriptive and declarative metadata associated with a digital resource or set of resources. [2.1.1. The TEI Header and Its Components 15.1. Varieties of Composite Text]</a:documentation>
+         <group>
+            <ref name="tei_suzettefileDesc"/>
+            <zeroOrMore>
+               <ref name="tei_suzettemodel.teiHeaderPart"/>
+            </zeroOrMore>
+         </group>
+         <ref name="tei_suzetteatt.global.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_suzettefileDesc">
+      <element name="fileDesc">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(file description) contains a full bibliographic description of an electronic file. [2.2. The File Description 2.1.1. The TEI Header and Its Components]</a:documentation>
+         <group>
+            <group>
+               <ref name="tei_suzettetitleStmt"/>
+               <ref name="tei_suzettepublicationStmt"/>
+            </group>
+            <oneOrMore>
+               <ref name="tei_suzettesourceDesc"/>
+            </oneOrMore>
+         </group>
+         <ref name="tei_suzetteatt.global.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_suzettetitleStmt">
+      <element name="titleStmt">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(title statement) groups information about the title of a work and those responsible for its content. [2.2.1. The Title Statement 2.2. The File Description]</a:documentation>
+         <group>
+            <oneOrMore>
+               <ref name="tei_suzettetitle"/>
+            </oneOrMore>
+            <zeroOrMore>
+               <ref name="tei_suzettemodel.respLike"/>
+            </zeroOrMore>
+         </group>
+         <ref name="tei_suzetteatt.global.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_suzettepublicationStmt">
+      <element name="publicationStmt">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(publication statement) groups information concerning the publication or distribution of an electronic or other text. [2.2.4. Publication, Distribution, Licensing, etc. 2.2. The File Description]</a:documentation>
+         <choice>
+            <oneOrMore>
+               <group>
+                  <ref name="tei_suzettemodel.publicationStmtPart.agency"/>
+                  <zeroOrMore>
+                     <ref name="tei_suzettemodel.publicationStmtPart.detail"/>
+                  </zeroOrMore>
+               </group>
+            </oneOrMore>
+            <oneOrMore>
+               <ref name="tei_suzettemodel.pLike"/>
+            </oneOrMore>
+         </choice>
+         <ref name="tei_suzetteatt.global.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_suzettesourceDesc">
+      <element name="sourceDesc">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(source description) describes the source(s) from which an electronic text was derived or generated, typically a bibliographic description in the case of a digitized text, or a phrase such as "born digital" for a text which has no previous existence. [2.2.7. The Source Description]</a:documentation>
+         <choice>
+            <oneOrMore>
+               <ref name="tei_suzettemodel.pLike"/>
+            </oneOrMore>
+            <oneOrMore>
+               <choice>
+                  <ref name="tei_suzettemodel.biblLike"/>
+                  <ref name="tei_suzettemodel.sourceDescPart"/>
+                  <ref name="tei_suzettemodel.listLike"/>
+               </choice>
+            </oneOrMore>
+         </choice>
+         <ref name="tei_suzetteatt.global.attributes"/>
+         <ref name="tei_suzetteatt.declarable.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_suzetteTEI">
+      <element name="TEI">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(TEI document) contains a single TEI-conformant document, combining a single TEI header with one or more members of the model.resource class. Multiple <code xmlns="http://www.w3.org/1999/xhtml">&lt;TEI&gt;</code> elements may be combined within a <code xmlns="http://www.w3.org/1999/xhtml">&lt;TEI&gt;</code> (or <code xmlns="http://www.w3.org/1999/xhtml">&lt;teiCorpus&gt;</code>) element. [4. Default Text Structure 15.1. Varieties of Composite Text]</a:documentation>
+         <group>
+            <ref name="tei_suzetteteiHeader"/>
+            <choice>
+               <group>
+                  <oneOrMore>
+                     <ref name="tei_suzettemodel.resource"/>
+                  </oneOrMore>
+                  <zeroOrMore>
+                     <ref name="tei_suzetteTEI"/>
+                  </zeroOrMore>
+               </group>
+               <oneOrMore>
+                  <ref name="tei_suzetteTEI"/>
+               </oneOrMore>
+            </choice>
+         </group>
+         <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                 prefix="tei"
+                 uri="http://www.tei-c.org/ns/1.0"/>
+         <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                 prefix="xs"
+                 uri="http://www.w3.org/2001/XMLSchema"/>
+         <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                 prefix="rng"
+                 uri="http://relaxng.org/ns/structure/1.0"/>
+         <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                 prefix="rna"
+                 uri="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+         <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                 prefix="sch"
+                 uri="http://purl.oclc.org/dsdl/schematron"/>
+         <sch:ns xmlns="http://www.tei-c.org/ns/1.0"
+                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                 xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                 prefix="sch1x"
+                 uri="http://www.ascc.net/xml/schematron"/>
+         <ref name="tei_suzetteatt.global.attributes"/>
+         <ref name="tei_suzetteatt.typed.attributes"/>
+         <optional>
+            <attribute name="version">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies the version number of the TEI Guidelines against which this document is valid.</a:documentation>
+               <data type="token">
+                  <param name="pattern">[\d]+(\.[\d]+){0,2}</param>
+               </data>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_suzettetext">
+      <element name="text">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(text) contains a single text of any kind, whether unitary or composite, for example a poem or drama, a collection of essays, a novel, a dictionary, or a corpus sample. [4. Default Text Structure 15.1. Varieties of Composite Text]</a:documentation>
+         <group>
+            <zeroOrMore>
+               <ref name="tei_suzettemodel.global"/>
+            </zeroOrMore>
+            <choice>
+               <ref name="tei_suzettebody"/>
+            </choice>
+            <zeroOrMore>
+               <ref name="tei_suzettemodel.global"/>
+            </zeroOrMore>
+         </group>
+         <ref name="tei_suzetteatt.global.attributes"/>
+         <ref name="tei_suzetteatt.declaring.attributes"/>
+         <ref name="tei_suzetteatt.typed.attributes"/>
+         <ref name="tei_suzetteatt.written.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_suzettebody">
+      <element name="body">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(text body) contains the whole body of a single unitary text, excluding any front or back matter. [4. Default Text Structure]</a:documentation>
+         <group>
+            <zeroOrMore>
+               <ref name="tei_suzettemodel.global"/>
+            </zeroOrMore>
+            <optional>
+               <group>
+                  <ref name="tei_suzettemodel.divTop"/>
+                  <zeroOrMore>
+                     <choice>
+                        <ref name="tei_suzettemodel.global"/>
+                        <ref name="tei_suzettemodel.divTop"/>
+                     </choice>
+                  </zeroOrMore>
+               </group>
+            </optional>
+            <optional>
+               <group>
+                  <ref name="tei_suzettemodel.divGenLike"/>
+                  <zeroOrMore>
+                     <choice>
+                        <ref name="tei_suzettemodel.global"/>
+                        <ref name="tei_suzettemodel.divGenLike"/>
+                     </choice>
+                  </zeroOrMore>
+               </group>
+            </optional>
+            <choice>
+               <oneOrMore>
+                  <group>
+                     <ref name="tei_suzettemodel.divLike"/>
+                     <zeroOrMore>
+                        <choice>
+                           <ref name="tei_suzettemodel.global"/>
+                           <ref name="tei_suzettemodel.divGenLike"/>
+                        </choice>
+                     </zeroOrMore>
+                  </group>
+               </oneOrMore>
+               <oneOrMore>
+                  <group>
+                     <ref name="tei_suzettemodel.div1Like"/>
+                     <zeroOrMore>
+                        <choice>
+                           <ref name="tei_suzettemodel.global"/>
+                           <ref name="tei_suzettemodel.divGenLike"/>
+                        </choice>
+                     </zeroOrMore>
+                  </group>
+               </oneOrMore>
+               <group>
+                  <oneOrMore>
+                     <group>
+                        <choice>
+                           <ref name="tei_suzettemodel.common"/>
+                        </choice>
+                        <zeroOrMore>
+                           <ref name="tei_suzettemodel.global"/>
+                        </zeroOrMore>
+                     </group>
+                  </oneOrMore>
+                  <optional>
+                     <choice>
+                        <oneOrMore>
+                           <group>
+                              <ref name="tei_suzettemodel.divLike"/>
+                              <zeroOrMore>
+                                 <choice>
+                                    <ref name="tei_suzettemodel.global"/>
+                                    <ref name="tei_suzettemodel.divGenLike"/>
+                                 </choice>
+                              </zeroOrMore>
+                           </group>
+                        </oneOrMore>
+                        <oneOrMore>
+                           <group>
+                              <ref name="tei_suzettemodel.div1Like"/>
+                              <zeroOrMore>
+                                 <choice>
+                                    <ref name="tei_suzettemodel.global"/>
+                                    <ref name="tei_suzettemodel.divGenLike"/>
+                                 </choice>
+                              </zeroOrMore>
+                           </group>
+                        </oneOrMore>
+                     </choice>
+                  </optional>
+               </group>
+            </choice>
+            <zeroOrMore>
+               <group>
+                  <ref name="tei_suzettemodel.divBottom"/>
+                  <zeroOrMore>
+                     <ref name="tei_suzettemodel.global"/>
+                  </zeroOrMore>
+               </group>
+            </zeroOrMore>
+         </group>
+         <ref name="tei_suzetteatt.global.attributes"/>
+         <ref name="tei_suzetteatt.declaring.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <start>
+      <choice>
+         <ref name="tei_suzetteTEI"/>
+      </choice>
+   </start>
+</grammar>
