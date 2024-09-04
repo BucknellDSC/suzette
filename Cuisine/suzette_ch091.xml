@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/CSS/suzette_cwrc.css"?><?xml-model href="../out/suzette.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Suzette: a Digital Edition</title>
+            <respStmt>
+               <persName>John Westbrook</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Editor</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Diane Jakacki</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Project Manager</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annie Girton</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2018-2020</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Sarah Haber</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2020-2022</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Rebecca Heintzelman</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2020-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Juliya Harnood</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2021-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Jaehoon Pyon</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2023-Present</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Bucknell University</distributor>
+            <pubPlace>
+               <address>
+                  <addrLine>One Dent Drive</addrLine>
+                  <addrLine>Lewisburg, PA 17837</addrLine>
+               </address>
+            </pubPlace>
+            <availability>
+               <licence>Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Suzette: Livre de Lecture Courante à l’Usage des Jeunes Filles.
+                     Morale—Leçon de choses, Economie Domestique – Ménage – Cuisine –
+                     Couture</title>
+                  <author>Robert Halt</author>
+                  <textLang>French</textLang>
+                  <imprint>
+                     <date>1889</date>
+                     <distributor>Libraire Classique Paul Delaplane</distributor>
+                     <pubPlace>Paris, France</pubPlace>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:fabio="https://purl.org/spar/fabio#" xmlns:bf="http://www.openlinksw.com/schemas/bif#" xmlns:cito="https://sparontologies.github.io/cito/current/cito.html#" xmlns:org="http://www.w3.org/ns/org#">
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch091.xml?note_annotation_20231016092128680",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-10-16T13:21:28.680Z",
+	"dcterms:modified": "2023-10-16T13:21:28.680Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch091.xml?note_annotation_20231016092128680#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch091.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch091.xml?note_annotation_20231016092128680#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/head/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Argenteuil. Petite ville des\n                  environs de Versailles."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch091.xml?place_annotation_20231016092510397",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-10-16T13:25:10.397Z",
+	"dcterms:modified": "2023-10-16T13:25:10.397Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch091.xml?place_annotation_20231016092510397#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch091.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch091.xml?place_annotation_20231016092510397#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[3]/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q1338207",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch091.xml?place_annotation_20231016092538222",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-10-16T13:25:38.222Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch091.xml?place_annotation_20231016092538222#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch091.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch091.xml?place_annotation_20231016092538222#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[6]/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q181946",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch091.xml?place_annotation_20231016092602293",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-10-16T13:26:02.293Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch091.xml?place_annotation_20231016092602293#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch091.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch091.xml?place_annotation_20231016092602293#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[9]/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q181946",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch091.xml?place_annotation_20231016092815855",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-10-16T13:28:15.855Z",
+	"dcterms:modified": "2023-10-16T13:28:15.855Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch091.xml?place_annotation_20231016092815855#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch091.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch091.xml?place_annotation_20231016092815855#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[3]/div[3]/div[2]/p[2]/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q1237299",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      </rdf:RDF></xenoData><profileDesc>
+         <langUsage>
+            <language ident="fr">French</language>
+            <language ident="en">English</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+<div xmlns:ns0="http://www.tei-c.org/ns/1.0" type="chapitre" xml:lang="fr" n="ch091">
+<pb type="page" n="315" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_315.jpg"/>
+            <head>91. — Asperges d'Argenteuil*<note type="annotation">Argenteuil. Petite ville des
+                  environs de Versailles.</note>. </head>
+            <div type="récit">
+               <p>Il faisait maintenant grand jour. On sortit des <objectName>pavillons</objectName>. Et ce fut comme si,
+                  l'on entrait dans un autre immense marché, celui-ci en plein air.</p>
+               <p>La file des chariots de <objectName>cresson</objectName> était partie. Mais il y avait un tohu-bohu*<note type="annotation">Tohu-bohu. Bruit confus d'une foule.</note> de charrettes,
+                  les unes vides, les autres pleines de <objectName>légumes</objectName>, produits des maraîchers*<note type="annotation">Maraîcher. Jardinier qui cultive les terrains à <objectName>légumes</objectName> qu'on
+                     appelle <objectName>marais</objectName>.</note> des environs de Paris, la
+                  concurrence aux <objectName>légumes</objectName> venus de loin par chemin de fer.</p>
+               <figure>
+                  <caption>Et les maraîchers criaient gesticulaient, appelaient en hâte
+                     l'acheteur.</caption>
+               </figure>
+               <p>Et les maraîchers criaient, gesticulaient, appelaient en hâte l'acheteur ; car ils
+                  devaient déguerpir au coup <pb type="page" n="316" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_316.jpg"/>
+                   de huit heures sonnant à l'<placeName key="Church of Saint Eustache" ref="http://www.wikidata.org/entity/Q1338207">église Saint-Eustache</placeName>, pour rendre le pavé à la circulation. L'heure
+                  approchait.</p>
+               <p>C'est cet instant, qu'avec patience, attend la ménagère soigneuse de ses
+                     deniers*<note type="annotation">Denier. Pièce de monnaie de peu de valeur et
+                     qui est hors d'usage.</note>. Car elle sait que l'orgueil du marchand et ses
+                  prix baissent au son de cette cloche ; il ne tient pas à remporter sa marchandise
+                  invendue.</p>
+               <p>Tout en mettant <persName key="suzette" type="fictif">Suzette</persName> au
+                  courant de ce petit tour, <persName key="mme_richard" type="fictif">Mme
+                     Richard</persName> guignait de l'œil une superbe botte d'<objectName>asperges</objectName>.</p>
+               <p>— <objectName>Asperges</objectName> d'<placeName key="Argenteuil" ref="http://www.wikidata.org/entity/Q181946">Argenteuil</placeName>, lui dit-elle à l'oreille ; je veux
+                  t'en faire goûter... Fameuses !</p>
+               <p>Elle acheva l'éloge par un de ces petits claquements de langue qui en disent plus
+                  long que des discours.</p>
+               <p>Huit heures moins cinq !</p>
+               <p>Suivies de <persName key="pascal" type="fictif">Pascal</persName>, aux bras
+                  ballants, les trois dames et les trois <objectName>paniers</objectName> s'avancèrent en bon ordre. Et la
+                  bataille s'engagea avec les <objectName>asperges</objectName> d'<placeName key="Argenteuil" ref="http://www.wikidata.org/entity/Q181946">Argenteuil</placeName>.</p>
+               <p>C'étaient, en effet, de bien belles <objectName>asperges</objectName>, plus grosses que le pouce,
+                  régulières, et d'un lilas rosé si fondu, si délicat !</p>
+               <p>Mais la marchande ne les valait pas. Elle avait une moustache, des yeux revêches ;
+                  les os lui perçaient la peau.</p>
+               <p>— Combien cette botte ?</p>
+               <p>— Trois francs soixante-quinze.</p>
+               <p><persName key="mme_richard" type="fictif">Mme Richard</persName> leva au ciel ses
+                  bras et son panier :</p>
+               <p>— Trois francs soixante-quinze ! ! !</p>
+               <p>— Pas un sou de moins.</p>
+               <p>Après une minute de discussion, elle passa à trois cinquante. Mais à partir de ce
+                  moment, ce fut une barre de fer. La tante s'égosilla en vain.</p>
+               <p><persName key="suzette" type="fictif">Suzette</persName> toucha du coude <persName key="pascal" type="fictif">Pascal</persName> et lui dit en riant : </p>
+               <p>— Tu dois savoir la chanson des <objectName>asperges</objectName> ? Chante la-lui.</p>
+               <p>— Bah ! celle-là n'entend pas la musique, répondit le chanteur.</p>
+               <p>La bravoure de <persName key="mme_richard" type="fictif">Mme Richard</persName>
+                  faiblissait devant l'ennemi. Enfin, comme dernier et décisif argument, elle
+                  invoqua le coup de cloche de huit heures, qui sonnèrent juste, amicalement.</p>
+               <pb type="page" n="317" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_317.jpg"/>
+               
+               <p>— Le coup de cloche ! s'écria la paysanne, le coup de cloche, je m'en moque comme
+                  d'une guigne ! Je suis assez riche pour manger mes <objectName>asperges</objectName>, si je ne les vends
+                  pas !</p>
+               <p>Et, tout en montant dans sa <objectName>charrette</objectName> avec sa marchandise, elle grommela contre
+                  les mauvais clients. Mais on lui avait déjà tourné le dos.</p>
+            </div>
+            <div type="questionnaire">
+               <head>Questionnaire.</head>
+               <list>
+                  <item>— Où entra-t-on en sortant des <objectName>pavillons</objectName> ?</item>
+                  <item>— Qu'est-ce qui avait remplace les <objectName>chariots de cresson</objectName> ?</item>
+                  <item>— Que faisaient les maraîchers, et pourquoi ? </item>
+                  <item>— Quel moment attend avec impatience la ménagère pour faire ses achats de
+                     <objectName>légumes</objectName> ? </item>
+                  <item>— Que dit <persName key="mme_richard" type="fictif">Mme Richard</persName> à
+                        <persName key="suzette" type="fictif">Suzette</persName> à propos d'<objectName>asperges</objectName>
+                     ? </item>
+                  <item>— Comment était la marchande ? </item>
+                  <item>— Comment la tante essaya-t-elle d'avoir une belle <objectName>botte d'asperges</objectName> ?</item>
+                  <item> — Que dit la maussade marchande au coup de huit heures ?</item>
+               </list>
+            </div>
+            <div type="exercices">
+               <head>DÉVELOPPEMENT DES SUJETS PROPOSÉS POUR EXERCICES.</head>
+               <div cert="high" org="composite" part="Y" sample="initial" type="civilité" xml:space="default" xml:id="sujciv_091">
+                  <head>Civilité.</head>
+                  <div type="questions">
+                     <list>
+                        <item>— Que pensez-vous de la conduite de la marchande ?</item>
+                        <item>— Qu'aurait-elle dû faire et dire ?</item>
+                        <item>— Quand dit-on qu'une personne est polie ?</item>
+                        <item>— Qu'indiquent des manières polies ? </item>
+                        <item>— Quelles qualités suppose la politesse ?</item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p>La conduite de la marchande est celle d'une personne grossière et insolente.
+                        Si elle trouvait insuffisant le prix offert par <persName key="mme_richard" type="fictif">Mme Richard</persName>, elle devait lui dire simplement : «
+                        Je ne puis céder la botte au-dessous de 3 fr, 75 ; il est inutile
+                        d'insister. » </p>
+                     <p>On dit qu'une personne est <term>polie</term> lorsqu'elle observe toujours,
+                        mais sans affectation, les usages généralement adoptés dans la société pour
+                        rendre les relations agréables et faciles. Un enfant poli se gardera de la
+                        brusquerie, des manières hautaines, impérieuses et dédaigneuses ; il
+                        témoignera des égards surtout aux personnes faibles ou âgées ; il sera
+                        silencieux à table et attendra sans impatience qu'on ait servi les autres ;
+                        il n'interrompra jamais, contredira encore moins et évitera de parler sur un
+                        ton élevé. </p>
+                     <p>Les <term>manières polies</term> indiquent que l'on sait concilier avec
+                        agrément ce qu'on doit aux autres et ce qu on doit à soi-mème ; elles font
+                        par donner bien des défauts et elles donnent plus de relief aux bonnes
+                        qualités.</p>
+                     <p>La politesse suppose que l'on a du cœur, de l'esprit et de la délicatesse
+                        dans les sentiments ; on prend toujours bonne opinion de ceux chez qui l'on
+                        reconnaît des manières soignées et un langage poli ; c'est même ainsi qu'on
+                        juge si quelqu'un a reçu une bonne éducation. </p>
+                  </div>
+               </div>
+               <div cert="high" org="composite" part="Y" sample="initial" type="géographie" xml:space="default" xml:id="sujgeo_091">
+                  <head>Géographie.</head>
+                  <div type="questions">
+                     <list>
+                        <item>— De quelles localités de votre voisinage proviennent les <objectName>légumes</objectName>
+                           qu'on achète au marché de votre résidence ? </item>
+                        <item>— Quelles communes de votre arrondissement sont connues pour fournir
+                           tels ou tels <objectName>légumes</objectName> ?</item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p>(Cette question étant exclusivement locale, l'élève seule sera à même de la
+                        développer.)</p>
+                  </div>
+               </div>
+               <div type="horticulture">
+                  <head>Horticulture.</head>
+                  <div type="questions">
+                     <list>
+                        <item>— Dire quelques mots de la culture des <objectName>asperges</objectName>, — de l'aspect de la
+                           <objectName>plante</objectName> aux diverses époques de l'année.</item>
+                        <item>— Quand coupe-t-on les asperges ?</item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p>Les <term><objectName>asperges</objectName></term> se cultivent dans les <objectName>champs</objectName> et les <objectName>jardins</objectName> ; mais
+                        les plus belles et les plus productives espèces réclament un terrain léger
+                           
+                        <pb type="page" n="318" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_318.jpg"/>
+                         et abondamment pourvu d'<objectName>engrais</objectName>. Au printemps, le <objectName>pied d'asperges</objectName>, qui se ramifie sous le sol en une multitude de <objectName>racines</objectName>, <objectName>pousse</objectName>
+                        des rejetons de la grosseur du doigt, <objectName>tendres</objectName> et de <objectName>couleur verte</objectName> avec des
+                        <objectName>nuances roses</objectName> ; c'est la partie de la <objectName>plante</objectName> qu'on mange et que l'on coupe
+                        dès qu'elle peut donner une <objectName>tige</objectName> de 20 a 25 centimètres. En été, le <objectName>pied d'asperges</objectName> présente l'aspect d'un joli <objectName>arbuste</objectName> au <objectName>feuillage délicat</objectName>, d'un
+                        <objectName>vert foncé</objectName>, qui porte, en automne, des baies rouges de forme sphérique et de
+                        l'effet le plus gracieux.</p>
+                     <p>On commence à couper les <objectName>asperges</objectName> au mois d'avril ou de mai selon que le
+                        printemps est plus ou moins précoce ; dans le <placeName key="Southern France" ref="http://www.wikidata.org/entity/Q1237299">Midi</placeName>, c'est dès le mois de
+                        mars que la <objectName>plante</objectName> commence à produire.</p>
+                  </div>
+               </div>
+               <div cert="high" org="composite" part="Y" sample="initial" xml:space="default" type="économie_domestique" xml:id="sujeco_091">
+                  <head>Économie domestique.</head>
+                  <div type="questions">
+                     <list><item> — Combien un are de terrain peut-il produire de bottes d'asperges par
+                           semaine, et pendant combien de temps ?</item>
+                        <item>— Prix d'une botte ordinaire d'<objectName>asperges</objectName>.</item>
+                        <item>— Revenu d'un are planté en <objectName>asperges</objectName>, en supposant qu'il nécessite 20
+                           francs de frais. </item>
+                        <item>— Comment sert-on les <objectName>asperges</objectName> ?</item>
+                        <item>— Manière de préparer les diverses <objectName>sauces</objectName> auxquelles on <objectName>mange</objectName> ce
+                           <objectName>légume</objectName>.</item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p>(N. B. — Les trois premières questions sont exclusivement locales, en ce
+                        sens que les produits du terrain et les prix de vente varient selon les
+                        régions, les départements et même les diverses localités ; les élèves
+                        devront prendre des renseignements auprès des personnes aptes à les
+                        instruire à cet égard.)</p>
+                     <p>Aussitôt qu'elles ont été cuites à l'<objectName>eau</objectName> bouillante, les <objectName>asperges</objectName> sont
+                        servies dans un <objectName>plat long</objectName> après avoir été égouttées, et chaque convive en
+                        prend à la main, ou avec un <objectName>ustensile</objectName> particulier, la quantité qui lui
+                        convient.</p>
+                     <p>Ce qui fait la bonne <objectName>sauce blanche</objectName> avec laquelle on mange les <objectName>asperges</objectName>,
+                        c'est la qualité du <objectName>beurre</objectName> et l'emploi du moins possible de <objectName>farine</objectName>. Mettez
+                        dans une <objectName>casserole</objectName> gros comme un <objectName>œuf de beurre</objectName>, du <objectName>sel</objectName> et du <objectName>poivre blanc</objectName> ;
+                        quand il est fondu, prenez une cuillerée à bouche de <objectName>farine</objectName> ; mêlez et
+                        versez petit à petit, en tournant toujours, presque un verre d'<objectName>eau</objectName> bouillante. Quand le tout est délayé, retirez du feu, ajoutez un <objectName>jaune d’œuf</objectName>
+                        un peu <objectName>battu</objectName> avec un <objectName>filet de vinaigre</objectName> et servez.</p>
+                     <p>On mange encore les <objectName>asperges</objectName> avec une <objectName>sauce à l'huile</objectName> et au <objectName>vinaigre</objectName>
+                        exactement composée comme celle de la <objectName>salade</objectName>.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
