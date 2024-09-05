@@ -74,7 +74,7 @@
         <moduleRef n="13" key="textcrit"/>
         <moduleRef n="14" key="namesdates"/>
         <moduleSpec ident="tei" mode="add"/>
-        <elementSpec ident="actName" mode="add" module="namesdates">
+        <elementSpec ident="actionName" mode="add" module="namesdates">
           <classes>
             <memberOf key="att.typed"/>
           </classes>
@@ -118,21 +118,48 @@
             <attDef ident="type" mode="change">
               <valList type="closed" mode="change">
                 <valItem mode="add" ident="ingrédient">
-                  <desc versionDate="2024-08-16" xml:lang="en">ingrédient</desc>
+                  <desc versionDate="2024-08-16" xml:lang="fr">ingrédient</desc>
                 </valItem>
                 <valItem mode="add" ident="ustensile">
-                  <desc versionDate="2024-08-16" xml:lang="en">ustensile</desc>
+                  <desc versionDate="2024-08-16" xml:lang="fr">ustensile</desc>
                 </valItem>
                 <valItem mode="add" ident="plat">
-                  <desc versionDate="2024-08-16" xml:lang="en">plat</desc>
+                  <desc versionDate="2024-08-16" xml:lang="fr">plat</desc>
                 </valItem>
                 <valItem ident="matière_première" mode="add">
-                  <desc versionDate="2024-09-03">matière_première</desc>
+                  <desc versionDate="2024-09-03" xml:lang="fr">matière_première</desc>
                 </valItem>
               </valList>
             </attDef>
           </attList>
         </elementSpec>
+        <elementSpec ident="rs" mode="change" module="namesdates">
+          <attList>
+            <attDef ident="type" mode="change">
+              <valList type="closed" mode="change">
+                <valItem ident="action" mode="add">
+                  <desc versionDate="2024-09-05" xml:lang="fr">action</desc>
+                </valItem>
+                <valItem ident="évaluation" mode="change">
+                  <desc versionDate="2024-09-05" xml:lang="fr">évaluation</desc>
+                </valItem>
+              </valList>
+            </attDef>
+            <attDef ident="subtype" mode="change">
+              <valList type="closed" mode="change">
+                <valItem ident="acquisition" mode="add">
+                  <desc versionDate="2024-09-05" xml:lang="fr">acquisition</desc>
+                </valItem>
+                <valItem ident="transformation" mode="add">
+                  <desc versionDate="2024-09-05" xml:lang="fr">transformation</desc>
+                </valItem>
+                <valItem ident="dissemination" mode="add">
+                  <desc versionDate="2024-09-05" xml:lang="fr">dissemination</desc>
+                </valItem>
+              </valList>
+            </attDef>
+          </attList>
+        </elementSpec>        
         <moduleRef n="15" key="figures"/>
         <moduleRef n="16" key="corpus"/>
         <moduleRef n="17" key="linking"/>
