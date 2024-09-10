@@ -28,6 +28,7 @@
       </appInfo>
     </encodingDesc>
     <revisionDesc>
+      <change when="2024-09-05" who="#DKJ">Added multiple @type and @subtype attributes for rs</change>
       <change when="2024-09-03" who="#DKJ">Added matière_première to list of @type values for objectName</change>
     </revisionDesc>
   </teiHeader>
@@ -73,46 +74,25 @@
         <moduleRef n="12" key="transcr"/>
         <moduleRef n="13" key="textcrit"/>
         <moduleRef n="14" key="namesdates"/>
-        <moduleSpec ident="tei" mode="add"/>
+        <!-- Attempting to create actionName element -->
         <elementSpec ident="actionName" mode="add" module="namesdates">
-          <classes>
-            <memberOf key="att.typed"/>
-          </classes>
-          <content>
-            <macroRef key="macro.phraseSeq"/>
-          </content>
           <attList>
-            <attDef ident="type" usage="opt">
-              <datatype>
-                <dataRef key="teidata.enumerated"/>
-              </datatype>
-              <valList type="closed">
-                <valItem ident=""/>
-                <valItem ident="transformation">
-                  <desc versionDate="2024-08-16" xml:lang="en">transformation</desc>
+            <attDef ident="type" mode="change">
+              <valList type="closed" mode="change">
+                <valItem ident="acquisition" mode="add">
+                  <desc versionDate="2024-09-05" xml:lang="fr">acquisition</desc>
                 </valItem>
-                <valItem ident="dissemination">
-                  <desc versionDate="2024-08-16" xml:lang="en">dissemination</desc>
+                <valItem ident="transformation" mode="add">
+                  <desc versionDate="2024-09-05" xml:lang="fr">transformation</desc>
                 </valItem>
-                <valItem ident="acquisition">
-                  <desc versionDate="2024-08-16" xml:lang="en">acquisition</desc>
+                <valItem ident="dissemination" mode="add">
+                  <desc versionDate="2024-09-05" xml:lang="fr">dissemination</desc>
                 </valItem>
               </valList>
             </attDef>
           </attList>
         </elementSpec>
-        <!--        <elementSpec ident="evalName" mode="add" module="namesdates">
-          <desc versionDate="2024-08-16" xml:lang="en">Used for evaluative language related to
-            cuisine</desc>
-          <classes>
-            <memberOf key="att.typed"/>
-            <memberOf key="att.naming"/>
-            <memberOf key="att.global.analytic"/>
-          </classes>
-          <content>
-            <macroRef key="macro.phraseSeq"/>
-          </content>
-        </elementSpec>-->
+        <!-- Added attributes for objectName @type -->
         <elementSpec ident="objectName" mode="change" module="namesdates">
           <attList>
             <attDef ident="type" mode="change">
@@ -126,13 +106,69 @@
                 <valItem mode="add" ident="plat">
                   <desc versionDate="2024-08-16" xml:lang="fr">plat</desc>
                 </valItem>
-                <valItem ident="matière_première" mode="add">
-                  <desc versionDate="2024-09-03" xml:lang="fr">matière_première</desc>
+                <valItem ident="source_animale" mode="add">
+                  <desc xml:lang="fr" versionDate="2024-09-10">source animale</desc>
                 </valItem>
+                <valItem ident="source_vegetale" mode="add">
+                  <desc xml:lang="fr" versionDate="2024-09-10">source_vegetale</desc>
+                </valItem>
+                <valItem ident="source-minérale" mode="add">
+                  <desc xml:lang="fr" versionDate="2024-09-10">source-minérale</desc>
+                </valItem>
+                <valItem ident="source_fonge" mode="add">
+                  <desc xml:lang="fr" versionDate="2024-09-10">source_fonge</desc>
+                </valItem>
+              </valList>
+            </attDef>
+            <attDef ident="subtype" mode="change">
+              <valList type="closed" mode="change">
+                <valItem ident="épice" mode="add">
+                  <desc xml:lang="fr" versionDate="2024-09-10">épice</desc>
+                </valItem>
+                <valItem ident="aromate" mode="add">
+                  <desc xml:lang="fr" versionDate="2024-09-10">aromate</desc>
+                </valItem>
+                <valItem ident="condiment" mode="add">
+                  <desc xml:lang="fr" versionDate="2024-09-10">condiment</desc>
+                </valItem>  
+                <valItem ident="légume" mode="add">
+                  <desc xml:lang="fr" versionDate="2024-09-10">légume</desc>
+                </valItem>
+                <valItem ident="fruit" mode="add">
+                  <desc xml:lang="fr" versionDate="2024-09-10">fruit</desc>
+                </valItem>
+                <valItem ident="poisson_fruit_de_mer" mode="add">
+                  <desc xml:lang="fr" versionDate="2024-09-10">poisson fruit de mer</desc>
+                </valItem>
+                <valItem ident="viande_rouge" mode="add">
+                  <desc xml:lang="fr" versionDate="2024-09-10">viande rouge</desc>
+                </valItem>
+                <valItem ident="volaille" mode="add">
+                  <desc xml:lang="fr" versionDate="2024-09-10">volaille</desc>
+                </valItem>
+                <valItem ident="gibier" mode="add">
+                  <desc xml:lang="fr" versionDate="2024-09-10">gibier</desc>
+                </valItem>
+                <valItem ident="charcuterie" mode="add">
+                  <desc xml:lang="fr" versionDate="2024-09-10">charcuterie</desc>
+                </valItem>
+                <valItem ident="produit_laitier" mode="add">
+                  <desc xml:lang="fr" versionDate="2024-09-10">produit laitier</desc>
+                </valItem>
+                <valItem ident="boisson" mode="add">
+                  <desc xml:lang="fr" versionDate="2024-09-10">boisson</desc>
+                </valItem>
+                <valItem ident="féculent" mode="add">
+                  <desc xml:lang="fr" versionDate="2024-09-10">féculent</desc>
+                </valItem>
+                <valItem ident="oléagineux" mode="add">
+                  <desc xml:lang="fr" versionDate="2024-09-10">oléagineux</desc>
+                </valItem>                
               </valList>
             </attDef>
           </attList>
         </elementSpec>
+        <!--Added attributes for rs @type and @subtype -->
         <elementSpec ident="rs" mode="change" module="namesdates">
           <attList>
             <attDef ident="type" mode="change">

@@ -5,7 +5,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2024-09-05T19:01:26Z. . 
+Schema generated from ODD source 2024-09-10T17:42:08Z. . 
 TEI Edition: P5 Version 4.7.0. Last updated on 16th November 2023, revision e5dd73ed0 
 TEI Edition Location: https://www.tei-c.org/Vault/P5/4.7.0/ 
   
@@ -138,7 +138,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/4.7.0/
             </choice>
          </zeroOrMore>
       </element>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d10e131002-constraint">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d10e131112-constraint">
          <rule context="tei:content">
             <report test="descendant::*[not(namespace-uri(.) =               ('http://relaxng.org/ns/compatibility/annotations/1.0', 'http://relaxng.org/ns/structure/1.0', 'http://www.tei-c.org/ns/1.0'))]">content descendants must be in the
               namespaces
@@ -187,7 +187,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/4.7.0/
             </choice>
          </zeroOrMore>
       </element>
-      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d10e132381-constraint">
+      <pattern xmlns="http://purl.oclc.org/dsdl/schematron" id="d10e132491-constraint">
          <rule context="tei:datatype">
             <report test="descendant::*[not(namespace-uri(.) =               ('http://relaxng.org/ns/structure/1.0', 'http://www.tei-c.org/ns/1.0'))]">datatype descendants must be in the
               namespaces
@@ -19434,7 +19434,6 @@ Sample values include: 1] atBirth; 2] atDeath; 3] dependent; 4] inherited; 5] in
          <ref name="suzetteatt.editLike.attributes"/>
          <ref name="suzetteatt.global.attributes"/>
          <ref name="suzetteatt.personal.attributes"/>
-         <ref name="suzetteatt.typed.attribute.subtype"/>
          <optional>
             <attribute name="type">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the element in some sense, using any convenient classification scheme or typology.</a:documentation>
@@ -19445,8 +19444,49 @@ Sample values include: 1] atBirth; 2] atDeath; 3] dependent; 4] inherited; 5] in
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">ustensile</a:documentation>
                   <value>plat</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">plat</a:documentation>
-                  <value>matière_première</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">matière_première</a:documentation>
+                  <value>source_animale</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">source animale</a:documentation>
+                  <value>source_vegetale</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">source_vegetale</a:documentation>
+                  <value>source-minérale</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">source-minérale</a:documentation>
+                  <value>source_fonge</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">source_fonge</a:documentation>
+               </choice>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="subtype">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(subtype) provides a sub-categorization of the element, if needed</a:documentation>
+               <choice>
+                  <value>épice</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">épice</a:documentation>
+                  <value>aromate</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">aromate</a:documentation>
+                  <value>condiment</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">condiment</a:documentation>
+                  <value>légume</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">légume</a:documentation>
+                  <value>fruit</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">fruit</a:documentation>
+                  <value>poisson_fruit_de_mer</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">poisson fruit de mer</a:documentation>
+                  <value>viande_rouge</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">viande rouge</a:documentation>
+                  <value>volaille</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">volaille</a:documentation>
+                  <value>gibier</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">gibier</a:documentation>
+                  <value>charcuterie</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">charcuterie</a:documentation>
+                  <value>produit_laitier</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">produit laitier</a:documentation>
+                  <value>boisson</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">boisson</a:documentation>
+                  <value>féculent</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">féculent</a:documentation>
+                  <value>oléagineux</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">oléagineux</a:documentation>
                </choice>
             </attribute>
          </optional>
