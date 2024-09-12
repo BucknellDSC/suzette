@@ -1224,9 +1224,9 @@
 							<list>
 								<item>— Comment appelle-t-on les <objectName type="plat" key="mets">mets</objectName>
 									préparés avec de la <objectName type="ingrédient" key="pâte">pâte</objectName>, du
-									<objectName type="ingrédient" key="beurre" > beurre</objectName>, du
-									<objectName type="ingrédient" key="sucre">sucre</objectName> et autres
-									<objectName type="ingrédient" key="assaisonements"> assaisonnements</objectName> ? </item>
+									<objectName type="ingrédient" subtype="produit_laitier" key="beurre" > beurre</objectName>, du
+									<objectName type="ingrédient" subtype="éparco" key="sucre">sucre</objectName> et autres
+									<objectName type="ingrédient" subtype="éparco" key="assaisonements"> assaisonnements</objectName> ? </item>
 								<item>— Quelles sont les diverses sortes de
 									<objectName type="plat" key="pâtisseries">pâtisseries</objectName> ?</item>
 							</list>
@@ -1235,11 +1235,11 @@
 							<p>On entend par <term><objectName type="plat" key="pâtisseries">pâtisseries</objectName></term> des
 								<objectName type="plat" key="mets">mets</objectName> préparés au moyen de
 								<objectName type="ingrédient" key="pâte">pâte</objectName> pétrie avec de
-								<objectName type="ingrédient" key="beurre">beurre</objectName>, du
-								<objectName type="ingrédient" key="lait">lait</objectName>, des
+								<objectName type="ingrédient" subtype="produit_laitier" key="beurre">beurre</objectName>, du
+								<objectName type="ingrédient" subtype="produit_laitier" key="lait">lait</objectName>, des
 								<objectName type="ingrédient" key="œufs">œufs</objectName>, et à laquelle on a ajouté divers
-								<objectName type="ingrédient" key="assaisonements">assaisonnements</objectName> dont le
-								<objectName type="ingrédient" key="sucre">sucre</objectName> est le plus important.</p>
+								<objectName type="ingrédient" subtype="éparco" key="assaisonements">assaisonnements</objectName> dont le
+								<objectName type="ingrédient" subtype="éparco" key="sucre">sucre</objectName> est le plus important.</p>
 							<p>Les principales sortes de <objectName type="plat" key="pâtisseries">pâtisseries</objectName> sont :
 								1° <term>les <objectName type="plat" key="entremets sucrés">entremets sucrés</objectName></term>, tels
 								que <objectName type="plat" key="gâteaux" >gâteaux</objectName> et
@@ -1247,25 +1247,21 @@
 									chocolat">pots de crème au
 									chocolat</objectName> ou <objectName type="plat" key="pots de crème au
 										café">au café</objectName>,
-									<objectName>crème renversée</objectName>,
-									<objectName>beignets</objectName>, <objectName>pommes au
-									beurre</objectName>, <objectName>charlottes</objectName> ; — 2°
-								les <term/><term><objectName>tartes</objectName></term>
-								<objectName>aux abricots</objectName>, <objectName cert="high"
-									evidence="internal" full="yes" instant="unknown" key="tarte"
-									xml:space="default">aux cerises</objectName>, <objectName
-									cert="high" evidence="internal" full="yes" instant="unknown"
-									xml:space="default" key="tarte">à la purée de
-									pommes</objectName>, <objectName cert="high" evidence="internal"
-									full="yes" instant="unknown" key="tarte" xml:space="default">aux
-									prunes</objectName>, <objectName cert="high" evidence="internal"
-									full="yes" instant="unknown" key="tarte" xml:space="default">à
+								<objectName type="plat" key="crème renversée">crème renversée</objectName>,
+								<objectName type="plat" key="beignets">beignets</objectName>, <objectName type="plat" key="pommes au beurre">pommes au
+									beurre </objectName>, <objectName type="plat" key="Charlottes" >charlottes</objectName> ; — 2°
+								les <term/><term><objectName type="plat" key="tartes">tartes</objectName></term>
+								<objectName type="plat" key="tartes aux abricots" >aux abricots</objectName>, <objectName  type="plat" key="tartes aux cerises" >aux cerises</objectName>, <objectName
+									type="plat" key="tartes à la purée de
+									pommes">à la purée de
+									pommes</objectName>, <objectName  type="plat" key="tartes aux prunes">aux
+									prunes</objectName>, <objectName  type="plat" key="tartes à
+										la frangipane">à
 									la frangipane</objectName> ; — 3° les
-										<term><objectName>gâteaux</objectName></term> ou
-										<term><objectName>galettes</objectName></term>
-								<objectName>de ménage</objectName>, <objectName>biscuits de
+								<term><objectName type="plat" key="gâteaux" >gâteaux</objectName></term> ou
+								<term><objectName type="plat" key="galettes de ménage">galettes de ménage</objectName></term>, <objectName>biscuits de
 									ménage</objectName>, <objectName>tôt-fait</objectName> ou
-									<objectName>gâteau quatre-quarts</objectName>, etc., etc.</p>
+								<objectName type="plat" key="gâteau quatre-quarts">gâteau quatre-quarts</objectName>, etc., etc.</p>
 						</div>
 					</div>
 					<div type="hygiène" xml:id="sujhyg_016">
@@ -1273,19 +1269,20 @@
 						<div type="questions">
 							<list>
 								<item>— Quels inconvénients présente l'abus des
-										<objectName>pâtisseries</objectName> pour les
+									<objectName type="plat" key="pâtisseries">pâtisseries</objectName> pour les
 									enfants?</item>
 								<item>— Comment en doivent-ils manger ?</item>
 							</list>
 						</div>
 						<div type="réponses">
-							<p>Les <objectName>pâtisseries</objectName> sont moins saines que le
-									<objectName>pain</objectName> ; elles se digèrent facilement
+							<p>Les <objectName type="plat" key="pâtisseries" >pâtisseries</objectName> sont moins saines que le
+								<objectName type="plat" key="pain">pain</objectName> ; elles se digèrent facilement
 								quand elles ne contiennent pas trop de
-									<objectName>beurre</objectName> et de <objectName>jaunes
+								<objectName type="ingrédient" subtype="produit_laitier" key="beurre">beurre</objectName> et de <objectName type="ingrédient" subtype="animal" key="jaunes
+									d'œufs">jaunes
 									d'œufs</objectName>. Mais comme le contraire arrive presque
-								toujours, et que souvent aussi le <objectName>beurre</objectName> y
-								est remplacé par des <objectName>graisses</objectName> de qualité
+								toujours, et que souvent aussi le <objectName type="ingrédient" subtype="produit_laitier" key="beurre">beurre</objectName> y
+								est remplacé par des <objectName type="ingrédient" subtype="animal" key="graisses">graisses</objectName> de qualité
 								inférieure, elles causent des indigestions aux enfants qui en
 								abusent. On ne saurait trop les inviter à en user avec
 								discrétion.</p>
