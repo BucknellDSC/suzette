@@ -28,8 +28,11 @@
       </appInfo>
     </encodingDesc>
     <revisionDesc>
-      <change when="2024-09-05" who="#DKJ">Added multiple @type and @subtype attributes for rs</change>
-      <change when="2024-09-03" who="#DKJ">Added matière_première to list of @type values for objectName</change>
+      <change when="2024-09-12" who="#DKJ">Added more @subtypes</change>
+      <change when="2024-09-05" who="#DKJ">Added multiple @type and @subtype attributes for
+        rs</change>
+      <change when="2024-09-03" who="#DKJ">Added matière_première to list of @type values for
+        objectName</change>
     </revisionDesc>
   </teiHeader>
   <text>
@@ -51,14 +54,15 @@
         module for <title level="a">Simple Analytic Mechanisms</title> is referred to before the
         module for <title level="a">Dictionaries</title>. This is because the class <name
           type="class">att.lexicographic.normalized</name> (which is defined in <name type="module"
-            >analysis</name>) needs to be specified before the class <name type="class"
-              >att.lexicographic</name> (which is defined in <name type="module"
-                >dictionaries</name>).</p>
+          >analysis</name>) needs to be specified before the class <name type="class"
+          >att.lexicographic</name> (which is defined in <name type="module"
+        >dictionaries</name>).</p>
       <p>The first four modules are often called the <soCalled>required</soCalled> modules. However,
         these modules are not themselves technically required to create a TEI conformant markup
         language (let alone a useful non-TEI conformant markup language). Rather, they each contain
         one or more <emph>elements</emph> which are required for TEI conformance.</p>
-      <schemaSpec ident="tei_all" start="TEI teiCorpus" prefix="suzette" targetLang="en" docLang="en">
+      <schemaSpec ident="tei_all" start="TEI teiCorpus" prefix="suzette" targetLang="en"
+        docLang="en">
         <moduleRef n="01" key="tei"/>
         <moduleRef n="02" key="header"/>
         <moduleRef n="03" key="core"/>
@@ -106,48 +110,30 @@
                 <valItem mode="add" ident="plat">
                   <desc versionDate="2024-08-16" xml:lang="fr">plat</desc>
                 </valItem>
-                <valItem ident="source_animale" mode="add">
-                  <desc xml:lang="fr" versionDate="2024-09-10">source animale</desc>
+                <valItem ident="ressource" mode="add">
+                  <desc versionDate="2024-09-12" xml:lang="fr">ressource</desc>
                 </valItem>
-                <valItem ident="source_vegetale" mode="add">
-                  <desc xml:lang="fr" versionDate="2024-09-10">source_vegetale</desc>
-                </valItem>
-                <valItem ident="source-minérale" mode="add">
-                  <desc xml:lang="fr" versionDate="2024-09-10">source-minérale</desc>
-                </valItem>
-                <valItem ident="source_fonge" mode="add">
-                  <desc xml:lang="fr" versionDate="2024-09-10">source_fonge</desc>
+                <valItem ident="produit" mode="add">
+                  <desc versionDate="2024-09-12" xml:lang="fr">produit</desc>
                 </valItem>
               </valList>
             </attDef>
             <attDef ident="subtype" mode="change">
               <valList type="closed" mode="change">
-                <valItem ident="épice" mode="add">
-                  <desc xml:lang="fr" versionDate="2024-09-10">épice</desc>
+                <valItem ident="éparco" mode="add">
+                  <desc xml:lang="fr" versionDate="2024-09-10">épice, aromate, condiment</desc>
                 </valItem>
-                <valItem ident="aromate" mode="add">
-                  <desc xml:lang="fr" versionDate="2024-09-10">aromate</desc>
-                </valItem>
-                <valItem ident="condiment" mode="add">
-                  <desc xml:lang="fr" versionDate="2024-09-10">condiment</desc>
-                </valItem>  
                 <valItem ident="légume" mode="add">
                   <desc xml:lang="fr" versionDate="2024-09-10">légume</desc>
                 </valItem>
                 <valItem ident="fruit" mode="add">
                   <desc xml:lang="fr" versionDate="2024-09-10">fruit</desc>
                 </valItem>
-                <valItem ident="poisson_fruit_de_mer" mode="add">
-                  <desc xml:lang="fr" versionDate="2024-09-10">poisson fruit de mer</desc>
+                <valItem ident="poisson" mode="add">
+                  <desc xml:lang="fr" versionDate="2024-09-10">poisson et fruit de mer</desc>
                 </valItem>
-                <valItem ident="viande_rouge" mode="add">
-                  <desc xml:lang="fr" versionDate="2024-09-10">viande rouge</desc>
-                </valItem>
-                <valItem ident="volaille" mode="add">
-                  <desc xml:lang="fr" versionDate="2024-09-10">volaille</desc>
-                </valItem>
-                <valItem ident="gibier" mode="add">
-                  <desc xml:lang="fr" versionDate="2024-09-10">gibier</desc>
+                <valItem ident="carné" mode="add">
+                  <desc xml:lang="fr" versionDate="2024-09-10">viande rouge, volaille, gibier</desc>
                 </valItem>
                 <valItem ident="charcuterie" mode="add">
                   <desc xml:lang="fr" versionDate="2024-09-10">charcuterie</desc>
@@ -156,14 +142,27 @@
                   <desc xml:lang="fr" versionDate="2024-09-10">produit laitier</desc>
                 </valItem>
                 <valItem ident="boisson" mode="add">
-                  <desc xml:lang="fr" versionDate="2024-09-10">boisson</desc>
+                  <desc xml:lang="fr" versionDate="2024-09-10">boisson (alcoolique et
+                    non-alcoolique)</desc>
                 </valItem>
-                <valItem ident="féculent" mode="add">
-                  <desc xml:lang="fr" versionDate="2024-09-10">féculent</desc>
+                <valItem ident="céréale" mode="add">
+                  <desc xml:lang="fr" versionDate="2024-09-10">céréale</desc>
                 </valItem>
                 <valItem ident="oléagineux" mode="add">
                   <desc xml:lang="fr" versionDate="2024-09-10">oléagineux</desc>
-                </valItem>                
+                </valItem>
+                <valItem ident="animal" mode="add">
+                  <desc versionDate="2024-09-12" xml:lang="fr">produit animal</desc>
+                </valItem>
+                <valItem ident="végétal" mode="add">
+                  <desc versionDate="2024-09-12" xml:lang="fr">produit végétal</desc>
+                </valItem>
+                <valItem ident="minéral" mode="add">
+                  <desc versionDate="2024-09-12" xml:lang="fr">produit minéral</desc>
+                </valItem>
+                <valItem ident="manufacturé" mode="add">
+                  <desc versionDate="2024-09-12" xml:lang="fr">produit manufacturé</desc>
+                </valItem>
               </valList>
             </attDef>
           </attList>
@@ -195,7 +194,7 @@
               </valList>
             </attDef>
           </attList>
-        </elementSpec>        
+        </elementSpec>
         <moduleRef n="15" key="figures"/>
         <moduleRef n="16" key="corpus"/>
         <moduleRef n="17" key="linking"/>
