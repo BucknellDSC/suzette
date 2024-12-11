@@ -1,0 +1,1375 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/CSS/suzette_cwrc.css"?>
+<?xml-model href="../out/suzette.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title type="main">Suzette: a Digital Edition</title>
+				<respStmt>
+					<persName>John Westbrook</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Editor</resp>
+				</respStmt>
+				<respStmt>
+					<persName>Diane Jakacki</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Project Manager</resp>
+				</respStmt>
+				<respStmt>
+					<persName>Annie Girton</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and Encoder, 2018-2020</resp>
+				</respStmt>
+				<respStmt>
+					<persName>Sarah Haber</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and Encoder, 2020-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName>Rebecca Heintzelman</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and Encoder, 2020-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName>Juliya Harnood</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and Encoder, 2021-Present</resp>
+				</respStmt>
+				<respStmt>
+					<persName>Jaehoon Pyon</persName>
+					<orgName>Bucknell University</orgName>
+					<resp>Research Assistant and Encoder, 2023-Present</resp>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<distributor>Bucknell University</distributor>
+				<pubPlace>
+					<address>
+						<addrLine>One Dent Drive</addrLine>
+						<addrLine>Lewisburg, PA 17837</addrLine>
+					</address>
+				</pubPlace>
+				<availability>
+					<licence>Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<monogr>
+						<title>Suzette: Livre de Lecture Courante à l’Usage des Jeunes Filles.
+							Morale—Leçon de choses, Economie Domestique – Ménage – Cuisine –
+							Couture</title>
+						<author>Robert Halt</author>
+						<textLang>French</textLang>
+						<imprint>
+							<date>1889</date>
+							<distributor>Libraire Classique Paul Delaplane</distributor>
+							<pubPlace>Paris, France</pubPlace>
+						</imprint>
+					</monogr>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+				xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+				xmlns:as="http://www.w3.org/ns/activitystreams#"
+				xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#"
+				xmlns:dc="http://purl.org/dc/elements/1.1/"
+				xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/"
+				xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#"
+				xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+				xmlns:fabio="https://purl.org/spar/fabio#"
+				xmlns:bf="http://www.openlinksw.com/schemas/bif#"
+				xmlns:cito="https://sparontologies.github.io/cito/current/cito.html#"
+				xmlns:org="http://www.w3.org/ns/org#">
+				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+					<![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422739",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-06T20:44:22.739Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422739#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422739#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Lambrequin. Ornement qui pend aux\n                     contours d'un objet."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+				</rdf:Description> <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+					<![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422744",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-06T20:44:22.744Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422744#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422744#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[2]/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Affriandé. Attiré par quelque chose\n                  d'agréable."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+				</rdf:Description> <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+					<![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422746",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-06T20:44:22.746Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422746#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422746#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[4]/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Tohu-bohu. Grande confusion de gens."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+				</rdf:Description> <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+					<![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422748",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-06T20:44:22.748Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422748#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422748#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[6]/hi/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Juif-Errant. Personnage qu'une légende représente comme devant marcher,\n                        errer, jusqu'à la fin du monde."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+				</rdf:Description> <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+					<![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422749",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-06T20:44:22.749Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422749#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422749#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[15]/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Boniment,\n                     Annonce de charlatan."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+				</rdf:Description> <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+					<![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422751",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-06T20:44:22.751Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422751#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422751#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[16]/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Cachemire. Tissu de laine très fin."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+				</rdf:Description> <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+					<![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422752",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-06T20:44:22.752Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422752#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422752#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[16]/note[2]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Sergé. Etoffe de laine croisée."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+				</rdf:Description> <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+					<![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422754",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-06T20:44:22.754Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422754#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422754#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[16]/note[3]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Broché. Tissu dans lequel on a entremêlé des Dis de\n                     soie."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+				</rdf:Description> <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+					<![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422755",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-06T20:44:22.755Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422755#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422755#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[16]/note[4]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Cheviotte. Etoffe de laine\n                     d'imitation ou de fabrique anglaise."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+				</rdf:Description> <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+					<![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422756",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-06T20:44:22.756Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422756#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422756#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[16]/note[5]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Bourrette. Étoffe faite de la soie grossière qui entoure le cocon du ver à\n                     soie."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+				</rdf:Description> <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+					<![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422757",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-06T20:44:22.757Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422757#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422757#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[16]/note[6]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Mérinos. Étoffe de laine très\n                     fine, moins cependant que le cachemire."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+				</rdf:Description> <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+					<![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422758",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-06T20:44:22.758Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422758#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422758#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[16]/note[7]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Popeline. Étoffe dont la chaîne est de soie et la trame de\n                     laine."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+				</rdf:Description> <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+					<![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422759",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-06T20:44:22.759Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422759#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch016.xml?note_annotation_20230706164422759#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[18]/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Perplexe. Qui ne sait quelle résolution prendre.\n                  "
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+				</rdf:Description>
+			</rdf:RDF></xenoData>
+		<profileDesc>
+			<langUsage>
+				<language ident="fr">French</language>
+				<language ident="en">English</language>
+			</langUsage>
+		</profileDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<div xmlns:ns0="http://www.tei-c.org/ns/1.0" type="chapitre" xml:lang="fr" n="ch016">
+				<pb type="page" n="56"
+					facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_056.jpg"/>
+				<head type="chapter">16. — Hésitations. </head>
+				<div type="récit">
+					<p>Que c'était beau sur la place ! les rangées de tentes de toile grise ou
+						blanche, ornées de lambrequins* <note type="annotation">Lambrequin. Ornement
+							qui pend aux contours d'un objet.</note> de toute couleur flottant au
+						vent ; des drapeaux, du bruit, de la musique ! </p>
+					<p>Et quelle agréable odeur de <objectName type="mets" key="gaufres">
+						gaufres</objectName> ! les spacieuses <fw type="header">HÉSITATIONS.
+							57</fw>
+						<pb type="page" n="57"
+							facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_057.jpg"
+						/> narines de <persName key="françois" type="fictif">François</persName>
+						étaient à une grande fête ; quelques bons morceaux de la
+						<objectName type="mets" key="pâtisserie">pâtisserie</objectName> dorée passèrent immédiatement par sa
+						bouche, tout aussi affriandée* <note type="annotation">Affriandé. Attiré par
+							quelque chose d'agréable.</note>.</p>
+					<p>Le plaisir coûta trois sous.</p>
+					<p><persName key="charlot" type="fictif">Charlot</persName>, lui, tenait la main
+						de sa sœur en même temps que quatre sous donnés par le père pour qu'il les
+						dépensât à son gré. Mais <persName type="fictif" key="charlot"
+							>Charlot</persName> ne se pressait pas. Il semblait perdu dans ce
+						tohu-bohu* <note type="annotation">Tohu-bohu. Grande confusion de
+							gens.</note> de magnificences. Et <persName key="jacques" type="fictif"
+							>Jacques</persName>, qui marchait à côté de <persName key="m_dumay"
+							type="fictif">M. Dumay</persName>, regardait toute cette tentation, mais
+						froidement, en ainé de la famille. </p>
+					<p>Les yeux de <persName key="suzette" type="fictif">Suzette</persName> vaguant
+						à travers les baraques <figure>
+							<caption>Que c'était beau sur la place !</caption>
+						</figure>
+						<fw type="header">58 SUZETTE.</fw>
+						<pb type="page" n="58"
+							facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_058.jpg"
+						/> aperçurent tout à coup des ribambelles de souliers à cheval sur de
+						longues ficelles très tendues :</p>
+					<p>
+						<hi rend="italic">« A la chaussure du Juif-Errant! * <note type="annotation"
+								>Juif-Errant. Personnage qu'une légende représente comme devant
+								marcher, errer, jusqu'à la fin du monde.</note> Inusable! »</hi>
+					</p>
+					<p>disait l’enseigne à grosses lettres jaunes sur toile rouge en même temps
+						qu'un homme, du fond de la baraque, criait à tue-tête, un bras en l'air
+						:</p>
+					<p>— Allons, la chaussure, inusable ! la chaussure du Juif-Errant ! C'est pour
+						rien ! Tout à six francs quatre-vingt-quinze !</p>
+					<p>Et voilà ! Monsieur <persName key="charlot" type="fictif">Charlot</persName>,
+						essayez les souliers du Juif-Errant ! </p>
+					<p>— Oh ! comme ils sont grands ! dit <persName type="fictif" key="charlot"
+							>Charlot</persName>, après être entré dans une paire presque aussi
+						aisément que dans la baraque.</p>
+					<p>— Grands ? pas du tout, c'est une idée. Tu mettras du coton au bout — je
+						donnerai le coton par-dessus le marché ; — oui, le coton, les souliers, tout
+						pour six francs quatre-vingt-quinze !</p>
+					<p>Le marchand, en parlant ainsi, avait l'air ravi de sa générosité et de sa
+						marchandise.</p>
+					<p>— Ils sont grands, dit tout bas <persName key="suzette" type="fictif"
+							>Suzette</persName> à son père, mais les pieds de <persName
+							key="charlot" type="fictif">Charlot</persName> ne vont pas
+						rapetisser.</p>
+					<p>— Le voilà chaussé pour le restant de ses jours ! ajouta le marchand.</p>
+					<p>On était déjà loin avec les souliers qu'on entendait <figure>
+							<caption>La tonte des moutons. Le produit de cette opération donne la
+								laine qui sert à faire le drap, la flanelle, le mérinos, le
+								cachemire, etc.; les principales fabriques de lainage sont à
+									<placeName>Tourcoing</placeName>,
+								<placeName>Roubaix</placeName>, <placeName>Reims</placeName> et
+									<placeName>Sedan</placeName>.</caption>
+						</figure>
+						<figure>
+							<caption>Le cotonnier. Cet arbrisseau est cultivé aux
+									<placeName>Etats-Unis</placeName>, dans
+									l'<placeName>Inde</placeName>, en <placeName>Egypte</placeName>
+								et en <placeName>Algérie</placeName> ; la bourre qui enveloppe les
+								graines du cotonnier est le coton. Nos principales manufactures de
+								coton sont dans le <placeName>Nord</placeName> et dans la
+									<placeName>Seine-Inférieure</placeName>.</caption>
+						</figure>
+						<fw type="header">HÉSITATIONS. 59</fw>
+						<pb type="page" n="59"
+							facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_059.jpg"
+						/> encore son boniment* <note type="annotation">Boniment, Annonce de
+							charlatan.</note> : « Inusable, inusable! la chaussure du Juif-Errant !
+						»</p>
+					<p>Maintenant il ne s'agissait plus que de la robe : bleue ? verte ? rouge ?
+						orange ? jaune ? violette ? ou même de toutes ces couleurs à la fois ? Et
+						l'étoffe ? s'il vous plaît : laine ? coton ? ou laine et coton ensemble ? Et
+						le tissu ? cachemire* <note type="annotation">Cachemire. Tissu de laine très
+							fin.</note>, sergé* <note type="annotation">Sergé. Etoffe de laine
+							croisée.</note>, broché*<note type="annotation">Broché. Tissu dans
+							lequel on a entremêlé des Dis de soie.</note>, cheviotte* <note
+							type="annotation">Cheviotte. Etoffe de laine d'imitation ou de fabrique
+							anglaise.</note>, bourrette* <note type="annotation">Bourrette. Étoffe
+							faite de la soie grossière qui entoure le cocon du ver à soie.</note>,
+						mérinos* <note type="annotation">Mérinos. Étoffe de laine très fine, moins
+							cependant que le cachemire.</note>, popeline* <note type="annotation"
+							>Popeline. Étoffe dont la chaîne est de soie et la trame de
+							laine.</note> ?</p>
+					<p><persName key="mme_valon" type="fictif">Mme Valon</persName>, consultée la
+						veille, avait opiné pour le sergé, étoffe résistante, souple, moelleuse à
+						l’œil et préférable au cachemire, que l'usage rend luisant ; elle avait
+						conseillé le bleu marine, qui sied aux jeunes et frais visages.</p>
+					<p><persName key="suzette" type="fictif">Suzette</persName> était très perplexe*
+							<note type="annotation">Perplexe. Qui ne sait quelle résolution prendre.
+						</note> ; le papa, se fiant à elle, l'avait quittée pour aller à des
+						affaires de graineterie. Immobile au milieu d'une allée, le doigt sur les
+						lèvres, elle songeait.</p>
+				</div>
+				<div type="questionnaire">
+					<head>Questionnaire.</head>
+					<list>
+						<item>— Que voyait-on sur la place où se tenait la foire ?</item>
+						<item>— Quelles choses acheta d'abord <persName type="fictif" key="françois"
+								>François</persName> ? </item>
+						<item>— Que faisaient <persName type="fictif" key="charlot"
+								>Charlot</persName> et <persName type="fictif" key="jacques"
+								>Jacques</persName> ?</item>
+						<item>— Que regardait <persName type="fictif" key="suzette"
+								>Suzette</persName> ?</item>
+						<item>— Que criait le marchand ?</item>
+						<item>— Que disait <persName type="fictif" key="charlot">Charlot</persName>
+							en essayant la chaussure ?</item>
+						<item>— Que répondait le marchand ?</item>
+						<item>— Comment se conclut enfin l'achat des souliers ?</item>
+						<item>— Quel fut ensuite l'objet des préoccupations de <persName
+								type="fictif" key="suzette">Suzette</persName> ?</item>
+						<item>— Quel conseil lui avait donné <persName type="fictif" key="mme_valon"
+								>Mme Valon</persName>, la veille du départ ?</item>
+						<item>— Qu'est-ce que le coton, la laine, le cachemire, le calicot, le
+							sergé, le broché, la cheviotte, la bourrette, le mérinos, la popeline
+							?</item>
+					</list>
+				</div>
+				<div type="exercices">
+					<head>DÉVELOPPEMENT DES SUJETS PROPOSÉS POUR EXERCICES.</head>
+					<div type="économie_domestique" xml:id="sujeco_016">
+						<head type="sujets">Économie domestique.</head>
+						<div type="questions">
+							<list>
+								<item>— Comment appelle-t-on les <objectName type="mets" key="mets">mets</objectName>
+									préparés avec de la <objectName type="ingrédient" subtype="féculent" key="pâte">pâte</objectName>, du
+									<objectName type="ingrédient" subtype="laitier" key="beurre">beurre</objectName>, du
+									<objectName type="ingrédient" subtype="éparco" key="sucre">sucre</objectName> et autres
+									<objectName type="ingrédient" subtype="éparco" key="assaisonements">assaisonnements</objectName> ? </item>
+								<item>— Quelles sont les diverses sortes de
+									<objectName type="mets" key="pâtisseries">pâtisseries</objectName> ?</item>
+							</list>
+						</div>
+						<div type="réponses">
+							<p>On entend par <term><objectName type="mets" key="pâtisseries">pâtisseries</objectName></term> des
+								<objectName type="mets" key="mets">mets</objectName> préparés au moyen de
+								<objectName type="ingrédient" subtype="féculent" key="pâte">pâte</objectName> pétrie avec de
+								<objectName type="ingrédient" subtype="laitier" key="beurre">beurre</objectName>, du
+								<objectName type="ingrédient" subtype="laitier" key="lait">lait</objectName>, des
+								<objectName type="ingrédient" subtype="animal" key="œuf">œufs</objectName>, et à laquelle on a ajouté divers
+								<objectName type="ingrédient" subtype="éparco" key="assaisonements">assaisonnements</objectName> dont le
+								<objectName type="ingrédient" subtype="éparco" key="sucre">sucre</objectName> est le plus important.</p>
+							<p>Les principales sortes de <objectName type="mets" key="pâtisseries">pâtisseries</objectName> sont :
+								1° <term>les <objectName type="mets" key="entremets sucrés">entremets sucrés</objectName></term>, tels
+								que <objectName type="mets" key="gâteaux">gâteaux</objectName> et
+								<objectName type="mets" key="croquettes">croquettes</objectName>, <objectName type="mets" key="pots de crème au
+									chocolat">pots de crème au
+									chocolat</objectName> ou <objectName type="mets" key="pots de crème au
+										café">au café</objectName>,
+								<objectName type="mets" key="crème renversée">crème renversée</objectName>,
+								<objectName type="mets" key="beignets">beignets</objectName>, <objectName type="mets" key="pommes au beurre">pommes au
+									beurre </objectName>, <objectName type="mets" key="charlottes">charlottes</objectName> ; — 2°
+								les <term/><term><objectName type="mets" key="tartes">tartes</objectName></term>
+								<objectName type="mets" key="tartes aux abricots">aux abricots</objectName>, <objectName  type="mets" key="tartes aux cerises">aux cerises</objectName>, <objectName
+									type="mets" key="tartes à la purée de
+									pommes">à la purée de
+									pommes</objectName>, <objectName  type="mets" key="tartes aux prunes">aux
+									prunes</objectName>, <objectName  type="mets" key="tartes à
+										la frangipane">à
+									la frangipane</objectName> ; — 3° les
+								<term><objectName type="mets" key="gâteaux">gâteaux</objectName></term> ou
+								<term><objectName type="mets" key="galettes de ménage">galettes de ménage</objectName></term>, <objectName type="mets" key="biscuits de ménage">biscuits de
+									ménage</objectName>, <objectName type="mets" key="tôt-fait">tôt-fait</objectName> ou
+								<objectName type="mets" key="gâteau quatre-quarts">gâteau quatre-quarts</objectName>, etc., etc.</p>
+						</div>
+					</div>
+					<div type="hygiène" xml:id="sujhyg_016">
+						<head type="sujets">Hygiène.</head>
+						<div type="questions">
+							<list>
+								<item>— Quels inconvénients présente l'abus des
+									<objectName type="mets" key="pâtisseries">pâtisseries</objectName> pour les
+									enfants?</item>
+								<item>— Comment en doivent-ils manger ?</item>
+							</list>
+						</div>
+						<div type="réponses">
+							<p>Les <objectName type="mets" key="pâtisseries">pâtisseries</objectName> sont moins saines que le
+								<objectName type="mets" key="pain">pain</objectName> ; elles se digèrent facilement
+								quand elles ne contiennent pas trop de
+								<objectName type="ingrédient" subtype="laitier" key="beurre">beurre</objectName> et de <objectName type="ingrédient" subtype="animal" key="jaunes
+									d'œufs">jaunes
+									d'œufs</objectName>. Mais comme le contraire arrive presque
+								toujours, et que souvent aussi le <objectName type="ingrédient" subtype="laitier" key="beurre">beurre</objectName> y
+								est remplacé par des <objectName type="ingrédient" subtype="animal" key="graisses">graisses</objectName> de qualité
+								inférieure, elles causent des indigestions aux enfants qui en
+								abusent. On ne saurait trop les inviter à en user avec
+								discrétion.</p>
+						</div>
+					</div>
+					<div type="industrie" xml:id="sujind_016">
+						<head type="sujets">Industrie.</head>
+						<div type="questions">
+							<list>
+								<item>—LE CUIR.</item>
+								<item>— Comment prépare-t-on le cuir ?</item>
+								<fw type="header">60 SUZETTE.</fw>
+								<pb type="page" n="60"
+									facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_060.jpg"/>
+								<item>— Quelles peaux tanne-t-on ? </item>
+								<item>— A quels usages applique-t-on : 1° les peaux des bœufs et des
+									vaches ;</item>
+								<item>— 2° des chevaux ;</item>
+								<item>— 3° des veaux, des chevreaux ?</item>
+								<item>— Quelles chaussures fabrique-t-on avec le cuir ?</item>
+								<item>— Quels sont leurs avantages et leurs inconvénients ?</item>
+							</list>
+						</div>
+						<div type="réponses">
+							<p><term>Le cuir</term> est la peau de certains grands animaux rendue
+								imputrescible (non sujette à se pourrir) et propre à divers usages
+								industriels, par une opération appelée <term>tannage</term>.</p>
+							<p>On prépare le cuir en faisant ramollir les peaux dans une eau
+								courante ; puis on les débarrasse des poils et de tout ce qui peut
+								adhérer à la face intérieure en les raclant avec un couteau d'une
+								forme particulière. Cette opération terminée, on les plonge dans de
+								l'eau de chaux et ensuite dans une eau acidulée qui les fait
+								gonfler.</p>
+							<p>On dispose alors les peaux dans de grandes fosses cylindriques
+								boisées, couche par couche, avec un lit de tan entre elles. (Le tan
+								est de l'écorce de chêne broyée.) On y verse de l'eau qui dissout
+								une certaine matière contenue dans le tan, laquelle pénètre la
+								substance des peaux et les convertit en cuir après un séjour de 8,
+								10, 12 et même 14 mois dans les fosses.</p>
+							<p>Les peaux tannées sont assouplies et lustrées par des ouvriers
+								appelés <term>corroyeurs</term> ; on peut alors les livrer à
+								l'industrie.</p>
+							<p>On tanne les peaux des bœufs, des vaches, des veaux, des chevaux, des
+								mulets, des ânes, pour en obtenir le cuir, Celles des moutons, des
+								chèvres et d'autres animaux, préparées avec de l'alun, servent à la
+								fabrication des gants et des doublures de chaussures.</p>
+							<p>Les peaux qui doivent conserver leurs poils sont également traitées
+								par l'alun et le sel.</p>
+							<p>On emploie le cuir provenant des peaux de gros animaux à la
+								confection des semelles, des malles ; — celles des chevaux servent
+								pour les harnais, tandis que celles des veaux et des chevreaux sont
+								préférées pour les empeignes, les sacs et divers objets légers
+								d'usage commun.</p>
+							<p>Avec les cuirs et les peaux, on fabrique les chaussures suivantes :
+								souliers, bottes, bottines, brodequins, pantoufles, galoches, etc.
+								Elles protègent les pieds contre les objets durs qu'ils rencontrent
+								sur le sol et les préservent des atteintes de l'humidité, ainsi que
+								de l'influence du froid. Celles qui sont trop étroites ou à talons
+								très élevés blessent le pied, le déforment et en font le siège de
+								douloureuses infirmités.</p>
+						</div>
+					</div>
+					<div type="calcul" xml:id="sujcal_016">
+						<head type="sujets">Calcul.</head>
+						<div type="questions">
+							<p>— Calculer ce qu'une fillette de dix ans peut coûter pendant l'année
+								à ses parents en chaussures de toutes sortes, selon qu'elle est ou
+								non soigneuse. Etablir le compte détaillé.</p>
+						</div>
+						<div type="réponses">
+							<p>On disposera ce compte de la manière suivante :</p>
+							<p>Chaussures d'hiver.</p>
+							<p>Sabots. . . . paires à. . . . . . . . . .</p>
+							<p>Galoches. . . . paires à . . . . . . . . . .</p>
+							<p>Souliers ou bottines . . . . . . . . . .</p>
+							<p>Raccommodage des galoches . . . . . . . . . .</p>
+							<p>— des bottines . . . . . . . . . .</p>
+							<p>Lacets, courroies . . . . . . . . . .</p>
+							<p>TOTAL . . . . . . . . . .</p>
+							<p>Chaussures d'été.</p>
+							<p>. . . . . . . . . .</p>
+							<p>. . . . . . . . . .</p>
+							<p>TOTAL. . . . . . . . . . .</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</body>
+	</text>
+</TEI>
