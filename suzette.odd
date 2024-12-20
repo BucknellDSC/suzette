@@ -79,7 +79,7 @@
         <moduleRef n="13" key="textcrit"/>
         <moduleRef n="14" key="namesdates"/>
         <!-- Attempting to create actionName element -->
-        <elementSpec ident="actionName" mode="add" module="namesdates">
+        <!--<elementSpec ident="actionName" mode="add">
           <attList>
             <attDef ident="type" mode="change">
               <valList type="closed" mode="change">
@@ -95,7 +95,7 @@
               </valList>
             </attDef>
           </attList>
-        </elementSpec>
+        </elementSpec>-->
         <!-- Added attributes for objectName @type -->
         <elementSpec ident="objectName" mode="change" module="namesdates">
           <attList>
@@ -107,17 +107,11 @@
                 <valItem mode="add" ident="ustensile">
                   <desc versionDate="2024-08-16" xml:lang="fr">ustensile</desc>
                 </valItem>
-                <valItem mode="add" ident="plat">
-                  <desc versionDate="2024-08-16" xml:lang="fr">plat</desc>
+                <valItem mode="add" ident="mets">
+                  <desc versionDate="2024-08-16" xml:lang="fr">mets</desc>
                 </valItem>
-<!--                <valItem ident="ressource" mode="add">
-                  <desc versionDate="2024-09-12" xml:lang="fr">ressource</desc>
-                </valItem>-->
                 <valItem ident="produit" mode="add">
                   <desc versionDate="2024-09-12" xml:lang="fr">produit</desc>
-                </valItem>
-                <valItem ident="boisson" mode="add">
-                  <desc versionDate="2024-09-19" xml:lang="fr">boisson</desc>
                 </valItem>
               </valList>
             </attDef>
@@ -158,6 +152,9 @@
                 </valItem>
                 <valItem ident="fabriqué" mode="add">
                   <desc versionDate="2024-09-12" xml:lang="fr">produit fabriqué</desc>
+                </valItem>
+                <valItem ident="boisson" mode="add">
+                  <desc versionDate="2024-10-17" xml:lang="fr">boisson</desc>
                 </valItem>
               </valList>
             </attDef>
