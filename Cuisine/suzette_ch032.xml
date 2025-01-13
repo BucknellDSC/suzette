@@ -1,0 +1,1091 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/CSS/suzette_cwrc.css"?>
+<?xml-model href="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/out/suzette.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Suzette: a Digital Edition</title>
+            <respStmt>
+               <persName>John Westbrook</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Editor</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Diane Jakacki</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Project Manager</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annie Girton</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2018-2020</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Sarah Haber</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2020-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Rebecca Heintzelman</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2020-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Juliya Harnood</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2021-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Jaehoon Pyon</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2023-Present</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Bucknell University</distributor>
+            <pubPlace>
+               <address>
+                  <addrLine>One Dent Drive</addrLine>
+                  <addrLine>Lewisburg, PA 17837</addrLine>
+               </address>
+            </pubPlace>
+            <availability>
+               <licence>Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Suzette: Livre de Lecture Courante à l’Usage des Jeunes Filles.
+                     Morale—Leçon de choses, Economie Domestique – Ménage – Cuisine –
+                     Couture</title>
+                  <author>Robert Halt</author>
+                  <textLang>French</textLang>
+                  <imprint>
+                     <date>1889</date>
+                     <distributor>Libraire Classique Paul Delaplane</distributor>
+                     <pubPlace>Paris, France</pubPlace>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:fabio="https://purl.org/spar/fabio#" xmlns:bf="http://www.openlinksw.com/schemas/bif#" xmlns:cito="https://sparontologies.github.io/cito/current/cito.html#" xmlns:org="http://www.w3.org/ns/org#">
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml?person_annotation_20230707103857042",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-07T14:38:57.042Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml?person_annotation_20230707103857042#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.4.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml?person_annotation_20230707103857042#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[4]/persName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:NaturalPerson",
+		"@id": "https://www.wikidata.org/wiki/Q17790",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.4.0"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml?person_annotation_20230707103857045",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-07T14:38:57.045Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml?person_annotation_20230707103857045#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.4.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml?person_annotation_20230707103857045#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/list/item[4]/persName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:NaturalPerson",
+		"@id": "https://www.wikidata.org/wiki/Q17790",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.4.0"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml?note_annotation_20230707103857047",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-07T14:38:57.047Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml?note_annotation_20230707103857047#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.4.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml?note_annotation_20230707103857047#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[2]/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Fécondité. Qualité attribuée à la plante qui produit beaucoup."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.4.0"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml?note_annotation_20230707103857049",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-07T14:38:57.049Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml?note_annotation_20230707103857049#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.4.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml?note_annotation_20230707103857049#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[5]/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Se féliciter. Se\n                     savoir bon gré, être content de ce qu'on a fait."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.4.0"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml?note_annotation_20230707103857051",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-07T14:38:57.051Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml?note_annotation_20230707103857051#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.4.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml?note_annotation_20230707103857051#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[6]/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Inépuisable. Qui ne cesse de\n                     produire."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.4.0"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml?note_annotation_20230707103857052",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-07T14:38:57.052Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml?note_annotation_20230707103857052#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.4.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml?note_annotation_20230707103857052#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[9]/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Fournil. Le lieu où est le four."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.4.0"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml?note_annotation_20230707103857054",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-07T14:38:57.054Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml?note_annotation_20230707103857054#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.4.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml?note_annotation_20230707103857054#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[11]/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Outillage. Ensemble des outils, des machines\n                     nécessaires à une fabrication, à une exploitation."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.4.0"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml?note_annotation_20230707103857056",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-07T14:38:57.056Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml?note_annotation_20230707103857056#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.4.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml?note_annotation_20230707103857056#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[11]/note[2]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Modification. Changement,\n                     perfectionnement."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.4.0"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml?note_annotation_20230707103857057",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-07T14:38:57.057Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml?note_annotation_20230707103857057#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.4.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml?note_annotation_20230707103857057#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[11]/note[3]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "L'agencement. Arrangement du local et du matériel employé."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.4.0"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml?note_annotation_20230707103857058",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-07T14:38:57.058Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml?note_annotation_20230707103857058#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.4.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch032.xml?note_annotation_20230707103857058#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[11]/note[4]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Prosperité. Situation où l'on gagne autant\n                     qu'on le peut espérer."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.4.0"
+	}
+}]]>
+        </rdf:Description>
+      </rdf:RDF></xenoData><profileDesc>
+         <langUsage>
+            <language ident="fr">French</language>
+            <language ident="en">English</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+<div xmlns:ns0="http://www.tei-c.org/ns/1.0" type="chapitre" xml:lang="fr" n="ch032">
+            <pb facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_113.jpg" type="page" n="113"/>
+            <fw type="head">SÉLECTION. 113</fw>
+            <head type="chapitre">32. — Sélection. </head>
+            <div type="récit">
+               <p>La lecture finie : </p>
+               <p>— Ma foi ! dit <persName type="fictif" key="m_dumay">M. Dumay</persName>, voilà un
+                  brave homme d'empereur chinois dont je suis content. Il me fait voir assez clair à
+                  votre « sélection ». Qui, tout comme les bonnes qualités d'une plante, ses
+                  mauvaises, sa maigreur, sa faiblesse, son peu de fécondité*<note type="annotation">Fécondité. Qualité attribuée à la plante qui produit beaucoup.</note> se
+                  perpétuent dans ses graines. Vraiment, on devrait savoir cela ; et tout se
+                  travaille chez nous un peu à l'aveuglette. Nous ferons de la sélection, mon fieux
+                  !</p>
+               <p>— A la bonne heure, mon père ! Mais quel singulier empereur, n'est-ce pas, que
+                  celui qui, au lieu de faire la guerre, de détruire son peuple, ne s'occupe qu'à le
+                  nourrir du mieux qu'il se peut ?</p>
+               <p>— Oui, ce <persName type="historique" ref="https://www.wikidata.org/wiki/Q17790">Kang-Hi</persName> était né homme des champs
+                  ; il aimait la terre ; nous l'aimons aussi, nous !</p>
+               <p>Alors, tendrement, ses yeux firent le tour de la demeure paternelle. Il l'aimait
+                  autant que ses champs ; il se félicita*<note type="annotation">Se féliciter. Se
+                     savoir bon gré, être content de ce qu'on a fait.</note> de son lot de paysan
+                  possesseur d'un petit bien.</p>
+               <p>— Et vous allez voir, cher papa, tout ce qu'il va nous valoir ! dit <persName type="fictif" key="jacques">Jacques</persName> ; l'abondance de la terre est
+                     inépuisable*<note type="annotation">Inépuisable. Qui ne cesse de
+                     produire.</note>.</p>
+               <p>A ce moment, <persName type="fictif" key="charlot">Charlot</persName> entra, l'air
+                  affairé, atteignit quelque chose au coin de la cheminée et se sauva.</p>
+               <p>— Où vas-tu, <persName type="fictif" key="charlot">Charlot</persName> ? demanda
+                     <persName type="fictif" key="suzette">Suzette</persName>.</p>
+               <p>— Au fournil*<note type="annotation">Fournil. Le lieu où est le four.</note>,
+                  rejoindre <persName type="fictif" key="françois">François</persName>, répondit le
+                  petit en courant.</p>
+               <p>Quelques minutes après, ils revinrent ensemble, triomphants. <persName type="fictif" key="françois">François</persName> tenait dans ses mains une
+                  brillante rondelle de plomb :</p>
+               <p>— Une pièce de cent sous ; voilà ! dit-il, je l'ai fondue et moulée moi-même dans
+                  un moule de pierre. A peine, hélas ! si ce semblant de pièce de cent sous fut
+                  regardé ; on était tout à la question des semences, des labours, de l'outillage*
+                     <note type="annotation">Outillage. Ensemble des outils, des machines
+                     nécessaires à une fabrication, à une exploitation.</note>, des
+                     modifications*<note type="annotation">Modification. Changement,
+                     perfectionnement.</note> à faire dans l'agencement* <note type="annotation">L'agencement. Arrangement du local et du matériel employé.</note> de la ferme.
+                  Et, l'heure venue, on s'alla coucher avec un beau rêve de travail et de
+                  prospérité* <note type="annotation">Prosperité. Situation où l'on gagne autant
+                     qu'on le peut espérer.</note> que le sommeil n'avait qu'à continuer.</p>
+            </div>
+            <pb facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_114.jpg" type="page" n="114"/>
+            <fw type="header">114 SUZETTE.</fw>
+            <div type="questionnaire">
+               <head>Questionnaire.</head>
+               <list type="questionnaire">
+                  <item>— Que pensait <persName type="fictif" key="m_dumay">M. Dumay</persName> de
+                     l'empereur chinois ?</item>
+                  <item> — Qu'est-ce qui se perpétue, se transmet d'une plante à une autre par les
+                     graines ? </item>
+                  <item>— Comment peut-on ameliorer les plantes et créer de nouvelles espèces
+                     ?</item>
+                  <item>— Qu'ajouta le fermier au sujet de <persName type="historique" ref="https://www.wikidata.org/wiki/Q17790">Kang-Hi</persName> ?</item>
+                  <item>— Que regarda-t-il avec plaisir ?</item>
+                  <item>— Que répondit <persName type="fictif" key="jacques">Jacques</persName>
+                     ?</item>
+                  <item>— Qu'avaient fait <persName type="fictif" key="françois">François</persName>
+                     et <persName type="fictif" key="charlot">Charlot</persName> pendant l'entretien
+                     du père avec les deux ainés ?</item>
+                  <item>— Que revinrent-ils apporter en triomphe ?</item>
+                  <item>— Pourquoi n'y fit-on aucune attention ?</item>
+                  <item>— Dans quelles pensées alla-t-on se coucher ?</item>
+               </list>
+            </div>
+            <div type="exercices">
+               <head>DÉVELOPPEMENT DES SUJETS PROPOSÉS POUR EXERCICES.</head>
+               <div cert="high" org="composite" part="Y" sample="initial" type="instruction_civique" xml:space="default" xml:id="sujciv_032">
+                  <head type="sujets">Instruction civique.</head>
+                  <div type="questions">
+                     <list type="exercices">
+                        <item>— Quel titre porte le chef du gouvernement français ?</item>
+                        <item>— Combien compte-t-on de ministres ?</item>
+                        <item>— Que font les ministres ?</item>
+                        <item>— A quoi doivent songer ceux qui gouvernent une nation ?</item>
+                        <item>— Lequel vaut mieux d'un gouvernement pacifique ou de celui qui
+                           cherche des aventures de guerre ?</item>
+                        <item>— Pourquoi ?</item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p>Actuellement, le chef du gouvernement porte, en
+                           <placeName>France</placeName>, le titre de <term>président de la
+                           République</term>. Il est nommé par les sénateurs et les députés réunis à
+                           <placeName>Versailles</placeName> en assemblée nationale, et la durée de
+                        ses pouvoirs a été fixée à sept ans. Il est rééligible et jouit d'un
+                        traitement annuel de douze cent mille francs.</p>
+                     <p>Le président nomme les <term>ministres</term>, dont les principaux sont : le
+                        ministre de l'intérieur, des affaires étrangères, de la guerre, de la marine
+                        et des colonies, de la justice et des cultes, de l'instruction publique et
+                        des beaux-arts, de l'agriculture, du commerce et de l'industrie, des travaux
+                        publics.</p>
+                     <p>Les ministres sont chargés d'administrer les grands services de l'Etat que
+                        nous venons d'énumérer, sous l'autorité du président ; ils sont, en général,
+                        choisis parmi les sénateurs et les députés.</p>
+                     <p>Ceux qui gouvernent doivent songer à maintenir la paix et la sûreté
+                        publique, et se sacrifier pour l'honneur, la tranquillité et la prospérité
+                        du pays.</p>
+                     <p>Le meilleur des gouvernements est celui qui maintient une paix honorable ;
+                        le plus funeste, celui qui excite des guerres sans autres motifs que la
+                        satisfaction d'une vaine gloire ou d'une coupable ambition.</p>
+                     <p>Pendant la paix, tout prospère à la condition qu'on fera régner la justice
+                        et qu'on protégera les gens honnêtes contre les attaques de ceux qui
+                        désirent vivre sans travail aux dépens de leurs concitoyens. Pendant la
+                        guerre, l'Etat est ruiné par des dépenses excessives et des milliers de
+                        soldats périssent sur les champs de bataille. Heureux quand le vainqueur
+                        n'écrase pas le vaincu sous d'énormes contributions et ne démembre pas la
+                        patrie !</p>
+                  </div>
+               </div>
+               <div type="complexe"> 
+                  <head type="sujets">Agriculture.</head>
+                  <div type="questions">
+                     <list type="exercices">
+                        <item>— Comment améliore-t-on les espèces de plantes ?</item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p>On les améliore en recueillant les plus beaux grains qu'on sème afin
+                        d'obtenir de plus beaux produits que l'on réserve pour la semaille suivante,
+                        et ainsi de suite.</p>
+                     <p>On améliore les races d'animaux domestiques et de volailles en ne conservant
+                        que les individus les plus parfaits parmi ceux qu'on obtient. En cela
+                        consiste la sélection.</p>
+                  </div>
+               </div>
+               <div type="sciences_naturelles" xml:id="sujnat_032">
+                  <head type="sujets"> Sciences naturelles.</head>
+                  <div type="questions">
+                     <list type="exercices">
+                        <item>— LE PLOMB.</item>
+                        <item>— Comment est ce métal, ou, en d'autres termes, quelles sont ses
+                           propriétés ?</item>
+                        <item>— Questions analogues sur l'or, l'argent, le cuivre.</item>
+                        <item>— Nommez des contrées oú ces métaux se trouvent en abondance.</item>
+                        <item>— Qu'est-ce que le bronze ?</item>
+                        <item>— Indiquez ses propriétés, ses emplois divers.</item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p>PLOMB. — Ce métal, l'un des plus anciennement connus, est d'un blanc
+                        bleuâtre, assez mou pour être rayé par l'ongle et d'une faible <pb type="page" n="115" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_115.jpg"/>
+                        <fw type="header">SÉLECTION. 115</fw> ténacité. — Il fond à une température
+                        relativement peu élevée, et l'on en fabrique des tuyaux, des plaques pour
+                        couvrir les toits des grands édifices ; il est encore employé pour les
+                        soudures et la fabrication des caractères d'imprimerie. On le trouve dans
+                        tous les pays.</p>
+                     <p>OR. — L'or est un métal jaune, très brillant, inaltérable à l'air et qui a
+                        la propriété de se réduire en feuilles excessivement minces et en fils
+                        ténus. Il pèse 19 fois plus que l'eau : c'est le plus précieux de tous les
+                        métaux ; il sert à faire des monnaies, des bijoux, des vases. On en exploite
+                        des mines en <placeName>Sibérie</placeName>, dans la
+                           <placeName>Californie</placeName>, le <placeName>Pérou</placeName>,
+                           l'<placeName>Australie</placeName>.</p>
+                     <p>ARGENT. — L'argent est d'un blanc très éclatant ; après l'or, c'est le métal
+                        qui se réduit le mieux en feuilles et en fils ; il est inaltérable à l'air
+                        et s'allie facilement au cuivre. On en fabrique des monnaies et une foule de
+                        vases, d'outils, d'ustensiles, d'instruments, de bijoux. On en recouvre
+                        quantité d'objets nour les rendre inaltérables, comme on le fait d'ailleurs
+                        avec l'or. Les mines d'argent sont très abondantes aux
+                           <placeName>Etats-Unis</placeName>, au <placeName>Mexique</placeName> et
+                        au <placeName>Pérou</placeName> ; l'une de ces mines, celle de
+                           <placeName>Potosi</placeName>, a donné, jusqu'ici, dix-sept milliards
+                        d'argent.</p>
+                     <p>CUIVRE. — C'est un métal très anciennement connu, d'un beau rouge et d'une
+                        grande ténacité ; il est peu sonore. L'air humide l'altère et il se forme à
+                        sa surface une substance verdâtre, le vert-de-gris, qui est un poison. Il
+                        sert à faire des ustensiles, des vases de cuisine qu'on étame pour qu'ils ne
+                        soient pas d'un usage dangereux, des instruments.</p>
+                     <p>Allié à l'étain, il constitue le bronze, connu dès la plus haute antiquité,
+                        et qui aujourd'hui entre dans la fabrication des monnaies, des cloches, des
+                        statues.</p>
+                     <p>L'alliage de cuivre et de zinc donne le laiton, dont la belle couleur jaune
+                        est connue ; on l'emploie nour confectionner des instruments, des ornements,
+                        des pièces de machines, etc, etc.</p>
+                     <p>Il y a des mines de cuivre en <placeName>Espagne</placeName>, aux environs
+                        du <placeName>lac Supérieur</placeName> et
+                        au <placeName>Chili</placeName>. Ces dernières fournissent la moitié du
+                        métal employé dans le monde.</p>
+                  </div>
+               </div>
+               <div type="industrie" xml:id="sujind_032">
+                  <head type="sujets">Industrie.</head>
+                  <div type="questions">
+                     <list type="exercices">
+                        <item>— MONNAIES.</item>
+                        <item>— Qu'est-ce qu'une pièce de monnaie ? </item>
+                        <item>— Quelle est l'utilité des monnaies ?</item>
+                        <item>— Aven quels métaux les fabrique-t-on ?</item>
+                        <item>— Quel métal allie-t-on à l'or et à l'argent destinés aux monnaies
+                           ?</item>
+                        <item>— Pourquoi et dans quelle proportion ?</item>
+                        <item>— Comment obtient-on les rondelles de métal qui, plus tard, seront des
+                           pièces ?</item>
+                        <item>— Avec quoi y imprime-t-on l'empreinte particulière à chaque sorte de
+                           pièce ?</item>
+                        <item>— Que représente chacune des faces des diverses pièces de monnaie
+                           ?</item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p><term>Les monnaies</term> sont des plaques de métal de forme ordinairement
+                        circulaire, frappées d'un signe particulier par des agents de l'Etat, et
+                        destinées à être échangées contre les objets à l'usage de tous. Elles ont
+                        par elles-mêmes une valeur réelle et bien déterminée, et sous un petit
+                        volume, elles représentent une somme considérable, Elles sont connues et
+                        acceptées de tous et, pour cette raison, constituent un moyen commode
+                        d'échange ; sans les monnaies, le commerce seraît tres difficile.</p>
+                     <p>On fabrique les monnaies avec l'or l'argent, le cuivre, le nickel. Aux deux
+                        premiers métaux, on allie une faible quantité de cuivre, 1/10 ou 825/1000,
+                        pour augmenter leur dureté et retarder d'autant l'usure des pièces.</p>
+                     <p>On frappe les pièces dans les hôtels des monnaies, et l'on obtient chacune
+                        des rondelles en découpant de minces plaques de métal à l'emporte-pièce. Il
+                        ne reste plus qu'à les presser entre des coins pour <pb facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_116.jpg" type="page" n="116"/>
+                        <fw type="header">116 SUZETTE.</fw> qu'elles reçoivent, sur leurs deux
+                        faces, les empreintes déterminées par la loi.</p>
+                     <p>Une des faces représente soit la figure du souverain, soit une figure
+                        emblématique ; sur l'autre sont indiquées la valeur de la pièce et l'année
+                        où elle a été frappée.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
