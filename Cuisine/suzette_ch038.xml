@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/CSS/suzette_cwrc.css"?>
+<?xml-model href="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/out/suzette.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Suzette: a Digital Edition</title>
+            <respStmt>
+               <persName>John Westbrook</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Editor</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Diane Jakacki</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Project Manager</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annie Girton</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2018-2020</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Sarah Haber</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2020-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Rebecca Heintzelman</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2020-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Juliya Harnood</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2021-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Jaehoon Pyon</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2023-Present</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Bucknell University</distributor>
+            <pubPlace>
+               <address>
+                  <addrLine>One Dent Drive</addrLine>
+                  <addrLine>Lewisburg, PA 17837</addrLine>
+               </address>
+            </pubPlace>
+            <availability>
+               <licence>Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Suzette: Livre de Lecture Courante à l’Usage des Jeunes Filles.
+                     Morale—Leçon de choses, Economie Domestique – Ménage – Cuisine –
+                     Couture</title>
+                  <author>Robert Halt</author>
+                  <textLang>French</textLang>
+                  <imprint>
+                     <date>1889</date>
+                     <distributor>Libraire Classique Paul Delaplane</distributor>
+                     <pubPlace>Paris, France</pubPlace>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:fabio="https://purl.org/spar/fabio#" xmlns:bf="http://www.openlinksw.com/schemas/bif#" xmlns:cito="https://sparontologies.github.io/cito/current/cito.html#" xmlns:org="http://www.w3.org/ns/org#">
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch038.xml?note_annotation_20230707104500658",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-07T14:45:00.658Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch038.xml?note_annotation_20230707104500658#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch038.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch038.xml?note_annotation_20230707104500658#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Argent\n                     comptant. Argent en pièces de monnaie."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch038.xml?note_annotation_20230707104500661",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-07T14:45:00.661Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch038.xml?note_annotation_20230707104500661#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch038.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch038.xml?note_annotation_20230707104500661#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/note[2]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Epier. Monter en épis."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch038.xml?note_annotation_20230707104500662",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-07T14:45:00.662Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch038.xml?note_annotation_20230707104500662#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch038.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch038.xml?note_annotation_20230707104500662#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/note[3]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Litière. Paille en autre fourrage qu'on répand\n                     sur le sol pour le coucher des bestiaux, des chevaux, etc."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch038.xml?note_annotation_20230707104500664",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-07T14:45:00.664Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch038.xml?note_annotation_20230707104500664#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch038.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch038.xml?note_annotation_20230707104500664#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[2]/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Exploitation. Domaine, ferme qu'on fait valoir par ses mains."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch038.xml?note_annotation_20230707104500666",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-07T14:45:00.666Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch038.xml?note_annotation_20230707104500666#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch038.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch038.xml?note_annotation_20230707104500666#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[5]/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Ancêtres. Les aïeux ; ceux de qui l'on\n                     descend."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch038.xml?note_annotation_20230707104500667",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-07T14:45:00.667Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch038.xml?note_annotation_20230707104500667#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch038.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch038.xml?note_annotation_20230707104500667#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[7]/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Robinson. Personnage imaginaire qu'on raconte avoir vécu longtemps seul dans\n                     une île."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch038.xml?note_annotation_20230707104500669",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-07T14:45:00.669Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch038.xml?note_annotation_20230707104500669#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch038.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch038.xml?note_annotation_20230707104500669#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[8]/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Mettre du sien. Donner sa part d'argent ou de\n                     travail."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      </rdf:RDF></xenoData><profileDesc>
+         <langUsage>
+            <language ident="fr">French</language>
+            <language ident="en">English</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+<div xmlns:ns0="http://www.tei-c.org/ns/1.0" type="chapitre" xml:lang="fr" n="ch038">
+<pb facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_132.jpg" type="page" n="132"/>
+            <head>38. — Le nid familial. </head>
+            <div type="récit">
+               <p>—J’ai passé la nuit à me demander quel parti nous devons prendre à cette heure,
+                  mes chers enfants. Plus d'argent comptant* <note type="annotation">Argent
+                     comptant. Argent en pièces de monnaie.</note>, ou si peu que rien. Il nous
+                  reste la grange, le bétail, sept à huit mille francs en terres. Le blé commence à
+                  peine à épier* <note type="annotation">Epier. Monter en épis.</note>, et avant
+                  qu'il soit mûr, coupé, rentré, battu, vendu, la grêle ou l'ouragan peut en faire
+                  litière* <note type="annotation">Litière. Paille en autre fourrage qu'on répand
+                     sur le sol pour le coucher des bestiaux, des chevaux, etc.</note>. Même menée à
+                  bien, que donnera la récolte ? A peine le pain d'une année. Or cette pauvre maison
+                  brûlée coûterait à rebâtir quatre à cinq mille francs au bas mot. Voilà là
+                  situation. Eh bien, faut-il vendre les terres dont on ne me donnera pas cher en ce
+                  moment, puis louer une maisonnette et travailler bravement en valets là où nous
+                  avons été maîtres ? Dites votre avis.</p>
+               <p>— Mon père,répondit <persName type="fictif" key="jacques">Jacques</persName>,pendant que vous veilliez cette nuit tout à vos pensées, moi
+                  j'étais aux miennes. Je songeais à une terre jeune, fertile, au climat heureux, où
+                  le bon travail a un bon salaire : c'est <placeName>l'Algérie</placeName>, dont on
+                  nous parlait beaucoup à l'école. Grâce à mes études et aux ressources qui nous
+                  restent, nous fonderions là-bas une exploitation* <note type="annotation">Exploitation. Domaine, ferme qu'on fait valoir par ses mains.</note> et nous y
+                  vivrions en travaillant. Vendez le bétail, vendez les terres, et partons ! </p>
+               <p><persName type="fictif" key="m_dumay">M. Dumay</persName> baissa la tète : </p>
+               <pb facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_133.jpg" type="page" n="133"/>
+               
+               <p>— Soit, dit-il. Ma vie est brisée ; je porterai mes vieux os dans la terre que
+                  vous voudrez, mes enfants.</p>
+               <p>Mais à cette résignation navrée du père, <persName type="fictif" key="jacques">Jacques</persName> et <persName type="fictif" key="suzette">Suzette</persName>
+                  sentirent passer dans leur cœur sa tendresse pour ce vieux foyer où leurs
+                  ancêtres* <note type="annotation">Ancêtres. Les aïeux ; ceux de qui l'on
+                     descend.</note> avaient vécu d'une existence d'honnêteté et de travail.</p>
+               <p>— Non, dit <persName type="fictif" key="suzette">Suzette</persName>, ne quittons
+                  pas <placeName type="fictif">Fragicourt</placeName> que nous aimons tous.
+                     <persName type="fictif" key="suzette">Jacques</persName> sait bien que son
+                  habileté, son courage, peuvent s'exercer ici, comme ailleurs ! Il ne veut pas vous
+                  être, cher papa, un nouveau sujet de chagrin.</p>
+               <p>— <persName type="fictif" key="suzette">Suzette</persName> dit vrai, mon père,
+                  ajouta le garçon, tout ému devant les yeux de <persName type="fictif" key="m_dumay">M. Dumay</persName> qui les avait relevés pleins de larmes ; le
+                  travail est bon partout, et puis, en <placeName>Algérie</placeName> comme ici,
+                  nous n'en serions pas moins à l'état de Robinsons* <note type="annotation">Robinson. Personnage imaginaire qu'on raconte avoir vécu longtemps seul dans
+                     une île.</note>.</p>
+               <p>— Robinson était tout seul dans son île, dit <persName type="fictif" key="suzette">Suzette</persName>, et nous, nous sommes cinq Robinsons unis ! chacun mettra
+                  du sien* <note type="annotation">Mettre du sien. Donner sa part d'argent ou de
+                     travail.</note> dans la construction de la cabane, dans la chasse à la
+                  nourriture quotidienne, pour alléger d'autant notre peine. Pauvre vieux Robinson !
+                  Ah ! qu'il eût, j'en suis sûre, abandonné volontiers les trois quarts de son île,
+                  et son parapluie par dessus le marché, pour sentir à son côté des aides ; des
+                  cœurs courageux, aimants et tout à lui !</p>
+            </div>
+            <div type="questionnaire">
+               <head>Questionnaire.</head>
+               <list>
+                  <item>— Que s'était demandé le père pendant la nuit ? </item>
+                  <item>— Que lui restait-il en argent, denrées et propriétés ? </item>
+                  <item>— Que pouvait coûter la reconstruction de la maison ? </item>
+                  <item>— Quelle est la question que le père posa à ses enfants ? </item>
+                  <item>— Qu'avait pensé <persName type="fictif" key="jacques">Jacques</persName> ? </item>
+                  <item>— Quelle réponse fit le père ? </item>
+                  <item>— Quelle impression produisit-elle sur les deux aînés ? </item>
+                  <item>— Que répondit <persName type="fictif" key="suzette">Suzette</persName> ? </item>
+                  <item>— Qu'ajouta-<persName type="fictif" key="jacques">Jacques</persName> ? </item>
+                  <item>— Que proposa finalement <persName type="fictif" key="suzette">Suzette</persName> ? </item>
+                  <item>— Par quelle réflexion encourageante la jeune fille termina-t-elle
+                     l'entretien ? </item>
+               </list>
+            </div>
+            <div type="exercices">
+               <head>DÉVELOPPEMENT DES SUJETS PROPOSÉS POUR EXERCICES.</head>
+               <div type="complexe">
+                  <head type="sujets">Instruction civique et Économie domestique.</head>
+                  <div type="questions">
+                     <list>
+                        <item>— DES EMPRUNTS.</item>
+                        <item>— Qu'est-ce que faire un emprunt ? </item>
+                        <item>— A quelles conditions se fait-il ? </item>
+                        <item>— Quelles garantie est-on tenu de donner ? </item>
+                        <item>— Que faut-il régler chaque année ? </item>
+                        <item>— Et à la fin ? </item>
+                        <item>— Si l'on ne peut payer, qu'arrive-t-il ? </item>
+                        <item>— Quelles réflexions faut-il faire et quelles résolutions faut-il
+                           prendre avant de se décider à conclure un emprunt ? </item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p>Faire un <term>emprunt</term>, c'est demander à quelqu'un une somme d'argent
+                        avec promesse de la rendre à une époque déterminée.</p>
+                     <p>On emprunte généralement à la condition de payer a la fin de 
+                        <pb facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_134.jpg" type="page" n="134"/>
+                         chaque année une somme supplémentaire qu'on appelle
+                        intérêt, laquelle est égale à 5 francs, 4 fr. 50 ou 4 francs par 100 francs
+                        de capital (1).</p>
+                     <p>Lorsqu'on demande à emprunter, on s'engage presque toujours par une promesse
+                        écrite à ne pas vendre une propriété quelconque de valeur supérieure au
+                        capital emprunté, avant le remboursement de ce capital. Cette formalité
+                        s'appelle donner une <term>hypothèque</term>. On rédige ensuite une promesse
+                        écrite qui indique le montant de la somme prêtée, le taux de l'intérêt et la
+                        date du remboursement. Exemple :</p>
+                     <p>B. P. F. 150. </p>
+                     <p>Au vingt-sept mai prochain, je payerai à <persName type="fictif">M.
+                           Cazotte</persName>, propriétaire à <placeName>Issy</placeName>, avec les
+                        intérêts à cinq pour cent, la somme de cent cinquante francs, valeur reçue
+                        en espèces.</p>
+                     <p>Paris, le 14 mars 1888.</p>
+                     <p><persName type="fictif">GEORGES VALLÉE</persName>,</p>
+                     <p>Rue de Buci, n° 2.</p>
+                     <p>Si l'on ne peut payer les intérêts, ni rembourser le capital, le créancier
+                        fait mettre en vente les biens du débiteur sur lesquels il y a hypothèque à
+                        son profit, et cette opération comporte des frais considérables que doit
+                        supporter ce même débiteur. N'empruntons donc jamais sans avoir la certitude
+                        de pouvoir tenir les engagements que nous contractons au sujet du
+                        remboursement de la somme et du règlement des intérêts.</p>
+                  </div>
+               </div>
+               <div type="composition" xml:id="sujcom_038">
+                  <head type="sujets">Composition.</head>
+                  <div type="questions">
+                     <list>
+                        <item>— Racontez ce que vous savez de l'histoire de Robinson.</item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <list>
+                        <item>SOMMAIRE.</item>
+                        <item>— Enfance de Robinson.</item>
+                        <item>— Son départ et son naufrage.</item>
+                        <item>— Son installation dans une île déserte.</item>
+                        <item>— Ses travaux pour assurer sa nourriture et pourvoir à la sûreté de
+                           son existence.</item>
+                        <item>— Vendredi et les sauvages.</item>
+                        <item>— Retour de Robinson dans son pays natal.</item>
+                     </list>
+                  </div>
+               </div>
+               <div type="géographie" xml:id="sujgeo_038">
+                  <head type="sujets">Géographie.</head>
+                  <div type="questions">
+                     <list>
+                        <item>— Tracer sur une feuille blanche la route à suivre pour aller à
+                              <placeName>Alger</placeName>, en partant de
+                              <placeName>Saint-Quentin</placeName> et en passant par
+                              <placeName>Paris</placeName>, <placeName>Lyon</placeName> et
+                              <placeName>Marseille</placeName>.</item>
+                        <item>— Marquer les villes principales.</item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p>(Cet exercice se rapporte aux tracés de cartes si instamment recommandés
+                        pour l'enseignement de la géographie ; autant que possible, on évitera de
+                        calquer sur un atlas.)</p>
+                  </div>
+               </div>
+               <div type="industrie" xml:id="sujind_038">
+                  <head type="sujets">Industrie.</head>
+                  <div type="questions">
+                     <list>
+                        <item>— Qu'est-ce qu'un parapluie, une ombrelle ? </item>
+                        <item>— Pièces d'un parapluie et d'une ombrelle.</item>
+                        <item>— Matières qui servent à fabriquer chacune de ces parties.</item>
+                        <item>— Ce que coûterait un parapluie de coton, un parapluie de soie, une
+                           ombrelle de colon, une ombrelle de soie pour votre usage
+                           particulier.</item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p><term>Le parapluie</term> est un assemblage de pièces d'étoffe taillées de
+                        manière à prendre une forme demi-sphérique quand elles sont tondues sur des
+                        baleines soudées à un cylindre creux glissant sur un manche de bois. On s'en
+                        sort pour se préserver de la pluie.</p>
+                     <p><term>L'ombrelle</term> est un petit parasol à l'usage des dames et des
+                        jeunes personnes. Il a exactement la forme d'un parapluie, mais il est
+                        presque toujours d'une étoffe de couleur claire et comporte plus
+                        d'ornements.</p>
+                     <p>Les parties principales d'un parapluie et d'une ombrelle sont :</p>
+                     <p>1° Le <term>manche</term>, qui est ordinairement en bois ou en bambou, avec
+                        poignée de corne ou d'ivoire ; </p>
+                     <p>2° Les <term>baleines</term>, qui soutiennent et tendent l'étoffe.
+                        Actuellement, ces tiges sont faites on acier ; </p>
+                     <fw type="footer">(1) Le <term>capital</term> est la somme prêtée ; on appelle
+                           <term>taux</term> l'intérêt annuel de 100 francs.</fw>
+                     <pb facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_135.jpg" type="page" n="135"/>
+                     
+                     <p>3° Une <term>douille</term> où <term>cylindre</term>, sur lequel sont fixées
+                        avec charnière les baleines ; </p>
+                     <p>4° L'<term>étoffe</term>, qui recouvre le tout et qui est formée d'un tissu
+                        de coton ou de soie.</p>
+                     <p>N'oublions pas le <term>ressort</term>, qui empêche la douille de descendre
+                        lorsque le parapluie est ouvert, ni la tresse en caoutchouc avec laquelle on
+                        rassemble le tissu quand on a fermé le parapluie,</p>
+                     <p>Un parapluie de soie coûte..... et une ombrelle de.....</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
