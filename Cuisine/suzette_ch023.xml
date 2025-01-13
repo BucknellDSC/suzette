@@ -1,0 +1,1002 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/CSS/suzette_cwrc.css"?>
+<?xml-model href="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/out/suzette.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Suzette: a Digital Edition</title>
+            <respStmt>
+               <persName>John Westbrook</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Editor</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Diane Jakacki</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Project Manager</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annie Girton</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2018-2020</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Sarah Haber</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2020-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Rebecca Heintzelman</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2020-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Juliya Harnood</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2021-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Jaehoon Pyon</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2023-Present</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Bucknell University</distributor>
+            <pubPlace>
+               <address>
+                  <addrLine>One Dent Drive</addrLine>
+                  <addrLine>Lewisburg, PA 17837</addrLine>
+               </address>
+            </pubPlace>
+            <availability>
+               <licence>Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Suzette: Livre de Lecture Courante à l’Usage des Jeunes Filles.
+                     Morale—Leçon de choses, Economie Domestique – Ménage – Cuisine –
+                     Couture</title>
+                  <author>Robert Halt</author>
+                  <textLang>French</textLang>
+                  <imprint>
+                     <date>1889</date>
+                     <distributor>Libraire Classique Paul Delaplane</distributor>
+                     <pubPlace>Paris, France</pubPlace>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:fabio="https://purl.org/spar/fabio#" xmlns:bf="http://www.openlinksw.com/schemas/bif#" xmlns:cito="https://sparontologies.github.io/cito/current/cito.html#" xmlns:org="http://www.w3.org/ns/org#">
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch023.xml?person_annotation_20230706165025831",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-06T20:50:25.831Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch023.xml?person_annotation_20230706165025831#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch023.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch023.xml?person_annotation_20230706165025831#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[3]/div/div[2]/p[2]/persName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:NaturalPerson",
+		"@id": "https://www.wikidata.org/wiki/Q307",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch023.xml?person_annotation_20230706165025833",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-06T20:50:25.833Z",
+	"dcterms:modified": "2024-02-29T15:42:13.574Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch023.xml?person_annotation_20230706165025833#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch023.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.4.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch023.xml?person_annotation_20230706165025833#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[3]/div/div[2]/p[2]/persName[2]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:NaturalPerson",
+		"@id": "https://www.wikidata.org/wiki/Q34969",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.4.0"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch023.xml?note_annotation_20230706165025834",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-06T20:50:25.834Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch023.xml?note_annotation_20230706165025834#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch023.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch023.xml?note_annotation_20230706165025834#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Inventeur. Celui qui fait une invention."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch023.xml?note_annotation_20230706165025836",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-06T20:50:25.836Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch023.xml?note_annotation_20230706165025836#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch023.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch023.xml?note_annotation_20230706165025836#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[2]/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Cliquet. Petit levier pour empêcher une roue dentée de revenir en\n                     arrière."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch023.xml?note_annotation_20230706165025837",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-06T20:50:25.837Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch023.xml?note_annotation_20230706165025837#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch023.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch023.xml?note_annotation_20230706165025837#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[5]/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Bassiner une blessure. Humecter, mouiller avec\n                     un liquide tiède ou chaud."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch023.xml?note_annotation_20230706165025839",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-06T20:50:25.839Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch023.xml?note_annotation_20230706165025839#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch023.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch023.xml?note_annotation_20230706165025839#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[7]/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Grommeler. Murmurer, se plaindre entre\n                     ses dents."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch023.xml?note_annotation_20230706165025840",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-06T20:50:25.840Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch023.xml?note_annotation_20230706165025840#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch023.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch023.xml?note_annotation_20230706165025840#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[9]/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Déserter. Voir nº 11."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch023.xml?note_annotation_20230706165025841",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-06T20:50:25.841Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch023.xml?note_annotation_20230706165025841#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch023.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch023.xml?note_annotation_20230706165025841#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[17]/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Onguent. Mélange ou composition\n                     molle qu'on étend sur du linge, du papier, et qu'on applique sur une\n                     plaie."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch023.xml?note_annotation_20230706165025842",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-06T20:50:25.842Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch023.xml?note_annotation_20230706165025842#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch023.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch023.xml?note_annotation_20230706165025842#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[23]/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Expérience.\n                     Epreuve, essai que l'on fait pour découvrir ou pour arriver à démontrer une\n                     vérité."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      </rdf:RDF></xenoData><profileDesc>
+         <langUsage>
+            <language ident="fr">French</language>
+            <language ident="en">English</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+<div xmlns:ns0="http://www.tei-c.org/ns/1.0" type="chapitre" xml:lang="fr" n="ch023">
+<pb type="page" n="81" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_081.jpg"/>
+            <head>23. — Le secret de <persName type="fictif" key="ludivine">Ludivine</persName>.
+               </head>
+            <div type="récit">
+               <p>Il dit cela avec la belle tranquillité de l'inventeur*<note type="annotation">Inventeur. Celui qui fait une invention.</note> sans reproche, et il continua
+                  : </p>
+               <fw type="footer"><fw type="sig">5.</fw></fw>
+               <pb type="page" n="82" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_082.jpg"/>
+               <fw>82 SUZETTE.</fw>
+               <p>— La ficelle a cassé ; et comme j'étais couché, le cliquet*<note type="annotation">Cliquet. Petit levier pour empêcher une roue dentée de revenir en
+                     arrière.</note> m'est tombé sur le nez.</p>
+               <p>Il montrait le plafond, où se voyaient encore quelques clous, des trous, des
+                  dégradations du plâtre :</p>
+               <p>— Papa, ça a très bien marché, au moins vingt fois ; l’éteignoir descendait tout
+                  seul et fonctionnait à ravir. — Son regard rencontra la bougie à demi consumée et,
+                  sur une chaise, une cinquantaine d'allumettes brûlées : — Mais, à la vingt-unième
+                  fois, la ficelle casse ; paf ! le cliquet sur…! </p>
+               <p>La main paternelle fit un petit mouvement du côté de l'éteigneur de chandelles.
+                  Mais <persName type="fictif" key="suzette">Suzette</persName>, déjà en train de
+                     bassiner*<note type="annotation">Bassiner une blessure. Humecter, mouiller avec
+                     un liquide tiède ou chaud.</note>la blessure, arrêta d'un regard cette main. </p>
+               <p>— Papa, dit-elle, ne prenez pas la peine, je vous prie, de vous occuper de ce
+                  mauvais garçon. Et vous, Monsieur, tournez-vous par ici, cachez à votre père cette
+                  vilaine trompette de nez que vous venez de changer en pomme de terre !&amp;gt;</p>
+               <p>Le papa grommela*<note type="annotation">Grommeler. Murmurer, se plaindre entre
+                     ses dents.</note> un instant, puis : </p>
+               <p>— Bon, pose-lui là-dessus une toile d'araignée, quoiqu’il ne mérite pas tant de
+                  soins.</p>
+               <p>Mais où étaient-elles les toiles d'araignées ? Depuis longtemps cela avait
+                     déserté*<note type="annotation">Déserter. Voir nº 11.</note> la maison.</p>
+               <p>Avant qu'on eût le temps de le retenir, <persName type="fictif" key="françois">François</persName>
+                  <figure>
+                     <caption>— C'est la ficelle qui a cassé et le cliquet m'est tombé sur le
+                        nez.</caption>
+                  </figure>
+                  <pb type="page" n="83" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_083.jpg"/>
+                  <fw type="header">LE SECRET DE LUDIVINE. 83</fw> s'élança, escalada le grenier, et
+                  redescendit ; il en tenait une.</p>
+               <p>— Je l'ai découverte ce matin à la lucarne d'en haut.</p>
+               <p>La toile fut appliquée sur le mal.</p>
+               <p>— Maintenant dormez, Monsieur, et laissez-nous dormir ! </p>
+               <p>Mais pendant le reste de la nuit, ah ! comme elle poussa, la pomme de terre ! et
+                  comme au matin elle était haute en couleur !</p>
+               <p>— Pourtant, dit <persName type="fictif" key="m_dumay">M. Dumay</persName> à
+                     <persName type="fictif" key="ludivine">Ludivine</persName>, lorsqu'en passant
+                  elle vit l'accident, la toile d'araignée, voilà bien, dit-on, ce qu'il faut pour
+                  les écorchures !</p>
+               <p><persName type="fictif" key="ludivine">Ludivine</persName> hocha la tête :</p>
+               <p>— La toile d'araignée, c'est bon et ça ne l'est pas ; vous me comprenez, <persName type="fictif" key="m_dumay">Denis</persName> ? ça dépend. Mais j'ai un secret
+                  de ma défunte mère. — Puis, doucement, en femme qui a un secret, et qui ne veut
+                  pas le laisser tomber en route, <persName type="fictif" key="ludivine">Ludivine</persName> alla au colombier. Elle reparut bientôt, tenant quelque
+                  chose dans sa main fermée, et annonça à voix basse qu'avant une heure elle
+                  rapporterait un onguent*<note type="annotation">Onguent. Mélange ou composition
+                     molle qu'on étend sur du linge, du papier, et qu'on applique sur une
+                     plaie.</note> dont on lui dirait des nouvelles.</p>
+               <p>Après trois quarts d'heure, elle revint avec le visage d'une personne enchantée de
+                  faire le bien, et de ses propres mains plaça sur la toile d'araignée un
+                  cataplasme. <persName type="fictif" key="françois">François</persName> poussa une
+                  exclamation, renifla, et avec une grimace :</p>
+               <p>— Pff ! pff ! qu'est-ce que c'est que ça ?</p>
+               <p>— Trois jours et trois nuits garde-le-moi là où il est, dit <persName type="fictif" key="ludivine">Ludivine</persName>, et tu seras pour longtemps à
+                  l'abri des maux de nez et même d'oreilles. Ma grand-mère, ma mère en ont guéri
+                  beaucoup... et demande à <persName type="fictif">Plectrude</persName>, à <persName type="fictif">Jean-Marie</persName>, à <persName type="fictif">Morisot</persName>, si je leur ai fait du mal.</p>
+               <p>Mais, le soir, la douleur commencée avec l'application de la toile d'araignée
+                  s'accrut beaucoup.</p>
+               <p>— Pff ! pff ! qu'est-ce que c'est que ça ? répétait <persName type="fictif" key="françois">François</persName>.</p>
+               <p>Cependant, comme il voulait guérir au plus vite pour chercher une ficelle plus
+                  solide et reprendre son <pb type="page" n="84" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_084.jpg"/>
+                  <fw type="header"> 84 SUZETTE.</fw> expérience*<note type="annotation">Expérience.
+                     Epreuve, essai que l'on fait pour découvrir ou pour arriver à démontrer une
+                     vérité.</note>, ou quelque autre de ce genre, il tenait bravement.</p>
+               <p>Mais <persName type="fictif" key="suzette">Suzette</persName> devenait
+                  inquiète.</p>
+            </div>
+            <div type="questionnaire">
+               <head>Questionnaire.</head>
+               <list>
+                  <item>— En quels termes <persName type="fictif" key="françois">François</persName>
+                     acheva-t-il le récit des causes de l'accident ? </item>
+                  <item>— Que dit et fit <persName type="fictif" key="suzette">Suzette</persName>
+                     pour apaiser la colère de <persName type="fictif" key="m_dumay">M.
+                        Dumay</persName> et pour soulager <persName type="fictif" key="françois">François</persName> ?</item>
+                  <item>— Quel remède singulier indiqua le père et comment se le procura-t-on ? </item>
+                  <item>— Comment se comporte le nez pendant la nuit ? </item>
+                  <item>— Quel remède secret prépara <persName type="fictif" key="ludivine">Ludivine</persName> ?</item>
+                  <item>— Racontez comment il fut appliqué par elle et accueilli par le malade ? </item>
+                  <item>— Quels conseils donna la voisine pour assurer le succès de son emplâtre ?
+                  </item>
+               </list>
+            </div>
+            <div type="exercices">
+               <head>DÉVELOPPEMENT DES SUJETS PROPOSÉS POUR EXERCICES</head>
+               <div type="morale" xml:id="sujmor_023">
+                  <head type="sujets">Morale.</head>
+                  <div type="questions">
+                     <list type="exercices">
+                        <item>— Faut-il se moquer des enfants qui s'amusent à confectionner des
+                           machines ?</item>
+                        <item>— Pourquoi ? </item>
+                        <item>— Connaissez-vous des enfants auxquels on doit des découvertes utiles
+                           ?</item>
+                        <item>— Résultats fâcheux des moqueries entre élèves.</item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p>En général, les enfants sont observateurs ; ils aiment à examiner les
+                        choses, à se rendre compte de ce qu'elles sont, comment elles fonctionnent
+                        et quel parti on en peut tirer. Il est donc juste de les encourager quand
+                        ils manifestent de semblables dispositions, et de leur venir en aide par des
+                        conseils ; peut-être ainsi une vocation se manifestera-t-elle et sera-t-elle
+                        le point de départ d'une existence utile à la société.</p>
+                     <p>C'est à un enfant qu'on doit la découverte de l'appareil qui règle l'entrée
+                        et la sortie de la vapeur dans le cylindre où se meut le piston de la
+                        machine ; <persName type="historique" ref="https://www.wikidata.org/wiki/Q307">Galilée</persName>, enfant, remarqua à
+                        l'église les mouvements égaux d'une lampe suspendue et imagina le pendule ;
+                        <persName ref="https://www.wikidata.org/wiki/Q34969" ana="américaine" key="Benjamin Franklin" role="inventeur">Franklin</persName>, enfant aussi, fit une
+                        observation pendant un orage en jouant au cerf-volant, et plus tard en tira
+                        l'idée du paratonnerre. On raconte que l'usage des lunettes provient de la
+                        remarque d'un petit Hollandais qui regardait les objets avec un morceau de
+                        glace convexe.</p>
+                     <p>La moquerie a pour objet de rendre ridicules certaines personnes au moyen de
+                        critiques malveillantes, exagérées, présentées sous une forme plaisante. On
+                        peut montrer ainsi quelque esprit, mais on dévoile en même temps qu'on
+                        manque de tact et de cœur, surtout si les observations malignes sont
+                        inspirées par une difformité naturelle. Les moqueurs amusent parfois, mais
+                        personne ne les estime : que les jeunes filles ne l'oublient pas, elles si
+                        promptes à signaler ce qu'il peut y avoir de singulier dans la physionomie,
+                        la tenue et les vêtements de leurs compagnes !</p>
+                  </div>
+               </div>
+               <div type="hygiène" xml:id="sujhyg_023">
+                  <head type="sujets">Hygiène.</head>
+                  <div type="questions">
+                     <list>
+                        <item>— Qu'appelle-t-on remèdes secrets, remèdes de bonne femme ? </item>
+                        <item>— Sont-ils tous efficaces ? </item>
+                        <item>— Pourquoi ? </item>
+                        <item>— Lorsqu'un enfant est malade ou blessé, qui faut-il consulter : 1º si
+                           le mal est léger ; — 2° s'il est grave ? </item>
+                        <item>— En quoi est-il très avantageux que les jeunes filles étudient
+                           l'hygiène et reçoivent des notions de médecine usuelle ? </item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p>On appelle remèdes secrets, remèdes de bonne femme, des remèdes simples en
+                        usage parmi les gens peu instruits, et qui, presque toujours, n'ont aucune
+                        efficacité quand ils ne présentent pas d'inconvénients. Il faut se défier
+                        des personnes qui font métier de préparer ces remèdes ; car souvent, parmi
+                        elles, il se trouve des fripons effrontés ; de plus, comment peut-on croire
+                        à la valeur des compositions qu'elles offrent aux naïfs, puisqu'elles-mêmes
+                        n'ont aucune notion de la médecine ?</p>
+                     <pb type="page" n="85" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_085.jpg"/>
+                     <fw type="header">LA BOHÉMIENNE. 85</fw>
+                     <p>Lorsqu'un enfant est malade ou simplement indisposé, il faut : </p>
+                     <p>Si le mal est léger, consulter une personne expérimentée, une mère de
+                        famille autant que possible.</p>
+                     <p>Si l'indisposition ou la blessure sont graves, il est nécessaire de demander
+                        sans retard l'aide du médecin : l'argent ainsi dépensé est toujours bien
+                        employé. En attendant la venue de l'homme de l'art, l'enfant malade sera mis
+                        au lit, et on se gardera de lui donner autre chose que des boissons tièdes
+                        et rafraîchissantes, telles que la tisane au chiendent, à la réglisse.</p>
+                     <p>Chacun sait que les médecins ne sont pas toujours libres de venir auprès
+                        d'un malade, lorsqu'on les en prie, car ils se trouvent fréquemment retenus
+                        au chevet d'un autre ; il est donc très désirable que, dans chaque maison,
+                        une personne sache donner les premiers soins en cas d'indisposition ou de
+                        blessure, ce qui, plus d'une fois, enrayera le développement du mal. Tel est
+                        le motif pour lequel, dans la plupart des écoles, les maîtresses se font une
+                        obligation de dicter aux élèves les conseils et les recettes pour remplir le
+                        rôle de garde-malade ou d'auxiliaire du médecin. Toutes devraient, à la fin
+                        de leurs études, se munir d'un bon traité d'hygiène et des excellents petits
+                        livres intitulés : <title>Remèdes des champs</title> et <title>l'Art de
+                           vivre longtemps</title> (Libr. Hachette ; 0 fr. 50 chacun).</p>
+                  </div>
+               </div>
+               <div type="industrie" xml:id="sujind_023">
+                  <head type="sujets">Industrie.</head>
+                  <div type="questions">
+                     <list>
+                        <item>— CHANDELLES.</item>
+                        <item>— Décrivez une chandelle.</item>
+                        <item>— Quelle est la matière d'une chandelle ? </item>
+                        <item>— Quelle est la matière de sa mèche ? </item>
+                        <item>— Comment fabrique-t-on les chandelles ? </item>
+                        <item>— Quels sont leurs avantages et leurs inconvénients ? </item>
+                        <item>— Combien coûte le kilogramme de chandelle ? </item>
+                        <item>— (Mêmes questions sur les bougies).</item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p>Les chandelles sont des cylindres de suif fondu à l'intérieur desquels on a
+                        introduit une mèche de coton.</p>
+                     <p>Pour les fabriquer, on met fondre de la graisse de bœuf ou de vache dans une
+                        grande chaudière, et, lorsque le liquide qu'on obtient est suffisamment
+                        limpide, on le coule avec une cuiller de fer dans des moules de bois où l’on
+                        a tendu une mèche de coton.</p>
+                     <p>Le procédé est le même pour les bougies ; seulement la matière employée est
+                        la stéarine, qui provient d'huiles grossières ou de graisses animales, et
+                        qui jouit de la propriété de se durcir et de blanchir en se refroidissant,
+                        tandis que les chandelles sont molles et jaunâtres pour peu que la
+                        température s'élève.</p>
+                     <p>Les chandelles donnent un éclairage peu dispendieux ; mais il est
+                        insuffisant et il se produit avec un dégagement de fumée et de gaz dont
+                        l'odeur n'a rien d'agréable.</p>
+                     <p>La lumière des bougies est plus vive, plus blanche, et pendant que la flamme
+                        brûle, il n'y a ni odeur ni fumée ; de plus, la mèche étant tressée, elle se
+                        consume tout entière et il n'y a pas besoin de la couper de temps en temps
+                        comme celle des chandelles.</p>
+                     <p>Le kilogramme de chandelle coûte de 0 fr. 90 à 1 fr. 20 ; celui de la bougie
+                        revient à 1 fr. 80 ou 2 francs dans la plupart des localités.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
