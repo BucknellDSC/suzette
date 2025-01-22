@@ -1,0 +1,1285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/CSS/suzette_cwrc.css"?>
+<?xml-model href="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/out/suzette.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Suzette: a Digital Edition</title>
+            <respStmt>
+               <persName>John Westbrook</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Editor</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Diane Jakacki</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Project Manager</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annie Girton</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2018-2020</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Sarah Haber</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2020-2022</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Rebecca Heintzelman</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2020-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Juliya Harnood</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2021-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Jaehoon Pyon</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2023-Present</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Bucknell University</distributor>
+            <pubPlace>
+               <address>
+                  <addrLine>One Dent Drive</addrLine>
+                  <addrLine>Lewisburg, PA 17837</addrLine>
+               </address>
+            </pubPlace>
+            <availability>
+               <licence>Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Suzette: Livre de Lecture Courante à l’Usage des Jeunes Filles.
+                     Morale—Leçon de choses, Economie Domestique – Ménage – Cuisine –
+                     Couture</title>
+                  <author>Robert Halt</author>
+                  <textLang>French</textLang>
+                  <imprint>
+                     <date>1889</date>
+                     <distributor>Libraire Classique Paul Delaplane</distributor>
+                     <pubPlace>Paris, France</pubPlace>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:fabio="https://purl.org/spar/fabio#" xmlns:bf="http://www.openlinksw.com/schemas/bif#" xmlns:cito="https://sparontologies.github.io/cito/current/cito.html#" xmlns:org="http://www.w3.org/ns/org#">
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml?note_annotation_20230710083106682",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-10T12:31:06.682Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml?note_annotation_20230710083106682#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml?note_annotation_20230710083106682#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Baisser verticalement. Baisser en suivant la direction d'un\n                     fil à plomb."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml?note_annotation_20230710083106685",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-10T12:31:06.685Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml?note_annotation_20230710083106685#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml?note_annotation_20230710083106685#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[6]/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Commissaire. Le commissaire de police, dans la comédie de Polichinelle."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml?note_annotation_20230710083106687",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-10T12:31:06.687Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml?note_annotation_20230710083106687#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml?note_annotation_20230710083106687#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[9]/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Jacquard. Mécanicien français,\n                     inventeur d'un métier à tisser (1752-1834)."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml?person_annotation_20230710083230955",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-10T12:32:30.955Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml?person_annotation_20230710083230955#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml?person_annotation_20230710083230955#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[9]/persName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:NaturalPerson"
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml?person_annotation_20230710083412076",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-10T12:34:12.076Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml?person_annotation_20230710083412076#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml?person_annotation_20230710083412076#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[8]/persName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:NaturalPerson",
+		"@id": "http://dbpedia.org/resource/Barthélemy_Thimonnier",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml?person_annotation_20230710083754225",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-10T12:37:54.225Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml?person_annotation_20230710083754225#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml?person_annotation_20230710083754225#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[9]/persName[2]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:NaturalPerson",
+		"@id": "http://www.wikidata.org/entity/Q310833",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	},
+	"cwrc:hasCertainty": "cwrc:high"
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml?place_annotation_20240228141751969",
+	"type": "oa:Annotation",
+	"dcterms:created": "2024-02-28T19:17:51.969Z",
+	"dcterms:modified": "2024-02-28T19:17:51.969Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml?place_annotation_20240228141751969#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.4.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml?place_annotation_20240228141751969#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[3]/div[2]/div/list/item/placeName/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q191085",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.4.0"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml?place_annotation_20240228141816006",
+	"type": "oa:Annotation",
+	"dcterms:created": "2024-02-28T19:18:16.006Z",
+	"dcterms:modified": "2024-02-28T19:18:16.006Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml?place_annotation_20240228141816006#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.4.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml?place_annotation_20240228141816006#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[3]/div[2]/div[2]/p/placeName/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q456",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.4.0"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml?place_annotation_20240228141835261",
+	"type": "oa:Annotation",
+	"dcterms:created": "2024-02-28T19:18:35.261Z",
+	"dcterms:modified": "2024-02-28T19:18:35.261Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml?place_annotation_20240228141835261#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.4.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml?place_annotation_20240228141835261#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[3]/div[2]/div[2]/p[3]/placeName/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q456",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.4.0"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml?place_annotation_20240228141905030",
+	"type": "oa:Annotation",
+	"dcterms:created": "2024-02-28T19:19:05.030Z",
+	"dcterms:modified": "2024-02-28T19:19:05.030Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml?place_annotation_20240228141905030#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.4.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml?place_annotation_20240228141905030#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[3]/div[2]/div[2]/p[5]/placeName[2]/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q90",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.4.0"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml?place_annotation_20240228141926786",
+	"type": "oa:Annotation",
+	"dcterms:created": "2024-02-28T19:19:26.786Z",
+	"dcterms:modified": "2024-02-28T19:19:26.786Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml?place_annotation_20240228141926786#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.4.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml?place_annotation_20240228141926786#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[3]/div[2]/div[2]/p[9]/placeName/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q90",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.4.0"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml?place_annotation_20240228141942552",
+	"type": "oa:Annotation",
+	"dcterms:created": "2024-02-28T19:19:42.552Z",
+	"dcterms:modified": "2024-02-28T19:19:42.552Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml?place_annotation_20240228141942552#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.4.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch099.xml?place_annotation_20240228141942552#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[3]/div[2]/div[2]/p[9]/placeName[2]/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q456",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.4.0"
+	}
+}]]>
+        </rdf:Description>
+      </rdf:RDF></xenoData><profileDesc>
+         <langUsage>
+            <language ident="fr">French</language>
+            <language ident="en">English</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+<div xmlns:ns0="http://www.tei-c.org/ns/1.0" type="chapitre" xml:lang="fr" n="ch099">
+<pb type="page" n="344" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_344.jpg"/>
+            <head>99. — Marionnettes. </head>
+            <div type="récit">
+               <p>— Voyez, Messieurs, et vous surtout, Mesdames, qui maniez l'aiguille, voyez
+                  celle-ci ! Elle n'est pas <figure>
+                     <caption>Messieurs, Desdames, voici monsieur <persName type="fictif">Polichinelle</persName> ! voulez-vous avoir l'extrême obligeance de
+                        regarder <persName type="fictif">Polichinelle</persName> ?</caption>
+                  </figure> percée d'un œil comme vos aiguilles à repriser, à ourler et piquer ; sa
+                  pointe. est un crochet, mais je l'appelle aiguille parce qu'en effet elle coud.
+                  Regardez : je meus ce volant, elle s'a baisse verticalement*<note type="annotation">Baisser verticalement. Baisser en suivant la direction d'un
+                     fil à plomb.</note>, elle traverse le morceau de drap placé là sur la tablette.
+                  Maintenant regardez sous la tablette. Qu'apercevez-vous ? ce fil qui s'avance
+                  porté par une petite pièce d'acier. Il tourne, s'enroule autour de l'aiguille ; et
+                  celle-ci remonte emportant une autre bouclette qu'elle passe dans première. Et
+                  ainsi de suite pour former ce joli point chaînette que voilà !</p>
+               <p>Apres quoi il faisait la quête.</p>
+               <pb type="page" n="345" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_345.jpg"/>
+               
+               <p>Mais le joli point de chaînette n'intéressait pas toujours le public au point de
+                  lui faire mettre la main à la poche. Les gens tournaient le dos.</p>
+               <p>C'est alors que le pauvre homme se hâtait de tirer ses marionnettes :</p>
+               <p>— Messieurs, Mesdames, voici M. <persName type="fictif">Polichinelle</persName> !
+                  Voulez vous avoir l'extrême obligeance de regarder <persName type="fictif">Polichinelle</persName> ?</p>
+               <p>Oh ! oh ! <persName type="fictif">Polichinelle</persName> ! On revenait en troupe,
+                  on appelait les voisins, on voyait rosser le commissaire*<note type="annotation">Commissaire. Le commissaire de police, dans la comédie de <persName type="fictif">Polichinelle</persName>.</note>, on riait à gorge
+                  déployée.</p>
+               <p>Et deux, trois, quatre sous refusés à l'inventeur tombaient aux pieds de
+                  Polichinelle, ou de Paillasse ou d'Arlequin. Cela se passait en 1830.</p>
+               <p>Dans les villes et les villages traversés, en cette année, par <persName key="Barthélemy Thimonnier" ref="http://dbpedia.org/resource/Barthélemy_Thimonnier">Thimonier</persName>, il y a aujourd'hui des machines à
+                  coudre qui font l'aisance de bien des ménages. Il y a aussi des gens qui se
+                  rappelleraient sans doute le passage de ce montreur de couseuse et de marionnettes
+                  auquel ils ont peut-être refusé un sou !</p>
+               <p><persName type="historique">Thimonier</persName>, pourtant, arriva à
+                     <placeName>Paris</placeName>. Et <placeName>Paris</placeName> ne l'entendit pas
+                  davantage. Ce furent les tailleurs qui le repoussèrent comme un ennemi, avec la
+                  sottise des tisserands, qui, jadis, repoussèrent <persName type="real" cert="high" key="Joseph Marie Jacquard" ref="http://www.wikidata.org/entity/Q310833">Jacquard</persName>*<note type="annotation">Jacquard. Mécanicien français,
+                     inventeur d'un métier à tisser (1752-1834).</note>.</p>
+               <p>Il revint à <placeName>Amplepuis</placeName> comme il en était parti.</p>
+               <p>On ne retrouve son nom qu'en 1851, à l'Exposition de
+                     <placeName>Londres</placeName>, où il obtint enfin une rémunération, mais
+                  insuffisante à le tirer de la pauvreté. Il mourut en 1857.</p>
+            </div>
+            <div type="questionnaire">
+               <head>Questionnaire. </head>
+               <list>
+                  <item>— Que disait <persName type="historique">Thimonier</persName> : 1° de
+                     l'aiguille ; </item>
+                  <item>— 2° du volant ;</item>
+                  <item>— 3° de ce qui se passait sous la tablette ? </item>
+                  <item>— Qu'arrivait-il lorsqu'il faisait la quête après ces explications ? </item>
+                  <item>— Comment ramenait-il les fuyards ? </item>
+                  <item>— Que recueillait-il après l'exhibition de <persName type="fictif">Polichinelle</persName> ? </item>
+                  <item>— Combien y a-t-il d'années que ces choses se passaient ? </item>
+                  <item>— Qu'y a-t-il aujourd'hui dans les villes et les villages que traversa
+                        <persName type="historique">Thimonier</persName> ? </item>
+                  <item>— Comment l'inventeur fut-il accueilli à <placeName>Paris</placeName> ? </item>
+                  <item>— Où retrouve-t-on son nom ? </item>
+                  <item>— Tira-t-il quelque profit de sa belle et utile invention ? </item>
+                  <item>— Quand mourut <persName type="historique">Thimonier</persName> ?</item>
+               </list>
+            </div>
+            <div type="exercices">
+               <head>DÉVELOPPEMENT DES SUJETS PROPOSÉS POUR EXERCICES.</head>
+               <div type="morale">
+                  <head type="sujets">Morale.</head>
+                  <div type="questions">
+                     <list>
+                        <item>— Pourquoi n'êtes-vous pas d'avis qu'une jeune fille regarde soit les
+                           spectacles forains, soit les affiches, soit même les images des
+                           devantures, dans les rues d'une ville surtout ? </item>
+                        <item>— Qu'entend-on par bons exemples, mauvais exemples ? </item>
+                        <item>— Que produisent les uns et les autres ? </item>
+                        <item>— Faits à l'appui. </item>
+                        <item>— Quels avis donneriez<pb type="page" n="346" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_346.jpg"/>
+                            vous à une de vos compagnes, plus jeune que vous,
+                           sur les enfants qu'elle doit fréquenter ou éviter ?</item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p>Si la curiosité est légitime chez les enfants lorsqu'elle a l'instruction
+                        pour but, elle devient un vice si elle s'applique à des choses qui blessent
+                        la pudeur et les convenances ; tels sont les phénomènes des foires et les
+                        jongleries des baladins ; telles sont encore bien souvent, dans les grandes
+                        villes, les affiches à couleurs tapageuses et les vitrines des marchands de
+                        gravures ou de photographies. Une jeune fille qui se respecte évitera de
+                        s'arrêter et de regarder ces objets auprès desquels elle trouverait
+                        probablement des gens dont le contact ne saurait lui être que
+                        préjudiciable.</p>
+                     <p>L'éducation ne peut rien sans l'exemple, a dit un philosophe moderne ; tout
+                        cède chez les enfants à la toute-puissante influence de l'imitation ;
+                        l'exemple est une force dont l'enfant ne peut se défendre ; il la subit sans
+                        le vouloir, sans le savoir. Il est donc nécessaire de mettre sous ses yeux
+                        des actions dont le spectacle est un encouragement au bien, de lui faire
+                        entendre des paroles excitant de nobles résolutions ; en un mot, de ne lui
+                        présenter que de bons exemples. Il est plus nécessaire encore de tenir les
+                        jeunes filles éloignées de tout ce qui pourrait les entraîner au mal,
+                        souiller leurs âmes, corrompre leurs cœurs. Combien les grandes personnes
+                        doivent-elles veiller sur leurs propos pour éviter de froisser la pudeur
+                        native de l'enfant, et les pères et mères s'ingénier pour écarter les livres
+                        et les journaux dont la lecture serait dangereuse ! Mauvais propos,
+                        mauvaises actions, mauvaises lectures, constituent ce qu'on entend par
+                        mauvais exemples, et de tristes récits nous apprennent qu'un seul suffit
+                        parfois pour perdre à jamais une jeune fille.</p>
+                     <p>Ne fréquentez donc que les enfants dont la société vous est recommandée par
+                        vos parents et par vos maîtresses ; évitez, lorsque vous êtes seule dans les
+                        rues, de regarder de tous côtés ; ne prêtez pas attention aux propos des
+                        gens grossiers ; ne lisez rien qui ne vous ait été remis par les personnes
+                        qui ont la charge de votre éducation ; enfin, rompez toutes relations avec
+                        celles de vos compagnes dont les conseils et les paroles sont telles que
+                        vous n'oseriez pas les répéter devant votre mère.</p>
+                  </div>
+               </div>
+               <div cert="high" org="composite" part="Y" sample="initial" type="composition" xml:space="default" xml:id="sujcom_099">
+                  <head type="sujets">Composition.</head>
+                  <div type="questions">
+                     <list>
+                        <item>— Reproduire l'histoire de <persName type="historique">Jacquard</persName> lue par Mme l'institutrice, ou celle de <persName type="historique">Brémontier</persName>, le créateur des plantations
+                           de pins dans les landes de <placeName><placeName key="Gascony" ref="http://www.wikidata.org/entity/Q191085">Gascogne</placeName></placeName>.</item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p>Ce grand et modeste inventeur d'une ingénieuse machine à tisser naquit à
+                           <placeName><placeName key="Lyon" ref="http://www.wikidata.org/entity/Q456">Lyon</placeName></placeName>, le 7 juillet 1752. Son père, ouvrier en
+                        étoffes de soie, le destina de bonne heure au travail, qu'il lui apprit à
+                        connaître et à aimer.</p>
+                     <p>La vue d'une machine du célèbre <persName type="historique">Vaucanson</persName> lui révéla sa vocation de mécanicien, et le voilà
+                        qui imagine d'ingénieux appareils pour dévider les fils de soie et les
+                        ourdir (1). Malgré l'appui de quelques patrons, il eut à subir mille
+                        tracasseries de la part des ouvriers, qui voyaient en lui un ennemi dont les
+                        inventions leur enlevaient le travail quotidien.</p>
+                     <p><persName type="historique">Jacquard</persName> fonda alors pour son propre
+                        compte une fabrique de chapeaux de paille ; mais sa maison fut brûlée
+                        pendant le siège que subit la ville de <placeName><placeName key="Lyon" ref="http://www.wikidata.org/entity/Q456">Lyon</placeName></placeName> en 1793,
+                        et il n'échappa que par miracle aux soldats de la Convention.</p>
+                     <p>De retour dans sa ville natale, il reprit, avec ses travaux, ses re-<note cert="high" evaluate="all" place="top" type="footer" xml:space="default">(1) Ourdir, disposer des fils pour en faire de la
+                           toile.</note>
+                        <pb type="page" n="347" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_347.jpg"/>
+                         cherches mécaniques. Au commencement du siècle,
+                        la Société royale de <placeName>Londres</placeName> ayant proposé un prix
+                        considérable pour l'inventeur d'un procédé mécanique applicable à la
+                        confection des filets destinés à la pêche maritime, <persName type="historique">Jacquard</persName> trouva la machine, fabriqua un
+                        filet, le mit dans sa poche et n'y pensa plus.</p>
+                     <p>Cependant le secret de son importante découverte s'était ébruité ; le préfet
+                        de <placeName>Lyon</placeName> manda <persName type="historique">Jacquard</persName> et lui apprit qu'il avait ordre du premier consul
+                           <persName type="historique">Bonaparte</persName> de l'envoyer à
+                           <placeName><placeName key="Paris" ref="http://www.wikidata.org/entity/Q90">Paris</placeName></placeName> avec sa machine.</p>
+                     <p>Une chaise de poste l'emporta rapidement vers la capitale sous l'escorte
+                        d'un gendarme. Le premier endroit où on le conduisit fut le
+                           <placeName>Conservatoire des arts et métiers</placeName> (1) ; les
+                        premières personnes qu'il vit furent <persName type="historique">Bonaparte</persName> et <persName type="historique">Carnot</persName>,
+                        son premier ministre.</p>
+                     <p>« Est-ce vous qui vous nommez <persName type="historique">Joseph-Marie
+                           Jacquard</persName> ? lui demanda brusquement <persName type="historique">Carnot</persName>. C'est vous qui prétendez faire ce que Dieu lui-même
+                        ne ferait pas : former un nœud sur une corde tendue ? » — Interdit par ces
+                        paroles, <persName type="historique">Jacquard</persName> ne put prononcer un
+                        seul mot ; mais <persName type="historique">Bonaparte</persName> le rassura,
+                        lui promit sa protection et l'encouragea à poursuivre ses recherches.</p>
+                     <p>Le voilà installé au <placeName>Conservatoire</placeName> ; tous les secrets
+                        de la mécanique étaient sous ses yeux ; toutes les difficultés s'aplanirent
+                        pour lui. On lui commanda de construire une machine pour la confection des
+                        filets ; il la construisit. Un châle magnifique qu'il vit lui donna l'idée
+                        d'appliquer au tissage de ces étoffes un mécanisme moins cher, et il réussit
+                        complêtement. Mais son idée fixe d'économiser des bras et des souffrances
+                        pour la fabrication des tissus brochés (2) ne l'avait pas abandonné ; il
+                        monta la machine qui porte le nom de <persName type="historique">Jacquard</persName>, et elle parut à l'Exposition de 1801.</p>
+                     <p>Le premier consul récompensa cette admirable découverte, qui a donné une
+                        existence nouvelle aux ouvriers lyonnais, par une pension annuelle de 6,000
+                        francs. A <placeName><placeName key="Paris" ref="http://www.wikidata.org/entity/Q90">Paris</placeName></placeName>, cependant, elle fut accueillie avec
+                        indifférence ; à <placeName><placeName key="Lyon" ref="http://www.wikidata.org/entity/Q456">Lyon</placeName></placeName>, par la persécution. Lorsque
+                           <persName type="historique">Jacquard</persName> voulut introduire sa
+                        machine, les ouvriers s'ameutèrent contre lui ; on le dénonçait de toutes
+                        parts comme l'ennemi du peuple et comme l'homme qui devait réduire toutes
+                        les familles à la mendicité. Trois fois sa vie fut menacée, et cette haine
+                        aveugle en vint au point que l'on crut devoir détruire publiquement le
+                        nouveau métier. Il fut mis en pièces sur la <placeName>place des
+                           Terreaux</placeName>, aux acclamations de la foule.</p>
+                     <p>Aujourd'hui, le métier Jacquard est répandu partout ; son nom est populaire
+                        dans l'Europe entière. En 1819, le glorieux mais pauvre inventeur recut la
+                        croix de la Légion d'honneur ; il mourut le 7 août 1834 dans le village
+                           d'<placeName>Oullins</placeName>, à quelques kilomêtres de
+                           <placeName>Lyon</placeName>. Sa statue de bronze décore actuellement une
+                        des places de sa ville natale.</p>
+                  </div>
+               </div>
+               <div type="géographie">
+                  <head type="sujets">Géographie.</head>
+                  <div type="questions">
+                     <list>
+                        <item>— Qu'est-ce que l'<placeName>Angleterre</placeName> ? </item>
+                        <item>— Quels produits extrait-on de ses mines ? </item>
+                        <item>— Que fabrique-t-on en <placeName>Angleterre</placeName> ? </item>
+                        <item>— Parler de la marine anglaise, des colonies anglaises. </item>
+                        <item>— Quelles sont celles que les Anglais nous ont ravies depuis un siècle
+                           et demi ? </item>
+                        <item>— Donnez des détails sur la grandeur, la population, le commerce,
+                           etc., de la ville de <placeName>Londres</placeName>.</item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p>On entend par <placeName><term>Angleterre</term></placeName> ou plutôt par
+                              <placeName><term>Iles Britanniques</term></placeName> une contrée de
+                           l'<placeName>Europe occidentale</placeName> située entre la , l'océan <note cert="high" evaluate="all" place="top" type="footer" xml:space="default">(1) Le <placeName>Conservatoire des arts et
+                              métiers</placeName> est un grand édifice où l'ou conserve les modèles
+                           de toutes les machines. (2) Un tissu broché est celui où l'on figure
+                           différents dessins dans l'étoffe en y faisant passer des fils d'or,
+                           d'argent, de soie, etc.</note>
+                        <pb type="page" n="348" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_348.jpg"/>
+                        
+                         et la
+                           , et
+                        comprenant, avec l'<placeName>Angleterre</placeName> proprement dite,
+                           l'<placeName>Écosse</placeName>, l'<placeName>Irlande</placeName> et
+                        quantité d'îles.</p>
+                     <p>L'<placeName>Angleterre</placeName> a un sol extrêmement riche en
+                        productions minérales ; chaque année on extrait 150 millions de tonnes de
+                        houille de ses mines ; le fer se trouve abondamment dans le sol ; les mines
+                        d'étain du comté de <placeName>Cornouailles</placeName>, celles de plomb et
+                        de cuivre du <placeName>pays de Galles</placeName> sont très
+                        productives.</p>
+                     <p>Nul pays au monde ne possède un aussi grand nombre de fabriques ; on estime
+                        que les machines à vapeur que l'on y emploie exécutent le travail de douze
+                        cents millions d'hommes. Les objets principaux de l'industrie anglaise sont
+                        : les cotonnades, les draps, les lainages, les machines, les outils, la
+                        coutelleris, les armes, le papier, les constructions navales, la bière,
+                        etc., etc. L'agriculture donne des produits très abondants en céréales,
+                        bestiaux et fruits.</p>
+                     <p>La marine anglaise est la plus puissante du monde tant au point de vue
+                        militaire que commercial ; elle possède 22,000 navires marchands, plus que
+                        toutes les nations du monde réunies.</p>
+                     <p>L'<placeName>Angleterre</placeName> a fondé des colonies dans toutes les
+                        régions du globe ; elle y domine sur environ 200 millions de sujets ; les
+                        principales sont : l'<placeName>Hindoustan</placeName>, la
+                           <placeName>colonie du Cap</placeName>, le <placeName>Canada</placeName>,
+                           l'<placeName>Australie</placeName>. Elle nous a ravi, depuis un siècle et
+                        demi, une grande partie de l'<placeName>Hindoustan</placeName>,
+                           l'<placeName>ile de France</placeName> ou <placeName>Maurice</placeName>,
+                        le <placeName>Canada</placeName> et plusieurs îles des
+                           <placeName>Antilles</placeName>.</p>
+                     <p>La capitale des <placeName>Iles Britanniques</placeName> est
+                           <placeName>Londres</placeName>, la plus grande et la plus riche ville du
+                        monde ; elle compte plus de 4,000,000 d'habitants, et son commerce dépasse
+                        celui de toute la <placeName>France</placeName>. Située sur la , qui mesure 800
+                        mêtres de largeur, à environ 80 kilomêtres de la mer, elle est le
+                        rendez-vous de milliers de navires qui débarquent dans des magasins
+                        immenses, appelés docks, tous les produits du globe.
+                           <placeName>Londres</placeName> a des rues magnifiques, des squares
+                        immenses, véritables parcs au milieu d'un océan de maisons et de beaux
+                        monuments parmi lesquels il faut citer l'<placeName>église
+                           Saint-Paul</placeName>, celle de <placeName>Westminster</placeName>, le
+                           <placeName>palais du Parlement</placeName>, le <placeName>palais de
+                           Justice</placeName>, la <placeName>Tour</placeName>, le <placeName>musée
+                           Britannique</placeName> et celui de
+                           <placeName>South-Kensington</placeName>, auquel rien ne saurait être
+                        comparé en <placeName>France</placeName>.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
