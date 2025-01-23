@@ -1,0 +1,1014 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/CSS/suzette_cwrc.css"?>
+<?xml-model href="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/out/suzette.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Suzette: a Digital Edition</title>
+            <respStmt>
+               <persName>John Westbrook</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Editor</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Diane Jakacki</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Project Manager</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annie Girton</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2018-2020</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Sarah Haber</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2020-2022</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Rebecca Heintzelman</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2020-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Juliya Harnood</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2021-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Jaehoon Pyon</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2023-Present</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Bucknell University</distributor>
+            <pubPlace>
+               <address>
+                  <addrLine>One Dent Drive</addrLine>
+                  <addrLine>Lewisburg, PA 17837</addrLine>
+               </address>
+            </pubPlace>
+            <availability>
+               <licence>Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Suzette: Livre de Lecture Courante à l’Usage des Jeunes Filles.
+                     Morale—Leçon de choses, Economie Domestique – Ménage – Cuisine –
+                     Couture</title>
+                  <author>Robert Halt</author>
+                  <textLang>French</textLang>
+                  <imprint>
+                     <date>1889</date>
+                     <distributor>Libraire Classique Paul Delaplane</distributor>
+                     <pubPlace>Paris, France</pubPlace>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:fabio="https://purl.org/spar/fabio#" xmlns:bf="http://www.openlinksw.com/schemas/bif#" xmlns:cito="https://sparontologies.github.io/cito/current/cito.html#" xmlns:org="http://www.w3.org/ns/org#">
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch050.xml?note_annotation_20230926142637591",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-09-26T18:26:37.591Z",
+	"dcterms:modified": "2023-09-26T18:26:37.591Z",
+	"dcterms:creator": {
+		"@id": "1",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "admin"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch050.xml?note_annotation_20230926142637591#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch050.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch050.xml?note_annotation_20230926142637591#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Clapier.\n                     Lieu où l'on élève des lapins."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch050.xml?note_annotation_20230926142637593",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-09-26T18:26:37.593Z",
+	"dcterms:modified": "2023-09-26T18:26:37.593Z",
+	"dcterms:creator": {
+		"@id": "1",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "admin"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch050.xml?note_annotation_20230926142637593#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch050.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch050.xml?note_annotation_20230926142637593#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[3]/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Industrie.\n                     Habileté."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch050.xml?note_annotation_20230926142637593",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-09-26T18:26:37.593Z",
+	"dcterms:modified": "2023-09-26T18:26:37.593Z",
+	"dcterms:creator": {
+		"@id": "1",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "admin"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch050.xml?note_annotation_20230926142637593#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch050.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch050.xml?note_annotation_20230926142637593#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[4]/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Claire-voie.\n                     Clôture dont les planches laissent du jour entre elles."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch050.xml?note_annotation_20230926142637594",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-09-26T18:26:37.594Z",
+	"dcterms:modified": "2023-09-26T18:26:37.594Z",
+	"dcterms:creator": {
+		"@id": "1",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "admin"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch050.xml?note_annotation_20230926142637594#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch050.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch050.xml?note_annotation_20230926142637594#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[6]/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Enumération. Action de compter, de\n                     dénombrer les choses."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch050.xml?note_annotation_20230926142637595",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-09-26T18:26:37.595Z",
+	"dcterms:modified": "2023-09-26T18:26:37.595Z",
+	"dcterms:creator": {
+		"@id": "1",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "admin"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch050.xml?note_annotation_20230926142637595#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch050.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch050.xml?note_annotation_20230926142637595#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[6]/note[2]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Intérêt. Revenu qu'on tire d'une\n                     somme prêtée ou placée."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch050.xml?note_annotation_20230926142637595",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-09-26T18:26:37.595Z",
+	"dcterms:modified": "2023-09-26T18:26:37.595Z",
+	"dcterms:creator": {
+		"@id": "1",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "admin"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch050.xml?note_annotation_20230926142637595#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch050.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch050.xml?note_annotation_20230926142637595#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[7]/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Sans trop tirer dessus. Sans trop d'effort."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch050.xml?place_annotation_20240417191518386",
+	"type": "oa:Annotation",
+	"dcterms:created": "2024-04-17T23:15:18.386Z",
+	"dcterms:modified": "2024-04-17T23:15:25.137Z",
+	"dcterms:creator": {
+		"@id": "30",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Aya Tarist"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch050.xml?place_annotation_20240417191518386#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch050.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.4.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch050.xml?place_annotation_20240417191518386#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[3]/div[3]/div[5]/p[3]/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q1479",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.4.0"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch050.xml?person_annotation_20240417191532713",
+	"type": "oa:Annotation",
+	"dcterms:created": "2024-04-17T23:15:32.713Z",
+	"dcterms:modified": "2024-04-17T23:15:32.713Z",
+	"dcterms:creator": {
+		"@id": "30",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Aya Tarist"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch050.xml?person_annotation_20240417191532713#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch050.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.4.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch050.xml?person_annotation_20240417191532713#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[3]/div[3]/div[5]/p[2]/persName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:NaturalPerson"
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.4.0"
+	}
+}]]>
+        </rdf:Description>
+      </rdf:RDF></xenoData><profileDesc>
+         <langUsage>
+            <language ident="fr">French</language>
+            <language ident="en">English</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+<div xmlns:ns0="http://www.tei-c.org/ns/1.0" type="chapitre" xml:lang="fr" n="ch050">
+<pb facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_174.jpg" type="page" n="174"/>
+            <head>50. — Faisons nos comptes. </head>
+            <div type="récit">
+               <p>Jusqu'à épuisement de la basse-cour, du clapier*<note type="annotation">Clapier.
+                     Lieu où l'on élève des lapins.</note>, des choux, des chrysanthèmes, ils
+                  retournèrent à la ville, le samedi. </p>
+               <p> Et maintenant faisons nos comptes! d'abord ceux du <pb facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_175.jpg" type="page" n="175"/>
+                   ménage et de la ferme. Ils furent rendus en
+                  famille, un soir, et joyeusement, par la ménagère. Pendant cette dure année, elle
+                  avait nourri, blanchi, habillé la maisonnée, et, tous les frais déduits, elle posa
+                  sur la table deux cent quarante francs de gain. </p>
+               <p> L'économie, l'ingéniosité, l'industrie*<note type="annotation">Industrie.
+                     Habileté.</note> de <persName type="fictif" key="suzette">Suzette</persName>
+                  furent louées comme il convenait par le père. </p>
+               <p> Mais <persName type="fictif" key="françois">François</persName> et <persName type="fictif" key="charlot">Charlot</persName> réclamèrent leur part des
+                  compliments : <persName type="fictif" key="françois">François</persName>, pour
+                  avoir confectionné les cabanes à claire-voie*<note type="annotation">Claire-voie.
+                     Clôture dont les planches laissent du jour entre elles.</note> pour les lapins,
+                  de jolies petites cabanes bièn élevées au-dessus du sol, très gentiment exposées
+                  au midi, comme <persName type="fictif" key="m_valon">M. Valon</persName> lui avait
+                  dit de le faire. Si les dames de Saint-Quentin s'étaient si bien jetées sur les
+                  lapins, c'était en partie à lui, <persName type="fictif" key="françois">François</persName>, qu'on le devait ! </p>
+               <p> — Et à moi aussi ! ajouta <persName type="fictif" key="charlot">Charlot</persName> ; car, qui est allé chercher les herbes, les lacerons, les
+                  coquelicots, la luzerne ? </p>
+               <p> MM. <persName type="fictif" key="charlot">Charlot</persName> et <persName type="fictif" key="françois">François</persName> furent donc félicités, et ils
+                  se rengorgèrent un peu. Après quoi <persName type="fictif" key="jacques">Jacques</persName>, ouvrant un grand livre posé devant lui sur la table, y lut
+                     l'énumération*<note type="annotation">Enumération. Action de compter, de
+                     dénombrer les choses.</note> des recettes et des dépenses. Parmi ces dernières
+                  se trouvait l'intérêt*<note type="annotation">Intérêt. Revenu qu'on tire d'une
+                     somme prêtée ou placée.</note> payé des 3,500 francs de l'emprunt pour la
+                  reconstruction de la maison. </p>
+               <p> Avec cela on joignait les deux bouts, et sans trop tirer dessus*<note type="annotation">Sans trop tirer dessus. Sans trop d'effort.</note>. Pour une
+                  année qui débuta par un incendie, n'était-ce pas admirable ? </p>
+               <p><persName type="fictif" key="m_dumay"> M. Dumay</persName> se frotta joyeusement
+                  les mains. </p>
+               <p>— Voilà de bons chiffres, dit-il, et de braves enfants.</p>
+               <p> — Mon père, répondit <persName type="fictif" key="jacques">Jacques</persName>,
+                  répétons-le encore : celui qui possède un morceau, quelque petit qu'il soit, de
+                  cette bonne, généreuse et nourricière terre de <placeName>France</placeName>, n'a
+                  pas le droit de se dire sans ressources. Tant qu'il nous en restera une motte,
+                  nous sommes sûrs de ne pas mourir de faim ! </p>
+               <p> — Eh bien ! dit le père gaiement, c est le moment de pendre la crémaillère !
+                  Après-demain, le premier janvier, grande fête ! Nous avons le temps d'inviter des
+                  amis. </p>
+            </div>
+            <div type="questionnaire">
+               <pb facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_176.jpg" type="page" n="176"/>
+               
+               <head>Questionnaire. </head>
+               <list>
+                  <item>— Jusqu'à quelle époque le frère et la sœur retournèrentils à la ville ? </item>
+                  <item>— Qui avait tenu les comptes de la famille ? </item>
+                  <item>— De quoi <persName type="fictif" key="suzette">Suzette</persName>
+                     avait-elle été chargée ? </item>
+                  <item>— Quel était le montant du gain définitif ? </item>
+                  <item>— Que dit le père ; pourquoi <persName type="fictif" key="françois">François</persName> et <persName type="fictif" key="charlot">Charlot</persName> réclamèrent-ils leur part d'éloges ?</item>
+                  <item>— Que fit <persName type="fictif" key="jacques">Jacques</persName> et que
+                     lut-il ? </item>
+                  <item>— Qu'avait-on payé en premier lieu ? </item>
+                  <item>— Pourquoi le résultat était-il très satisfaisant ? </item>
+                  <item>— Que disait joyeusement le fermier ? </item>
+                  <item>— Quelle fut la réflexion de <persName type="fictif" key="jacques">Jacques</persName> sur la terre de <placeName>France</placeName> ? </item>
+                  <item>— Quelle fête fut décidée ?</item>
+               </list>
+            </div>
+            <div type="exercices">
+               <head>DÉVELOPPEMENT DES SUJETS PROPOSÉS POUR EXERCICES.</head>
+               <div type="morale" xml:id="sujmor_050">
+                  <head type="sujets">Morale. </head>
+                  <div type="questions">
+                     <list>
+                        <item>— Comment les plus jeunes enfants même peuvent-ils se rendre utiles à
+                           la maison, soit qu'ils habitent la campagne, soit qu'ils résident à la
+                           ville ?</item>
+                        <item>— Doivent-ils attendre qu'on demande leurs petits services, et
+                           pourquoi ? </item>
+                        <item>— Comment agira, dans ce cas, une jeune fille prévenante ?</item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p> Les enfants, même les plus jeunes, peuvent se rendre utiles de bien des
+                        manières. A la campagne, imitant <persName type="fictif" key="françois">François</persName> et <persName type="fictif" key="charlot">Charlot</persName>, ils arracheront les mauvaises herbes, surveilleront
+                        les volailles, nettoieront la cour, arroseront les légumes et les fleurs,
+                        aideront leur père et leur mère dans leurs travaux multiples. A la ville,
+                        les jeunes filles participeront aux soins du ménage et de la cuisine,
+                        garderont leurs plus jeunes frères et sœurs, se chargeront sans murmurer des
+                        commissions qu'on leur confiera, etc, etc. Leur concours sera d'autant plus
+                        méritoire, qu'ils l'offriront de meilleur cœur; ils n'attendront donc point
+                        qu'on le leur réclame, s'ils prévoient à l'avance ce à quoi ils peuvent être
+                        employés. </p>
+                     <p> Dans cet ordre d'idées, une jeune fille prévenante se rendra compte chaque
+                        jour, et dès la première heure de la matinée, des travaux à la charge de sa
+                        mère ; elle lui offrira immédiatement de la seconder ; puis, au retour de la
+                        classe, elle agira de même aussitôt qu'elle aura achevé le travail
+                        supplémentaire que madame l'institutrice aura prescrit. </p>
+                  </div>
+               </div>
+               <div type="composition" xml:id="sujcom_050">
+                  <head type="sujets">Composition</head>
+                  <div type="questions">
+                     <p> Composition. — (A LA CAMPAGNE) Décrire un colombier que l'on devra visiter.
+                        — Parler non seulement de sa construction, de son agencement, mais encore
+                        des oiseaux, de leurs nids et du produit. </p>
+                  </div>
+                  <div type="réponses">
+                     <p>(A LA VILLE). Décrire une cage avec ses oiseaux. (Voir comme modèles les
+                        exercices 1 et 2, pages 230 et 231 du <title>COURS DE COMPOSITION FRANÇAISE
+                           (Degré élémentaire et moyen, Partie du maître), par <persName type="historique">E. LAPORTE</persName>.</title>) </p>
+                  </div>
+               </div>
+               <div type="économie_domestique" xml:id="sujeco_050">
+                  <head type="sujets">Économie domestique. </head>
+                  <div type="questions">
+                     <p>— Combien se vendent : un bon poulet, une douzaine d'œufs frais en hiver et
+                        en été, deux poulets de l'année, une oie grasse, un canard, un lapin d'un
+                        an, une couple de pigeons de moyenne grosseur ? </p>
+                  </div>
+                  <div type="réponses">
+                     <table>
+                        <row>
+                           <cell>MODÉLE.</cell>
+                           <cell>— Prix d'un bon poulet en hiver</cell>
+                           <cell>....</cell>
+                        </row>
+                        <row>
+                           <cell/>
+                           <cell>Prix d'un bon poulet en été </cell>
+                           <cell>....</cell>
+                        </row>
+                        <row>
+                           <cell/>
+                           <cell>Prix d'une douzaine d'œufs frais en hiver</cell>
+                           <cell>....</cell>
+                        </row>
+                        <row>
+                           <cell/>
+                           <cell>Prix d'une couple de pigeons</cell>
+                           <cell>....</cell>
+                        </row>
+                        <row>
+                           <cell/>
+                           <cell>Prix d'une douzaine d'œufs, etc., etc.</cell>
+                           <cell>....</cell>
+                        </row>
+                        <row>
+                           <cell/>
+                           <cell>TOTAL</cell>
+                           <cell> ....</cell>
+                        </row>
+                     </table>
+                  </div>
+                  <div type="questions">
+                     <p> Comment sera établi le livre de comptes d'une ménagère soigneuse et économe
+                        ? — En donner le modèle écrit et le remplir pour une semaine de la saison oú
+                        l'on se trouve. (Prendre des renseignements auprès de sa maman pour le prix
+                        des choses.) </p>
+                  </div>
+                  <pb facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_177.jpg" type="page" n="177"/>
+                  <div type="réponses">
+                     
+                     <table>
+                        <head>Livre de comptes d'une ménagère.</head>
+                        <row>
+                           <cell>DATES.</cell>
+                           <cell/>
+                           <cell>OBJETS DES DÉPENSES ET DES RECETTES.</cell>
+                           <cell/>
+                           <cell>DÉPENSES. </cell>
+                           <cell/>
+                           <cell>RECETTES.</cell>
+                        </row>
+                        <row>
+                           <cell>1888.</cell>
+                           <cell/>
+                           <cell/>
+                           <cell/>
+                           <cell/>
+                           <cell/>
+                           <cell/>
+                        </row>
+                        <row>
+                           <cell>Juin.</cell>
+                           <cell>25</cell>
+                           <cell>Légumes frais...................</cell>
+                           <cell>1</cell>
+                           <cell>35</cell>
+                           <cell>"</cell>
+                           <cell>"</cell>
+                        </row>
+                        <row>
+                           <cell/>
+                           <cell>"</cell>
+                           <cell>1kg,500 de bœuf à 2fr,10..........</cell>
+                           <cell>3</cell>
+                           <cell>15</cell>
+                           <cell>"</cell>
+                           <cell>"</cell>
+                        </row>
+                        <row>
+                           <cell/>
+                           <cell>"</cell>
+                           <cell>Montant d'une semaine de mon mari.</cell>
+                           <cell>"</cell>
+                           <cell>"</cell>
+                           <cell>56</cell>
+                           <cell>"</cell>
+                        </row>
+                        <row>
+                           <cell>"</cell>
+                           <cell>26</cell>
+                           <cell>3m,80 d'indienne à 1fr,40......</cell>
+                           <cell>5</cell>
+                           <cell>30</cell>
+                           <cell>"</cell>
+                           <cell>"</cell>
+                        </row>
+                        <row>
+                           <cell/>
+                           <cell>"</cell>
+                           <cell>Pain de la semaine précédente : 6 kilogrammes à 0fr,42......</cell>
+                           <cell>2</cell>
+                           <cell>52</cell>
+                           <cell>"</cell>
+                           <cell>"</cell>
+                        </row>
+                        <row>
+                           <cell/>
+                           <cell>"</cell>
+                           <cell>Soldé la note de l'épicier.........</cell>
+                           <cell>17</cell>
+                           <cell>25</cell>
+                           <cell>"</cell>
+                           <cell>"</cell>
+                        </row>
+                        <row>
+                           <cell>"</cell>
+                           <cell>27</cell>
+                           <cell>Touché le coupon d'une obligation.</cell>
+                           <cell>"</cell>
+                           <cell>"</cell>
+                           <cell>7</cell>
+                           <cell>15</cell>
+                        </row>
+                        <row>
+                           <cell/>
+                           <cell>"</cell>
+                           <cell>Lait, 0fr,15; crème, 0fr,30......... </cell>
+                           <cell>"</cell>
+                           <cell>45</cell>
+                           <cell>7</cell>
+                           <cell>15</cell>
+                        </row>
+                        <row>
+                           <cell/>
+                           <cell>"</cell>
+                           <cell>Beurre et fromage......</cell>
+                           <cell>1</cell>
+                           <cell>80</cell>
+                           <cell>"</cell>
+                           <cell>"</cell>
+                        </row>
+                        <row>
+                           <cell>"</cell>
+                           <cell>28</cell>
+                           <cell>Cravate et mouchoirs d'enfant.....</cell>
+                           <cell>6</cell>
+                           <cell>50</cell>
+                           <cell>"</cell>
+                           <cell>"</cell>
+                        </row>
+                        <row>
+                           <cell/>
+                           <cell>"</cell>
+                           <cell>4 côtelettes à 0fr,30 (pour mémoire) </cell>
+                           <cell>"</cell>
+                           <cell>"</cell>
+                           <cell>"</cell>
+                           <cell>"</cell>
+                        </row>
+                     </table>
+                     <p> A la fin de chaque mois, on totalise les recettes et les dépenses et l'on
+                        calcule la diffèrence ; c'est ce qu'on appelle établir la balance. On voit
+                        ainsi la situation où l'on se trouve. Les objets achetés à crédit seront
+                        suivis de la mention pour mémoire et l'on n'en inscrira point le montant
+                        dans la colonne des dépenses. A la fin du mois, on les totalisera à part et
+                        on les ajoutera aux dépenses pour reconnaître ce qu'on possède net ou ce
+                        dont on est endetté. </p>
+                  </div>
+                  <div type="réponses">                     
+                     <head>Modèle de reçu ou quittance.</head>
+                     <p> Je, soussignée, reconnais avoir reçu de mademoiselle <persName type="fictif">Quignon (Sylvia)</persName>, la somme de dix-sept francs
+                        vingt-cinq centimes, pour solde de l'achat de volailles que je lui ai fait
+                        le 2 avril courant.</p><p> <persName type="fictif">ESTELLE DERRIE</persName>.
+</p><p>                           <placeName key="Bordeaux" ref="http://www.wikidata.org/entity/Q1479">Bordeaux</placeName>, le 15 avril 1888. </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

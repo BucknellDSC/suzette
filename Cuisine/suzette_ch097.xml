@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/CSS/suzette_cwrc.css"?>
+<?xml-model href="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/out/suzette.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Suzette: a Digital Edition</title>
+            <respStmt>
+               <persName>John Westbrook</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Editor</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Diane Jakacki</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Project Manager</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annie Girton</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2018-2020</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Sarah Haber</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2020-2022</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Rebecca Heintzelman</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2020-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Juliya Harnood</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2021-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Jaehoon Pyon</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2023-Present</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Bucknell University</distributor>
+            <pubPlace>
+               <address>
+                  <addrLine>One Dent Drive</addrLine>
+                  <addrLine>Lewisburg, PA 17837</addrLine>
+               </address>
+            </pubPlace>
+            <availability>
+               <licence>Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Suzette: Livre de Lecture Courante à l’Usage des Jeunes Filles.
+                     Morale—Leçon de choses, Economie Domestique – Ménage – Cuisine –
+                     Couture</title>
+                  <author>Robert Halt</author>
+                  <textLang>French</textLang>
+                  <imprint>
+                     <date>1889</date>
+                     <distributor>Libraire Classique Paul Delaplane</distributor>
+                     <pubPlace>Paris, France</pubPlace>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:fabio="https://purl.org/spar/fabio#" xmlns:bf="http://www.openlinksw.com/schemas/bif#" xmlns:cito="https://sparontologies.github.io/cito/current/cito.html#" xmlns:org="http://www.w3.org/ns/org#">
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch097.xml?person_annotation_20240229203354855",
+	"type": "oa:Annotation",
+	"dcterms:created": "2024-03-01T01:33:54.855Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch097.xml?person_annotation_20240229203354855#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch097.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.4.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch097.xml?person_annotation_20240229203354855#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[3]/div[2]/div[2]/p[3]/persName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:NaturalPerson",
+		"@id": "http://dbpedia.org/resource/Barthélemy_Thimonnier",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.4.0"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch097.xml?person_annotation_20240229203447353",
+	"type": "oa:Annotation",
+	"dcterms:created": "2024-03-01T01:34:47.353Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch097.xml?person_annotation_20240229203447353#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch097.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.4.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch097.xml?person_annotation_20240229203447353#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[3]/div[2]/div[2]/p[3]/persName[2]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:NaturalPerson",
+		"@id": "http://www.wikidata.org/entity/Q360359",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.4.0"
+	}
+}]]>
+        </rdf:Description>
+      </rdf:RDF></xenoData><profileDesc>
+         <langUsage>
+            <language ident="fr">French</language>
+            <language ident="en">English</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+<div xmlns:ns0="http://www.tei-c.org/ns/1.0" type="chapitre" xml:lang="fr" n="ch097">
+<pb type="page" n="335" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_335.jpg"/>
+            <head>97. — Machine à coudre. </head>
+            <div type="récit">
+               <p>La leçon de coupe et d'essayage achevée, les différentes pièces du patron
+                  assemblées, rectifiées*<note type="annotation">Rectifier. Corriger les défauts
+                     d'une chose ou les erreurs qu'on y a commises.</note> par un bâti de longs
+                  points blancs, <persName key="mme_richard" type="fictif">Mme Richard</persName>
+                  prit par la main sa nièce, et la mena devant la machine à coudre.</p>
+               <p>C'était un fin outil, de bonne marque*<note type="annotation">Bonne marque.
+                     Provenant d'une maison recommandable.</note> ; toute la partie d'acier brillait
+                  comme de l'argent. Il était fixé sur une table d'acajou. <persName key="suzette" type="fictif">Suzette</persName> lui sourit comme à une jolie chose.</p>
+               <p> — Assieds-toi, ma fille. Pose tes deux pieds sur la pédale*<note type="annotation">Pédale. Pièce de métal ou appareil qu'on meut avec le pied
+                     pour faire tourner une roue.</note> .... <figure>
+                     <caption>La machine à coudre.</caption>
+                  </figure> presse du pied droit, du pied gauche ! droit ! gauche ! droit ! gauche
+                  droit ! stop ! </p>
+               <pb type="page" n="336" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_336.jpg"/>
+               
+               <p>Ce n'était là qu'un exercice préliminaire*<note type="annotation">Préliminaire.
+                     Qui précède les autres choses.</note>. Pour mettre la machine en train,
+                     <persName key="mme_richard" type="fictif">Mme Richard</persName> prit la place
+                  de <persName key="suzette" type="fictif">Suzette</persName>, disposa la mécanique,
+                  puis l'ouvrage, une lon-<figure>
+                     <caption>Les différents points de couture. 1. Le point devant s'exécute en
+                        piquant l'aiguille dans l'étoffe de distance en distance. — 2. Le point
+                        arrière exécute à reculons, ou en arrière, la moitié du parcours qu'il vient
+                        de faire en avant. — 3. Le point d'ourlet se fait obliquement et de bas en
+                        haut. — 4. Le surjet sert à réunir deux bords d'étoffe repliés, soit à fil
+                        droit ; il faut rejeter l'aiguille en conduisant le fil par-dessus les
+                        bords, afin qu'elle pique les deux étoffes par un même point. — 5. La piqûre
+                        se fait de droite à gauche comme le point arrière ; mais l'aiguille, au lieu
+                        de faire la moitié du parcours qu'elle vient d'exécuter en avant, le fait
+                        tout entier et repique dans le point précédemment formé. — 6. Le point de
+                        chausson fixe les bords rabattus d'une couture à plat et s'emploie pour les
+                        raccommodages, principalement pour la flanelle.</caption>
+                  </figure> gue bande destinée à un plissé de la garniture. Il s'agissait de
+                  l'ourler. Et, se levant à son tour : </p>
+               <p>— A toi, <persName key="suzette" type="fictif">Suzon</persName>, hop !... gauche,
+                  droit !...</p>
+               <p>Cette fois, le jeu des pieds sur la pédale mit en mouvement le volant*<note type="annotation">Volant. Pièce cylindrique de métal munie de quatre ailes, ou
+                     encore roue pesante de fonte qui, l'une et l'autre, règlent un mouvement
+                     circulaire.</note> et le reste du mécanisme. Cela faisait un petit et multiple
+                  tic tac pressé, régulier. L'aiguille piquait l'étoffe d'outre en outre, se
+                  relevait, piquait <pb type="page" n="337" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_337.jpg"/>
+                   encore, laissant derrière elle un ourlet orné d'une
+                  piqûre égale, fine, perlée — et cousait, cousait à l'enchantement des yeux.</p>
+               <p>En quelques minutes, des mètres et des mètres de la bande passèrent,
+                  s'ourlèrent.</p>
+               <p>Ce travail préparatoire achevé, la bande se plissa de petits plis réguliers, par
+                  suite d'une autre disposition donnée à la machine. Et ce fut une ruche charmante
+                  destinée à l'enjolivement du corsage.</p>
+               <p>— Passons maintenant à la couture même de ce corsage. Ici, toute votre
+                  intelligence, Mademoiselle ! car les outils savants, supérieurs veulent des
+                  ouvriers savants, supérieurs. La machine ne vous remplace pas ; elle est la
+                  multiplication des qualités mécaniques d'une main agile ; mais elle n'est que
+                  cela, une main armée d'une aiguille.</p>
+               <p>Et qu'est-ce qu'une main armée d'une aiguille, si l'intelligence, le goût ne la
+                  mènent ? Elle fait cinquante bêtises. Elle en fait cinquante mille quand elle est
+                  machine à coudre. Donc, <persName key="suzette" type="fictif">Suzette</persName>,
+                  tout votre goût ici et tout votre esprit ! Le nez vous en perle*<note type="annotation">Le nez perle. Il se couvre de gouttelettes de sueur.</note>,
+                  d'application ; c'est très bien ; vous l'essuierez plus tard.</p>
+               <figure>
+                  <caption>Fronces. Il faut savoir très bien froncer pour faire de la belle
+                     lingerie.</caption>
+               </figure>
+               <figure>
+                  <caption>Plissé. Sorte de ruche aplatie employée à la garniture des robes ou de la
+                     lingerie.</caption>
+               </figure>
+               <p>Elle va de toute son âme. Les petits côtés, les devants avec les quatre pinces, le
+                  dos, le collet sont enfin terminés, et gentiment.</p>
+               <p>— Oh ! que c'est joli ! dit-elle sans modestie en regardant son ouvrage.</p>
+               <p>—Oui, et voilà ! dit la tante. Avec une couseuse méca-<pb type="page" n="338" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_338.jpg"/>
+                   nique dans un coin de la maison, la maman de six enfants se
+                  moque de l'hiver qui approche et de l'usure des vêtements. Petites chemises,
+                  petits bonnets, petites culottes, vestes, robes, manteaux, tout cela se trousse en
+                  un clin d'œil... Tiens ! à propos ; une machine à coudre, c'est le cadeau que je
+                  te ferai, <persName key="suzette" type="fictif">Suzon</persName>, quand tu te
+                  marieras ! </p>
+               <p><persName key="suzette" type="fictif">Suzon</persName> se mit à rire : Et si elle
+                  allait rester vieille fille ? </p>
+               <figure>
+                  <caption>Patron des diverses parties d'un corsage et manches de corsage.</caption>
+               </figure>
+               <p>— Alors, Mademoiselle, répondit, en riant aussi, la tante, qui n'avait pas l'air
+                  de croire à ce fâcheux destin pour une si gentille enfant, alors vous coudrez de
+                  vos doigts toute votre vie ! </p>
+               <p>En une matinée, le corsage avec les boutonnières, les boutons, le montage des
+                  manches, la pose du plissé, tout était fini ; n-i ni, fini ! </p>
+            </div>
+            <div type="questionnaire">
+               <head>Questionnaire.</head>
+               <list>
+                  <item>— Où <persName key="mme_richard" type="fictif">Mme Richard</persName>
+                     conduisit-elle sa nièce ? </item>
+                  <item>— Que savez-vous de cette machine à coudre ? </item>
+                  <item>— Comment indiqua-t-on à <persName key="suzette" type="fictif">Suzette</persName> la manière de s'en servir ? </item>
+                  <item>— Comment <persName key="mme_richard" type="fictif">Mme Richard</persName>
+                     donna-t-elle la première leçon ? </item>
+                  <item>— Indiquez comment fonctionne la machine. </item>
+                  <item>— Quels sont les différents points de couture et en quoi consistent-ils ? </item>
+                  <item>— De quelle manière confectionna-t-on la ruche ? </item>
+                  <item>— Pourquoi faut-il être très attentive en emplovant la machine à coudre ? </item>
+                  <item>— Que disait <persName key="suzette" type="fictif">Suzette</persName> en
+                     voyant le résultat obtenu ? </item>
+                  <item>— Que lui répondit sa tante sur les avantages de la couseuse mécanique ? </item>
+                  <item>— Pour quelle époque <persName key="mme_richard" type="fictif">Mme
+                        Richard</persName> en promit-elle une à sa nièce ? </item>
+                  <item>— Quelles réflexions terminèrent l'entretien ? </item>
+                  <item>— Qu'avait-on fait dans la matinée ? </item>
+               </list>
+            </div>
+            <div type="exercices">
+               <head>DÉVELOPPEMENT DES SUJETS PROPOSÉS POUR EXERCICES.</head>
+               <div type="français">
+                  <head>Français.</head>
+                  <div type="questions">
+                     <list>
+                        <item>— Donner la définition d'un patron, d'une pédale, d'un plissé, d'une
+                           garniture, d'un ourlet, d'une piqûre égale, d'une ruche, des pinces d'une
+                           robe, des fronces.</item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p>Un <term>patron</term> est un morceau de papier, de carton, que les
+                        tailleurs, tes couturières, les lingères, etc, découpent de manière à
+                        figurer les <pb type="page" n="339" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_339.jpg"/>
+                         diffèrentes parties de leurs ouvrages, et
+                        sur lequel ils taillent l'étoffe. — Une <term>pédale</term> est une pièce de
+                        métal qu'on fait mouvoir en y appuyant le pied. — Un <term>plissé</term> est
+                        une pièce d'étoffe sur laquelle on a formé des plis réguliers. — Une
+                           <term>garniture</term> est ce qui est ajouté à une robe ou à tout autre
+                        vêtement pour l'orner et le complter. — Un <term>ourlet</term> est un repli
+                        qu'on assujettit, en le cousant, au bord d'une toffe ou d'un morceau de
+                        toile pour empécher qu'il ne s'effile. — Une <term>piqûre égale</term> est
+                        celle où les rangs de points sont exécutés avec régularité. — Une
+                           <term>ruche</term> est une bande d'étoffe ou de dentelle plissée pour
+                        orner un vêtement ou une coiffure de femme. — Les <term>pinces d'une
+                           robe</term> sont des plis qu'on fait à l'étoffe même, et qui se terminent
+                        en pointe. — Les <term>fronces</term> sont les plis menus et serrés qu'on
+                        fait à du linge.</p>
+                  </div>
+               </div>
+               <div cert="high" org="composite" part="Y" sample="initial" type="industrie" xml:space="default" xml:id="sujind_097">
+                  <head>Industrie.</head>
+                  <div type="questions">
+                     <list>
+                        <item>— Décrire une machine à coudre en ne désignant que les pièces
+                           principales.</item>
+                        <item>— En rappeler les inventeurs.</item>
+                        <item>— Quels avantages presente-t-elle ? </item>
+                        <item>— Quelles sont les diverses sortes de machines à coudre ? </item>
+                        <item>— Combien peut coûter une petite machine à coudre telle que vous la
+                           désireriez ? </item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p>La <term>machine à coudre</term> se compose d'une table de bois ou de fer
+                        sur quatre pieds réunis par des tiges de métal plus ou moins élégamment
+                        disposées. A la partie inférieure, une tige transversale supporte une pédale
+                        qui s'élève ou s'abaisse à volonté sous le pied. Cette pédale met en
+                        mouvement une bielle qui fait tourner une roue autour de laquelle circule
+                        une courroie ; cette courroie, enfin, imprime un mouvement de rotation à un
+                        cylindre faisant partie du mécanisme supérieur.</p>
+                     <p>Ce mécanisme, établi dans une forte pièce de fer coudée et solidement fixée
+                        sur la table, fait exécuter à l'aiguille, dans le sens vertical, un
+                        mouvement de va-et-vient qu'on accélère ou ralentit à volonté. Grâce à une
+                        disposition aussi simple qu'ingénieuse, le fil provenant de a bobine est
+                        entraîné par l'aiguille ; il pénêtre au travers de l'étoffe et exécute un
+                        point comme si la main de l'ouvrier dirigeait le petit instrument.</p>
+                     <p>Le premier <term>inventeur</term> de la machine à aiguille est <persName ana="française" key="Barthélemy Thimonnier" ref="http://dbpedia.org/resource/Barthélemy_Thimonnier" role="inventeur">Thimonier</persName> ; elle a été perfectionnée et
+                        vulgarisée par l'Américain <persName ana="américaine" key="Elias Howe" ref="http://www.wikidata.org/entity/Q360359" role="inventeur">Howe</persName>.</p>
+                     <p>Ses avantages... (Voir la leçon.)</p>
+                     <p>Il y a diverses sortes de machines à coudre, depuis les plus fortes qui
+                        exécutent les coutures dans les étoffes épaisses, jusqu'aux plus mignonnes,
+                        qui font des travaux très délicats avec une régularité extrème. D'autres
+                        plissent, ruchent, etc.</p>
+                     <p>(Pour le prix des machines à coudre, voir un commerçant ou un bon
+                        prospectus.)</p>
+                  </div>
+               </div>
+               <div type="économie_domestique">
+                  <head>Économie domestique.</head>
+                  <div type="questions">
+                     <list>
+                        <item>— Quelles sont les différentes sortes de garnitures qu'on peut
+                           appliquer sur une robe ? </item>
+                        <item>— Indiquez la manière de s'y prendre pour faufiler et pour bien
+                           ourler.</item>
+                        <item>— Quel fil convient pour chacune de ces opérations ? </item>
+                        <item>— Donnez quelques détails sur les diverses sortes de fils, avec le
+                           prix de la pelole de chacune d'elles.</item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p>(On a jugé superflu de donner la réponse à ces diverses questions que Mmes
+                        les institutrices ont maintes occasions de résoudre au cours de leurs leçons
+                        de couture.)</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>

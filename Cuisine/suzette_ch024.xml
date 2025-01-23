@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/CSS/suzette_cwrc.css"?>
+<?xml-model href="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/out/suzette.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Suzette: a Digital Edition</title>
+            <respStmt>
+               <persName>John Westbrook</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Editor</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Diane Jakacki</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Project Manager</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annie Girton</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2018-2020</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Sarah Haber</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2020-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Rebecca Heintzelman</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2020-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Juliya Harnood</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2021-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Jaehoon Pyon</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2023-Present</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Bucknell University</distributor>
+            <pubPlace>
+               <address>
+                  <addrLine>One Dent Drive</addrLine>
+                  <addrLine>Lewisburg, PA 17837</addrLine>
+               </address>
+            </pubPlace>
+            <availability>
+               <licence>Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Suzette: Livre de Lecture Courante à l’Usage des Jeunes Filles.
+                     Morale—Leçon de choses, Economie Domestique – Ménage – Cuisine –
+                     Couture</title>
+                  <author>Robert Halt</author>
+                  <textLang>French</textLang>
+                  <imprint>
+                     <date>1889</date>
+                     <distributor>Libraire Classique Paul Delaplane</distributor>
+                     <pubPlace>Paris, France</pubPlace>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:fabio="https://purl.org/spar/fabio#" xmlns:bf="http://www.openlinksw.com/schemas/bif#" xmlns:cito="https://sparontologies.github.io/cito/current/cito.html#" xmlns:org="http://www.w3.org/ns/org#">
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch024.xml?note_annotation_20230706165110131",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-06T20:51:10.131Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch024.xml?note_annotation_20230706165110131#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch024.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch024.xml?note_annotation_20230706165110131#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Le patient. Celui qui souffre."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch024.xml?note_annotation_20230706165110133",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-06T20:51:10.133Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch024.xml?note_annotation_20230706165110133#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch024.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch024.xml?note_annotation_20230706165110133#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p/note[2]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Surgir. Sortir de, s'élever\n                     au-dessus, apparaître sans être attendu."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch024.xml?note_annotation_20230706165110134",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-06T20:51:10.134Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch024.xml?note_annotation_20230706165110134#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch024.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch024.xml?note_annotation_20230706165110134#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[7]/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Étrange. Qui n'est point comme les choses ou personnes ordinaires."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch024.xml?note_annotation_20230706165110135",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-06T20:51:10.135Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch024.xml?note_annotation_20230706165110135#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch024.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch024.xml?note_annotation_20230706165110135#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[19]/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Tenter une chose. Essayer ;\n                     mettre, pour réussir, un moyen quelconque en usage."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch024.xml?note_annotation_20230706165110136",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-06T20:51:10.136Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch024.xml?note_annotation_20230706165110136#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch024.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch024.xml?note_annotation_20230706165110136#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[20]/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "A pas de\n                     loup. Sans bruit et lentement."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch024.xml?note_annotation_20230706165110137",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-06T20:51:10.137Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch024.xml?note_annotation_20230706165110137#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch024.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch024.xml?note_annotation_20230706165110137#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[21]/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Margelle. Pierre creuse qui forme\n                     le rebord d'un puits."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch024.xml?note_annotation_20230706165110138",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-06T20:51:10.138Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch024.xml?note_annotation_20230706165110138#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch024.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch024.xml?note_annotation_20230706165110138#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[36]/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Conjuration. Paroles et gestes par lesquels certains fripons\n                     prétendent guérir les gens ou les animaux malades."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch024.xml?note_annotation_20230706165110139",
+	"type": "oa:Annotation",
+	"dcterms:created": "2023-07-06T20:51:10.139Z",
+	"dcterms:creator": {
+		"@id": "5",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:describing",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch024.xml?note_annotation_20230706165110139#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch024.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.2.2"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch024.xml?note_annotation_20230706165110139#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[40]/note"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "oa:TextualBody",
+		"dc:format": "text/plain",
+		"rdf:value": "Tournée (en). En\n                     excursion."
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.2.2"
+	}
+}]]>
+        </rdf:Description>
+      </rdf:RDF></xenoData><profileDesc>
+         <langUsage>
+            <language ident="fr">French</language>
+            <language ident="en">English</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+<div xmlns:ns0="http://www.tei-c.org/ns/1.0" type="chapitre" xml:lang="fr" n="ch024">
+<pb type="page" n="85" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_085.jpg"/>
+            <head>24. — La bohémienne. </head>
+            <div type="récit">
+               <p>Après le coucher du soleil, comme elle causait sur la porte avec le patient*<note type="annotation">Le patient. Celui qui souffre.</note>, qui se trouvait mieux
+                  à l'air, tout à coup surgit*<note type="annotation">Surgir. Sortir de, s'élever
+                     au-dessus, apparaître sans être attendu.</note> à quelques pas une longue et
+                  <pb type="page" n="86" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_086.jpg"/>
+                  <fw type="header">86 SUZETTE.</fw> maigre femme, au teint bronzé, avec des yeux
+                  hardis, perçants, une tignasse de cheveux, noirs comme aile de corbeau.</p>
+               <p>— La charité, s'il vous plaît ? dit-elle en tendant une main osseuse.</p>
+               <p>— <persName type="fictif" key="françois">François</persName>, dit <persName type="fictif" key="suzette">Suzette</persName>, va chercher un morceau de
+                  pain.</p>
+               <p>Pendant que <persName type="fictif" key="françois">François</persName> obéissait,
+                  la bohémienne, après avoir jeté un regard à l'enfant, s'approcha de <persName type="fictif" key="suzette">Suzette</persName> : </p>
+               <p>— Il est malade, le petit ?</p>
+               <p>— Oui, d'un bobo qui ne se presse pas de guérir.</p>
+               <p>— Et qui ne guérira pas ! repartit aussitôt l'étrange*<note type="annotation">Étrange. Qui n'est point comme les choses ou personnes ordinaires.</note>
+                  créature, avec un ton qui fit frissonner la jeune fille.</p>
+               <p>— Vous dites... qu'il ne guérira pas ? demanda <persName type="fictif" key="suzette">Suzette</persName>, la voix soudainement altérée.</p>
+               <p>— Je le dis !</p>
+               <p>En même temps, elle tendit l'index vers le ciel, d'où la nuit tombait déjà, et
+                     <persName type="fictif" key="suzette">Suzette</persName> vit, au-dessus de la
+                  maison, le vol tournoyant et silencieux de deux grandes ailes blanches.</p>
+               <p>— Connais-tu cet oiseau, ma fille ?</p>
+               <p>— C'est une chouette ! répondit <persName type="fictif" key="suzette">Suzette</persName>, toute tremblante.</p>
+               <p>— Oui, l'oiseau de malheur !...</p>
+               <p><persName type="fictif" key="françois">François</persName> revenait avec le
+                  morceau de pain qu'il était allé chercher.</p>
+               <p>— Si tu veux en savoir davantage, reprit la bohémienne, viens tout à l'heure,
+                  là-bas, seule.</p>
+               <p>Et, ce disant, elle montrait, à gauche de la ferme, une encoignure ombragée. Puis,
+                  prenant le pain que lui tendait l'enfant, elle s'éloigna.</p>
+               <p>Eh bien ! que faire ?</p>
+               <p>Très émue, <persName type="fictif" key="suzette">Suzette</persName> se demanda
+                  s'il était sage d'aller à ce rendez-vous.</p>
+               <p>Mais le pauvre petit <persName type="fictif" key="françois">François</persName>
+                  était malade, il n'y avait pas à en douter ; le cliquet, fait d'une vieille
+                  ferraille, était peut-être empoisonné ; et la chouette venait de paraître ici
+                  comme un avertissement de mort. C'est <persName type="fictif" key="françois">François</persName> qui était menacé ! car, en ce moment, point <pb type="page" n="87" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_087.jpg"/>
+                  <fw type="header">LA BOHÉMIENNE. 87</fw> d'autre malade que lui au village. Ah !
+                  ne fallait-il pas tout tenter*<note type="annotation">Tenter une chose. Essayer ;
+                     mettre, pour réussir, un moyen quelconque en usage.</note> contre ce terrible
+                  souci ? Quand cette grande femme, qui semblait avoir quelque puissance
+                  mystérieuse, attendait là, à côté, pouvait-on se défendre d'aller la trouver ? </p>
+               <p>Une demi-heure avant le souper, <persName type="fictif" key="suzette">Suzette</persName> sortit à pas de loup* <note type="annotation">A pas de
+                     loup. Sans bruit et lentement.</note> et fut bientôt sous les arbres
+                  indiqués.</p>
+               <p>Assise sur la margelle*<note type="annotation">Margelle. Pierre creuse qui forme
+                     le rebord d'un puits.</note> d'un vieux puits, la femme l'attendait.</p>
+               <p>— Ah ! ah ! dit-elle avec un petit ricanement, tu as tardé ; tu ne voulais pas
+                  venir... tu vois que je sais tout ! Approche... Je peux sauver ton frère ! </p>
+               <p><persName type="fictif" key="suzette">Suzette</persName>, dont les jambes
+                  fléchissaient, s'accola au puits.</p>
+               <p>— Montre ta main.</p>
+               <p>La jeune fille tendit sa main droite :</p>
+               <p>— Croise-la avec de l'argent.</p>
+               <p>— Je ne comprends pas. </p>
+               <p>— Mets-y d l'argent.</p>
+               <p><persName type="fictif" key="suzette">Suzette</persName> avait dans sa poche cinq
+                  francs de monnaie ; elle tira vingt sous.</p>
+               <p>D’un rapide mouvement de chat, l'autre agrippa la pièce.</p>
+               <p>— Tu en as plus d'une ; donne le reste.</p>
+               <p>Sans se défendre, machinalement, <persName type="fictif" key="suzette">Suzette</persName> donna le reste des cinq francs.</p>
+               <figure type="illustration">
+                  <caption>— Connais-tu cet oiseau, ma fille ?</caption>
+               </figure>
+               <pb type="page" n="88" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_088.jpg"/>
+               <fw type="header">88 SUZETTE.</fw>
+               <p>— C'est tout ?</p>
+               <p>— C'est tout.</p>
+               <p>— Bon. Qu'as-tu là au cou ? Un foulard ? donne-le. Elle prit le foulard avant que
+                  l'enfant eût pu obéir.</p>
+               <p>— Ce foulard et ces cent sous serviront à commencer les conjurations*<note type="annotation">Conjuration. Paroles et gestes par lesquels certains fripons
+                     prétendent guérir les gens ou les animaux malades.</note> nécessaires. Mais il
+                  faut que demain, à la même heure, tu reviennes ici avec d'autre argent, autant que
+                  tu pourras en prendre, au moins vingt francs, et sans avoir parlé de moi à
+                  personne... à personne ! tu entends ? </p>
+               <p><persName type="fictif" key="suzette">Suzette</persName> fit signe qu'elle
+                  entendait.</p>
+               <p>A ce moment, un sifflet strident troubla le silence de la nuit. La bohémienne se
+                  leva et fila comme un lièvre.</p>
+               <p>Comme <persName type="fictif" key="suzette">Suzette</persName> repassait le seuil
+                  de sa maison, elle entendit le pas de plusieurs chevaux qui s'avançaient au grand
+                  trot. Bientôt ils parurent.</p>
+               <p>C'était la gendarmerie en tournée*<note type="annotation">Tournée (en). En
+                     excursion.</note>.</p>
+            </div>
+            <div type="questionnaire">
+               <head>Questionnaire.</head>
+               <list>
+                  <item>— Qui apparut à <persName type="fictif" key="suzette">Suzette</persName> à
+                     la fin du jour ? </item>
+                  <item>— Que demanda la femme ? </item>
+                  <item>— Reproduisez le début de la conversation entre elle et <persName type="fictif" key="suzette">Suzette</persName>.</item>
+                  <item>— Que lui montra la bohémienne et quelle signification cette dernière
+                     attribuait-elle à l'apparition de l'oiseau ? </item>
+                  <item>— Que proposa la femme à <persName type="fictif" key="suzette">Suzette</persName> ? </item>
+                  <item>— Cette dernière fut-elle sage de céder à ce qu'on lui demandait ? </item>
+                  <item>— Quel bon sentiment peut faire excuser la pauvre petite ? </item>
+                  <item>— Racontez comment la bohémienne eut les cinq francs et le foulard.</item>
+                  <item>— Qu'ajouta cette vilaine femme en quittant <persName type="fictif" key="suzette">Suzette</persName> ? </item>
+                  <item>— Qu'est-ce qui la porta à s'enfuir ? </item>
+               </list>
+            </div>
+            <div type="exercices">
+               <head>DÉVELOPPEMENT DES SUJETS PROPOSÉS POUR EXERCICES</head>
+               <div type="morale" xml:id="sujmor_024">
+                  <head>Morale.</head>
+                  <div type="questions">
+                     <list>
+                        <item>— Causes de nos maux.</item>
+                        <item>— Puisque nos maux viennent de nous-mêmes ou de choses bien connues,
+                           que pensez-vous des craintes superstitieuses de certaines gens ? </item>
+                        <item>— Citez des choses, des circonstances qu'on regarde sottement comme de
+                           mauvais augure.</item>
+                        <item>— Qu'appelle-t-on revenants ?</item>
+                        <item>— Y a-t-il vraiment des revenants ? </item>
+                        <item>— Que pensez-vous de ceux qui en rient ? </item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p>Nos maux viennent de nos imprudences, de la vieillesse ou de causes et
+                        d'accidents dont nous discernons parfaitement l'origine. Il est ridicule, il
+                        est sot de les attribuer à des influences étrangères, comme le mauvais
+                        vouloir d'une personne, l'apparition de certains oiseaux, ou d'un insecte
+                        plus ou moins répugnant. C'est faire de la Providence, si juste, si sage, un
+                        être méchant et dépourvu de raison qui subordon-<figure>
+                           <caption>Chouette. Cet oiseau est fort utile à l'agriculture, en ce qu'il
+                              détruit une grande quantité de rongeurs.</caption>
+                        </figure>
+                        <pb type="page" n="89" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_089.jpg"/>
+                        <fw type="header"> LA BOHÉMIENNE. 89</fw> nerait le bonheur ou le malheur de
+                        l'homme, non à ses bonnes ou à ses mauvaises actions, mais à des hasards ou
+                        à des événements imprévus, ou bien encore aux intentions de gens
+                        méprisables.</p>
+                     <p>Il y a des ignorants qui s'effrayent quand, au matin, ils aperçoivent une
+                        araignée ; qui tremblent sur l'issue d'un voyage lorsqu'il est entrepris le
+                        vendredi ou un 13 ; qui pâlissent à la vue d'un couteau croisé sur la table
+                        avec une fourchette ; qui n'oseraient prendre part à un repas s'il y avait
+                        treize convives, etc., etc. On ne comprend pas que des êtres doués de raison
+                        aient de telles faiblesses d'esprit.</p>
+                     <p>Rien n'est plus comique que d'entendre les bonnes femmes parler des
+                           <term>revenants</term> en tremblant de frayeur ; elles s'imaginent que
+                        les morts reparaissent pour nous effrayer, surtout la nuit, surtout aux
+                        environs du cimetière. Les seules apparitions bien constatées de revenants
+                        sont dues à de mauvais plaisants qui, affublés d'un drap blanc, se
+                        promenaient dans les ténèbres, et s'amusaient follement des terreurs des
+                        vieilles commères et des petites filles qui les rencontraient.</p>
+                     <p>Ceux qui rient lorsqu'on leur parle de revenants, font preuve de bon sens et
+                        d'un joyeux caractère ; choses qui ordinairement marchent de compagnie.</p>
+                  </div>
+               </div>
+               <div type="composition" xml:id="sujdom_024">
+                  <head>Composition.</head>
+                  <div type="questions">
+                     <list>
+                        <item>— Décrire une famille de bohémiens ou de vagabonds errants : leur
+                           voiture, leur mode de vie, leur façon d'élever leurs enfants.</item>
+                        <item>— Que doit-on penser de ces gens ? </item>
+                        <item>— Pourquoi faut-il s'en éloigner ? </item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p>(Voir <title>COURS DE COMPOSITION FRANÇAISE, Degré supérieur, par <persName type="historique">E. LAPORTE</persName></title>, 5° exercice, page
+                        295, et 12e exercice, page 307.)</p>
+                  </div>
+               </div>
+               <div type="sciences_naturelles" xml:id="sujnat_024">
+                  <head>Sciences naturelles.</head>
+                  <div type="questions">
+                     <list>
+                        <item>— Qu'entend-on par oiseaux de nuit ? </item>
+                        <item>— Quels sont les principaux ? </item>
+                        <item>— Où nichent-ils ? </item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p><term>Les oiseaux de nuit</term> sont ceux qui ne prennent leur vol qu'au
+                        moment du crépuscule ; tant que le soleil reste sur l'horizon, ils se
+                        confinent dans des trous. Il est à remarquer qu'ils ont, en général, des
+                        couleurs sombres et le plumage mœlleux, ce qui les favorise dans la chasse à
+                        laquelle ils se livrent pendant la nuit. Les principales espèces sont : les
+                        hiboux, les chouettes, les orfraies, les grands-ducs, qui se plaisent à
+                        nicher dans les édifices solitaires ou abandonnés, dans les greniers et les
+                        granges où ils détruisent un nombre prodigieux de rats, de souris et de
+                        mulots, sans compter les serpents.</p>
+                  </div>
+               </div>
+               <div type="économie_domestique" xml:id="sujeco_024">
+                  <head>Économie domestique.</head>
+                  <div type="questions">
+                     <list>
+                        <item>— Quel remède faut-il appliquer à une écorchure ; — à une coupure ; —
+                           à une contusion provenant d'une chute, d'un coup ? </item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p>Pour guérir <term>une écorchure</term>, lavez la plaie à l'eau fraîche et,
+                        si elle n'est pas très étendue ou exposée à des chocs et à des frottements,
+                        laissez-la telle quelle ; autrement, posez dessus un linge doux, légèrement
+                        enduit de beurre et maintenu par une bande faiblement serrée.</p>
+                     <p>On lave à l'eau tiède la plaie qui résulte d'<term>une coupure</term>, et
+                        l'on s'assure qu'il n'y reste aucun corps étranger. Si la blessure saigne
+                        abondamment, user d'eau froide. Ensuite, on l'essuie avec un linge fin, et
+                        l'on en rapproche les bords que l'on fixe avec du taffetas
+                           d'<placeName>Angleterre</placeName> ou du diachylon. Lorsque le mal est
+                        considérable, la présence du médecin devient obligatoire.</p>
+                     <p>Pour les <term>contusions ordinaires</term>, consistant dans le
+                        meurtrissement des tissus par suite d'une chute ou d'un coup, il suffit de
+                        combattre l'inflammation par l'application de l'eau froide, et d'envelopper
+                        ensuite le membre atteint. Si l’enfant contusionné se trouvait indisposé à
+                        la suite de l'accident, il serait bon de lui donner à boire quelque chose de
+                        chaud et de le mettre au lit. </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
