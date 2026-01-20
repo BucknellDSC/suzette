@@ -28,6 +28,7 @@
       </appInfo>
     </encodingDesc>
     <revisionDesc>
+      <change when="2026-01-14" who="#DKJ">Built actionName element and added evaluative attributes for objectName</change>
       <change when="2024-09-12" who="#DKJ">Added more @subtypes</change>
       <change when="2024-09-05" who="#DKJ">Added multiple @type and @subtype attributes for
         rs</change>
@@ -79,7 +80,10 @@
         <moduleRef n="13" key="textcrit"/>
         <moduleRef n="14" key="namesdates"/>
         <!-- Attempting to create actionName element -->
-        <!--<elementSpec ident="actionName" mode="add">
+<elementSpec ident="actionName" mode="add" module="namesdates">
+  <classes>
+    <memberOf key="model.nameLike"/>
+  </classes>
           <attList>
             <attDef ident="type" mode="change">
               <valList type="closed" mode="change">
@@ -90,13 +94,26 @@
                   <desc versionDate="2024-09-05" xml:lang="fr">transformation</desc>
                 </valItem>
                 <valItem ident="dissemination" mode="add">
-                  <desc versionDate="2024-09-05" xml:lang="fr">dissemination</desc>
+                  <desc versionDate="2024-09-05" xml:lang="fr">présentation</desc>
                 </valItem>
               </valList>
             </attDef>
+            <attDef ident="subtype" mode="change">
+              <valList/>
+            </attDef>
+            <attDef ident="key" mode="change">
+              <valList>
+                <valItem ident="open"/>
+              </valList>
+            </attDef>
+            <attDef ident="ana" mode="change">
+              <valList>
+                <valItem ident="open"/>
+              </valList>
+            </attDef>
           </attList>
-        </elementSpec>-->
-        <!-- Added attributes for objectName @type -->
+        </elementSpec>
+        <!-- Added attributes for objectName @type @subtype @ana -->
         <elementSpec ident="objectName" mode="change" module="namesdates">
           <attList>
             <attDef ident="type" mode="change">
@@ -158,6 +175,19 @@
                 </valItem>
                 <valItem ident="autre" mode="add">
                   <desc versionDate="2025-10-16" xml:lang="fr">autre</desc>
+                </valItem>
+              </valList>
+            </attDef>
+            <attDef ident="ana" mode="change">
+              <valList type="closed" mode="change">
+                <valItem ident="positif" mode="add">
+                  <desc versionDate="2026-01-14">positif</desc>                  
+                </valItem>
+                <valItem ident="negatif" mode="add">
+                  <desc versionDate="2026-01-14">negatif</desc>
+                </valItem>
+                <valItem ident="neutre">
+                  <desc versionDate="2026-01-14">neutre</desc>
                 </valItem>
               </valList>
             </attDef>
