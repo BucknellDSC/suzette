@@ -26,10 +26,16 @@
           <desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc>
         </application>
       </appInfo>
-    <appInfo><application ident="RomaJS" version="1.3.1a" when="2026-01-22T16:29:44.285Z"><desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc></application></appInfo></encodingDesc>
+      <appInfo>
+        <application ident="RomaJS" version="1.3.1a" when="2026-01-22T16:29:44.285Z">
+          <desc>File edited with <ref target="https://github.com/TEIC/romajs">RomaJS</ref></desc>
+        </application>
+      </appInfo>
+    </encodingDesc>
     <revisionDesc>
       <change when="2026-01-22" who="#DKJ">Changed actionName to action element</change>
-      <change when="2026-01-14" who="#DKJ">Built actionName element and added evaluative attributes for objectName</change>
+      <change when="2026-01-14" who="#DKJ">Built actionName element and added evaluative attributes
+        for objectName</change>
       <change when="2024-09-12" who="#DKJ">Added more @subtypes</change>
       <change when="2024-09-05" who="#DKJ">Added multiple @type and @subtype attributes for
         rs</change>
@@ -54,12 +60,17 @@
         the TEI <title>Guidelines</title> in which the module being referenced is defined. Note that
         the modules are generally referred to in the order defined, with the exception that the
         module for <title level="a">Simple Analytic Mechanisms</title> is referred to before the
-        module for <title level="a">Dictionaries</title>. This is because the class <name type="class">att.lexicographic.normalized</name> (which is defined in <name type="module">analysis</name>) needs to be specified before the class <name type="class">att.lexicographic</name> (which is defined in <name type="module">dictionaries</name>).</p>
+        module for <title level="a">Dictionaries</title>. This is because the class <name
+          type="class">att.lexicographic.normalized</name> (which is defined in <name type="module"
+          >analysis</name>) needs to be specified before the class <name type="class"
+          >att.lexicographic</name> (which is defined in <name type="module"
+        >dictionaries</name>).</p>
       <p>The first four modules are often called the <soCalled>required</soCalled> modules. However,
         these modules are not themselves technically required to create a TEI conformant markup
         language (let alone a useful non-TEI conformant markup language). Rather, they each contain
         one or more <emph>elements</emph> which are required for TEI conformance.</p>
-      <schemaSpec ident="tei_all" start="TEI teiCorpus" prefix="suzette" targetLang="en" docLang="en">
+      <schemaSpec ident="tei_all" start="TEI teiCorpus" targetLang="en"
+        docLang="en">
         <moduleRef n="01" key="tei"/>
         <moduleRef n="02" key="header"/>
         <moduleRef n="03" key="core"/>
@@ -76,10 +87,10 @@
         <moduleRef n="13" key="textcrit"/>
         <moduleRef n="14" key="namesdates"/>
         <!-- Attempting to create action element -->
-<elementSpec ident="action" mode="add" module="namesdates">
-  <classes>
-    <memberOf key="model.nameLike"/>
-  </classes>
+        <elementSpec ident="action" mode="add" module="namesdates">
+          <classes>
+            <memberOf key="model.nameLike"/>
+          </classes>
           <attList>
             <attDef ident="type" mode="change">
               <valList type="closed" mode="change">
@@ -107,16 +118,16 @@
                 <valItem ident="open"/>
               </valList>
             </attDef>
-          <attDef ident="sort" mode="change">            
-            <valList type="closed" mode="change">
-              <valItem ident="succès" mode="add">
-                <desc versionDate="2026-01-22" xml:lang="en">succès</desc>
-              </valItem>
-              <valItem ident="échet">
-                <desc versionDate="2026-01-22" xml:lang="en">échet</desc>
-              </valItem>
-            </valList>
-          </attDef>
+            <attDef ident="sort" mode="change">
+              <valList type="closed" mode="change">
+                <valItem ident="succès" mode="add">
+                  <desc versionDate="2026-01-22" xml:lang="en">succès</desc>
+                </valItem>
+                <valItem ident="échet">
+                  <desc versionDate="2026-01-22" xml:lang="en">échet</desc>
+                </valItem>
+              </valList>
+            </attDef>
           </attList>
         </elementSpec>
         <!-- Added attributes for objectName @type @subtype @ana -->
@@ -161,7 +172,7 @@
                 <valItem ident="féculent" mode="add">
                   <desc xml:lang="fr" versionDate="2024-09-10">féculent</desc>
                 </valItem>
-<!--                <valItem ident="oléagineux" mode="add">
+                <!--                <valItem ident="oléagineux" mode="add">
                   <desc xml:lang="fr" versionDate="2024-09-10">oléagineux</desc>
                 </valItem>-->
                 <valItem ident="animal" mode="add">
@@ -187,7 +198,7 @@
             <attDef ident="ana" mode="change">
               <valList type="closed" mode="change">
                 <valItem ident="positif" mode="add">
-                  <desc versionDate="2026-01-14">positif</desc>                  
+                  <desc versionDate="2026-01-14">positif</desc>
                 </valItem>
                 <valItem ident="negatif" mode="add">
                   <desc versionDate="2026-01-14">negatif</desc>
