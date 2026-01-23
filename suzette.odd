@@ -210,8 +210,48 @@
             </attDef>
           </attList>
         </elementSpec>
-        <!--Added attributes for rs @type and @subtype -->
+        <!--Added attributes for rs @type and @subtype as placeholder for action element-->
         <elementSpec ident="rs" mode="change" module="namesdates">
+          <attList>
+            <attDef ident="type" mode="change">
+              <valList type="closed" mode="change">
+                <valItem ident="acquisition" mode="add">
+                  <desc versionDate="2024-09-05" xml:lang="fr">acquisition</desc>
+                </valItem>
+                <valItem ident="transformation" mode="add">
+                  <desc versionDate="2024-09-05" xml:lang="fr">transformation</desc>
+                </valItem>
+                <valItem ident="dissemination" mode="add">
+                  <desc versionDate="2024-09-05" xml:lang="fr">présentation</desc>
+                </valItem>
+              </valList>
+            </attDef>
+            <attDef ident="subtype" mode="change">
+              <valList/>
+            </attDef>
+            <attDef ident="key" mode="change">
+              <valList>
+                <valItem ident="open"/>
+              </valList>
+            </attDef>
+            <attDef ident="ana" mode="change">
+              <valList>
+                <valItem ident="open"/>
+              </valList>
+            </attDef>
+            <attDef ident="select" mode="change">
+              <valList type="closed" mode="change">
+                <valItem ident="succès" mode="add">
+                  <desc versionDate="2026-01-22" xml:lang="fr">succès</desc>
+                </valItem>
+                <valItem ident="échet">
+                  <desc versionDate="2026-01-22" xml:lang="fr">échet</desc>
+                </valItem>
+              </valList>
+            </attDef>
+          </attList>
+        </elementSpec>
+<!--        <elementSpec ident="rs" mode="change" module="namesdates">
           <attList>
             <attDef ident="type" mode="change">
               <valList type="closed" mode="change">
@@ -237,7 +277,7 @@
               </valList>
             </attDef>
           </attList>
-        </elementSpec>
+        </elementSpec>-->
         <moduleRef n="15" key="figures"/>
         <moduleRef n="16" key="corpus"/>
         <moduleRef n="17" key="linking"/>
