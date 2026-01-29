@@ -87,7 +87,7 @@
         <moduleRef n="13" key="textcrit"/>
         <moduleRef n="14" key="namesdates"/>
         <!-- Attempting to create action element -->
-        <elementSpec ident="action" mode="add" module="namesdates">
+<!--        <elementSpec ident="action" mode="add" module="namesdates">
           <classes>
             <memberOf key="model.nameLike"/>
           </classes>
@@ -129,7 +129,7 @@
               </valList>
             </attDef>
           </attList>
-        </elementSpec>
+        </elementSpec>-->
         <!-- Added attributes for objectName @type @subtype @ana -->
         <elementSpec ident="objectName" mode="change" module="namesdates">
           <attList>
@@ -215,19 +215,26 @@
           <attList>
             <attDef ident="type" mode="change">
               <valList type="closed" mode="change">
-                <valItem ident="acquisition" mode="add">
-                  <desc versionDate="2024-09-05" xml:lang="fr">acquisition</desc>
+                <valItem ident="action" mode="add">
+                  <desc versionDate="2024-09-05" xml:lang="fr">action</desc>
                 </valItem>
-                <valItem ident="transformation" mode="add">
-                  <desc versionDate="2024-09-05" xml:lang="fr">transformation</desc>
-                </valItem>
-                <valItem ident="dissemination" mode="add">
-                  <desc versionDate="2024-09-05" xml:lang="fr">présentation</desc>
+                <valItem ident="evaluation" mode="add">
+                  <desc versionDate="2024-09-05" xml:lang="fr">evaluation</desc>
                 </valItem>
               </valList>
             </attDef>
-            <attDef ident="subtype" mode="change">
-              <valList/>
+<attDef ident="subtype" mode="change">
+    <valList type="closed" mode="change">
+      <valItem ident="acquisition" mode="add">
+        <desc versionDate="2024-09-05" xml:lang="fr">acquisition</desc>
+      </valItem>
+      <valItem ident="transformation" mode="add">
+        <desc versionDate="2024-09-05" xml:lang="fr">transformation</desc>
+      </valItem>
+      <valItem ident="dissemination" mode="add">
+        <desc versionDate="2024-09-05" xml:lang="fr">présentation</desc>
+      </valItem>
+    </valList>
             </attDef>
             <attDef ident="key" mode="change">
               <valList>
@@ -244,8 +251,8 @@
                 <valItem ident="succès" mode="add">
                   <desc versionDate="2026-01-22" xml:lang="fr">succès</desc>
                 </valItem>
-                <valItem ident="échet">
-                  <desc versionDate="2026-01-22" xml:lang="fr">échet</desc>
+                <valItem ident="échec">
+                  <desc versionDate="2026-01-22" xml:lang="fr">échec</desc>
                 </valItem>
               </valList>
             </attDef>
