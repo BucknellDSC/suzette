@@ -429,8 +429,8 @@ extent {
     margin-bottom: 1em;
 }
 
-/* DKJ eventName purple 12/13/2023 */
-eventName {
+/* DKJ rs = action/evaluation purple 12/13/2023 */
+rs {
     display: inline;
     color: purple;
     font-weight: bold;
@@ -966,7 +966,7 @@ persName {
 }
 
 placeName {
-    color: purple;
+    color: orange;
     display: inline;
     font-weight: bold;
 }
@@ -1098,19 +1098,22 @@ row[role = 'label'] {
 roleName {
     display: inline;
     color: brown;
+    font-weight: bold;
 }
 rs {
     display: inline;
 }
 
-rs[occupation] {
+rs[type = 'action']{
     display: inline;
-    color: orange;
+    color: purple;
+    font-weight: bold;
 }
 
-rs[office] {
+rs[type = 'evaluation']{
     display: inline;
-    color: orange;
+    color: red;
+    font-weight: bold;
 }
 
 s {
