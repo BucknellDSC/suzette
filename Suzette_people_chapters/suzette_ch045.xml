@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/CSS/suzette_cwrc.css"?>
+<?xml-model href="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/out/suzette.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Suzette: a Digital Edition</title>
+            <respStmt>
+               <persName>John Westbrook</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Editor</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Diane Jakacki</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Project Manager</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Annie Girton</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2018-2020</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Sarah Haber</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2020-2022</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Rebecca Heintzelman</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2020-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Juliya Harnood</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2021-Present</resp>
+            </respStmt>
+            <respStmt>
+               <persName>Jaehoon Pyon</persName>
+               <orgName>Bucknell University</orgName>
+               <resp>Research Assistant and Encoder, 2023-Present</resp>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <distributor>Bucknell University</distributor>
+            <pubPlace>
+               <address>
+                  <addrLine>One Dent Drive</addrLine>
+                  <addrLine>Lewisburg, PA 17837</addrLine>
+               </address>
+            </pubPlace>
+            <availability>
+               <licence>Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                  <title>Suzette: Livre de Lecture Courante à l’Usage des Jeunes Filles.
+                     Morale—Leçon de choses, Economie Domestique – Ménage – Cuisine –
+                     Couture</title>
+                  <author>Robert Halt</author>
+                  <textLang>French</textLang>
+                  <imprint>
+                     <date>1889</date>
+                     <distributor>Libraire Classique Paul Delaplane</distributor>
+                     <pubPlace>Paris, France</pubPlace>
+                  </imprint>
+               </monogr>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+      <xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:fabio="https://purl.org/spar/fabio#" xmlns:bf="http://www.openlinksw.com/schemas/bif#" xmlns:cito="https://sparontologies.github.io/cito/current/cito.html#" xmlns:org="http://www.w3.org/ns/org#">
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch045.xml?person_annotation_20240304111446286",
+	"type": "oa:Annotation",
+	"dcterms:created": "2024-03-04T16:14:46.286Z",
+	"dcterms:modified": "2024-03-04T16:15:03.144Z",
+	"dcterms:creator": {
+		"@id": "9",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch045.xml?person_annotation_20240304111446286#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch045.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.4.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch045.xml?person_annotation_20240304111446286#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/figure/caption/persName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:NaturalPerson",
+		"@id": "http://www.wikidata.org/entity/Q517",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.4.0"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch045.xml?place_annotation_20240304111540273",
+	"type": "oa:Annotation",
+	"dcterms:created": "2024-03-04T16:15:40.273Z",
+	"dcterms:modified": "2024-03-04T16:15:54.651Z",
+	"dcterms:creator": {
+		"@id": "9",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch045.xml?place_annotation_20240304111540273#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch045.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.4.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch045.xml?place_annotation_20240304111540273#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/figure/caption/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q649",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.4.0"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch045.xml?place_annotation_20240304111558111",
+	"type": "oa:Annotation",
+	"dcterms:created": "2024-03-04T16:15:58.111Z",
+	"dcterms:modified": "2024-03-04T16:16:11.555Z",
+	"dcterms:creator": {
+		"@id": "9",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch045.xml?place_annotation_20240304111558111#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch045.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.4.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch045.xml?place_annotation_20240304111558111#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/figure/caption/placeName[2]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "http://www.wikidata.org/entity/Q649",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.4.0"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch045.xml?person_annotation_20240304111623267",
+	"type": "oa:Annotation",
+	"dcterms:created": "2024-03-04T16:16:23.267Z",
+	"dcterms:modified": "2024-03-04T16:16:38.893Z",
+	"dcterms:creator": {
+		"@id": "9",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch045.xml?person_annotation_20240304111623267#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch045.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.4.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch045.xml?person_annotation_20240304111623267#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[3]/div/div[2]/p/persName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:NaturalPerson",
+		"@id": "https://www.wikidata.org/wiki/Q517",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.4.0"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch045.xml?person_annotation_20240304111646272",
+	"type": "oa:Annotation",
+	"dcterms:created": "2024-03-04T16:16:46.272Z",
+	"dcterms:modified": "2024-03-04T16:17:02.003Z",
+	"dcterms:creator": {
+		"@id": "9",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch045.xml?person_annotation_20240304111646272#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch045.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf.bucknell.edu",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "3.4.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch045.xml?person_annotation_20240304111646272#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[3]/div/div[2]/p[3]/persName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:NaturalPerson",
+		"@id": "https://www.wikidata.org/wiki/Q517",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf.bucknell.edu",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "3.4.0"
+	}
+}]]>
+        </rdf:Description>
+      </rdf:RDF></xenoData><profileDesc>
+         <langUsage>
+            <language ident="fr">French</language>
+            <language ident="en">English</language>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+<div xmlns:ns0="http://www.tei-c.org/ns/1.0" type="chapitre" xml:lang="fr" n="ch045">
+<pb facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_157.jpg" type="page" n="157"/>
+            <head>45. — Veste, gilet, calotte. </head>
+            
+            <div type="récit">
+               <p>— Quoique toujours à l'air, mes bras n'en grossirent pas moins, si bien qu'un beau
+                  jour, à l'école — dans ce temps-là, c'était un vieux soldat de la retraite de
+                     <placeName type="réel">Moscou</placeName> qui nous faisait la classe, et chacun
+                  de nous, pour le chauffage, apportait sa bûche à son tour, — donc ce beau jour-là,
+                  portant la mienne, qui était de taille, je me baisse.... Crac! crac ! la veste se
+                  partage dans le dos, du haut en bas.</p>
+               <p>Je fus à la fois content et peiné. Car ce vieil habit, voyez-vous.... bon, vous le
+                  saurez tout à l'heure!... Ma mère resta un moment en contemplation, les yeux sur
+                  ce dos. Puis m'ayant retourné, elle me sourit comme si je venais de faire une
+                  bonne action.</p>
+               <figure>
+                  <caption>La retraite de <placeName key="Moscow" ref="http://www.wikidata.org/entity/Q649">Moscou</placeName>. En 1812, <persName key="Napoleon" ref="http://www.wikidata.org/entity/Q517">Napoléon Ier</persName>, après être entré à
+                        <placeName key="Moscow" ref="http://www.wikidata.org/entity/Q649">Moscou</placeName>, y pensait hiverner. Mais les Russes
+                     incendièrent la ville, qu'il fallut abandonner, et l'armée dut battre en
+                     retraite à travers d'immenses plaines de neige, par un froid terrible. Le
+                     désastre des Français fut complet au passage de la <placeName>Bérésina</placeName>, et en
+                     sortant de la <placeName>Russie</placeName>, la grande armée ne comptait plus
+                     que 24,000 hommes sur près de 400,000.</caption>
+               </figure>
+               
+               <pb facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_158.jpg" type="page" n="158"/>
+               <p>Et huit jours après, j'endossais ma veste sous la forme d'un gilet. Je le portai
+                  trois ans. Dans ce gilet, j'achevai mes études, qui n'étaient pas alors très
+                  compliquées* <note type="annotation"> Compliqué. Qui est composé d'un grand nombre
+                     de choses.</note>. Mais il fallut enfin lui donner un remplaçant.</p>
+               <p>— Cette fois, ce fut fini ? demanda <persName type="fictif" key="suzette">Suzette</persName>.</p>
+               <p>— Fini ah, que nenni! et que vous ne valez pas votre grand mère, ma <persName type="fictif" key="suzette">Suzette</persName>, si vous croyez qu'un habit a
+                  fini son temps quand il a passé d'habit en veste et de veste en gilet ! L’hiver
+                  qui suivit m'en trouva coiffé.</p>
+               <p>— Coiffé de votre gilet, papa !</p>
+               <p>— Oui, de mon gilet, mais il était devenu calotte. Et voilà ce qu'il reste de la
+                  calotte, dit-il, en prenant le morceau de drap vert. Je le croyais bien perdu.</p>
+               <p>— Bon, s'écria <persName type="fictif" key="françois">François</persName>
+                  joyeusement, je disais bien à <persName type="fictif" key="françois">Suzette</persName> qu'il n'en fallait pas rapetasser* <note type="annotation">Rapetasser. Raccommoder grossièrement de vieux habits.</note> mon
+                  pantalon.</p>
+               <p>— En effet, dit <persName type="fictif" key="jacques">Jacques</persName>, ce
+                  morceau est le reste d'un vêtement célèbre, comme vous l'avez appelé, papa.</p>
+               <p><persName type="fictif" key="m_dumay">M. Dumay</persName> était devenu tout grave
+                  :</p>
+               <p>— Un vêtement ne peut pas être célèbre parce que je l'ai porté sous plusieurs
+                  formes, répondit-il; j'aurais dit dire « glorieux » au lieu de « célèbre » — il
+                  regarda <persName type="fictif" key="m_valon">M</persName>. et <persName type="fictif" key="mme_valon">Mme Valon,</persName> très attentifs, — oui,
+                  glorieux! Car mon grand-père, <persName type="fictif" key="mathias">Mathias
+                     Dumay</persName>, en était vêtu lorsqu'il alla, comme délégué* <note type="annotation">Délégué. Celui qui est envoyé par d'autres pour agir et
+                     décider en leur nom.</note> de <placeName type="fictif">Fragicourt</placeName>,
+                  voter pour l'élection des députés aux États généraux* <note type="annotation">États généraux. Assemblée des députés des trois ordres de la nation sous
+                     l'ancienne monarchie. </note> de 1789.</p>
+               <p>Les enfants battirent des mains, <persName type="fictif" key="jacques">Jacques</persName>, <persName type="fictif" key="suzette">Suzette</persName>,
+                     <persName type="fictif" key="françois">François</persName>, et même <persName type="fictif" key="charlot">Charlot</persName> ayant appris, par l'école et par
+                  les livres, la grandeur de cette époque dans notre histoire nationale. Quelque
+                  petit qu'eût été' le rôle* <note type="annotation">Rôle. Manière d'agir dans les
+                     affaires du monde.</note> de <persName type="fictif" key="mathias">Mathias
+                     Dumay</persName> à cette heure magnifique de l'affranchissement humain* <note type="annotation">Humain. Qui se rapporte à l'homme. </note>, ses descendants
+                  saluaient l'ancêtre avec une fierté attendrie* <note type="annotation">Fierté
+                     attendrie. Fierté mêlée de tendresse.</note>.</p>
+               <p>— Oui, nous conserverons cela comme une relique ! s'écria <persName type="fictif" key="suzette">Suzette</persName> en élevant le morceau de drap, que <persName type="fictif" key="m_valon">M</persName>. et <persName type="fictif" key="mme_valon">Mme Valon</persName> prirent ensuite pour le regarder.</p>
+               <p>Et les enfants répétèrent :</p>
+               <p>— Nous le conserverons !</p>
+               
+               <pb facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_159.jpg" type="page" n="159"/>
+            </div>
+            <div type="questionnaire">
+               <head>Questionnaire.</head>
+               <list>
+                  <item>— Qui dirigeait l'école au temps où <persName type="fictif" key="m_dumay">M.
+                        Dumay</persName> la fréquentait ?</item>
+                  <item>— Quoi accident y arriva un certain jour ?</item>
+                  <item>— Que fit la mère quand son fils fut de retour ?</item>
+                  <item>— Quel parti sut-elle tirer des restes de la veste;</item>
+                  <item>— de ceux du gilet quand ce dernier vêtement fut hors du service ?</item>
+                  <item>— Quel souvenir rappelait à <persName type="fictif" key="m_dumay">M.
+                        Dumay</persName> le dernier morceau du vieil habit ?</item>
+                  <item>— Que firent les enfants quand leur père eut parlé des États généraux de
+                     1789 ?</item>
+                  <item>— Qu'ajouta <persName type="fictif" key="suzette">Suzette</persName>
+                     ?</item>
+               </list>
+            </div>
+            <div type="exercices">
+               <head>DÉVELOPPEMENT DES SUJETS PROPOSÉS POUR EXERCICES.</head>
+               <div cert="high" org="composite" part="Y" sample="initial" type="histoire" xml:space="default" xml:id="sujhis_045">
+                  <head type="sujets">Histoire.</head>
+                  <div type="questions">
+                     <list>
+                        <item>— Racontez dans quelles conditions désastreuses l'armée française,
+                           pendant l'hiver de 1812, battit en retraite de
+                              <placeName>Moscou</placeName> à la frontière russe.</item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <head>RETRAITE DE RUSSIE.</head>
+                     <p>— <persName ref="https://www.wikidata.org/wiki/Q517" key="Napoleon">Napoléon</persName> quitta
+                           <placeName>Moscou</placeName> le 23 octobre 1812, après avoir fait sauter
+                        le Kremlin ; arrêté dans sa marche par les forces considérables des Russes,
+                        il se porta avec l'armée sur <placeName>Smolensk</placeName>. C’était une
+                        grande faute que lui faisaient commettre ses généraux, car le pays était
+                        entièrement dévasté. Le froid, qui descendit à 25 et même 30° au-dessous de
+                        zéro, fit d'innombrables victimes ; la route était couverte de débris
+                        humains qui perçaient sous la neige.</p>
+                     <p>Au milieu de plaines immenses, sous une neige qui effaçait les chemins et
+                        s'amoncelait dans les ravins, l'armée, harcelée par les cosaques, avait à
+                        lutter à la fois contre la nature et contre l'ennemi. Chevaux et vivres
+                        manquaient ; on ne pouvait recueillir les blessés, qui jonchaient le sol, et
+                        restaient abandonnés aux loups et aux vautours quand ils n'étaient pas
+                        achevés par les Russes. Aussi beaucoup de soldats quittaient le drapeau,
+                        jetaient leurs armes et suivaient l'armée en traînards jusqu'à ce qu'ils
+                        tombassent épuisés de fatigue et de misère.</p>
+                     <p>L'épisode le plus terrible de la retraite de <placeName>Russie</placeName>
+                        est le passage de la <placeName>Bérésina</placeName>. L'ennemi avait détruit le pont ;
+                        <persName ref="https://www.wikidata.org/wiki/Q517" key="Napoleon">Napoléon</persName> on fit élever à la hâte
+                        deux autres sur chevalets par les pontonniers, qui, plongés dans l'eau
+                        glacée pendant deux jours et deux nuits, périrent presque tous. Une partie
+                        de l'armée put gagner l'autre rive; mais les traînards et la multitude qui
+                        s'étaient refusés à passer quand la chose était sans danger, se
+                        précipitèrent sur les ponts avec un désordre qui causa d'affreux malheurs,
+                        quand apparurent les Russes. Les boulets ennemis, tombant au milieu de cette
+                        foule compacte, y traçaient d'horribles sillons et arrachaient des cris de
+                        terreur aux pauvres femmes fugitives qui étaient sur des voitures avec leurs
+                        enfants. On se serrait, on se foulait, on montait sur ceux qui étaient trop
+                        faibles pour se soutenir et on les écrasait sous les pieds. Quand il fallut
+                        détruire les ponts pour arrêter l'ennemi, nombre de traînards qui s'étaient
+                        obstinés à rester sur le rivage se précipitèrent sur les ponts en flammes,
+                        tandis que d'autres se jetaient dans l'eau glacée et y trouvaient la
+                        mort.</p>
+                     <p>L'armée s'éloigna profondément affectée de ce spectacle.</p>
+                  </div>
+               </div>
+               <div type="industrie" xml:id="sujind_046">
+                  <head type="sujets">Industrie.</head>
+                  <div type="questions">
+                     <list>
+                        <item>— Objet des cheminées.</item>
+                        <item>— Parties dont elles se composent.</item>
+                        <item>— Qu'est-ce que la suie ? </item>
+                        <item>— Comment en débarrasse-t-on le tuyau ? </item>
+                        <item>— Parler des petits ramoneurs.</item>
+                        <item>— Décrire un poêle de fonte ou de faïence.</item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p>On appelle <term>cheminées</term> des foyers ouverts adossés à un mur et
+                        surmontés d'un tuyau de maçonnerie par lequel les produits de la combustion
+                        se rendent, au dehors. Elles se composent chacune de <term>l'âtre</term> ou
+                           <term>foyer</term> proprement dit, du chambranle qui l'encadre et du
+                        tuyau dont il a été question. Des ouvertures appelées <term>ventouses</term>
+                        amènent près du foyer l'air extérieur et facilitent l'ascension de la fumée.
+                        Les 
+                        <pb facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_160.jpg" type="page" n="160"/> cheminées donnent un chauffage agréable et sain,
+                        quoiqu'elles utilisent à peine un dixième de la chaleur produite.</p>
+                     <p>La fumée dépose sur les parois du tuyau une matière noirâtre et bitumineuse,
+                        la <term>suie</term>, qui s'enflamme et brûle avec facilité. Si on la laisse
+                        s'accumuler, elle constitue un véritable danger d'incendie. On en débarrasse
+                        les cheminées en y faisant passer un fagot qui monte et descend au moyen
+                        d'une corde. De petits enfants, appelés <term>ramoneurs</term>, rendent le
+                        même service en s'introduisant dans le tuyau et en détachant la suie avec
+                        une lame de fer emmanchée solidement.</p>
+                     <p><term>Les poêles</term> sont des espèces de caisses de fonte ou de terre à
+                        poterie, recouverte de faïence, dans lesquelles on allume du feu. La flamme
+                        échauffe l'appareil, qui répand une douce chaleur dans la pièce ; la fumée
+                        se rend au dehors par un système de tuyaux qui permet d'utiliser, à peu de
+                        chose près, toute la chaleur produite.</p>
+                  </div>
+               </div>
+               <div type="hygiène" xml:id="sujhyg_046">
+                  <head type="sujets">Hygiène.</head>
+                  <div type="questions">
+                     <list>
+                        <item>— Quels avantages présente le chauffage au moyen des cheminées
+                           ?</item>
+                        <item>— Quels en sont les deux inconvénients principaux ?</item>
+                        <item>— Quels avantages présente l'usage des poêles ?</item>
+                        <item>— Comment remédie-t-on à l'insuffisance du renouvellement de l'air et
+                           à la sécheresse de l'atmosphère de la chambre où l'on a installé un poêle
+                           ?</item>
+                        <item>— Quel gaz dangereux dégagent les poêles de fonte chauffés au rouge
+                           ?</item>
+                        <item>— Quels effets pernicieux produit ce gaz ?</item>
+                        <item>— Comment remédier à ce grave inconvénient ?</item>
+                     </list>
+                  </div>
+                  <div type="réponses">
+                     <p>Le chauffage au moyen des cheminées assure la ventilation des pièces où
+                        elles sont installées; on y respirera donc en tout temps un air suffisamment
+                        pur ; mais ce mode de chauffage est dispendieux en raison du peu de chaleur
+                        utilisée.</p>
+                     <p>Il n'en est pas de même des poêles à ce dernier point de vue ; mais, à leur
+                        tour, ils ont le grave inconvénient de ne pas assurer le renouvellement de
+                        l'air de la chambre ou de la salle, de dessécher cet air et, souvent, de
+                        laisser échapper certains gaz malfaisants produits par la combustion.</p>
+                     <p>On remédie à l'insuffisance de la ventilation en ouvrant assez fréquemment
+                        les fenêtres, et à la sécheresse, en plaçant sur l'appareil un vase à large
+                        ouverture qu'on maintient rempli d'eau.</p>
+                     <p>Les poêles de fonte, dont l'usage est si répandu, laissent filtrer à travers
+                        leurs parois, lorsqu'elles sont chauffées au rouge, un gaz empoisonné qui
+                        provoque des maux de tête et occasionne, en bien des cas, des fièvres
+                        dangereuses et même mortelles. Tout poêle de fonte devrait être recouvert
+                        d'une enveloppe de tôle, car le fer ainsi préparé ne présente plus
+                        l'inconvénient que nous venons de signaler. </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+</TEI>
