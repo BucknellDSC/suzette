@@ -34,6 +34,7 @@
       </appInfo>
     </encodingDesc>
     <revisionDesc>
+      <change when="2026-02-19" who="#DKJ">Changed rs attribute from select to ana for evaluation</change>
       <change when="2026-01-22" who="#DKJ">Changed actionName to action element</change>
       <change when="2026-01-14" who="#DKJ">Built actionName element and added evaluative attributes
         for objectName</change>
@@ -210,7 +211,7 @@
             </attDef>
           </attList>
         </elementSpec>
-        <!--Added attributes for rs @type and @subtype as placeholder for action element-->
+        <!--Added attributes for rs @type, @subtype @ana for action element-->
         <elementSpec ident="rs" mode="change" module="namesdates">
           <attList>
             <attDef ident="type" mode="change">
@@ -245,11 +246,6 @@
               </valList>
             </attDef>
             <attDef ident="ana" mode="change">
-              <valList>
-                <valItem ident="open"/>
-              </valList>
-            </attDef>
-            <attDef ident="select" mode="change">
               <valList type="closed" mode="change">
                 <valItem ident="succès" mode="add">
                   <desc versionDate="2026-01-22" xml:lang="fr">succès</desc>
