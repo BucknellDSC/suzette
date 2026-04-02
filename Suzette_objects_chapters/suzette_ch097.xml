@@ -43,7 +43,7 @@
             </respStmt>
          </titleStmt>
          <publicationStmt>
-            <distributor>Bucknell University</distributor>
+            <distributor><orgName>Bucknell University</orgName></distributor>
             <pubPlace>
                <address>
                   <addrLine>One Dent Drive</addrLine>
@@ -71,163 +71,83 @@
             </biblStruct>
          </sourceDesc>
       </fileDesc>
-      <xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:fabio="https://purl.org/spar/fabio#" xmlns:bf="http://www.openlinksw.com/schemas/bif#" xmlns:cito="https://sparontologies.github.io/cito/current/cito.html#" xmlns:org="http://www.w3.org/ns/org#">
-        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
-          <![CDATA[{
-	"@context": {
-		"dcterms:created": {
-			"@type": "xsd:dateTime",
-			"@id": "dcterms:created"
-		},
-		"dcterms:issued": {
-			"@type": "xsd:dateTime",
-			"@id": "dcterms:issued"
-		},
-		"oa:motivatedBy": {
-			"@type": "oa:Motivation"
-		},
-		"@language": "en",
-		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-		"as": "http://www.w3.org/ns/activitystreams#",
-		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
-		"dc": "http://purl.org/dc/elements/1.1/",
-		"dcterms": "http://purl.org/dc/terms/",
-		"foaf": "http://xmlns.com/foaf/0.1/",
-		"geo": "http://www.geonames.org/ontology#",
-		"oa": "http://www.w3.org/ns/oa#",
-		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#",
-		"fabio": "https://purl.org/spar/fabio#",
-		"bf": "http://www.openlinksw.com/schemas/bif#",
-		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
-		"org": "http://www.w3.org/ns/org#"
-	},
-	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch097.xml?person_annotation_20240229203354855",
-	"type": "oa:Annotation",
-	"dcterms:created": "2024-03-01T01:33:54.855Z",
-	"dcterms:creator": {
-		"@id": "5",
-		"@type": [
-			"cwrc:NaturalPerson",
-			"schema:Person"
-		],
-		"cwrc:hasName": "John Westbrook"
-	},
-	"oa:motivatedBy": "oa:identifying",
-	"oa:hasTarget": {
-		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch097.xml?person_annotation_20240229203354855#Target",
-		"@type": "oa:SpecificResource",
-		"oa:hasSource": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch097.xml",
-			"@type": "dctypes:Text",
-			"dc:format": "text/xml"
-		},
-		"oa:renderedVia": {
-			"@id": "https://leaf.bucknell.edu",
-			"@type": "as:Application",
-			"rdfs:label": "LEAF-Writer",
-			"schema:softwareVersion": "3.4.0"
-		},
-		"oa:hasSelector": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch097.xml?person_annotation_20240229203354855#Selector",
-			"@type": "oa:XPathSelector",
-			"rdf:value": "TEI/text/body/div/div[3]/div[2]/div[2]/p[3]/persName"
-		}
-	},
-	"oa:hasBody": {
-		"@type": "cwrc:NaturalPerson",
-		"@id": "http://dbpedia.org/resource/Barthélemy_Thimonnier",
-		"dc:format": "text/plain"
-	},
-	"as:generator": {
-		"@id": "https://leaf.bucknell.edu",
-		"@type": "as:Application",
-		"rdfs:label": "LEAF-Writer",
-		"schema:url": "https://leaf-writer.lincsproject.ca/",
-		"schema:softwareVersion": "3.4.0"
-	}
-}]]>
-        </rdf:Description>
-      
-        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
-          <![CDATA[{
-	"@context": {
-		"dcterms:created": {
-			"@type": "xsd:dateTime",
-			"@id": "dcterms:created"
-		},
-		"dcterms:issued": {
-			"@type": "xsd:dateTime",
-			"@id": "dcterms:issued"
-		},
-		"oa:motivatedBy": {
-			"@type": "oa:Motivation"
-		},
-		"@language": "en",
-		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-		"as": "http://www.w3.org/ns/activitystreams#",
-		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
-		"dc": "http://purl.org/dc/elements/1.1/",
-		"dcterms": "http://purl.org/dc/terms/",
-		"foaf": "http://xmlns.com/foaf/0.1/",
-		"geo": "http://www.geonames.org/ontology#",
-		"oa": "http://www.w3.org/ns/oa#",
-		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#",
-		"fabio": "https://purl.org/spar/fabio#",
-		"bf": "http://www.openlinksw.com/schemas/bif#",
-		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
-		"org": "http://www.w3.org/ns/org#"
-	},
-	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch097.xml?person_annotation_20240229203447353",
-	"type": "oa:Annotation",
-	"dcterms:created": "2024-03-01T01:34:47.353Z",
-	"dcterms:creator": {
-		"@id": "5",
-		"@type": [
-			"cwrc:NaturalPerson",
-			"schema:Person"
-		],
-		"cwrc:hasName": "John Westbrook"
-	},
-	"oa:motivatedBy": "oa:identifying",
-	"oa:hasTarget": {
-		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch097.xml?person_annotation_20240229203447353#Target",
-		"@type": "oa:SpecificResource",
-		"oa:hasSource": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch097.xml",
-			"@type": "dctypes:Text",
-			"dc:format": "text/xml"
-		},
-		"oa:renderedVia": {
-			"@id": "https://leaf.bucknell.edu",
-			"@type": "as:Application",
-			"rdfs:label": "LEAF-Writer",
-			"schema:softwareVersion": "3.4.0"
-		},
-		"oa:hasSelector": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch097.xml?person_annotation_20240229203447353#Selector",
-			"@type": "oa:XPathSelector",
-			"rdf:value": "TEI/text/body/div/div[3]/div[2]/div[2]/p[3]/persName[2]"
-		}
-	},
-	"oa:hasBody": {
-		"@type": "cwrc:NaturalPerson",
-		"@id": "http://www.wikidata.org/entity/Q360359",
-		"dc:format": "text/plain"
-	},
-	"as:generator": {
-		"@id": "https://leaf.bucknell.edu",
-		"@type": "as:Application",
-		"rdfs:label": "LEAF-Writer",
-		"schema:url": "https://leaf-writer.lincsproject.ca/",
-		"schema:softwareVersion": "3.4.0"
-	}
-}]]>
-        </rdf:Description>
-      </rdf:RDF></xenoData><profileDesc>
+      <xenoData><rdf:RDF xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+            xmlns:as="http://www.w3.org/ns/activitystreams#"
+            xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#"
+            xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/"
+            xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#"
+            xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:fabio="https://purl.org/spar/fabio#"
+            xmlns:bf="http://www.openlinksw.com/schemas/bif#"
+            xmlns:cito="https://sparontologies.github.io/cito/current/cito.html#"
+            xmlns:org="http://www.w3.org/ns/org#">
+            <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"> { "@context": {
+               "dcterms:created": { "@type": "xsd:dateTime", "@id": "dcterms:created" },
+               "dcterms:issued": { "@type": "xsd:dateTime", "@id": "dcterms:issued" },
+               "oa:motivatedBy": { "@type": "oa:Motivation" }, "@language": "en", "rdf":
+               "http://www.w3.org/1999/02/22-rdf-syntax-ns#", "rdfs":
+               "http://www.w3.org/2000/01/rdf-schema#", "as":
+               "http://www.w3.org/ns/activitystreams#", "cwrc":
+               "http://sparql.cwrc.ca/ontologies/cwrc#", "dc": "http://purl.org/dc/elements/1.1/",
+               "dcterms": "http://purl.org/dc/terms/", "foaf": "http://xmlns.com/foaf/0.1/", "geo":
+               "http://www.geonames.org/ontology#", "oa": "http://www.w3.org/ns/oa#", "schema":
+               "http://schema.org/", "xsd": "http://www.w3.org/2001/XMLSchema#", "fabio":
+               "https://purl.org/spar/fabio#", "bf": "http://www.openlinksw.com/schemas/bif#",
+               "cito": "https://sparontologies.github.io/cito/current/cito.html#", "org":
+               "http://www.w3.org/ns/org#" }, "id":
+               "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch097.xml?person_annotation_20240229203354855",
+               "type": "oa:Annotation", "dcterms:created": "2024-03-01T01:33:54.855Z",
+               "dcterms:creator": { "@id": "5", "@type": [ "cwrc:NaturalPerson", "schema:Person" ],
+               "cwrc:hasName": "John Westbrook" }, "oa:motivatedBy": "oa:identifying",
+               "oa:hasTarget": { "@id":
+               "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch097.xml?person_annotation_20240229203354855#Target",
+               "@type": "oa:SpecificResource", "oa:hasSource": { "@id":
+               "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch097.xml", "@type":
+               "dctypes:Text", "dc:format": "text/xml" }, "oa:renderedVia": { "@id":
+               "https://leaf.bucknell.edu", "@type": "as:Application", "rdfs:label": "LEAF-Writer",
+               "schema:softwareVersion": "3.4.0" }, "oa:hasSelector": { "@id":
+               "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch097.xml?person_annotation_20240229203354855#Selector",
+               "@type": "oa:XPathSelector", "rdf:value":
+               "TEI/text/body/div/div[3]/div[2]/div[2]/p[3]/persName" } }, "oa:hasBody": { "@type":
+               "cwrc:NaturalPerson", "@id": "http://dbpedia.org/resource/Barthélemy_Thimonnier",
+               "dc:format": "text/plain" }, "as:generator": { "@id": "https://leaf.bucknell.edu",
+               "@type": "as:Application", "rdfs:label": "LEAF-Writer", "schema:url":
+               "https://leaf-writer.lincsproject.ca/", "schema:softwareVersion": "3.4.0" } } </rdf:Description>
+            <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/"> { "@context": {
+               "dcterms:created": { "@type": "xsd:dateTime", "@id": "dcterms:created" },
+               "dcterms:issued": { "@type": "xsd:dateTime", "@id": "dcterms:issued" },
+               "oa:motivatedBy": { "@type": "oa:Motivation" }, "@language": "en", "rdf":
+               "http://www.w3.org/1999/02/22-rdf-syntax-ns#", "rdfs":
+               "http://www.w3.org/2000/01/rdf-schema#", "as":
+               "http://www.w3.org/ns/activitystreams#", "cwrc":
+               "http://sparql.cwrc.ca/ontologies/cwrc#", "dc": "http://purl.org/dc/elements/1.1/",
+               "dcterms": "http://purl.org/dc/terms/", "foaf": "http://xmlns.com/foaf/0.1/", "geo":
+               "http://www.geonames.org/ontology#", "oa": "http://www.w3.org/ns/oa#", "schema":
+               "http://schema.org/", "xsd": "http://www.w3.org/2001/XMLSchema#", "fabio":
+               "https://purl.org/spar/fabio#", "bf": "http://www.openlinksw.com/schemas/bif#",
+               "cito": "https://sparontologies.github.io/cito/current/cito.html#", "org":
+               "http://www.w3.org/ns/org#" }, "id":
+               "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch097.xml?person_annotation_20240229203447353",
+               "type": "oa:Annotation", "dcterms:created": "2024-03-01T01:34:47.353Z",
+               "dcterms:creator": { "@id": "5", "@type": [ "cwrc:NaturalPerson", "schema:Person" ],
+               "cwrc:hasName": "John Westbrook" }, "oa:motivatedBy": "oa:identifying",
+               "oa:hasTarget": { "@id":
+               "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch097.xml?person_annotation_20240229203447353#Target",
+               "@type": "oa:SpecificResource", "oa:hasSource": { "@id":
+               "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch097.xml", "@type":
+               "dctypes:Text", "dc:format": "text/xml" }, "oa:renderedVia": { "@id":
+               "https://leaf.bucknell.edu", "@type": "as:Application", "rdfs:label": "LEAF-Writer",
+               "schema:softwareVersion": "3.4.0" }, "oa:hasSelector": { "@id":
+               "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch097.xml?person_annotation_20240229203447353#Selector",
+               "@type": "oa:XPathSelector", "rdf:value":
+               "TEI/text/body/div/div[3]/div[2]/div[2]/p[3]/persName[2]" } }, "oa:hasBody": {
+               "@type": "cwrc:NaturalPerson", "@id": "http://www.wikidata.org/entity/Q360359",
+               "dc:format": "text/plain" }, "as:generator": { "@id": "https://leaf.bucknell.edu",
+               "@type": "as:Application", "rdfs:label": "LEAF-Writer", "schema:url":
+               "https://leaf-writer.lincsproject.ca/", "schema:softwareVersion": "3.4.0" } }
+            </rdf:Description>
+         </rdf:RDF></xenoData>
+      <profileDesc>
          <langUsage>
             <language ident="fr">French</language>
             <language ident="en">English</language>
@@ -236,29 +156,31 @@
    </teiHeader>
    <text>
       <body>
-<div xmlns:ns0="http://www.tei-c.org/ns/1.0" type="chapitre" xml:lang="fr" n="ch097">
-<pb type="page" n="335" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_335.jpg"/>
+         <div xmlns:ns0="http://www.tei-c.org/ns/1.0" type="chapitre" xml:lang="fr" n="ch097">
+            <pb type="page" n="335"
+               facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_335.jpg"/>
             <head>97. — Machine à coudre. </head>
             <div type="récit">
                <p>La leçon de coupe et d'essayage achevée, les différentes pièces du patron
                   assemblées, rectifiées*<note type="annotation">Rectifier. Corriger les défauts
                      d'une chose ou les erreurs qu'on y a commises.</note> par un bâti de longs
-                  points blancs, <persName key="mme_richard" type="fictif">Mme Richard</persName>
+                  points blancs, Mme Richard
                   prit par la main sa nièce, et la mena devant la machine à coudre.</p>
                <p>C'était un fin outil, de bonne marque*<note type="annotation">Bonne marque.
                      Provenant d'une maison recommandable.</note> ; toute la partie d'acier brillait
-                  comme de l'argent. Il était fixé sur une table d'acajou. <persName key="suzette" type="fictif">Suzette</persName> lui sourit comme à une jolie chose.</p>
-               <p> — Assieds-toi, ma fille. Pose tes deux pieds sur la pédale*<note type="annotation">Pédale. Pièce de métal ou appareil qu'on meut avec le pied
+                  comme de l'argent. Il était fixé sur une table d'acajou. Suzette lui sourit comme à une jolie chose.</p>
+               <p> — Assieds-toi, ma fille. Pose tes deux pieds sur la pédale*<note
+                     type="annotation">Pédale. Pièce de métal ou appareil qu'on meut avec le pied
                      pour faire tourner une roue.</note> .... <figure>
                      <caption>La machine à coudre.</caption>
                   </figure> presse du pied droit, du pied gauche ! droit ! gauche ! droit ! gauche
                   droit ! stop ! </p>
-               <pb type="page" n="336" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_336.jpg"/>
-               
+               <pb type="page" n="336"
+                  facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_336.jpg"/>
                <p>Ce n'était là qu'un exercice préliminaire*<note type="annotation">Préliminaire.
                      Qui précède les autres choses.</note>. Pour mettre la machine en train,
-                     <persName key="mme_richard" type="fictif">Mme Richard</persName> prit la place
-                  de <persName key="suzette" type="fictif">Suzette</persName>, disposa la mécanique,
+                     Mme Richard prit la place
+                  de Suzette, disposa la mécanique,
                   puis l'ouvrage, une lon-<figure>
                      <caption>Les différents points de couture. 1. Le point devant s'exécute en
                         piquant l'aiguille dans l'étoffe de distance en distance. — 2. Le point
@@ -274,15 +196,17 @@
                         raccommodages, principalement pour la flanelle.</caption>
                   </figure> gue bande destinée à un plissé de la garniture. Il s'agissait de
                   l'ourler. Et, se levant à son tour : </p>
-               <p>— A toi, <persName key="suzette" type="fictif">Suzon</persName>, hop !... gauche,
+               <p>— A toi, Suzon, hop !... gauche,
                   droit !...</p>
-               <p>Cette fois, le jeu des pieds sur la pédale mit en mouvement le volant*<note type="annotation">Volant. Pièce cylindrique de métal munie de quatre ailes, ou
+               <p>Cette fois, le jeu des pieds sur la pédale mit en mouvement le volant*<note
+                     type="annotation">Volant. Pièce cylindrique de métal munie de quatre ailes, ou
                      encore roue pesante de fonte qui, l'une et l'autre, règlent un mouvement
                      circulaire.</note> et le reste du mécanisme. Cela faisait un petit et multiple
                   tic tac pressé, régulier. L'aiguille piquait l'étoffe d'outre en outre, se
-                  relevait, piquait <pb type="page" n="337" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_337.jpg"/>
-                   encore, laissant derrière elle un ourlet orné d'une
-                  piqûre égale, fine, perlée — et cousait, cousait à l'enchantement des yeux.</p>
+                  relevait, piquait <pb type="page" n="337"
+                     facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_337.jpg"
+                  /> encore, laissant derrière elle un ourlet orné d'une piqûre égale, fine, perlée
+                  — et cousait, cousait à l'enchantement des yeux.</p>
                <p>En quelques minutes, des mètres et des mètres de la bande passèrent,
                   s'ourlèrent.</p>
                <p>Ce travail préparatoire achevé, la bande se plissa de petits plis réguliers, par
@@ -295,8 +219,9 @@
                   cela, une main armée d'une aiguille.</p>
                <p>Et qu'est-ce qu'une main armée d'une aiguille, si l'intelligence, le goût ne la
                   mènent ? Elle fait cinquante bêtises. Elle en fait cinquante mille quand elle est
-                  machine à coudre. Donc, <persName key="suzette" type="fictif">Suzette</persName>,
-                  tout votre goût ici et tout votre esprit ! Le nez vous en perle*<note type="annotation">Le nez perle. Il se couvre de gouttelettes de sueur.</note>,
+                  machine à coudre. Donc, Suzette,
+                  tout votre goût ici et tout votre esprit ! Le nez vous en perle*<note
+                     type="annotation">Le nez perle. Il se couvre de gouttelettes de sueur.</note>,
                   d'application ; c'est très bien ; vous l'essuierez plus tard.</p>
                <figure>
                   <caption>Fronces. Il faut savoir très bien froncer pour faire de la belle
@@ -309,14 +234,14 @@
                <p>Elle va de toute son âme. Les petits côtés, les devants avec les quatre pinces, le
                   dos, le collet sont enfin terminés, et gentiment.</p>
                <p>— Oh ! que c'est joli ! dit-elle sans modestie en regardant son ouvrage.</p>
-               <p>—Oui, et voilà ! dit la tante. Avec une couseuse méca-<pb type="page" n="338" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_338.jpg"/>
-                   nique dans un coin de la maison, la maman de six enfants se
-                  moque de l'hiver qui approche et de l'usure des vêtements. Petites chemises,
-                  petits bonnets, petites culottes, vestes, robes, manteaux, tout cela se trousse en
-                  un clin d'œil... Tiens ! à propos ; une machine à coudre, c'est le cadeau que je
-                  te ferai, <persName key="suzette" type="fictif">Suzon</persName>, quand tu te
-                  marieras ! </p>
-               <p><persName key="suzette" type="fictif">Suzon</persName> se mit à rire : Et si elle
+               <p>—Oui, et voilà ! dit la tante. Avec une couseuse méca-<pb type="page" n="338"
+                     facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_338.jpg"
+                  /> nique dans un coin de la maison, la maman de six enfants se moque de l'hiver
+                  qui approche et de l'usure des vêtements. Petites chemises, petits bonnets,
+                  petites culottes, vestes, robes, manteaux, tout cela se trousse en un clin
+                  d'œil... Tiens ! à propos ; une machine à coudre, c'est le cadeau que je te ferai,
+                     Suzon, quand tu te marieras ! </p>
+               <p>Suzon se mit à rire : Et si elle
                   allait rester vieille fille ? </p>
                <figure>
                   <caption>Patron des diverses parties d'un corsage et manches de corsage.</caption>
@@ -330,21 +255,21 @@
             <div type="questionnaire">
                <head>Questionnaire.</head>
                <list>
-                  <item>— Où <persName key="mme_richard" type="fictif">Mme Richard</persName>
+                  <item>— Où Mme Richard
                      conduisit-elle sa nièce ? </item>
                   <item>— Que savez-vous de cette machine à coudre ? </item>
-                  <item>— Comment indiqua-t-on à <persName key="suzette" type="fictif">Suzette</persName> la manière de s'en servir ? </item>
-                  <item>— Comment <persName key="mme_richard" type="fictif">Mme Richard</persName>
+                  <item>— Comment indiqua-t-on à Suzette la manière de s'en servir ? </item>
+                  <item>— Comment Mme Richard
                      donna-t-elle la première leçon ? </item>
                   <item>— Indiquez comment fonctionne la machine. </item>
                   <item>— Quels sont les différents points de couture et en quoi consistent-ils ? </item>
                   <item>— De quelle manière confectionna-t-on la ruche ? </item>
                   <item>— Pourquoi faut-il être très attentive en emplovant la machine à coudre ? </item>
-                  <item>— Que disait <persName key="suzette" type="fictif">Suzette</persName> en
+                  <item>— Que disait Suzette en
                      voyant le résultat obtenu ? </item>
                   <item>— Que lui répondit sa tante sur les avantages de la couseuse mécanique ? </item>
-                  <item>— Pour quelle époque <persName key="mme_richard" type="fictif">Mme
-                        Richard</persName> en promit-elle une à sa nièce ? </item>
+                  <item>— Pour quelle époque Mme
+                        Richard en promit-elle une à sa nièce ? </item>
                   <item>— Quelles réflexions terminèrent l'entretien ? </item>
                   <item>— Qu'avait-on fait dans la matinée ? </item>
                </list>
@@ -363,11 +288,12 @@
                   <div type="réponses">
                      <p>Un <term>patron</term> est un morceau de papier, de carton, que les
                         tailleurs, tes couturières, les lingères, etc, découpent de manière à
-                        figurer les <pb type="page" n="339" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_339.jpg"/>
-                         diffèrentes parties de leurs ouvrages, et
-                        sur lequel ils taillent l'étoffe. — Une <term>pédale</term> est une pièce de
-                        métal qu'on fait mouvoir en y appuyant le pied. — Un <term>plissé</term> est
-                        une pièce d'étoffe sur laquelle on a formé des plis réguliers. — Une
+                        figurer les <pb type="page" n="339"
+                           facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_339.jpg"
+                        /> diffèrentes parties de leurs ouvrages, et sur lequel ils taillent
+                        l'étoffe. — Une <term>pédale</term> est une pièce de métal qu'on fait
+                        mouvoir en y appuyant le pied. — Un <term>plissé</term> est une pièce
+                        d'étoffe sur laquelle on a formé des plis réguliers. — Une
                            <term>garniture</term> est ce qui est ajouté à une robe ou à tout autre
                         vêtement pour l'orner et le complter. — Un <term>ourlet</term> est un repli
                         qu'on assujettit, en le cousant, au bord d'une toffe ou d'un morceau de
@@ -380,7 +306,8 @@
                         fait à du linge.</p>
                   </div>
                </div>
-               <div cert="high" org="composite" part="Y" sample="initial" type="industrie" xml:space="default" xml:id="sujind_097">
+               <div cert="high" org="composite" part="Y" sample="initial" type="industrie"
+                  xml:space="default" xml:id="sujind_097">
                   <head>Industrie.</head>
                   <div type="questions">
                      <list>
@@ -407,8 +334,13 @@
                         disposition aussi simple qu'ingénieuse, le fil provenant de a bobine est
                         entraîné par l'aiguille ; il pénêtre au travers de l'étoffe et exécute un
                         point comme si la main de l'ouvrier dirigeait le petit instrument.</p>
-                     <p>Le premier <term>inventeur</term> de la machine à aiguille est <persName ana="française" key="Barthélemy Thimonnier" ref="http://dbpedia.org/resource/Barthélemy_Thimonnier" role="inventeur">Thimonier</persName> ; elle a été perfectionnée et
-                        vulgarisée par l'Américain <persName ana="américaine" key="Elias Howe" ref="http://www.wikidata.org/entity/Q360359" role="inventeur">Howe</persName>.</p>
+                     <p>Le premier <term>inventeur</term> de la machine à aiguille est <persName
+                           ana="française" key="Barthélemy Thimonnier"
+                           ref="http://dbpedia.org/resource/Barthélemy_Thimonnier" role="inventeur"
+                           >Thimonier</persName> ; elle a été perfectionnée et vulgarisée par
+                        l'Américain <persName ana="américaine" key="Elias Howe"
+                           ref="http://www.wikidata.org/entity/Q360359" role="inventeur"
+                           >Howe</persName>.</p>
                      <p>Ses avantages... (Voir la leçon.)</p>
                      <p>Il y a diverses sortes de machines à coudre, depuis les plus fortes qui
                         exécutent les coutures dans les étoffes épaisses, jusqu'aux plus mignonnes,
