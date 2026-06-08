@@ -104,6 +104,7 @@
 	"id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20240104134605613",
 	"type": "oa:Annotation",
 	"dcterms:created": "2024-01-04T18:46:05.613Z",
+	"dcterms:modified": "2026-06-08T15:35:59.636Z",
 	"dcterms:creator": {
 		"@id": "1",
 		"@type": [
@@ -135,7 +136,7 @@
 	},
 	"oa:hasBody": {
 		"@type": "cwrc:RealPlace",
-		"@id": "http://www.wikidata.org/entity/Q20892",
+		"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0749",
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
@@ -144,7 +145,19 @@
 		"rdfs:label": "LEAF-Writer",
 		"schema:url": "https://leaf-writer.lincsproject.ca/",
 		"schema:softwareVersion": "4.2.0"
-	}
+	},
+	"dcterms:contributor": [
+		{
+			"dcterms:contributor": {
+				"@id": "https://github.com/djakacki",
+				"@type": [
+					"cwrc:NaturalPerson",
+					"schema:Person"
+				],
+				"cwrc:hasName": "Diane Jakacki"
+			}
+		}
+	]
 }]]>
         </rdf:Description>
       
@@ -1324,6 +1337,85 @@
 	}
 }]]>
         </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113602379",
+	"type": "oa:Annotation",
+	"dcterms:created": "2026-06-08T15:36:02.379Z",
+	"dcterms:modified": "2026-06-08T15:36:12.188Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/djakacki",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113602379#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "4.2.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113602379#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[3]/div[4]/div[2]/p[3]/placeName[2]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0328",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "4.2.0"
+	}
+}]]>
+        </rdf:Description>
       </rdf:RDF></xenoData><profileDesc>
 			<langUsage>
 				<language ident="fr">French</language>
@@ -1488,8 +1580,8 @@
 							</list>
 						</div>
 						<div type="réponses">
-							<p>(Voir <title>COURS DE COMPOSITION FRANÇAISE (Degré élémentaire et
-									moyen) par E. LAPORTE, Partie du maître</title>, page 240, et
+							<p>(Voir COURS DE COMPOSITION FRANÇAISE (Degré élémentaire et
+									moyen) par E. LAPORTE, Partie du maître, page 240, et
 								page 239, Degré supérieur.)</p>
 						</div>
 					</div>
@@ -1542,9 +1634,9 @@
 							<p>Ces phénomènes, dont le premier est connu sous le nom de flux et
 								l'autre sous celui de reflux, sont attribués à l'attraction
 								qu'exercent le soleil et la lune sur la surface du globe.</p>
-							<p>C'est au <placeName key="Le Mont-Saint-Michel" ref="http://www.wikidata.org/entity/Q20892">mont
+							<p>C'est au <placeName key="Mont Saint-Michel" ref="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0749">mont
 									Saint-Michel</placeName>, au sud-ouest de la presqu'ile de
-									<placeName key="Cotentin Peninsula" ref="http://www.wikidata.org/entity/Q463529">Cotentin</placeName>, que la marée modifie le plus l'aspect du
+									<placeName key="presqu'ile de Cotentin" ref="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0328">Cotentin</placeName>, que la marée modifie le plus l'aspect du
 								rivagé. « A mer basse, l'immense plaine de sable de 250 kilomêtres
 								carrès qui entoure le mont, ressemble à un lit de cendres que borne
 								au lointain le liséré d'écume de l' ; mais lorsque la marée, plus
@@ -1555,7 +1647,7 @@
 								à nu la grande plage déserte que parcourent des ruisseaux, en
 								formant çà et là des gouffres perfides de vase molle où les
 								voyageurs risquent de s'engloutir. » (D'après E. RECLUS,
-										<title><title level="m">L'Océan</title></title>.)</p>
+										<title>L'Océan</title>.)</p>
 							<p>La hauteur de la marée est plus grande dans les golfes que sur les
 								plages largement découvertes. Au fond de la baie du <placeName key="Le Mont-Saint-Michel" ref="http://www.wikidata.org/entity/Q20892">mont
 									Saint-Michel</placeName>, elle marque 14 à 15 mêtres entre le
