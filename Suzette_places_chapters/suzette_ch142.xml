@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/CSS/suzette_cwrc.css"?>
-<?xml-model href="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/out/suzette.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/out/suzette.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/CSS/suzette_cwrc.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -71,20 +68,10 @@
 				</biblStruct>
 			</sourceDesc>
 		</fileDesc>
-		<xenoData><rdf:RDF
-				xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-				xmlns:as="http://www.w3.org/ns/activitystreams#"
-				xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#"
-				xmlns:dc="http://purl.org/dc/elements/1.1/"
-				xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/"
-				xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#"
-				xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-				xmlns:fabio="https://purl.org/spar/fabio#"
-				xmlns:bf="http://www.openlinksw.com/schemas/bif#"
-				xmlns:cito="https://sparontologies.github.io/cito/current/cito.html#"
-				xmlns:org="http://www.w3.org/ns/org#">
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
-					{
+		
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:fabio="https://purl.org/spar/fabio#" xmlns:bf="http://www.openlinksw.com/schemas/bif#" xmlns:cito="https://sparontologies.github.io/cito/current/cito.html#" xmlns:org="http://www.w3.org/ns/org#">
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -114,244 +101,10 @@
 		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
 		"org": "http://www.w3.org/ns/org#"
 	},
-	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104134443034",
-	"type": "oa:Annotation",
-	"dcterms:created": "2024-01-04T18:44:43.034Z",
-	"dcterms:modified": "2024-01-04T18:44:43.034Z",
-	"dcterms:creator": {
-		"@id": "1",
-		"@type": [
-			"cwrc:NaturalPerson",
-			"schema:Person"
-		],
-		"cwrc:hasName": "admin"
-	},
-	"oa:motivatedBy": "oa:identifying",
-	"oa:hasTarget": {
-		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104134443034#Target",
-		"@type": "oa:SpecificResource",
-		"oa:hasSource": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml",
-			"@type": "dctypes:Text",
-			"dc:format": "text/xml"
-		},
-		"oa:renderedVia": {
-			"@id": "https://leaf.bucknell.edu",
-			"@type": "as:Application",
-			"rdfs:label": "LEAF-Writer",
-			"schema:softwareVersion": "3.4.0"
-		},
-		"oa:hasSelector": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104134443034#Selector",
-			"@type": "oa:XPathSelector",
-			"rdf:value": "TEI/text/body/div/div/p[9]/placeName/placeName"
-		}
-	},
-	"oa:hasBody": {
-		"@type": "cwrc:RealPlace",
-		"@id": "http://www.wikidata.org/entity/Q81621",
-		"dc:format": "text/plain"
-	},
-	"as:generator": {
-		"@id": "https://leaf.bucknell.edu",
-		"@type": "as:Application",
-		"rdfs:label": "LEAF-Writer",
-		"schema:url": "https://leaf-writer.lincsproject.ca/",
-		"schema:softwareVersion": "3.4.0"
-	}
-}
-				</rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
-					{
-	"@context": {
-		"dcterms:created": {
-			"@type": "xsd:dateTime",
-			"@id": "dcterms:created"
-		},
-		"dcterms:issued": {
-			"@type": "xsd:dateTime",
-			"@id": "dcterms:issued"
-		},
-		"oa:motivatedBy": {
-			"@type": "oa:Motivation"
-		},
-		"@language": "en",
-		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-		"as": "http://www.w3.org/ns/activitystreams#",
-		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
-		"dc": "http://purl.org/dc/elements/1.1/",
-		"dcterms": "http://purl.org/dc/terms/",
-		"foaf": "http://xmlns.com/foaf/0.1/",
-		"geo": "http://www.geonames.org/ontology#",
-		"oa": "http://www.w3.org/ns/oa#",
-		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#",
-		"fabio": "https://purl.org/spar/fabio#",
-		"bf": "http://www.openlinksw.com/schemas/bif#",
-		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
-		"org": "http://www.w3.org/ns/org#"
-	},
-	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104134521859",
-	"type": "oa:Annotation",
-	"dcterms:created": "2024-01-04T18:45:21.859Z",
-	"dcterms:modified": "2024-01-04T18:45:21.859Z",
-	"dcterms:creator": {
-		"@id": "1",
-		"@type": [
-			"cwrc:NaturalPerson",
-			"schema:Person"
-		],
-		"cwrc:hasName": "admin"
-	},
-	"oa:motivatedBy": "oa:identifying",
-	"oa:hasTarget": {
-		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104134521859#Target",
-		"@type": "oa:SpecificResource",
-		"oa:hasSource": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml",
-			"@type": "dctypes:Text",
-			"dc:format": "text/xml"
-		},
-		"oa:renderedVia": {
-			"@id": "https://leaf.bucknell.edu",
-			"@type": "as:Application",
-			"rdfs:label": "LEAF-Writer",
-			"schema:softwareVersion": "3.4.0"
-		},
-		"oa:hasSelector": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104134521859#Selector",
-			"@type": "oa:XPathSelector",
-			"rdf:value": "TEI/text/body/div/div[2]/list/item[8]/placeName/placeName"
-		}
-	},
-	"oa:hasBody": {
-		"@type": "cwrc:RealPlace",
-		"@id": "http://www.wikidata.org/entity/Q81621",
-		"dc:format": "text/plain"
-	},
-	"as:generator": {
-		"@id": "https://leaf.bucknell.edu",
-		"@type": "as:Application",
-		"rdfs:label": "LEAF-Writer",
-		"schema:url": "https://leaf-writer.lincsproject.ca/",
-		"schema:softwareVersion": "3.4.0"
-	}
-}
-				</rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
-					{
-	"@context": {
-		"dcterms:created": {
-			"@type": "xsd:dateTime",
-			"@id": "dcterms:created"
-		},
-		"dcterms:issued": {
-			"@type": "xsd:dateTime",
-			"@id": "dcterms:issued"
-		},
-		"oa:motivatedBy": {
-			"@type": "oa:Motivation"
-		},
-		"@language": "en",
-		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-		"as": "http://www.w3.org/ns/activitystreams#",
-		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
-		"dc": "http://purl.org/dc/elements/1.1/",
-		"dcterms": "http://purl.org/dc/terms/",
-		"foaf": "http://xmlns.com/foaf/0.1/",
-		"geo": "http://www.geonames.org/ontology#",
-		"oa": "http://www.w3.org/ns/oa#",
-		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#",
-		"fabio": "https://purl.org/spar/fabio#",
-		"bf": "http://www.openlinksw.com/schemas/bif#",
-		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
-		"org": "http://www.w3.org/ns/org#"
-	},
-	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?person_annotation_20240104134605612",
-	"type": "oa:Annotation",
-	"dcterms:created": "2024-01-04T18:46:05.612Z",
-	"dcterms:modified": "2024-01-04T18:46:05.612Z",
-	"dcterms:creator": {
-		"@id": "1",
-		"@type": [
-			"cwrc:NaturalPerson",
-			"schema:Person"
-		],
-		"cwrc:hasName": "admin"
-	},
-	"oa:motivatedBy": "oa:identifying",
-	"oa:hasTarget": {
-		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?person_annotation_20240104134605612#Target",
-		"@type": "oa:SpecificResource",
-		"oa:hasSource": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml",
-			"@type": "dctypes:Text",
-			"dc:format": "text/xml"
-		},
-		"oa:renderedVia": {
-			"@id": "https://leaf.bucknell.edu",
-			"@type": "as:Application",
-			"rdfs:label": "LEAF-Writer",
-			"schema:softwareVersion": "3.4.0"
-		},
-		"oa:hasSelector": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?person_annotation_20240104134605612#Selector",
-			"@type": "oa:XPathSelector",
-			"rdf:value": "TEI/text/body/div/div[3]/div[4]/div[2]/p[3]/persName"
-		}
-	},
-	"oa:hasBody": {
-		"@type": "cwrc:NaturalPerson",
-		"@id": "http://viaf.org/viaf/315643242/",
-		"dc:format": "text/plain"
-	},
-	"as:generator": {
-		"@id": "https://leaf.bucknell.edu",
-		"@type": "as:Application",
-		"rdfs:label": "LEAF-Writer",
-		"schema:url": "https://leaf-writer.lincsproject.ca/",
-		"schema:softwareVersion": "3.4.0"
-	}
-}
-				</rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
-					{
-	"@context": {
-		"dcterms:created": {
-			"@type": "xsd:dateTime",
-			"@id": "dcterms:created"
-		},
-		"dcterms:issued": {
-			"@type": "xsd:dateTime",
-			"@id": "dcterms:issued"
-		},
-		"oa:motivatedBy": {
-			"@type": "oa:Motivation"
-		},
-		"@language": "en",
-		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-		"as": "http://www.w3.org/ns/activitystreams#",
-		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
-		"dc": "http://purl.org/dc/elements/1.1/",
-		"dcterms": "http://purl.org/dc/terms/",
-		"foaf": "http://xmlns.com/foaf/0.1/",
-		"geo": "http://www.geonames.org/ontology#",
-		"oa": "http://www.w3.org/ns/oa#",
-		"schema": "http://schema.org/",
-		"xsd": "http://www.w3.org/2001/XMLSchema#",
-		"fabio": "https://purl.org/spar/fabio#",
-		"bf": "http://www.openlinksw.com/schemas/bif#",
-		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
-		"org": "http://www.w3.org/ns/org#"
-	},
-	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104134605613",
+	"id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20240104134605613",
 	"type": "oa:Annotation",
 	"dcterms:created": "2024-01-04T18:46:05.613Z",
-	"dcterms:modified": "2024-01-04T18:46:05.613Z",
+	"dcterms:modified": "2026-06-08T15:35:59.636Z",
 	"dcterms:creator": {
 		"@id": "1",
 		"@type": [
@@ -362,41 +115,54 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104134605613#Target",
+		"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20240104134605613#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml",
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://leaf.bucknell.edu",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
 			"rdfs:label": "LEAF-Writer",
-			"schema:softwareVersion": "3.4.0"
+			"schema:softwareVersion": "4.2.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104134605613#Selector",
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20240104134605613#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[3]/div[4]/div[2]/p[3]/placeName"
 		}
 	},
 	"oa:hasBody": {
 		"@type": "cwrc:RealPlace",
-		"@id": "http://www.wikidata.org/entity/Q20892",
+		"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0749",
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://leaf.bucknell.edu",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
 		"rdfs:label": "LEAF-Writer",
 		"schema:url": "https://leaf-writer.lincsproject.ca/",
-		"schema:softwareVersion": "3.4.0"
-	}
-}
-				</rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
-					{
+		"schema:softwareVersion": "4.2.0"
+	},
+	"dcterms:contributor": [
+		{
+			"dcterms:contributor": {
+				"@id": "https://github.com/djakacki",
+				"@type": [
+					"cwrc:NaturalPerson",
+					"schema:Person"
+				],
+				"cwrc:hasName": "Diane Jakacki"
+			}
+		}
+	]
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -426,10 +192,10 @@
 		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
 		"org": "http://www.w3.org/ns/org#"
 	},
-	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104134605613",
+	"id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20240104134605613",
 	"type": "oa:Annotation",
 	"dcterms:created": "2024-01-04T18:46:05.613Z",
-	"dcterms:modified": "2024-01-04T18:46:05.613Z",
+	"dcterms:modified": "2026-06-08T15:36:48.481Z",
 	"dcterms:creator": {
 		"@id": "1",
 		"@type": [
@@ -440,41 +206,54 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104134605613#Target",
+		"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20240104134605613#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml",
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://leaf.bucknell.edu",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
 			"rdfs:label": "LEAF-Writer",
-			"schema:softwareVersion": "3.4.0"
+			"schema:softwareVersion": "4.2.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104134605613#Selector",
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20240104134605613#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[3]/div[4]/div[2]/p[4]/placeName[2]"
 		}
 	},
 	"oa:hasBody": {
 		"@type": "cwrc:RealPlace",
-		"@id": "http://www.wikidata.org/entity/Q45797",
+		"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0486",
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://leaf.bucknell.edu",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
 		"rdfs:label": "LEAF-Writer",
 		"schema:url": "https://leaf-writer.lincsproject.ca/",
-		"schema:softwareVersion": "3.4.0"
-	}
-}
-				</rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
-					{
+		"schema:softwareVersion": "4.2.0"
+	},
+	"dcterms:contributor": [
+		{
+			"dcterms:contributor": {
+				"@id": "https://github.com/djakacki",
+				"@type": [
+					"cwrc:NaturalPerson",
+					"schema:Person"
+				],
+				"cwrc:hasName": "Diane Jakacki"
+			}
+		}
+	]
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -504,10 +283,10 @@
 		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
 		"org": "http://www.w3.org/ns/org#"
 	},
-	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104134605613",
+	"id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20240104134605613",
 	"type": "oa:Annotation",
 	"dcterms:created": "2024-01-04T18:46:05.613Z",
-	"dcterms:modified": "2024-01-04T18:46:05.613Z",
+	"dcterms:modified": "2026-06-08T15:36:58.289Z",
 	"dcterms:creator": {
 		"@id": "1",
 		"@type": [
@@ -518,41 +297,54 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104134605613#Target",
+		"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20240104134605613#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml",
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://leaf.bucknell.edu",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
 			"rdfs:label": "LEAF-Writer",
-			"schema:softwareVersion": "3.4.0"
+			"schema:softwareVersion": "4.2.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104134605613#Selector",
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20240104134605613#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[3]/div[4]/div[2]/p[4]/placeName[3]"
 		}
 	},
 	"oa:hasBody": {
 		"@type": "cwrc:RealPlace",
-		"@id": "http://www.wikidata.org/entity/Q42810",
+		"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0518",
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://leaf.bucknell.edu",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
 		"rdfs:label": "LEAF-Writer",
 		"schema:url": "https://leaf-writer.lincsproject.ca/",
-		"schema:softwareVersion": "3.4.0"
-	}
-}
-				</rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
-					{
+		"schema:softwareVersion": "4.2.0"
+	},
+	"dcterms:contributor": [
+		{
+			"dcterms:contributor": {
+				"@id": "https://github.com/djakacki",
+				"@type": [
+					"cwrc:NaturalPerson",
+					"schema:Person"
+				],
+				"cwrc:hasName": "Diane Jakacki"
+			}
+		}
+	]
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -582,10 +374,10 @@
 		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
 		"org": "http://www.w3.org/ns/org#"
 	},
-	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104134605614",
+	"id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20240104134605614",
 	"type": "oa:Annotation",
 	"dcterms:created": "2024-01-04T18:46:05.614Z",
-	"dcterms:modified": "2024-01-04T18:46:05.614Z",
+	"dcterms:modified": "2026-06-08T15:37:07.024Z",
 	"dcterms:creator": {
 		"@id": "1",
 		"@type": [
@@ -596,41 +388,54 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104134605614#Target",
+		"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20240104134605614#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml",
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://leaf.bucknell.edu",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
 			"rdfs:label": "LEAF-Writer",
-			"schema:softwareVersion": "3.4.0"
+			"schema:softwareVersion": "4.2.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104134605614#Selector",
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20240104134605614#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[3]/div[4]/div[2]/p[5]/placeName"
 		}
 	},
 	"oa:hasBody": {
 		"@type": "cwrc:RealPlace",
-		"@id": "http://www.wikidata.org/entity/Q4918",
+		"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0215",
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://leaf.bucknell.edu",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
 		"rdfs:label": "LEAF-Writer",
 		"schema:url": "https://leaf-writer.lincsproject.ca/",
-		"schema:softwareVersion": "3.4.0"
-	}
-}
-				</rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
-					{
+		"schema:softwareVersion": "4.2.0"
+	},
+	"dcterms:contributor": [
+		{
+			"dcterms:contributor": {
+				"@id": "https://github.com/djakacki",
+				"@type": [
+					"cwrc:NaturalPerson",
+					"schema:Person"
+				],
+				"cwrc:hasName": "Diane Jakacki"
+			}
+		}
+	]
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -660,10 +465,10 @@
 		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
 		"org": "http://www.w3.org/ns/org#"
 	},
-	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104134605614",
+	"id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20240104134605614",
 	"type": "oa:Annotation",
 	"dcterms:created": "2024-01-04T18:46:05.614Z",
-	"dcterms:modified": "2024-01-04T18:46:05.614Z",
+	"dcterms:modified": "2026-06-08T15:38:21.517Z",
 	"dcterms:creator": {
 		"@id": "1",
 		"@type": [
@@ -674,41 +479,54 @@
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104134605614#Target",
+		"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20240104134605614#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml",
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://leaf.bucknell.edu",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
 			"rdfs:label": "LEAF-Writer",
-			"schema:softwareVersion": "3.4.0"
+			"schema:softwareVersion": "4.2.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104134605614#Selector",
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20240104134605614#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div[3]/div[4]/div[2]/p[5]/placeName[6]"
 		}
 	},
 	"oa:hasBody": {
 		"@type": "cwrc:RealPlace",
-		"@id": "http://www.wikidata.org/entity/Q121378",
+		"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0468",
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://leaf.bucknell.edu",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
 		"rdfs:label": "LEAF-Writer",
 		"schema:url": "https://leaf-writer.lincsproject.ca/",
-		"schema:softwareVersion": "3.4.0"
-	}
-}
-				</rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
-					{
+		"schema:softwareVersion": "4.2.0"
+	},
+	"dcterms:contributor": [
+		{
+			"dcterms:contributor": {
+				"@id": "https://github.com/djakacki",
+				"@type": [
+					"cwrc:NaturalPerson",
+					"schema:Person"
+				],
+				"cwrc:hasName": "Diane Jakacki"
+			}
+		}
+	]
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -738,10 +556,9 @@
 		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
 		"org": "http://www.w3.org/ns/org#"
 	},
-	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?note_annotation_20240104134605616",
+	"id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?note_annotation_20240104134605616",
 	"type": "oa:Annotation",
 	"dcterms:created": "2024-01-04T18:46:05.616Z",
-	"dcterms:modified": "2024-01-04T18:46:05.616Z",
 	"dcterms:creator": {
 		"@id": "1",
 		"@type": [
@@ -752,21 +569,21 @@
 	},
 	"oa:motivatedBy": "oa:describing",
 	"oa:hasTarget": {
-		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?note_annotation_20240104134605616#Target",
+		"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?note_annotation_20240104134605616#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml",
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://leaf.bucknell.edu",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
 			"rdfs:label": "LEAF-Writer",
-			"schema:softwareVersion": "3.4.0"
+			"schema:softwareVersion": "4.2.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?note_annotation_20240104134605616#Selector",
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?note_annotation_20240104134605616#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div/p[9]/note"
 		}
@@ -774,19 +591,20 @@
 	"oa:hasBody": {
 		"@type": "oa:TextualBody",
 		"dc:format": "text/plain",
-		"rdf:value": "Émoi.\n                     Émotion mêlée d'inquiétude."
+		"rdf:value": "Émoi.\n\t\t\t\t\t\t\tÉmotion mêlée d'inquiétude."
 	},
 	"as:generator": {
-		"@id": "https://leaf.bucknell.edu",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
 		"rdfs:label": "LEAF-Writer",
 		"schema:url": "https://leaf-writer.lincsproject.ca/",
-		"schema:softwareVersion": "3.4.0"
+		"schema:softwareVersion": "4.2.0"
 	}
-}
-				</rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
-					{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -816,10 +634,9 @@
 		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
 		"org": "http://www.w3.org/ns/org#"
 	},
-	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?note_annotation_20240104134605617",
+	"id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?note_annotation_20240104134605617",
 	"type": "oa:Annotation",
 	"dcterms:created": "2024-01-04T18:46:05.617Z",
-	"dcterms:modified": "2024-01-04T18:46:05.617Z",
 	"dcterms:creator": {
 		"@id": "1",
 		"@type": [
@@ -830,21 +647,21 @@
 	},
 	"oa:motivatedBy": "oa:describing",
 	"oa:hasTarget": {
-		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?note_annotation_20240104134605617#Target",
+		"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?note_annotation_20240104134605617#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml",
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://leaf.bucknell.edu",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
 			"rdfs:label": "LEAF-Writer",
-			"schema:softwareVersion": "3.4.0"
+			"schema:softwareVersion": "4.2.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?note_annotation_20240104134605617#Selector",
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?note_annotation_20240104134605617#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div/p[10]/note"
 		}
@@ -852,19 +669,20 @@
 	"oa:hasBody": {
 		"@type": "oa:TextualBody",
 		"dc:format": "text/plain",
-		"rdf:value": "Planteur. Habitant des colonies qui cultive le sol en grand."
+		"rdf:value": "Planteur. Habitant des colonies qui cultive le sol en\n\t\t\t\t\t\t\tgrand."
 	},
 	"as:generator": {
-		"@id": "https://leaf.bucknell.edu",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
 		"rdfs:label": "LEAF-Writer",
 		"schema:url": "https://leaf-writer.lincsproject.ca/",
-		"schema:softwareVersion": "3.4.0"
+		"schema:softwareVersion": "4.2.0"
 	}
-}
-				</rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
-					{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -894,10 +712,9 @@
 		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
 		"org": "http://www.w3.org/ns/org#"
 	},
-	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?note_annotation_20240104134605617",
+	"id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?note_annotation_20240104134605617",
 	"type": "oa:Annotation",
 	"dcterms:created": "2024-01-04T18:46:05.617Z",
-	"dcterms:modified": "2024-01-04T18:46:05.617Z",
 	"dcterms:creator": {
 		"@id": "1",
 		"@type": [
@@ -908,21 +725,21 @@
 	},
 	"oa:motivatedBy": "oa:describing",
 	"oa:hasTarget": {
-		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?note_annotation_20240104134605617#Target",
+		"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?note_annotation_20240104134605617#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml",
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://leaf.bucknell.edu",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
 			"rdfs:label": "LEAF-Writer",
-			"schema:softwareVersion": "3.4.0"
+			"schema:softwareVersion": "4.2.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?note_annotation_20240104134605617#Selector",
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?note_annotation_20240104134605617#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div/p[11]/note"
 		}
@@ -930,19 +747,20 @@
 	"oa:hasBody": {
 		"@type": "oa:TextualBody",
 		"dc:format": "text/plain",
-		"rdf:value": "Houlouse. Formant de\n                     fortes ondulations."
+		"rdf:value": "Houlouse. Formant\n\t\t\t\t\t\t\tde fortes ondulations."
 	},
 	"as:generator": {
-		"@id": "https://leaf.bucknell.edu",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
 		"rdfs:label": "LEAF-Writer",
 		"schema:url": "https://leaf-writer.lincsproject.ca/",
-		"schema:softwareVersion": "3.4.0"
+		"schema:softwareVersion": "4.2.0"
 	}
-}
-				</rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
-					{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -972,10 +790,9 @@
 		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
 		"org": "http://www.w3.org/ns/org#"
 	},
-	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?note_annotation_20240104134605618",
+	"id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?note_annotation_20240104134605618",
 	"type": "oa:Annotation",
 	"dcterms:created": "2024-01-04T18:46:05.618Z",
-	"dcterms:modified": "2024-01-04T18:46:05.618Z",
 	"dcterms:creator": {
 		"@id": "1",
 		"@type": [
@@ -986,21 +803,21 @@
 	},
 	"oa:motivatedBy": "oa:describing",
 	"oa:hasTarget": {
-		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?note_annotation_20240104134605618#Target",
+		"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?note_annotation_20240104134605618#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml",
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://leaf.bucknell.edu",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
 			"rdfs:label": "LEAF-Writer",
-			"schema:softwareVersion": "3.4.0"
+			"schema:softwareVersion": "4.2.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?note_annotation_20240104134605618#Selector",
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?note_annotation_20240104134605618#Selector",
 			"@type": "oa:XPathSelector",
 			"rdf:value": "TEI/text/body/div/div/p[11]/note[2]"
 		}
@@ -1008,19 +825,20 @@
 	"oa:hasBody": {
 		"@type": "oa:TextualBody",
 		"dc:format": "text/plain",
-		"rdf:value": "Lame. Vagne très coute sur la mer."
+		"rdf:value": "Lame. Vagne très coute sur la\n\t\t\t\t\t\t\tmer."
 	},
 	"as:generator": {
-		"@id": "https://leaf.bucknell.edu",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
 		"rdfs:label": "LEAF-Writer",
 		"schema:url": "https://leaf-writer.lincsproject.ca/",
-		"schema:softwareVersion": "3.4.0"
+		"schema:softwareVersion": "4.2.0"
 	}
-}
-				</rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
-					{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -1050,55 +868,56 @@
 		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
 		"org": "http://www.w3.org/ns/org#"
 	},
-	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104134712643",
+	"id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113252227",
 	"type": "oa:Annotation",
-	"dcterms:created": "2024-01-04T18:47:12.643Z",
-	"dcterms:modified": "2024-01-04T18:47:12.643Z",
+	"dcterms:created": "2026-06-08T15:32:52.227Z",
+	"dcterms:modified": "2026-06-08T15:32:57.893Z",
 	"dcterms:creator": {
-		"@id": "1",
+		"@id": "https://github.com/djakacki",
 		"@type": [
 			"cwrc:NaturalPerson",
 			"schema:Person"
 		],
-		"cwrc:hasName": "admin"
+		"cwrc:hasName": "Diane Jakacki"
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104134712643#Target",
+		"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113252227#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml",
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://leaf.bucknell.edu",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
 			"rdfs:label": "LEAF-Writer",
-			"schema:softwareVersion": "3.4.0"
+			"schema:softwareVersion": "4.2.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104134712643#Selector",
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113252227#Selector",
 			"@type": "oa:XPathSelector",
-			"rdf:value": "TEI/text/body/div/div[3]/div[4]/div[2]/p[3]/placeName[2]/placeName"
+			"rdf:value": "TEI/text/body/div/div/p[2]/placeName"
 		}
 	},
 	"oa:hasBody": {
 		"@type": "cwrc:RealPlace",
-		"@id": "http://www.wikidata.org/entity/Q463529",
+		"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0112",
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://leaf.bucknell.edu",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
 		"rdfs:label": "LEAF-Writer",
 		"schema:url": "https://leaf-writer.lincsproject.ca/",
-		"schema:softwareVersion": "3.4.0"
+		"schema:softwareVersion": "4.2.0"
 	}
-}
-				</rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
-					{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -1128,55 +947,56 @@
 		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
 		"org": "http://www.w3.org/ns/org#"
 	},
-	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104134841634",
+	"id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113334674",
 	"type": "oa:Annotation",
-	"dcterms:created": "2024-01-04T18:48:41.634Z",
-	"dcterms:modified": "2024-01-04T18:48:41.634Z",
+	"dcterms:created": "2026-06-08T15:33:34.674Z",
+	"dcterms:modified": "2026-06-08T15:33:40.138Z",
 	"dcterms:creator": {
-		"@id": "1",
+		"@id": "https://github.com/djakacki",
 		"@type": [
 			"cwrc:NaturalPerson",
 			"schema:Person"
 		],
-		"cwrc:hasName": "admin"
+		"cwrc:hasName": "Diane Jakacki"
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104134841634#Target",
+		"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113334674#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml",
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://leaf.bucknell.edu",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
 			"rdfs:label": "LEAF-Writer",
-			"schema:softwareVersion": "3.4.0"
+			"schema:softwareVersion": "4.2.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104134841634#Selector",
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113334674#Selector",
 			"@type": "oa:XPathSelector",
-			"rdf:value": "TEI/text/body/div/div[3]/div[4]/div[2]/p[4]/placeName/placeName"
+			"rdf:value": "TEI/text/body/div/div/p[4]/placeName"
 		}
 	},
 	"oa:hasBody": {
 		"@type": "cwrc:RealPlace",
-		"@id": "http://www.wikidata.org/entity/Q20892",
+		"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0555",
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://leaf.bucknell.edu",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
 		"rdfs:label": "LEAF-Writer",
 		"schema:url": "https://leaf-writer.lincsproject.ca/",
-		"schema:softwareVersion": "3.4.0"
+		"schema:softwareVersion": "4.2.0"
 	}
-}
-				</rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
-					{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -1206,55 +1026,56 @@
 		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
 		"org": "http://www.w3.org/ns/org#"
 	},
-	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104134915115",
+	"id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113353395",
 	"type": "oa:Annotation",
-	"dcterms:created": "2024-01-04T18:49:15.115Z",
-	"dcterms:modified": "2024-01-04T18:49:15.115Z",
+	"dcterms:created": "2026-06-08T15:33:53.395Z",
+	"dcterms:modified": "2026-06-08T15:33:58.667Z",
 	"dcterms:creator": {
-		"@id": "1",
+		"@id": "https://github.com/djakacki",
 		"@type": [
 			"cwrc:NaturalPerson",
 			"schema:Person"
 		],
-		"cwrc:hasName": "admin"
+		"cwrc:hasName": "Diane Jakacki"
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104134915115#Target",
+		"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113353395#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml",
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://leaf.bucknell.edu",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
 			"rdfs:label": "LEAF-Writer",
-			"schema:softwareVersion": "3.4.0"
+			"schema:softwareVersion": "4.2.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104134915115#Selector",
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113353395#Selector",
 			"@type": "oa:XPathSelector",
-			"rdf:value": "TEI/text/body/div/div[3]/div[4]/div[2]/p[5]/placeName[2]/placeName"
+			"rdf:value": "TEI/text/body/div/div/p[5]/placeName"
 		}
 	},
 	"oa:hasBody": {
 		"@type": "cwrc:RealPlace",
-		"@id": "http://www.wikidata.org/entity/Q29",
+		"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0555",
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://leaf.bucknell.edu",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
 		"rdfs:label": "LEAF-Writer",
 		"schema:url": "https://leaf-writer.lincsproject.ca/",
-		"schema:softwareVersion": "3.4.0"
+		"schema:softwareVersion": "4.2.0"
 	}
-}
-				</rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
-					{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -1284,55 +1105,56 @@
 		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
 		"org": "http://www.w3.org/ns/org#"
 	},
-	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104134948611",
+	"id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113401938",
 	"type": "oa:Annotation",
-	"dcterms:created": "2024-01-04T18:49:48.611Z",
-	"dcterms:modified": "2024-01-04T18:49:48.611Z",
+	"dcterms:created": "2026-06-08T15:34:01.938Z",
+	"dcterms:modified": "2026-06-08T15:34:07.609Z",
 	"dcterms:creator": {
-		"@id": "1",
+		"@id": "https://github.com/djakacki",
 		"@type": [
 			"cwrc:NaturalPerson",
 			"schema:Person"
 		],
-		"cwrc:hasName": "admin"
+		"cwrc:hasName": "Diane Jakacki"
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104134948611#Target",
+		"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113401938#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml",
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://leaf.bucknell.edu",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
 			"rdfs:label": "LEAF-Writer",
-			"schema:softwareVersion": "3.4.0"
+			"schema:softwareVersion": "4.2.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104134948611#Selector",
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113401938#Selector",
 			"@type": "oa:XPathSelector",
-			"rdf:value": "TEI/text/body/div/div[3]/div[4]/div[2]/p[5]/placeName[3]/placeName"
+			"rdf:value": "TEI/text/body/div/div/p[6]/placeName"
 		}
 	},
 	"oa:hasBody": {
 		"@type": "cwrc:RealPlace",
-		"@id": "http://www.wikidata.org/entity/Q38",
+		"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0555",
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://leaf.bucknell.edu",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
 		"rdfs:label": "LEAF-Writer",
 		"schema:url": "https://leaf-writer.lincsproject.ca/",
-		"schema:softwareVersion": "3.4.0"
+		"schema:softwareVersion": "4.2.0"
 	}
-}
-				</rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
-					{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -1362,55 +1184,56 @@
 		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
 		"org": "http://www.w3.org/ns/org#"
 	},
-	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104135038553",
+	"id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113412233",
 	"type": "oa:Annotation",
-	"dcterms:created": "2024-01-04T18:50:38.553Z",
-	"dcterms:modified": "2024-01-04T18:50:38.553Z",
+	"dcterms:created": "2026-06-08T15:34:12.233Z",
+	"dcterms:modified": "2026-06-08T15:34:17.976Z",
 	"dcterms:creator": {
-		"@id": "1",
+		"@id": "https://github.com/djakacki",
 		"@type": [
 			"cwrc:NaturalPerson",
 			"schema:Person"
 		],
-		"cwrc:hasName": "admin"
+		"cwrc:hasName": "Diane Jakacki"
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104135038553#Target",
+		"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113412233#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml",
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://leaf.bucknell.edu",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
 			"rdfs:label": "LEAF-Writer",
-			"schema:softwareVersion": "3.4.0"
+			"schema:softwareVersion": "4.2.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104135038553#Selector",
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113412233#Selector",
 			"@type": "oa:XPathSelector",
-			"rdf:value": "TEI/text/body/div/div[3]/div[4]/div[2]/p[5]/placeName[5]/placeName"
+			"rdf:value": "TEI/text/body/div/div/p[6]/placeName[2]"
 		}
 	},
 	"oa:hasBody": {
 		"@type": "cwrc:RealPlace",
-		"@id": "http://www.wikidata.org/entity/Q144880",
+		"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0450",
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://leaf.bucknell.edu",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
 		"rdfs:label": "LEAF-Writer",
 		"schema:url": "https://leaf-writer.lincsproject.ca/",
-		"schema:softwareVersion": "3.4.0"
+		"schema:softwareVersion": "4.2.0"
 	}
-}
-				</rdf:Description>
-				<rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
-					{
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
 	"@context": {
 		"dcterms:created": {
 			"@type": "xsd:dateTime",
@@ -1440,55 +1263,607 @@
 		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
 		"org": "http://www.w3.org/ns/org#"
 	},
-	"id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104135115046",
+	"id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113422288",
 	"type": "oa:Annotation",
-	"dcterms:created": "2024-01-04T18:51:15.046Z",
-	"dcterms:modified": "2024-01-04T18:51:15.046Z",
+	"dcterms:created": "2026-06-08T15:34:22.288Z",
+	"dcterms:modified": "2026-06-08T15:34:31.400Z",
 	"dcterms:creator": {
-		"@id": "1",
+		"@id": "https://github.com/djakacki",
 		"@type": [
 			"cwrc:NaturalPerson",
 			"schema:Person"
 		],
-		"cwrc:hasName": "admin"
+		"cwrc:hasName": "Diane Jakacki"
 	},
 	"oa:motivatedBy": "oa:identifying",
 	"oa:hasTarget": {
-		"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104135115046#Target",
+		"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113422288#Target",
 		"@type": "oa:SpecificResource",
 		"oa:hasSource": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml",
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml",
 			"@type": "dctypes:Text",
 			"dc:format": "text/xml"
 		},
 		"oa:renderedVia": {
-			"@id": "https://leaf.bucknell.edu",
+			"@id": "https://leaf-writer.leaf-vre.org",
 			"@type": "as:Application",
 			"rdfs:label": "LEAF-Writer",
-			"schema:softwareVersion": "3.4.0"
+			"schema:softwareVersion": "4.2.0"
 		},
 		"oa:hasSelector": {
-			"@id": "https://leaf.bucknell.edu/sites/default/files/2023-07/suzette_ch142.xml?place_annotation_20240104135115046#Selector",
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113422288#Selector",
 			"@type": "oa:XPathSelector",
-			"rdf:value": "TEI/text/body/div/div[3]/div[4]/div[2]/p[5]/placeName[4]/placeName"
+			"rdf:value": "TEI/text/body/div/div/p[9]/placeName"
 		}
 	},
 	"oa:hasBody": {
 		"@type": "cwrc:RealPlace",
-		"@id": "http://www.wikidata.org/entity/Q641",
+		"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0495",
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
-		"@id": "https://leaf.bucknell.edu",
+		"@id": "https://leaf-writer.leaf-vre.org",
 		"@type": "as:Application",
 		"rdfs:label": "LEAF-Writer",
 		"schema:url": "https://leaf-writer.lincsproject.ca/",
-		"schema:softwareVersion": "3.4.0"
+		"schema:softwareVersion": "4.2.0"
 	}
-}
-				</rdf:Description>
-			</rdf:RDF></xenoData>
-		<profileDesc>
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113511206",
+	"type": "oa:Annotation",
+	"dcterms:created": "2026-06-08T15:35:11.206Z",
+	"dcterms:modified": "2026-06-08T15:35:18.973Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/djakacki",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113511206#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "4.2.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113511206#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[2]/list/item[8]/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0495",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "4.2.0"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113602379",
+	"type": "oa:Annotation",
+	"dcterms:created": "2026-06-08T15:36:02.379Z",
+	"dcterms:modified": "2026-06-08T15:36:12.188Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/djakacki",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113602379#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "4.2.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113602379#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[3]/div[4]/div[2]/p[3]/placeName[2]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0328",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "4.2.0"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113630221",
+	"type": "oa:Annotation",
+	"dcterms:created": "2026-06-08T15:36:30.221Z",
+	"dcterms:modified": "2026-06-08T15:36:38.585Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/djakacki",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113630221#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "4.2.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113630221#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[3]/div[4]/div[2]/p[4]/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0749",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "4.2.0"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113713792",
+	"type": "oa:Annotation",
+	"dcterms:created": "2026-06-08T15:37:13.792Z",
+	"dcterms:modified": "2026-06-08T15:37:23.456Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/djakacki",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113713792#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "4.2.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113713792#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[3]/div[4]/div[2]/p[5]/placeName[2]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0014",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "4.2.0"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113727284",
+	"type": "oa:Annotation",
+	"dcterms:created": "2026-06-08T15:37:27.284Z",
+	"dcterms:modified": "2026-06-08T15:37:36.241Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/djakacki",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113727284#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "4.2.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113727284#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[3]/div[4]/div[2]/p[5]/placeName[3]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0015",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "4.2.0"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113739382",
+	"type": "oa:Annotation",
+	"dcterms:created": "2026-06-08T15:37:39.382Z",
+	"dcterms:modified": "2026-06-08T15:37:47.071Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/djakacki",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113739382#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "4.2.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113739382#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[3]/div[4]/div[2]/p[5]/placeName[4]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0664",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "4.2.0"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113750380",
+	"type": "oa:Annotation",
+	"dcterms:created": "2026-06-08T15:37:50.380Z",
+	"dcterms:modified": "2026-06-08T15:38:09.023Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/djakacki",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113750380#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "4.2.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch142.xml?place_annotation_20260608113750380#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[3]/div[4]/div[2]/p[5]/placeName[5]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0862",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "4.2.0"
+	}
+}]]>
+        </rdf:Description>
+      </rdf:RDF></xenoData><profileDesc>
 			<langUsage>
 				<language ident="fr">French</language>
 				<language ident="en">English</language>
@@ -1498,8 +1873,7 @@
 	<text>
 		<body>
 			<div xmlns:ns0="http://www.tei-c.org/ns/1.0" type="chapitre" xml:lang="fr" n="ch142">
-				<pb type="page" n="508"
-					facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_508.jpg"/>
+				<pb type="page" n="508" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_508.jpg"/>
 				<head>142. — Un sauvetage. </head>
 				<div type="récit">
 					<p>Encore une fois la terre avait parcouru le long chemin qui la mène du noir
@@ -1514,30 +1888,26 @@
 						aussi, ce jour-là, de fleur en fleur, dans son jardin. De roses de mai, de
 						petits œillets blancs, de narcisses, de pervenches elle composait de ces
 						jolis bouquets qu'aimaient tant les belles dames de
-							<placeName>Saint-Quentin</placeName> : c'était demain samedi, et on
+							<placeName key="Saint-Quentin" ref="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0112">Saint-Quentin</placeName> : c'était demain samedi, et on
 						l'attendait au marché.</p>
 					<p>Elle tournait le fil autour des tiges d'un paquet d'œillets blancs, lorsque
 						son père parut, en compagnie de M. Cartier, le fermier du
 							<placeName>Bois-Maillard</placeName>.</p>
 					<p>— Hé ! Suzette, voilà M. Cartier qui nous apporte des nouvelles... des
-						nouvelles de la <placeName>Martinique</placeName> ! </p>
-					<p>—De la <placeName>Martinique</placeName>, Monsieur ? </p>
-					<p>— Oui, Mademoiselle, de la <placeName>Martinique</placeName>... d'où pourtant
-						je ne viens pas. Je n'arrive que de <placeName>Cherbourg</placeName>. Et
+						nouvelles de la <placeName key="Martinique" ref="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0555">Martinique</placeName> ! </p>
+					<p>—De la <placeName key="Martinique" ref="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0555">Martinique</placeName>, Monsieur ? </p>
+					<p>— Oui, Mademoiselle, de la <placeName key="Martinique" ref="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0555">Martinique</placeName>... d'où pourtant
+						je ne viens pas. Je n'arrive que de <placeName key="Cherbourg" ref="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0450">Cherbourg</placeName>. Et
 						ouvrant un journal qu'il tenait à la main : — Voici un journal, Les
 						Colonies, qui m'est tombé sous les yeux dans une auberge.</p>
 					<p>Lis-moi ça, ma fille, quoique M. Cartier m'en ait déjà touché un mot.</p>
 					<p>Assez timidement, Suzette, qui connaissait très peu M. Cartier, commença
 						cette lecture : </p>
 					<p>« Un événement dramatique vient de jeter l'émoi*<note type="annotation">Émoi.
-							Émotion mêlée d'inquiétude.</note> dans la population de <placeName
-							key="Fort-de-France" ref="http://www.wikidata.org/entity/Q81621"
-							>Fort-de-France</placeName>.</p>
-					<pb type="page" n="509"
-						facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_509.jpg"/>
+							Émotion mêlée d'inquiétude.</note> dans la population de <placeName key="Fort-de-France" ref="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0495">Fort-de-France</placeName>.</p>
+					<pb type="page" n="509" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_509.jpg"/>
 					<fw>UN SAUVETAGE. 509</fw>
-					<p>« Jeudi dernier, le jeune Paul Cellier, fils de M. Cellier, planteur*<note
-							type="annotation">Planteur. Habitant des colonies qui cultive le sol en
+					<p>« Jeudi dernier, le jeune Paul Cellier, fils de M. Cellier, planteur*<note type="annotation">Planteur. Habitant des colonies qui cultive le sol en
 							grand.</note>, prenait un bain à la marée montante, tout en riant de la
 						peur de sa mère qui l'appelait de la plage.</p>
 					<p>« Les vagues devenaient houleuses*<note type="annotation">Houlouse. Formant
@@ -1571,8 +1941,7 @@
 						du cœur.</p>
 					<p>— Nous le savions depuis longtemps ! ajouta M. Dumay.</p>
 					<p>Et M. Cartier conclut : </p>
-					<p>— C'est de vous que je tiens ce brave garçon ! Vous <pb type="page" n="510"
-							facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_510.jpg"/>
+					<p>— C'est de vous que je tiens ce brave garçon ! Vous <pb type="page" n="510" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_510.jpg"/>
 						<fw>510 SUZETTE.</fw> ne sauriez croire quel attachement j'ai pour lui et
 						combien je souhaite son retour.</p>
 					<p>Ami Sylvain, qu'en ce moment elles durent joyeusement tinter, vos oreilles,
@@ -1592,9 +1961,7 @@
 						<item>— Que composait Suzette au jardin ? </item>
 						<item>— Quelles personnes vinrent la trouver au jardin ? </item>
 						<item>— Quelles nouvelles apportait M. Cartier ? </item>
-						<item>— Quel accident était survenu sur la plage à <placeName
-								key="Fort-de-France" ref="http://www.wikidata.org/entity/Q81621"
-								>Fort-de-France</placeName> ? </item>
+						<item>— Quel accident était survenu sur la plage à <placeName key="Fort-de-France" ref="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0495">Fort-de-France</placeName> ? </item>
 						<item>— Que fit la mère de l'enfant ? </item>
 						<item>— Racontez l'acte courageux d'un jeune soldat.</item>
 						<item>— Qui était-il ? </item>
@@ -1654,16 +2021,14 @@
 						<head type="sujets">Composition.</head>
 						<div type="questions">
 							<list>
-								<item> — Décrire soit votre jardin, soit celui d'un voisin, <pb
-										type="page" n="511"
-										facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_511.jpg"/>
+								<item> — Décrire soit votre jardin, soit celui d'un voisin, <pb type="page" n="511" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_511.jpg"/>
 									<fw>UN SAUVETAGE. 511</fw> dans la saison des fleurs, ou un
 									jardin publie, un square, si vous habitez la ville.</item>
 							</list>
 						</div>
 						<div type="réponses">
-							<p>(Voir <title>COURS DE COMPOSITION FRANÇAISE (Degré élémentaire et
-									moyen) par E. LAPORTE, Partie du maître</title>, page 240, et
+							<p>(Voir COURS DE COMPOSITION FRANÇAISE (Degré élémentaire et
+									moyen) par E. LAPORTE, Partie du maître, page 240, et
 								page 239, Degré supérieur.)</p>
 						</div>
 					</div>
@@ -1716,12 +2081,9 @@
 							<p>Ces phénomènes, dont le premier est connu sous le nom de flux et
 								l'autre sous celui de reflux, sont attribués à l'attraction
 								qu'exercent le soleil et la lune sur la surface du globe.</p>
-							<p>C'est au <placeName key="Le Mont-Saint-Michel"
-									ref="http://www.wikidata.org/entity/Q20892">mont
+							<p>C'est au <placeName key="Mont Saint-Michel" ref="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0749">mont
 									Saint-Michel</placeName>, au sud-ouest de la presqu'ile de
-									<placeName key="Cotentin Peninsula"
-									ref="http://www.wikidata.org/entity/Q463529"
-									>Cotentin</placeName>, que la marée modifie le plus l'aspect du
+									<placeName key="presqu'ile de Cotentin" ref="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0328">Cotentin</placeName>, que la marée modifie le plus l'aspect du
 								rivagé. « A mer basse, l'immense plaine de sable de 250 kilomêtres
 								carrès qui entoure le mont, ressemble à un lit de cendres que borne
 								au lointain le liséré d'écume de l' ; mais lorsque la marée, plus
@@ -1732,33 +2094,19 @@
 								à nu la grande plage déserte que parcourent des ruisseaux, en
 								formant çà et là des gouffres perfides de vase molle où les
 								voyageurs risquent de s'engloutir. » (D'après E. RECLUS,
-										<title><title level="m">L'Océan</title></title>.)</p>
+										<title>L'Océan</title>.)</p>
 							<p>La hauteur de la marée est plus grande dans les golfes que sur les
-								plages largement découvertes. Au fond de la baie du <placeName
-									key="Le Mont-Saint-Michel"
-									ref="http://www.wikidata.org/entity/Q20892">mont
+								plages largement découvertes. Au fond de la baie du <placeName key="Mont Saint-Michel" ref="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0749">mont
 									Saint-Michel</placeName>, elle marque 14 à 15 mêtres entre le
 								niveau du flux et celui des plus basses eaux ; elle n'est que de 5 à
-								6 mêtres à <placeName key="Dunkirk"
-									ref="http://www.wikidata.org/entity/Q45797"
-									>Dunkerque</placeName> et au <placeName key="Le Havre"
-									ref="http://www.wikidata.org/entity/Q42810"
-								>Havre</placeName>.</p>
-							<p><placeName key="Mediterranean Sea"
-									ref="http://www.wikidata.org/entity/Q4918">La
+								6 mêtres à <placeName key="Dunkerque" ref="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0486">Dunkerque</placeName> et au <placeName key="Havre" ref="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0518">Havre</placeName>.</p>
+							<p><placeName key="La Méditerranée" ref="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0215">La
 									Méditerranée</placeName>, qui est une mer fermée, a des marées
-								presque insensibles. Sur nos côtes et celles d'<placeName
-									key="Spain" ref="http://www.wikidata.org/entity/Q29"
-									>Espagne</placeName> ou d'<placeName key="Italy"
-									ref="http://www.wikidata.org/entity/Q38">Italie</placeName>, la
+								presque insensibles. Sur nos côtes et celles d'<placeName key="Espagne" ref="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0014">Espagne</placeName> ou d'<placeName key="Italie" ref="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0015">Italie</placeName>, la
 								difference n'est que de 0m,30 entre le flux et le reflux ; de 0m,60
-								à 0m,90 à <placeName key="Venice"
-									ref="http://www.wikidata.org/entity/Q641">Venise</placeName>. au
-								fond de l' ; de 0m,15 à l'<placeName key="Zakynthos"
-									ref="http://www.wikidata.org/entity/Q144880">ile de
-									Zante</placeName> et de 0m,020 à <placeName key="Corfu"
-									ref="http://www.wikidata.org/entity/Q121378"
-								>Corfou</placeName>.</p>
+								à 0m,90 à <placeName key="Venise" ref="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0664">Venise</placeName>. au
+								fond de l' ; de 0m,15 à l'<placeName key="Zante" ref="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0862">ile de
+									Zante</placeName> et de 0m,020 à <placeName key="Corfou" ref="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0468">Corfou</placeName>.</p>
 						</div>
 					</div>
 				</div>
