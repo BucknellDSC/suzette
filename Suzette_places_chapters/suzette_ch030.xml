@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/CSS/suzette_cwrc.css"?>
-<?xml-model href="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/out/suzette.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/out/suzette.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/CSS/suzette_cwrc.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -71,7 +68,165 @@
 				</biblStruct>
 			</sourceDesc>
 		</fileDesc>
-		<profileDesc>
+		<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:fabio="https://purl.org/spar/fabio#" xmlns:bf="http://www.openlinksw.com/schemas/bif#" xmlns:cito="https://sparontologies.github.io/cito/current/cito.html#" xmlns:org="http://www.w3.org/ns/org#">
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/BucknellDSC/suzette-place/master/Suzette_places_chapters/suzette_ch030.xml?place_annotation_20260618152724781",
+	"type": "oa:Annotation",
+	"dcterms:created": "2026-06-18T19:27:24.781Z",
+	"dcterms:modified": "2026-06-18T19:27:33.848Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/workbesot",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette-place/master/Suzette_places_chapters/suzette_ch030.xml?place_annotation_20260618152724781#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette-place/master/Suzette_places_chapters/suzette_ch030.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "4.2.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette-place/master/Suzette_places_chapters/suzette_ch030.xml?place_annotation_20260618152724781#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[3]/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0005",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "4.2.0"
+	}
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/BucknellDSC/suzette-place/master/Suzette_places_chapters/suzette_ch030.xml?place_annotation_20260618152739981",
+	"type": "oa:Annotation",
+	"dcterms:created": "2026-06-18T19:27:39.981Z",
+	"dcterms:modified": "2026-06-18T19:28:09.257Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/workbesot",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette-place/master/Suzette_places_chapters/suzette_ch030.xml?place_annotation_20260618152739981#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette-place/master/Suzette_places_chapters/suzette_ch030.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "4.2.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette-place/master/Suzette_places_chapters/suzette_ch030.xml?place_annotation_20260618152739981#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[3]/placeName[2]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0009",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "4.2.0"
+	}
+}]]>
+        </rdf:Description>
+      </rdf:RDF></xenoData><profileDesc>
 			<langUsage>
 				<language ident="fr">French</language>
 				<language ident="en">English</language>
@@ -81,15 +236,12 @@
 	<text>
 		<body>
 			<div xmlns:ns0="http://www.tei-c.org/ns/1.0" type="chapitre" xml:lang="fr" n="ch030">
-				<pb
-					facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_106.jpg"
-					type="page" n="106"/>
+				<pb facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_106.jpg" type="page" n="106"/>
 				<head>30. — Vive le blé de France ! </head>
 				<div type="récit">
 					<p>Pendant les trois jours qui suivirent, le père, Jacques, Suzette, ne s’entretinrent que de beaux et bons travaux à
 						faire. Jacques voulait être
-						renseigné sur la situation exacte du petit bien, sur ses charges*<note
-							type="annotation">Des Charges. Les dépenses qu'on est obligé de
+						renseigné sur la situation exacte du petit bien, sur ses charges*<note type="annotation">Des Charges. Les dépenses qu'on est obligé de
 							faire.</note>, ses ressources*<note type="annotation">Ressources.
 							Argent, choses à vendre avec quoi l'on peut solder ses
 						dépenses.</note>.</p>
@@ -97,24 +249,19 @@
 						doubler le rapport, mais sans changer grand'chose au train ordinaire et en
 						rechignant* <note type="annotation">Rechigner. Témoigner de la répugnance
 
-							avec mauvaise humeur.</note> un peu aux innovations*<note
-							type="annotation">Innovation. Pratique nouvelle qu'on introduit dans sa
+							avec mauvaise humeur.</note> un peu aux innovations*<note type="annotation">Innovation. Pratique nouvelle qu'on introduit dans sa
 							manière habituelle de faire une chose.</note>, comme font d'ordinaire
 						les gens ancrés* <note type="annotation">Ancré. S'affermir obstinément dans
 							un procédé routinier, dans une habitude.</note> dans leurs
 						habitudes.</p>
 					<p>— Nous aurons beau faire, disait-il, le blé du vieux
-						sol d'<placeName corresp="suzpl0005" key="Europe"
-							ref="http://www.wikidata.org/entity/Q46">Europe</placeName>, fatigué par
+						sol d'<placeName corresp="suzpl0005" key="Europe" ref="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0005">Europe</placeName>, fatigué par
 						tant de récoltes, ne peut pas lutter contre le blé
-							d'<placeName corresp="suzpl0009" key="United States of America"
-							ref="http://www.wikidata.org/entity/Q30">Amérique</placeName>, qui
+							d'<placeName corresp="suzpl0009" key="États-Unis" ref="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0009">Amérique</placeName>, qui
 						pousse là-bas presque sans travail dans des terres toutes neuves. La semaine
 						dernière, ta sœur me lisait dans un livre qu'en ce pays, il y a d'immenses
 						espaces encore à défricher. Un seul Américain en possède des milliers
-						d'hectares. A l’au- <pb
-							facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_107.jpg"
-							type="page" n="107"/>
+						d'hectares. A l’au- <pb facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_107.jpg" type="page" n="107"/>
 						<fw>VIVE LE BLÉ DE FRANCE ! 107</fw> tomne, il transporte dans ces solitudes
 						une population d'ouvriers à peupler une ville ; ceux-ci lancent des charrues
 						à vapeur qui remuent le sol ; puis, la terre à peine retournée, on
@@ -147,16 +294,11 @@
 					</figure>
 					<figure>
 						<caption>Le bison. Cet animal sauvage, de la taille d’un bœuf, vit en
-							<placeName corresp="suzpl0009"
-								key="United States of America"
-								ref="http://www.wikidata.org/entity/Q30"
-								>Amérique</placeName>, où il est l'objet d'une chasse
+							<placeName corresp="suzpl0009" key="United States of America" ref="http://www.wikidata.org/entity/Q30">Amérique</placeName>, où il est l'objet d'une chasse
 							opiniâtre.</caption>
 					</figure>
 				</div>
-				<pb
-					facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_108.jpg"
-					type="page" n="108"/>
+				<pb facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_108.jpg" type="page" n="108"/>
 				<fw>108 SUZETTE.</fw>
 				<div type="questionnaire">
 					<head>Questionnaire.</head>
@@ -169,12 +311,8 @@
 							blé ? </item>
 						<item>— Suzette
 							n'avait-elle pas lu quelques détails sur la semaille et la récolte du
-							blé en <placeName corresp="suzpl0009"
-								key="United States of America"
-								ref="http://www.wikidata.org/entity/Q30">Amérique</placeName>
-							(<placeName corresp="suzpl0009"
-								key="United States of America"
-								ref="http://www.wikidata.org/entity/Q30">États-Unis</placeName>) ? </item>
+							blé en <placeName corresp="suzpl0009" key="United States of America" ref="http://www.wikidata.org/entity/Q30">Amérique</placeName>
+							(<placeName corresp="suzpl0009" key="United States of America" ref="http://www.wikidata.org/entity/Q30">États-Unis</placeName>) ? </item>
 						<item>— A quoi Jacques
 							attribuait-il l'infériorité de la production du
 							blé en <placeName>France</placeName> ?
@@ -193,49 +331,28 @@
 							</list>
 						</div>
 						<div type="réponses">
-							<p>L'<placeName  corresp="suzpl0791" ref="https://www.wikidata.org/wiki/Q828" key="Americas">Amérique</placeName> est un immense continent
-								situé à l'ouest de l'<placeName corresp="suzpl0005" key="Europe"
-									ref="http://www.wikidata.org/entity/Q46">Europe</placeName>, de
-								l'autre côté de l'<placeName corresp="suzpl0348"
-									key="Atlantic Ocean" ref="http://www.wikidata.org/entity/Q97"
-									>Atlantique</placeName>. Il se divise en deux régions :
-									l'<placeName cert="high" corresp="suzpl0349" evidence="internal"
-									full="yes" instant="unknown" type="réel" xml:space="default"
-									>Amérique septentrionale</placeName> et l'<placeName cert="high"
-									corresp="suzpl0350" evidence="internal" full="yes"
-									instant="unknown" type="réel" xml:space="default">Amérique
-									méridionale</placeName>, réunies par <placeName
-									key="L’Isthme de Panama"
-									ref="http://www.wikidata.org/entity/Q17358976"
-									corresp="suzpl0351">l'isthme de Panama</placeName>, à travers
+							<p>L'<placeName corresp="suzpl0791" ref="https://www.wikidata.org/wiki/Q828" key="Americas">Amérique</placeName> est un immense continent
+								situé à l'ouest de l'<placeName corresp="suzpl0005" key="Europe" ref="http://www.wikidata.org/entity/Q46">Europe</placeName>, de
+								l'autre côté de l'<placeName corresp="suzpl0348" key="Atlantic Ocean" ref="http://www.wikidata.org/entity/Q97">Atlantique</placeName>. Il se divise en deux régions :
+									l'<placeName cert="high" corresp="suzpl0349" evidence="internal" full="yes" instant="unknown" type="réel" xml:space="default">Amérique septentrionale</placeName> et l'<placeName cert="high" corresp="suzpl0350" evidence="internal" full="yes" instant="unknown" type="réel" xml:space="default">Amérique
+									méridionale</placeName>, réunies par <placeName key="L’Isthme de Panama" ref="http://www.wikidata.org/entity/Q17358976" corresp="suzpl0351">l'isthme de Panama</placeName>, à travers
 								lequel M. de Lesseps a
 								entrepris de creuser un canal pour le passage des navires, comme il
-								l'a déjà fait pour <placeName corresp="suzpl0352"
-									key="L’Isthme de Suez"
-									ref="http://www.wikidata.org/entity/Q17358977">l'isthme de
+								l'a déjà fait pour <placeName corresp="suzpl0352" key="L’Isthme de Suez" ref="http://www.wikidata.org/entity/Q17358977">l'isthme de
 									Suez</placeName>.</p>
 							<p> L'État le plus important de cette partie du monde sont les
-										<placeName key="United States of America"
-										ref="http://www.wikidata.org/entity/Q30"
-										>États-Unis</placeName>, qui comptent environ
+										<placeName key="United States of America" ref="http://www.wikidata.org/entity/Q30">États-Unis</placeName>, qui comptent environ
 								soixante millions d'habitants ; on désigne parfois cette contrée
-								sous le nom d'<placeName key="United States of America"
-										ref="http://www.wikidata.org/entity/Q30"
-										>Amérique</placeName>, comme on l'a fait dans
+								sous le nom d'<placeName key="United States of America" ref="http://www.wikidata.org/entity/Q30">Amérique</placeName>, comme on l'a fait dans
 								cette leçon, en parlant du blé.</p>
-							<p>Le <placeName key="North America"
-										ref="http://dbpedia.org/resource/North_America">continent
+							<p>Le <placeName key="North America" ref="http://dbpedia.org/resource/North_America">continent
 										américain</placeName> fut découvert par
 									Christophe
-									Colomb, navigateur génois né à <placeName
-									corresp="suzpl0105" key="Calvi"
-									ref="http://www.wikidata.org/entity/Q202439">Calvi</placeName>,
-								en <placeName corresp="suzpl0028" key="Corsica"
-									ref="http://www.wikidata.org/entity/Q14112">Corse</placeName>
+									Colomb, navigateur génois né à <placeName corresp="suzpl0105" key="Calvi" ref="http://www.wikidata.org/entity/Q202439">Calvi</placeName>,
+								en <placeName corresp="suzpl0028" key="Corsica" ref="http://www.wikidata.org/entity/Q14112">Corse</placeName>
 								(1440-1505). Plusieurs voyages et l'étude des cartes géographiques
 								lui inspirèrent l'idée que la terre est ronde, et que l’on pouvait
-								arriver aux <placeName corresp="suzpl0361" key="India"
-									ref="http://www.wikidata.org/entity/Q668">Indes</placeName> en
+								arriver aux <placeName corresp="suzpl0361" key="India" ref="http://www.wikidata.org/entity/Q668">Indes</placeName> en
 								faisant voile vers l'ouest. Dès lors, il n'eut plus pour pensée que
 								de faire ce voyage, et il sollicita de toutes parts les moyens de
 								l'accomplir. Son courage fut égal à la force de son esprit, car il
@@ -249,46 +366,23 @@
 									d'<placeName>Espagne</placeName>. Après huit ans de
 								sollicitations, la reine Isabelle et
 								le roi Ferdinand consentiront à  lui prêter
-								leur appui ; mais la cour d'<placeName key="Spain"
-										ref="http://www.wikidata.org/entity/Q29"
-									>Espagne</placeName> était pauvre ; il fallut que le
+								leur appui ; mais la cour d'<placeName key="Spain" ref="http://www.wikidata.org/entity/Q29">Espagne</placeName> était pauvre ; il fallut que le
 								prieur Pérez et
 								deux négociants, nommés Penzone, avançassent 17,000
-								ducats pour faire l'armement. Colomb partit enfin de <placeName
-										key="Palos de la Frontera"
-										ref="http://www.wikidata.org/entity/Q622030"
-										>Palos</placeName>, en  <placeName
-										key="Andalusia" ref="http://www.wikidata.org/entity/Q5783"
-										>Andalousie</placeName>, avec trois petits
+								ducats pour faire l'armement. Colomb partit enfin de <placeName key="Palos de la Frontera" ref="http://www.wikidata.org/entity/Q622030">Palos</placeName>, en  <placeName key="Andalusia" ref="http://www.wikidata.org/entity/Q5783">Andalousie</placeName>, avec trois petits
 								vaisseaux dont un seul était ponté, le 3 août 1492. Trois mois
 								après, le 12 octobre, il découvrit la première terre de
-										l'<placeName key="North America"
-										ref="http://www.wikidata.org/entity/Q49"
-										>Amérique</placeName> : c'était l'une des îles
-								du groupe des <placeName key="Lucayan Archipelago"
-										ref="http://dbpedia.org/resource/Lucayan_Archipelago"
-										>Lucayes</placeName>, appelée
-										<placeName key="Guanahani"
-										ref="http://www.wikidata.org/entity/Q1144797"
-										>Guanahain</placeName> par les indigènes ;
+										l'<placeName key="North America" ref="http://www.wikidata.org/entity/Q49">Amérique</placeName> : c'était l'une des îles
+								du groupe des <placeName key="Lucayan Archipelago" ref="http://dbpedia.org/resource/Lucayan_Archipelago">Lucayes</placeName>, appelée
+										<placeName key="Guanahani" ref="http://www.wikidata.org/entity/Q1144797">Guanahain</placeName> par les indigènes ;
 									Colomb lui donna le nom de
-										<placeName key="San Salvador Island"
-										ref="http://www.wikidata.org/entity/Q31508221"
-										>San-Salvador</placeName>. Il visita ensuite les
-								autres îles <placeName key="Lucayan Archipelago"
-										ref="http://www.wikidata.org/entity/Q5363289"
-										>Lucayes</placeName>, puis il découvrit
-										<placeName key="Cuba"
-										ref="http://www.wikidata.org/entity/Q241"
-									>Cuba</placeName> et <placeName
-										key="Haiti" ref="http://www.wikidata.org/entity/Q790"
-										>Haïti</placeName>, que les
+										<placeName key="San Salvador Island" ref="http://www.wikidata.org/entity/Q31508221">San-Salvador</placeName>. Il visita ensuite les
+								autres îles <placeName key="Lucayan Archipelago" ref="http://www.wikidata.org/entity/Q5363289">Lucayes</placeName>, puis il découvrit
+										<placeName key="Cuba" ref="http://www.wikidata.org/entity/Q241">Cuba</placeName> et <placeName key="Haiti" ref="http://www.wikidata.org/entity/Q790">Haïti</placeName>, que les
 									<orgName>Espagnols</orgName> appelèrent plus tard
-										<placeName key="Hispaniola"
-										ref="http://www.wikidata.org/entity/Q25277"
-										>Saint-Domingue</placeName>.</p>
+										<placeName key="Hispaniola" ref="http://www.wikidata.org/entity/Q25277">Saint-Domingue</placeName>.</p>
 							<p> C’est une erreur de penser que le nom
-								d'<placeName  corresp="suzpl0791" ref="https://www.wikidata.org/wiki/Q828" key="Americas">Amérique</placeName> vient d'Albertino Vespucci,
+								d'<placeName corresp="suzpl0791" ref="https://www.wikidata.org/wiki/Q828" key="Americas">Amérique</placeName> vient d'Albertino Vespucci,
 								navigateur <orgName>italien</orgName> ; les indigènes de ce
 								continent le désignaient sous ce nom même dès la première période de
 								l'arrivée des <orgName>Européens</orgName>.</p>
@@ -327,9 +421,7 @@
 								octobre à la fin de novembre, soit à la volée, c'est-à-dire à la
 								main, soit au moyen d'une machine désignée <fw>VIVE LE BLÉ DE FRANCE
 									! 109</fw>
-								<pb
-									facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_109.jpg"
-									type="page" n="109"/>   sous le nom de
+								<pb facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_109.jpg" type="page" n="109"/>   sous le nom de
 									semoir qui économise le grain et le
 								dispose en ligues régulières dans les pièces de terre. Après les
 								gelées, on fait passer le rouleau sur les
@@ -453,11 +545,8 @@
 									sauces et les
 									liaisons. </p>
 							<p>On emploie le son pour la nourriture des
-									volailles, des bêtes de <fw
-									type="footer">SUZETTE (Maîtresse). <fw type="sig">7</fw></fw>
-								<pb
-									facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_110.jpg"
-									type="page" n="110"/>  <fw type="header">110 SUZETTE.</fw>
+									volailles, des bêtes de <fw type="footer">SUZETTE (Maîtresse). <fw type="sig">7</fw></fw>
+								<pb facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_110.jpg" type="page" n="110"/>  <fw type="header">110 SUZETTE.</fw>
 								somme, des porcs ; ordinairement, après
 								qu'on l'a mouillé, on y mêle des légumes
 								hachés ou bien des betteraves et des
