@@ -610,6 +610,7 @@
 	"id": "https://raw.githubusercontent.com/BucknellDSC/suzette-place/master/Suzette_places_chapters/suzette_ch053.xml?place_annotation_20230926164003527",
 	"type": "oa:Annotation",
 	"dcterms:created": "2023-09-26T20:40:03.527Z",
+	"dcterms:modified": "2026-06-20T18:16:38.827Z",
 	"dcterms:creator": {
 		"@id": "1",
 		"@type": [
@@ -640,7 +641,100 @@
 		}
 	},
 	"oa:hasBody": {
-		"@type": "cwrc:RealPlace"
+		"@type": "cwrc:RealPlace",
+		"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0451",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "4.2.0"
+	},
+	"dcterms:contributor": [
+		{
+			"dcterms:contributor": {
+				"@id": "https://github.com/workbesot",
+				"@type": [
+					"cwrc:NaturalPerson",
+					"schema:Person"
+				],
+				"cwrc:hasName": "John Westbrook"
+			}
+		}
+	]
+}]]>
+        </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/BucknellDSC/suzette-place/master/Suzette_places_chapters/suzette_ch053.xml?place_annotation_20260620141640980",
+	"type": "oa:Annotation",
+	"dcterms:created": "2026-06-20T18:16:40.980Z",
+	"dcterms:modified": "2026-06-20T18:16:48.299Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/workbesot",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette-place/master/Suzette_places_chapters/suzette_ch053.xml?place_annotation_20260620141640980#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette-place/master/Suzette_places_chapters/suzette_ch053.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "4.2.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette-place/master/Suzette_places_chapters/suzette_ch053.xml?place_annotation_20260620141640980#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div[3]/div/div[2]/p[2]/placeName[3]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0453",
+		"dc:format": "text/plain"
 	},
 	"as:generator": {
 		"@id": "https://leaf-writer.leaf-vre.org",
@@ -736,8 +830,8 @@
                         montagneux où la terre a peu de valeur, les porchers mènent paître ces
                         animaux, réunis en bandes, sur les friches et les chaumes. Aux
                            <placeName key="États-Unis" ref="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0009">Etats-Unis</placeName>, on élève les porcs en nombre
-                        prodigieux; la ville de <placeName>Chicago</placeName> et celle de
-                           <placeName key="Cincinnati" ref="http://www.wikidata.org/entity/Q43196">Cincinnati</placeName> en exportent plus d'un million par an.
+                        prodigieux; la ville de <placeName key="Chicago" ref="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0451">Chicago</placeName> et celle de
+                           <placeName key="Cincinnati" ref="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0453">Cincinnati</placeName> en exportent plus d'un million par an.
                         Le porc vit, à l'état sauvage, dans les bois et les forêts, sous le nom de
                            <term>sanglier</term> : c'est un animal dangereux et malfaisant, qui
                         dévaste les terres cultivées voisines des bois et des forêts où il établit
