@@ -2759,7 +2759,7 @@
 	"id": "https://raw.githubusercontent.com/BucknellDSC/suzette-place/master/Suzette_places_chapters/suzette_ch056.xml?place_annotation_20240417151650632",
 	"type": "oa:Annotation",
 	"dcterms:created": "2024-04-17T19:16:50.632Z",
-	"dcterms:modified": "2024-04-17T19:16:50.632Z",
+	"dcterms:modified": "2026-06-20T18:25:06.684Z",
 	"dcterms:creator": {
 		"@id": "30",
 		"@type": [
@@ -2791,7 +2791,7 @@
 	},
 	"oa:hasBody": {
 		"@type": "cwrc:RealPlace",
-		"@id": "http://www.wikidata.org/entity/Q223",
+		"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0510",
 		"dc:format": "text/plain"
 	},
 	"as:generator": {
@@ -2800,7 +2800,19 @@
 		"rdfs:label": "LEAF-Writer",
 		"schema:url": "https://leaf-writer.lincsproject.ca/",
 		"schema:softwareVersion": "4.2.0"
-	}
+	},
+	"dcterms:contributor": [
+		{
+			"dcterms:contributor": {
+				"@id": "https://github.com/workbesot",
+				"@type": [
+					"cwrc:NaturalPerson",
+					"schema:Person"
+				],
+				"cwrc:hasName": "John Westbrook"
+			}
+		}
+	]
 }]]>
         </rdf:Description>
       
@@ -3194,6 +3206,85 @@
 	}
 }]]>
         </rdf:Description>
+      
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/BucknellDSC/suzette-place/master/Suzette_places_chapters/suzette_ch056.xml?place_annotation_20260620142511718",
+	"type": "oa:Annotation",
+	"dcterms:created": "2026-06-20T18:25:11.718Z",
+	"dcterms:modified": "2026-06-20T18:25:18.881Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/workbesot",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "John Westbrook"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette-place/master/Suzette_places_chapters/suzette_ch056.xml?place_annotation_20260620142511718#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette-place/master/Suzette_places_chapters/suzette_ch056.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "4.2.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette-place/master/Suzette_places_chapters/suzette_ch056.xml?place_annotation_20260620142511718#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[5]/figure/caption/placeName[3]"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0232",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "4.2.0"
+	}
+}]]>
+        </rdf:Description>
       </rdf:RDF></xenoData><profileDesc>
          <langUsage>
             <language ident="fr">French</language>
@@ -3221,10 +3312,9 @@
                   cessèrent de sourire.</p>
                <p>Et, reprit le garçon, nous nous proposons, mon ami <figure>
                      <caption> Les Hurons, qui ont presque totalement disparu aujourd'hui,
-                        appartenaient à une nation sauvage du nord des <placeName key="États-Unis" ref="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0009">Etats
-                           Unis</placeName>. Les Esquimaux habitent les régions boréales, le
-                           <placeName key="Greenland" ref="http://www.wikidata.org/entity/Q223">Grœnland</placeName>, les rivages de la  et ceux de la
-                              <placeName key="Baie-d'Hudson" ref="http://www.wikidata.org/entity/Q2879397">baie d'Hudson</placeName>. </caption>
+                        appartenaient à une nation sauvage du nord des <placeName key="États-Unis" ref="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0009">Etats-Unis</placeName>. Les Esquimaux habitent les régions boréales, le
+                           <placeName key="Grœnland" ref="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0510">Grœnland</placeName>, les rivages de la  et ceux de la
+                              <placeName key="baie d'Hudson" ref="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0232">baie d'Hudson</placeName>. </caption>
                   </figure> et moi, de traverser , de gagner <placeName key="Great Lakes" ref="http://www.wikidata.org/entity/Q7347">la région des
                      Lacs</placeName>, de visiter surtout ceux du 
                   <pb type="page" n="196" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_196.jpg"/>
