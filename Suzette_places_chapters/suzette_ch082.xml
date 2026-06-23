@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/CSS/suzette_cwrc.css"?>
-<?xml-model href="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/out/suzette.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/out/suzette.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-stylesheet type="text/css" href="https://raw.githubusercontent.com/BucknellDSC/suzette/master/CSS/suzette_cwrc.css"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 	<teiHeader>
 		<fileDesc>
 			<titleStmt>
@@ -71,16 +68,93 @@
 				</biblStruct>
 			</sourceDesc>
 		</fileDesc>
-	</teiHeader>
+	<xenoData><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:as="http://www.w3.org/ns/activitystreams#" xmlns:cwrc="http://sparql.cwrc.ca/ontologies/cwrc#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:geo="http://www.geonames.org/ontology#" xmlns:oa="http://www.w3.org/ns/oa#" xmlns:schema="http://schema.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:fabio="https://purl.org/spar/fabio#" xmlns:bf="http://www.openlinksw.com/schemas/bif#" xmlns:cito="https://sparontologies.github.io/cito/current/cito.html#" xmlns:org="http://www.w3.org/ns/org#">
+        <rdf:Description rdf:datatype="http://www.w3.org/TR/json-ld/">
+          <![CDATA[{
+	"@context": {
+		"dcterms:created": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:created"
+		},
+		"dcterms:issued": {
+			"@type": "xsd:dateTime",
+			"@id": "dcterms:issued"
+		},
+		"oa:motivatedBy": {
+			"@type": "oa:Motivation"
+		},
+		"@language": "en",
+		"rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+		"rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+		"as": "http://www.w3.org/ns/activitystreams#",
+		"cwrc": "http://sparql.cwrc.ca/ontologies/cwrc#",
+		"dc": "http://purl.org/dc/elements/1.1/",
+		"dcterms": "http://purl.org/dc/terms/",
+		"foaf": "http://xmlns.com/foaf/0.1/",
+		"geo": "http://www.geonames.org/ontology#",
+		"oa": "http://www.w3.org/ns/oa#",
+		"schema": "http://schema.org/",
+		"xsd": "http://www.w3.org/2001/XMLSchema#",
+		"fabio": "https://purl.org/spar/fabio#",
+		"bf": "http://www.openlinksw.com/schemas/bif#",
+		"cito": "https://sparontologies.github.io/cito/current/cito.html#",
+		"org": "http://www.w3.org/ns/org#"
+	},
+	"id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch082.xml?place_annotation_20260623134514243",
+	"type": "oa:Annotation",
+	"dcterms:created": "2026-06-23T17:45:14.243Z",
+	"dcterms:modified": "2026-06-23T17:45:21.428Z",
+	"dcterms:creator": {
+		"@id": "https://github.com/djakacki",
+		"@type": [
+			"cwrc:NaturalPerson",
+			"schema:Person"
+		],
+		"cwrc:hasName": "Diane Jakacki"
+	},
+	"oa:motivatedBy": "oa:identifying",
+	"oa:hasTarget": {
+		"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch082.xml?place_annotation_20260623134514243#Target",
+		"@type": "oa:SpecificResource",
+		"oa:hasSource": {
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch082.xml",
+			"@type": "dctypes:Text",
+			"dc:format": "text/xml"
+		},
+		"oa:renderedVia": {
+			"@id": "https://leaf-writer.leaf-vre.org",
+			"@type": "as:Application",
+			"rdfs:label": "LEAF-Writer",
+			"schema:softwareVersion": "4.2.0"
+		},
+		"oa:hasSelector": {
+			"@id": "https://raw.githubusercontent.com/djakacki/suzette/master/Suzette_places_chapters/suzette_ch082.xml?place_annotation_20260623134514243#Selector",
+			"@type": "oa:XPathSelector",
+			"rdf:value": "TEI/text/body/div/div/p[6]/placeName"
+		}
+	},
+	"oa:hasBody": {
+		"@type": "cwrc:RealPlace",
+		"@id": "https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0016",
+		"dc:format": "text/plain"
+	},
+	"as:generator": {
+		"@id": "https://leaf-writer.leaf-vre.org",
+		"@type": "as:Application",
+		"rdfs:label": "LEAF-Writer",
+		"schema:url": "https://leaf-writer.lincsproject.ca/",
+		"schema:softwareVersion": "4.2.0"
+	}
+}]]>
+        </rdf:Description>
+      </rdf:RDF></xenoData></teiHeader>
 	<text>
 		<body>
 			<div xmlns:ns0="http://www.tei-c.org/ns/1.0" type="chapitre" xml:lang="fr" n="ch082">
-				<pb type="page" n="283"
-					facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_283.jpg"/>
+				<pb type="page" n="283" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_283.jpg"/>
 				<head>82. — Pierre, bronze, fer. </head>
 				<div type="récit">
-					<p>Là, dans des vitrines, se voyaient des couteaux, des haches de silex* <note
-							type="annotation">Silex. Pierre très dure, à demi transparente, qui
+					<p>Là, dans des vitrines, se voyaient des couteaux, des haches de silex* <note type="annotation">Silex. Pierre très dure, à demi transparente, qui
 							donne du feu sous le briquet.</note> ; plus loin, des hameçons, des
 						épingles, des ornements en bronze, et plus loin encore, les mêmes objets,
 						mais <figure>
@@ -99,22 +173,17 @@
 						idées de bonté, de solidarité* <note type="annotation">Solidarité. La
 							responsabilité mutuelle qui s'établit entre plusieurs personnes.</note>.
 						Et elle n'en continue pas moins de fabriquer de ces armes par lesquelles on
-						se détruit. Les vieilles rancunes, les méflances, les haines de race* <note
-							type="annotation">Haine de race. Haine qui se perpétue entre un peuple
+						se détruit. Les vieilles rancunes, les méflances, les haines de race* <note type="annotation">Haine de race. Haine qui se perpétue entre un peuple
 							et un autre.</note> les superstitions la tiennent encore, hélas ! et
 						l'affolent.</p>
 					<p>— Il y a là-bas, dit Louis, un canon prodigieux, le premier du monde en force
 						de destruction, et que bien des gens admirent.</p>
 					<p>Cependant, à côté des historiques engins*<note type="annotation">Engin.
-							Machine dont on se sert à la guerre.</note> de mort, <pb type="page"
-							n="284"
-							facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_284.jpg"
-						/> apparaissaient des recherches plus douces : des agrafes, des boucles, des
+							Machine dont on se sert à la guerre.</note> de mort, <pb type="page" n="284" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_284.jpg"/> apparaissaient des recherches plus douces : des agrafes, des boucles, des
 						ornements. Un peu plus loin, les essais des premières poteries d'argile,
 						assez mal tournées, Mais, peu à peu, venaient s'y ajouter des ébauches de
 						décoration, un souci de la couleur et de la forme, enfin atteintes en
-							<placeName key="France" ref="http://www.wikidata.org/entity/Q142"
-							>France</placeName>, au seizième siècle, dans un <figure>
+							<placeName key="France" ref="https://raw.githubusercontent.com/BucknellDSC/suzette/refs/heads/master/suzette_gazetteer.xml#suzpl0016">France</placeName>, au seizième siècle, dans un <figure>
 							<caption>L'art céramique, La faïence est une poterie de terre vernissée
 								et émaillée.</caption>
 						</figure> glorieux vase de faïence émaillée de Bernard Palissy.</p>
@@ -164,10 +233,7 @@
 								un sentiment qui nous éloigne des autres ou des choses ; à l'égard
 								des personnes, il s'y ajoute la pensée de leur faire du mal. — Un
 									<term>canon prodigieux</term> est une pièce d'artillerie dont
-								les dimensions dépassent ce qu'on a fait jusqu’alors. <pb
-									type="page" n="285"
-									facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_285.jpg"
-								/> — Une <term>agrafe</term> est un crochet formé d'un fil double de
+								les dimensions dépassent ce qu'on a fait jusqu’alors. <pb type="page" n="285" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_285.jpg"/> — Une <term>agrafe</term> est un crochet formé d'un fil double de
 								métal, qu'on fixe à une étoffe par ses deux extrémités façonnées en
 								œillet. — Les <term>poteries</term> sont des vases de terre cuite ou
 								d'étain ; elles sont mal tournées lorsqu'on les a fabriquées sans
@@ -185,8 +251,7 @@
 								<item>— Terrains où on la trouve et sous quelle forme.</item>
 								<item>LE CUIVRE — Qu'est-ce que le cuivre ? </item>
 								<item>— Lieux où on le trouve. </item>
-								<item>— Parler des mines de cuivre natif d'<placeName key="Americas"
-										>Amérique</placeName>.</item>
+								<item>— Parler des mines de cuivre natif d'<placeName key="Americas">Amérique</placeName>.</item>
 								<item>— Quel est son oxyde ?</item>
 								<item>— Quelles en sont les propriétés ?</item>
 							</list>
@@ -208,19 +273,12 @@
 								désagréables ; la plupart de ses combinaisons sont des poisons. — On
 								le trouve dans le sol, soit à l'état de pureté, soit combiné avec
 								diverses substances minérales ; les mines les plus abondantes sont
-								celles d'<placeName key="Spain"
-									ref="http://www.wikidata.org/entity/Q29">Espagne</placeName>, de
-									<placeName key="Tuscany"
-									ref="http://www.wikidata.org/entity/Q1273">Toscane</placeName>,
-								des <placeName key="United States of America"
-									ref="http://www.wikidata.org/entity/Q30">Etats-Unis</placeName>
-								et du <placeName key="Chile"
-									ref="http://www.wikidata.org/entity/Q298">Chili</placeName>. Le
-								cuivre natif existe en amas puissants aux <placeName
-									key="United States of America"
-									ref="http://www.wikidata.org/entity/Q30">Etats-Unis</placeName>
-								sur la rive sud-ouest du <placeName key="Lake Superior"
-									ref="http://www.wikidata.org/entity/Q1066">lac
+								celles d'<placeName key="Spain" ref="http://www.wikidata.org/entity/Q29">Espagne</placeName>, de
+									<placeName key="Tuscany" ref="http://www.wikidata.org/entity/Q1273">Toscane</placeName>,
+								des <placeName key="United States of America" ref="http://www.wikidata.org/entity/Q30">Etats-Unis</placeName>
+								et du <placeName key="Chile" ref="http://www.wikidata.org/entity/Q298">Chili</placeName>. Le
+								cuivre natif existe en amas puissants aux <placeName key="United States of America" ref="http://www.wikidata.org/entity/Q30">Etats-Unis</placeName>
+								sur la rive sud-ouest du <placeName key="Lake Superior" ref="http://www.wikidata.org/entity/Q1066">lac
 									Supérieur</placeName> , où il est l'objet d'une active
 								exploitation.</p>
 							<p>A l'air humide, le cuivre se couvre d'un oxyde verdâtre, connu sous
@@ -229,8 +287,7 @@
 								les vases et ustensiles de cuisine faits avec ce métal.</p>
 						</div>
 					</div>
-					<div cert="high" org="composite" part="Y" sample="initial" type="industrie"
-						xml:space="default" xml:id="sujind_082">
+					<div cert="high" org="composite" part="Y" sample="initial" type="industrie" xml:space="default" xml:id="sujind_082">
 						<head>Industrie.</head>
 						<div type="questions">
 							<list>
@@ -271,9 +328,7 @@
 							<p>Les <term>vases artistiques</term> sont ceux dont la forme élégante
 								comporte des ornements délicats et de bon goût.</p>
 							<p>Les <term>vases émaillés</term> sont ceux qui sont recouverts d'une
-								matière ana-<pb type="page" n="286"
-									facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_286.jpg"
-								/> logue au verre, fondue sous l'action d'un feu à une température
+								matière ana-<pb type="page" n="286" facs="https://raw.githubusercontent.com/BucknellDSC/suzette/master/images/page_images/Suzette_286.jpg"/> logue au verre, fondue sous l'action d'un feu à une température
 								fort élevée. Leur éclat comme la variété de leurs couleurs plaisent
 								aux regards.</p>
 							<p><term>Bernard Palissy</term>, né vers 1510, découvrit le secret de
@@ -289,8 +344,7 @@
 								substances chimiques, de temps et de travail.</p>
 							<p>Pendant des mois, pendant des années, il continua ses expériences, si
 								bien qu'il finit par se trouver, avec toute sa famille, aux prises
-								avec la misère. Il vint à <placeName key="Paris"
-									ref="http://www.wikidata.org/entity/Q90">Paris</placeName>,
+								avec la misère. Il vint à <placeName key="Paris" ref="http://www.wikidata.org/entity/Q90">Paris</placeName>,
 								continna ses recherches au prix des plus pénibles privations ;
 								enfin, après seize années d'efforts persévérants, il put arriver à
 								confectionner ces vases admirables qui sont l'ornement de nos musées
