@@ -1,4 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Suzette: a Digital Edition</title>
+        <respStmt>
+          <persName>John Westbrook</persName>
+          <orgName>Bucknell University</orgName>
+          <resp>Editor</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Diane Jakacki</persName>
+          <orgName>Bucknell University</orgName>
+          <resp>Project Manager</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Annie Girton</persName>
+          <orgName>Bucknell University</orgName>
+          <resp>Research Assistant and Encoder, 2018-2020</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Sarah Haber</persName>
+          <orgName>Bucknell University</orgName>
+          <resp>Research Assistant and Encoder, 2020-Present</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Rebecca Heintzelman</persName>
+          <orgName>Bucknell University</orgName>
+          <resp>Research Assistant and Encoder, 2020-Present</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Juliya Harnood</persName>
+          <orgName>Bucknell University</orgName>
+          <resp>Research Assistant and Encoder, 2021-Present</resp>
+        </respStmt>
+        <respStmt>
+          <persName>Jaehoon Pyon</persName>
+          <orgName>Bucknell University</orgName>
+          <resp>Research Assistant and Encoder, 2023-Present</resp>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <distributor><orgName>Bucknell University</orgName></distributor>
+        <pubPlace>
+          <address>
+            <addrLine>One Dent Drive</addrLine>
+            <addrLine>Lewisburg, PA 17837</addrLine>
+          </address>
+        </pubPlace>
+        <availability>
+          <licence>Attribution-NonCommercial-ShareAlike 4.0 International</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title>Suzette: Livre de Lecture Courante à l’Usage des Jeunes Filles.
+              Morale—Leçon de choses, Economie Domestique – Ménage – Cuisine –
+              Couture</title>
+            <author>Robert Halt</author>
+            <textLang>French</textLang>
+            <imprint>
+              <date>1889</date>
+              <distributor>Libraire Classique Paul Delaplane</distributor>
+              <pubPlace>Paris, France</pubPlace>
+            </imprint>
+          </monogr>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
 <listPlace>
   <place xml:id="suzpl0001">
     <placeName>Afrique</placeName>
@@ -8282,8 +8358,10 @@
   </place>
   <place xml:id="suzpl0920">
     <placeName>Finistère</placeName>
-    <geo ana="latitude">48.25</geo>
+    <location>
+      <geo ana="latitude">48.25</geo>
     <geo ana="longitude">-4</geo>
+    </location>
     <bibl>
       <ref source="Wikidata" target="https://www.wikidata.org/wiki/Q3389"/>
     </bibl>
@@ -8324,9 +8402,9 @@
       <geo ana="latitude">50.028611</geo>
       <geo ana="longitude">3.264722</geo>
     </location>
-    <bib>
+    <bibl>
       <ref source="Wikidata" target="https://www.wikidata.org/wiki/Q332057"/>
-    </bib>
+    </bibl>
   </place>
   <place xml:id="suzpl0925">
     <placeName>Plaine Saint Denis</placeName>
@@ -8542,9 +8620,9 @@
       <geo ana="latitude">51.513611</geo>
       <geo ana="longitude">-0.113333</geo>
     </location>
-    <bib>
+    <bibl>
       <ref source="Wikidata" target="https://www.wikidata.org/wiki/Q609835"/>
-    </bib>
+    </bibl>
   </place>
   <place xml:id="suzpl0949">
     <placeName>Tour de Londres</placeName>
@@ -8627,3 +8705,6 @@
     </bibl>
   </place>
 </listPlace>
+  </body>
+  </text>
+</TEI>
